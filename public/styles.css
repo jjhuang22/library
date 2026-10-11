@@ -25,30 +25,19 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
 .search-wrap svg { width: 17px; flex-shrink: 0; color: var(--muted); }
 input { min-width: 0; width: 100%; border: 0; background: transparent; font-size: 12px; outline-offset: 3px; }
 input::placeholder { color: var(--muted); }
-.home-link { display: flex; align-items: center; gap: 12px; margin-top: 26px; padding: 8px 11px; border-radius: 4px; font-size: 12px; }
-.home-link span { font-size: 21px; line-height: 1; }
-.home-link[aria-current=page] { background: #e3e6d6; color: #495531; }
 .nav-label { font-size: 9px; text-transform: uppercase; letter-spacing: 1.8px; color: var(--muted); margin: 29px 11px 12px; }
-.collection summary { list-style: none; display: flex; align-items: center; gap: 8px; padding: 11px 6px; font-size: 12px; }
+.collection > summary { list-style: none; display: flex; align-items: center; gap: 8px; padding: 11px 6px; font-size: 12px; }
 .collection summary::-webkit-details-marker { display: none; }
 .chevron { font-size: 22px; line-height: 16px; transition: transform .15s; }
-.collection[open] .chevron { transform: rotate(90deg); }
+.collection[open] > summary .chevron { transform: rotate(90deg); }
 .count { margin-left: auto; color: var(--muted); font-size: 10px; }
 .collection-pages { margin-left: 15px; border-left: 1px solid #d3d6c5; padding: 3px 0 3px 11px; }
 .collection-pages a { display: block; padding: 8px 10px; font-size: 11px; color: var(--muted); border-radius: 3px; }
 .collection-pages a:hover, .collection-pages a[aria-current=page] { background: #e5e7d8; color: #414b32; }
-.season-heading { display: flex; align-items: center; gap: 2px; }
-.season-toggle, .season-filter { border: 0; background: transparent; padding: 8px 5px; }
-.season-toggle { flex-shrink: 0; width: 24px; }
-.season-toggle .chevron { display: inline-block; }
-.season-toggle[aria-expanded=true] .chevron { transform: rotate(90deg); }
-.season-filter { text-align: left; font-size: 11px; border-radius: 3px; flex: 1; }
-.season-filter:hover, .season-filter[aria-pressed=true] { background: #e5e7d8; color: #414b32; }
+.season-group > summary { list-style: none; display: flex; align-items: center; gap: 9px; padding: 9px 5px; font-size: 11px; border-radius: 3px; }
+.season-group > summary:hover { background: #e5e7d8; color: #414b32; }
+.season-group[open] > summary .chevron { transform: rotate(90deg); }
 .season-pages { margin-left: 14px; padding-left: 8px; border-left: 1px solid #d3d6c5; }
-.list-controls { display: flex; align-items: center; justify-content: flex-end; flex-wrap: wrap; gap: 16px; padding-top: 22px; }
-.list-controls label { display: flex; align-items: center; gap: 9px; font-size: 11px; color: var(--muted); }
-.list-controls select { font-size: 12px; border: 1px solid var(--line); background: var(--paper); padding: 7px 10px; border-radius: 4px; }
-.filter-chip { margin-right: auto; border: 1px solid #d6dcc8; border-radius: 4px; padding: 6px 10px; font-size: 11px; background: #e7eadc; }
 .mobile-header { display: none; }
 main { margin-left: 268px; min-height: 100dvh; }
 main:focus { outline: none; }
@@ -62,7 +51,6 @@ main:focus { outline: none; }
 .entry-meta { display: flex; flex-wrap: wrap; gap: 8px 20px; margin: 0 0 10px; font-size: 11px; color: var(--muted); }
 .artifact-entry h3 { font: 30px/1.2 var(--serif); margin: 0; }
 .entry-created { font-size: 11px; color: var(--muted); margin: 12px 0 0; }
-.alphabetical-list { margin-top: 22px; }
 .search-query { font-size: 12px; color: var(--muted); margin: 20px 0 0; }
 .empty-state { padding: 30px 0; color: var(--muted); }
 .empty-state button { border: 1px solid var(--line); background: var(--sidebar); padding: 8px 15px; border-radius: 3px; }

@@ -2,7 +2,7 @@
 
 This repository and the reading-companion idea were inspired by [Boris Cherny’s artifact](https://claude.ai/artifact/RdE6uE7WozcP2MLfx3BDky).
 
-A static reading library for podcast episodes, books, and other standalone HTML companions. One catalog drives the sidebar, home page, search, and artifact pages. Acquired episodes appear under Spring/Fall seasons in the sidebar; clicking a season filters the home page, and its chevron expands or collapses episode links. The home page sorts by creation date, source release date, or title, with past years under Older. No framework, database, or build dependencies are required.
+A static reading library for podcast episodes, books, and other standalone HTML companions. One catalog drives the sidebar, home page, search, and artifact pages. Acquired episodes appear under Spring/Fall seasons in the sidebar; clicking a season label or its chevron expands or collapses episode links without changing the main list. The home page sorts by creation date, newest first, with past years under Older. The Library title returns to the full home page; individual artifacts retain their Home links. No framework, database, or build dependencies are required.
 
 Empty collections stay hidden until their first artifact is added.
 
