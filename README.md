@@ -2,7 +2,7 @@
 
 This repository and the reading-companion idea were inspired by [Boris Cherny’s artifact](https://claude.ai/artifact/RdE6uE7WozcP2MLfx3BDky).
 
-A static reading library for podcast episodes, books, and other standalone HTML companions. One catalog drives the alphabetical sidebar, chronological home page (newest additions first, grouped by year with past years under Older), search, and artifact pages. No framework, database, or build dependencies are required.
+A static reading library for podcast episodes, books, and other standalone HTML companions. One catalog drives the sidebar, home page, search, and artifact pages. Acquired episodes appear under Spring/Fall seasons in the sidebar; clicking a season filters the home page, and its chevron expands or collapses episode links. The home page sorts by creation date, source release date, or title, with past years under Older. No framework, database, or build dependencies are required.
 
 Empty collections stay hidden until their first artifact is added.
 
@@ -18,7 +18,7 @@ npm test       # Test the catalog and generated pages using Node's built-in runn
 
 `public/` contains the library interface and standalone artifacts. `content/library.json` is the source of truth for collections and artifact metadata. `scripts/build.mjs` validates the catalog, copies static assets, and copies the full artifact to its public URL. `scripts/serve.mjs` is only the local development server.
 
-Artifact links open the full HTML page directly. Each artifact should include a Home link to `/` and its original source link. Keep HTML self-contained or use root-relative asset URLs so it works at both its file path and public URL. Search uses artifact and collection titles; it does not depend on an artifact's internal JavaScript or HTML structure.
+Artifact links open the full HTML page directly. Each artifact should include a Home link to `/` and its original source link. Keep HTML self-contained or use root-relative asset URLs so it works at both its file path and public URL. Search uses artifact and collection titles, seasons, and release dates; it does not depend on an artifact's internal JavaScript or HTML structure.
 
 ## Add an artifact
 
@@ -40,4 +40,4 @@ Example entry:
 }
 ```
 
-Each artifact has five fields: `id`, `title`, `category`, `addedOn`, and `file`. Dates are calendar dates in `YYYY-MM-DD` format: record when the artifact first enters the library and preserve that date through revisions. Each entry gets `/<category>/<id>/`; IDs may repeat in different collections, but a full route must be unique.
+Each artifact has `id`, `title`, `category`, `addedOn`, and `file`. `addedOn` is displayed as **Created** and preserved through revisions. Acquired entries also require `releasedOn`, displayed as **Released**; other collections may optionally include it. All dates are calendar dates in `YYYY-MM-DD` format. The build derives Acquired season labels from release dates using the library convention: January–August is **Spring [Year]**, September–December is **Fall [Year]**. Older numbered seasons and summer releases follow the same convention. Each entry gets `/<category>/<id>/`; IDs may repeat in different collections, but a full route must be unique.

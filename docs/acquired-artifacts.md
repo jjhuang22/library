@@ -12,7 +12,7 @@ Create an illustrated reading companion that tells the episode’s story and exp
 
 ## Sections
 
-1. **Cover:** episode/company title, optional creative title, short premise, linked episode attribution, publication date, scope, and estimated reading time. Include a meaningful opening illustration when useful.
+1. **Cover:** episode/company title, optional creative title, short premise, season, linked episode attribution, **Released** date, **Created** date, scope, and estimated reading time. Created is the catalog's original `addedOn` date. Include a meaningful opening illustration when useful.
 2. **Chronological chapters:** chapter number, era, descriptive heading, short framing line, narrative paragraphs, and a concise business lesson. Include verified listening timestamps.
 3. **Explanatory interludes:** place diagrams, timelines, or interactive models where they clarify ownership, financing, distribution, or reinforcing businesses.
 4. **Concluding analysis:** explain the business model, competitive advantages, what is hard to reproduce, and vulnerabilities. Use frameworks such as Seven Powers only when helpful.
@@ -27,11 +27,11 @@ Cover the full episode, including the hosts’ concluding analysis. Combine or o
 - Keep prose around 60–75 characters wide, with generous chapter spacing. Let illustrations and diagrams extend beyond the text column.
 - Use one main heading, chapter headings, and smaller lesson headings. Reserve bullets and tables for comparisons, frameworks, and the playbook. Use italics sparingly.
 - Adapt artwork and accents to the subject. Disney’s watercolors, blue/gold palette, and film-reel treatment are a reference, not a mandatory theme.
-- Keep compact sticky navigation with **Home** and chapter jumps. Use a proportional episode timeline with hover/focus timestamps when reliable timings exist. Avoid duplicate controls, story/lesson switches, and quizzes.
+- Keep compact sticky navigation with **Home** and chapter jumps. Keep the Chapters control and its dropdown above the episode ruler. Use a proportional episode timeline with hover/focus timestamps when reliable timings exist. Avoid duplicate controls, story/lesson switches, and quizzes.
 - On mobile, stack diagrams and simplify navigation. Preserve readable type, keyboard access, touch targets, image descriptions, and reduced motion. Prevent horizontal overflow.
 
 ## Accuracy and delivery
 
 - Verify consequential claims. Do not invent quotes, facts, precision, or timestamps. Label approximations, conceptual diagrams, and imagined artwork; distinguish revenue, profit, box office, and cash flow.
-- Deliver full standalone HTML with **Home** linking to `/`. Link the episode attribution itself to the original source. Keep assets embedded or root-relative; avoid a library wrapper.
-- Add the catalog entry with only `id`, `title`, `category`, `addedOn`, and `file`. Keep source links and attribution in the artifact itself. Preserve the original addition date when revising. Check links, images, and interactions on desktop and mobile.
+- Deliver full standalone HTML with **Home** linking to `/`. Link the episode attribution itself to the original source. External links must open a new tab with `target="_blank"` and `rel="noopener noreferrer"`; keep internal chapter links in the current tab. Keep assets embedded or root-relative; avoid a library wrapper.
+- Add the catalog entry with `id`, `title`, `category`, `addedOn`, `releasedOn`, and `file`. Verify the original release date from Acquired. The build derives the library season from that date: January–August → **Spring [Year]**, September–December → **Fall [Year]**. This is the library's two-season convention, including older numbered seasons and summer episodes. Use the same label on the artifact cover. Keep source links and attribution in the artifact itself. Preserve the original creation (`addedOn`) date when revising. Check links, images, and interactions on desktop and mobile.

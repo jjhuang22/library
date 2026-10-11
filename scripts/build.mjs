@@ -5,6 +5,18 @@ import path from 'node:path';
 const defaultRoot = fileURLToPath(new URL('../', import.meta.url));
 const slug = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 
+function validateDate(value, field) {
+  const date = new Date(`${value}T00:00:00Z`);
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(value) || !Number.isFinite(date.getTime()) || date.toISOString().slice(0, 10) !== value) throw new Error(`Invalid ${field} date`);
+}
+
+// Library convention: the first eight months belong to Spring; Fall starts in September.
+// Derive this from each episode's release date, including older numbered seasons.
+export function acquiredSeason(releasedOn) {
+  validateDate(releasedOn, 'releasedOn');
+  return `${Number(releasedOn.slice(5, 7)) < 9 ? 'Spring' : 'Fall'} ${releasedOn.slice(0, 4)}`;
+}
+
 export async function buildLibrary(root = defaultRoot) {
   const library = JSON.parse(await readFile(path.join(root, 'content/library.json'), 'utf8'));
   const categories = new Set();
@@ -15,8 +27,9 @@ export async function buildLibrary(root = defaultRoot) {
   const routes = new Set();
   for (const artifact of library.artifacts) {
     if (!categories.has(artifact.category) || !slug.test(artifact.id) || !artifact.title) throw new Error('Invalid artifact');
-    const date = new Date(`${artifact.addedOn}T00:00:00Z`);
-    if (!/^\d{4}-\d{2}-\d{2}$/.test(artifact.addedOn) || !Number.isFinite(date.getTime()) || date.toISOString().slice(0, 10) !== artifact.addedOn) throw new Error('Invalid addedOn date');
+    validateDate(artifact.addedOn, 'addedOn');
+    if (artifact.releasedOn !== undefined || artifact.category === 'acquired') validateDate(artifact.releasedOn, 'releasedOn');
+    if (artifact.category === 'acquired') artifact.season = acquiredSeason(artifact.releasedOn);
     artifact.url = `/${artifact.category}/${artifact.id}/`;
     if (routes.has(artifact.url)) throw new Error(`Duplicate route: ${artifact.url}`);
     routes.add(artifact.url);

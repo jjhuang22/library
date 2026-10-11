@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import { mkdtemp, mkdir, writeFile, readFile, rm } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import path from 'node:path';
-import { buildLibrary } from '../scripts/build.mjs';
+import { buildLibrary, acquiredSeason } from '../scripts/build.mjs';
 
 async function fixture(t, mutate = () => {}) {
   const root = await mkdtemp(path.join(tmpdir(), 'artifact-library-'));
@@ -49,5 +49,36 @@ for (const [name, mutate, error] of [
   test(`rejects ${name}`, async t => {
     const root = await fixture(t, mutate);
     await assert.rejects(buildLibrary(root), error);
+  });
+}
+
+test('converts historical numbered seasons by release date using the library convention', () => {
+  for (const releasedOn of ['2024-01-22', '2024-02-20', '2024-03-18', '2024-04-22', '2024-06-04', '2024-07-22', '2024-08-31']) {
+    assert.equal(acquiredSeason(releasedOn), 'Spring 2024');
+  }
+  assert.equal(acquiredSeason('2024-09-01'), 'Fall 2024');
+  assert.equal(acquiredSeason('2024-12-31'), 'Fall 2024');
+});
+
+test('derives Acquired seasons from release dates without changing creation dates', async t => {
+  const root = await fixture(t, library => {
+    library.categories[0] = { id: 'acquired', title: 'Acquired Podcasts' };
+    Object.assign(library.artifacts[0], { category: 'acquired', releasedOn: '2026-06-22', season: 'Season 14' });
+    library.artifacts[1].releasedOn = '2026-09-14';
+  });
+  const { artifacts } = await buildLibrary(root);
+  assert.equal(artifacts[0].season, 'Spring 2026');
+  assert.equal(artifacts[0].addedOn, '2026-10-06');
+  assert.equal(artifacts[1].releasedOn, '2026-09-14');
+  assert.equal(artifacts[1].season, undefined);
+});
+
+for (const releasedOn of [undefined, '2026-02-30']) {
+  test(`rejects missing or invalid Acquired release dates: ${releasedOn}`, async t => {
+    const root = await fixture(t, library => {
+      library.categories[0] = { id: 'acquired', title: 'Acquired Podcasts' };
+      Object.assign(library.artifacts[0], { category: 'acquired', releasedOn });
+    });
+    await assert.rejects(buildLibrary(root), /Invalid releasedOn/);
   });
 }
