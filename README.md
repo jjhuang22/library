@@ -24,11 +24,16 @@ Artifact links open the full HTML page directly. Each artifact should include a 
 
 For Acquired episodes, follow the [artifact writing and design guide](docs/acquired-artifacts.md).
 
-All Acquired companions should use the illustrated editorial style established by the Disney and Home Depot artifacts: warm paper backgrounds, large serif headings, readable prose, and original watercolor illustrations with textured paper, loose pigment washes, and soft edges. Include a watercolor cover and add relevant scenes at major story moments where they help explain the narrative. Adapt restrained accent colors to the company, keep illustrations responsive with descriptive alt text, and label imagined scenes as conceptual rather than historical photographs or exact reconstructions. Keep diagrams precise and readable alongside the artwork.
+All Acquired companions should use the illustrated editorial style established by the Disney and Home Depot artifacts: warm paper backgrounds, Cormorant Garamond headings and prose (the bundled font in `public/fonts/cormorant.woff2`, applied through `public/artifact-type.css`), and original watercolor illustrations with textured paper, loose pigment washes, and soft edges. Include a watercolor cover and add relevant scenes at major story moments where they help explain the narrative. Adapt restrained accent colors to the company, keep illustrations responsive with descriptive alt text, and label imagined scenes as conceptual rather than historical photographs or exact reconstructions. Keep diagrams precise and readable alongside the artwork.
+
+The compact sticky navigation must also belong to the episode's world: a film reel for Disney, tape measure for Home Depot, stitched leather for Hermès, a warehouse receipt for Costco, a watch bezel for Rolex, a circuit for Formula 1, or a dashboard gauge for Ferrari. Design a recognizable, restrained motif rather than reusing a generic timeline. Keep Home and the Chapters dropdown above it. Chapter links must show their names and verified listening cues on hover and keyboard focus, work on small touch screens, and keep the current chapter clear. If marker spacing represents chapter order rather than elapsed audio, label that distinction explicitly.
+
+Use actual watercolor image assets for the cover and selected story scenes; basic geometric SVG drawings are not substitutes for painted artwork. Reserve SVG for precise explanatory diagrams and navigation. Link `public/artifact-type.css` last in each companion's head so typography stays consistent. Check the finished images and themed navigation in a real browser at desktop and mobile widths.
 
 1. Save its HTML under `public/artifacts/<collection>/`.
 2. Add an entry to `content/library.json`. Add a collection to `categories` if needed.
-3. Run `npm run build`.
+3. Run `npm run build` and `npm test`, then check the artifact in a browser at desktop and mobile widths.
+4. Commit the HTML, catalog, fonts/styles, and all referenced image assets to this repository. Push the commit to the agreed remote branch; local or generated `dist/` files alone are not repository delivery.
 
 Example entry:
 

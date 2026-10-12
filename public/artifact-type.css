@@ -1,0 +1,57 @@
+/* Shared Acquired typography, matched to the reference's Cormorant Garamond. */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  src: url('/fonts/cormorant.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+body, body * {
+  font-family: 'Cormorant Garamond', Georgia, serif !important;
+}
+body {
+  font-size: 26px !important;
+  line-height: 1.65 !important;
+}
+.read > p:not(.small):not(.label):not(.deck),
+.reading > p:not(.small):not(.label):not(.deck),
+.story > p:not(.small):not(.label):not(.deck),
+.lesson p {
+  font-size: 26px !important;
+  line-height: 1.65 !important;
+}
+h1, h2, h3 { font-weight: 400 !important; }
+.read, .reading, .story { max-width: 740px; }
+nav, .topbar, .navtop, .navtopline, .nav-row { font-size: 18px; }
+summary { font-size: 18px !important; }
+nav a[href='/'], .topbar a[href='/'] {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+}
+.contents li a { font-size: 18px !important; }
+main figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 0;
+}
+figcaption { font-size: 16px !important; line-height: 1.5 !important; }
+@media (max-width: 700px) {
+  body { font-size: 23px !important; line-height: 1.6 !important; }
+  .read > p:not(.small):not(.label):not(.deck),
+  .reading > p:not(.small):not(.label):not(.deck),
+  .story > p:not(.small):not(.label):not(.deck),
+  .lesson p { font-size: 23px !important; line-height: 1.6 !important; }
+}
+/* Cormorant has a smaller apparent size than the previous interface fonts. */
+.small, .meta, .metadata, .references, .source-note, .source-notes,
+.sources ol, .sources li, footer {
+  font-size: 16px !important;
+  line-height: 1.55 !important;
+}
+.label, .eyebrow, .kicker { font-size: 13px !important; }
+.chapters li a, .chapter-menu li a {
+  font-size: 18px !important;
+  line-height: 1.5 !important;
+}
