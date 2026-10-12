@@ -1,4 +1,4 @@
-/* Disney's proportional interaction; only the surface and emblem vary by episode. */
+/* Shared popup and fallback linear layout; episode styles retain their geometry. */
 .episode-timeline { --track-a:#5b6c76; --track-b:#718087; --track-active:#ba913e; --track-hover:#b8a781; --track-line:#1b2c3c; position:relative; z-index:1; max-width:1100px; padding:0 24px 12px; margin:auto; display:grid; grid-template-columns:190px minmax(0,1fr); gap:20px; align-items:center; }
 .episode-readout { min-width:0; }
 .episode-clock { display:flex; align-items:baseline; gap:5px; color:var(--ink,#2c3029); white-space:nowrap; font-size:17px; line-height:1.2; }
@@ -20,7 +20,7 @@
 .episode-preview strong { display:block; font-weight:600; color:var(--track-line); margin-bottom:4px; }
 .episode-hover-time { color:#9f661f; font-size:18px; font-weight:600; font-variant-numeric:tabular-nums; }
 .episode-range { font-size:14px; color:#756d60; margin-top:2px; }
-/* Materials convey the theme; chapter boundaries are the only major divisions. */
+/* Default linear treatments; bespoke episode styles may replace this layout. */
 .episode-timeline[data-theme=film] .episode-segment { top:12px; bottom:12px; box-shadow:inset 3px 0 var(--track-line),inset -2px 0 var(--track-line); }
 .episode-timeline[data-theme=film] .episode-track::before,.episode-timeline[data-theme=film] .episode-track::after { left:3px; right:3px; height:6px; background:repeating-linear-gradient(90deg,var(--paper,#f7f1e6) 0 8px,transparent 8px 15px); }
 .episode-timeline[data-theme=film] .episode-track::before { top:3px; }
@@ -70,3 +70,6 @@
   .episode-timeline[data-theme=film] .episode-track::before,.episode-timeline[data-theme=film] .episode-track::after { height:4px; background-size:9px; }
 }
 @media print { .episode-timeline { display:none; } }
+/* A changing title must not change the sticky header height during a seek. */
+.episode-timeline[data-theme=film] .episode-current-title,
+.episode-timeline[data-theme=tape] .episode-current-title { min-height:2.5em; }

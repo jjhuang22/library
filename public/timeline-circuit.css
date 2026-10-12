@@ -1,0 +1,27 @@
+/* The original imagined race circuit, with chronological corner markers. */
+.episode-timeline[data-geometry=path] {grid-template-columns:180px minmax(0,1fr);padding-bottom:10px;gap:15px}
+.episode-timeline[data-geometry=path] .episode-readout{padding:8px 12px;background:#293b33;border:1px solid #697b69;border-radius:3px;box-shadow:inset 0 2px 4px #0005;color:#efe9d9}
+.episode-timeline[data-geometry=path] .episode-clock{color:#efe9d9;font:14px/1.1 ui-monospace,SFMono-Regular,Consolas,monospace;gap:5px}
+.episode-timeline[data-geometry=path] .episode-current-time{font:600 16px/1.1 ui-monospace,SFMono-Regular,Consolas,monospace;letter-spacing:.01em;background:#14231e;padding:3px 5px;border-radius:2px}
+.episode-timeline[data-geometry=path] .episode-end-time{font:11px/1.1 ui-monospace,SFMono-Regular,Consolas,monospace;opacity:.8}
+.episode-timeline[data-geometry=path] .episode-current-title{font:11px/1.2 Arial,sans-serif;color:#d3d9ca;margin-top:6px}
+.episode-timeline[data-geometry=path] .episode-transport{display:block}
+.episode-timeline[data-geometry=path] .episode-track{height:88px;background:transparent;border-radius:0;box-shadow:none;isolation:isolate}
+.episode-timeline[data-geometry=path] .episode-track::before,.episode-timeline[data-geometry=path] .episode-track::after{display:none}
+.episode-timeline[data-geometry=path] .circuit-map{position:absolute;inset:0;width:100%;height:100%;z-index:0}
+.episode-timeline[data-geometry=path] .episode-hit{pointer-events:stroke;cursor:pointer}
+.episode-timeline[data-geometry=path] .corner{position:absolute;transform:translate(-50%,-50%);width:44px;height:44px;min-width:44px;bottom:auto;display:grid;place-items:center;padding:0;margin:0;border:0;background:none;box-shadow:none;z-index:2}
+.episode-timeline[data-geometry=path] .corner:nth-of-type(even),.episode-timeline[data-geometry=path] .corner:hover,.episode-timeline[data-geometry=path] .corner[aria-current=location]{background:none}
+.episode-timeline[data-geometry=path] .corner b{width:24px;height:24px;display:grid;place-items:center;background:var(--paper,#f6f1e7);border:1px solid #345d4f;border-radius:50%;font:600 10px/1 Arial,sans-serif;color:#345d4f}
+.episode-timeline[data-geometry=path] .corner:hover b,.episode-timeline[data-geometry=path] .corner:focus-visible b,.episode-timeline[data-geometry=path] .corner[aria-current=location] b{background:#a83b32;border-color:#a83b32;color:#f6f1e7}
+.episode-timeline[data-geometry=path] .corner:focus-visible{outline:2px solid #a83b32;outline-offset:0;border-radius:50%}
+.episode-timeline[data-geometry=path] .episode-playhead{width:8px;height:8px;top:50%;left:4.2%;bottom:auto;background:#c5a25c;border:1px solid #f6f1e7;border-radius:50%;box-shadow:0 0 0 1px #345d4f;transform:translate(-50%,-50%);z-index:3}
+@media(max-width:700px){
+ .episode-timeline[data-geometry=path]{grid-template-columns:1fr;gap:5px;padding:0 20px 8px}
+ .episode-timeline[data-geometry=path] .episode-readout{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:4px 8px;max-width:100%}
+ .episode-timeline[data-geometry=path] .episode-current-title{display:block;white-space:nowrap;text-overflow:ellipsis;overflow:hidden;min-width:0;margin:0;font-size:10px}
+ .episode-timeline[data-geometry=path] .episode-clock{flex-shrink:0}
+ .episode-timeline[data-geometry=path] .episode-current-time{font-size:13px}
+ .episode-timeline[data-geometry=path] .episode-end-time{font-size:10px}
+ .episode-timeline[data-geometry=path] .episode-track{height:88px}
+}

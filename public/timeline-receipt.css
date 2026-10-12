@@ -1,0 +1,61 @@
+/* Costco's printed member receipt; timings and hover remain the shared engine. */
+.episode-timeline[data-theme=receipt] {
+  --track-a:#fffaf0; --track-b:#f7f0e2; --track-active:#a74731;
+  --track-hover:#e9dcc7; --track-line:#365443;
+  display:block; max-width:1100px; padding:0 24px 10px;
+}
+.episode-timeline[data-theme=receipt] .episode-readout {
+  display:flex; align-items:baseline; gap:20px; margin-bottom:7px;
+}
+.episode-timeline[data-theme=receipt] .episode-clock { flex:none; }
+.episode-timeline[data-theme=receipt] .episode-current-title {
+  margin:0; font-size:15px; line-height:1.2; white-space:nowrap;
+  display:block; overflow:hidden; text-overflow:ellipsis;
+}
+.episode-timeline[data-theme=receipt] .episode-transport { display:block; }
+.episode-timeline[data-theme=receipt] .episode-emblem { display:none; }
+.episode-timeline[data-theme=receipt] .episode-track {
+  height:46px; width:100%; border-radius:0;
+  background:repeating-linear-gradient(90deg,#fffaf0 0 7px,#fcf6e9 7px 8px);
+  border-top:1px dashed #a7473180; border-bottom:1px dashed #36544380;
+  box-shadow:0 2px 3px #29332d0b;
+}
+.episode-timeline[data-theme=receipt] .episode-segment {
+  color:#365443; display:flex; flex-direction:column;
+  align-items:center; justify-content:center; gap:2px;
+  background:transparent; box-shadow:none;
+  border-right:1px dashed #36544345;
+}
+.episode-timeline[data-theme=receipt] .episode-segment:nth-of-type(even) { background:#36544306; }
+.episode-timeline[data-theme=receipt] .episode-segment:nth-of-type(3n) { color:#a74731; }
+.episode-timeline[data-theme=receipt] .episode-segment:last-of-type { border-right:0; }
+.episode-timeline[data-theme=receipt] .episode-segment[aria-current=location] { background:#e6d7c2; }
+.episode-timeline[data-theme=receipt] .episode-segment:hover { background:#eee0c8; }
+.episode-timeline[data-theme=receipt] .receipt-aisle {
+  display:block; font-size:8px; line-height:1; letter-spacing:.08em;
+}
+.episode-timeline[data-theme=receipt] .receipt-number {
+  display:block; font-size:18px; line-height:1; font-weight:600;
+  font-variant-numeric:tabular-nums; letter-spacing:.015em;
+}
+.episode-timeline[data-theme=receipt] .episode-track::before,
+.episode-timeline[data-theme=receipt] .episode-track::after {
+  height:4px; background:radial-gradient(circle at 4px 0,#f5f0e5 0 2px,transparent 2.5px) 0 0/9px 4px repeat-x;
+}
+.episode-timeline[data-theme=receipt] .episode-track::before { top:-1px; }
+.episode-timeline[data-theme=receipt] .episode-track::after { bottom:-1px; transform:rotate(180deg); }
+.episode-timeline[data-theme=receipt] .episode-playhead { background:#a74731; width:2px; }
+@media(max-width:700px) {
+  .episode-timeline[data-theme=receipt] { padding:0 16px 9px; }
+  .episode-timeline[data-theme=receipt] .episode-readout { gap:12px; margin-bottom:6px; }
+  .episode-timeline[data-theme=receipt] .episode-current-title { font-size:12px; }
+  .episode-timeline[data-theme=receipt] .episode-track { height:38px; }
+  .episode-timeline[data-theme=receipt] .receipt-aisle { display:none; }
+  .episode-timeline[data-theme=receipt] .receipt-number { font-size:13px; letter-spacing:0; }
+}
+@media(max-width:450px) {
+  .episode-timeline[data-theme=receipt] .receipt-number { font-size:11px; }
+  .episode-timeline[data-theme=receipt] .episode-segment[data-narrow] .receipt-number { font-size:9px; letter-spacing:-.04em; }
+  .episode-timeline[data-theme=receipt] .episode-current-title { font-size:11px; }
+  .episode-timeline[data-theme=receipt] .episode-readout { gap:8px; }
+}

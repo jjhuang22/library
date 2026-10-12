@@ -1,0 +1,34 @@
+
+/* Restore Rolex's unwrapped watch bezel; chapter hands are the only indices. */
+.episode-timeline[data-theme=bezel]{display:block;padding-bottom:12px;--track-active:#96753e;--track-line:#315446}
+.episode-timeline[data-theme=bezel] .episode-readout{display:flex;align-items:baseline;justify-content:space-between;gap:18px;margin-bottom:9px}
+.episode-timeline[data-theme=bezel] .episode-current-title{margin:0;text-align:right;max-width:65%;-webkit-line-clamp:1}
+.episode-timeline[data-theme=bezel] .episode-emblem{width:35px;height:35px}
+.episode-timeline[data-theme=bezel] .episode-transport{gap:12px}
+.episode-timeline[data-theme=bezel] .episode-track{width:100%;height:70px;min-width:0;overflow:visible;border:0;border-radius:8px;background:linear-gradient(180deg,#a9b2a5 0%,#e2e5d8 8%,#d2d9ca 13%,#c5cdbe 78%,#889989 89%,#dce1d2 93%,#819482 100%);box-shadow:0 1px 2px #273f3270 inset,0 -1px 2px #f8f5df inset}
+.episode-timeline[data-theme=bezel] .episode-track::before{inset:2px 0;border:0;border-radius:6px;background:repeating-linear-gradient(175deg,transparent 0 2px,#f9ffeb20 2px 3px);z-index:0}
+.episode-timeline[data-theme=bezel] .episode-track::after{display:none}
+.episode-timeline[data-theme=bezel] .episode-hit{position:absolute;inset:0;width:100%;height:100%;border:0;padding:0;cursor:pointer;background:transparent;z-index:1;appearance:none;border-radius:8px}
+.episode-timeline[data-theme=bezel] .episode-hit:focus-visible{outline:2px solid #73542a;outline-offset:3px}
+.episode-timeline[data-theme=bezel] .episode-segment.bezel-hand{top:13px;bottom:auto;transform:translateX(-50%);width:44px;height:44px;min-width:0;border:0;box-shadow:none;border-radius:5px;display:flex;align-items:flex-end;justify-content:center;background:transparent!important;z-index:2;color:#fff9e8}
+.episode-timeline[data-theme=bezel] .hand{position:absolute;top:0;left:17px;width:10px;height:25px;background:#315b45;clip-path:polygon(50% 0,100% 35%,75% 75%,75% 100%,25% 100%,25% 75%,0 35%);filter:drop-shadow(0 1px 1px #122c1c60)}
+.episode-timeline[data-theme=bezel] .chapter-number{position:relative;font:700 11px/1 Arial,sans-serif;background:#315b45;padding:4px 7px 3px;border-radius:12px;margin-bottom:3px;box-shadow:0 1px 1px #223c2830}
+.episode-timeline[data-theme=bezel] .bezel-hand:hover .hand,.episode-timeline[data-theme=bezel] .bezel-hand:focus-visible .hand,.episode-timeline[data-theme=bezel] .bezel-hand[aria-current=location] .hand{background:#94703c}
+.episode-timeline[data-theme=bezel] .bezel-hand:hover .chapter-number,.episode-timeline[data-theme=bezel] .bezel-hand:focus-visible .chapter-number,.episode-timeline[data-theme=bezel] .bezel-hand[aria-current=location] .chapter-number{background:#94703c}
+.episode-timeline[data-theme=bezel] .bezel-hand:focus-visible{outline:2px solid #73542a;outline-offset:-1px;z-index:3}
+.episode-timeline[data-theme=bezel] .episode-playhead{z-index:4;border-radius:2px;top:3px;bottom:3px;background:#94703c;box-shadow:0 0 0 1px #fff8}
+@media(max-width:900px){.episode-timeline[data-theme=bezel] .episode-track{height:94px}.episode-timeline[data-theme=bezel] .bezel-hand{top:2px!important}.episode-timeline[data-theme=bezel] .bezel-hand[data-episode="2"],.episode-timeline[data-theme=bezel] .bezel-hand[data-episode="5"],.episode-timeline[data-theme=bezel] .bezel-hand[data-episode="8"]{top:48px!important}}
+@media(max-width:700px){.episode-timeline[data-theme=bezel] .episode-readout{gap:10px}.episode-timeline[data-theme=bezel] .episode-transport{gap:0}.episode-timeline[data-theme=bezel] .episode-emblem{display:none}.episode-timeline[data-theme=bezel] .episode-current-title{max-width:54%;font-size:12px}.episode-timeline[data-theme=bezel] .episode-clock{font-size:15px}.episode-timeline[data-theme=bezel] .episode-track{flex-basis:100%}}
+
+/* Keep a hand on its exact time even when its touch target is bounded at the edge. */
+.episode-timeline[data-theme=bezel] .episode-track{container-type:inline-size}
+.episode-timeline[data-theme=bezel] .hand{left:calc(17px + min(0px, var(--chapter-coordinate) - 22px))}
+/* Compact two-row phone layout; chapter menus provide larger touch targets. */
+@media(max-width:440px){
+ .episode-timeline[data-theme=bezel] .episode-track{height:88px}
+ .episode-timeline[data-theme=bezel] .episode-segment.bezel-hand{width:28px;height:40px;left:clamp(14px,var(--chapter-position),calc(100% - 14px))!important}
+ .episode-timeline[data-theme=bezel] .bezel-hand[data-episode="3"],.episode-timeline[data-theme=bezel] .bezel-hand[data-episode="6"]{top:2px!important}
+ .episode-timeline[data-theme=bezel] .bezel-hand[data-episode="2"],.episode-timeline[data-theme=bezel] .bezel-hand[data-episode="5"],.episode-timeline[data-theme=bezel] .bezel-hand[data-episode="8"]{top:44px!important}
+ .episode-timeline[data-theme=bezel] .hand{left:calc(9px + min(0px,var(--chapter-coordinate) - 14px))}
+ .episode-timeline[data-theme=bezel] .chapter-number{padding:3px 4px;font-size:10px}
+}
