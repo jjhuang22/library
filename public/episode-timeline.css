@@ -1,0 +1,72 @@
+/* Disney's proportional interaction; only the surface and emblem vary by episode. */
+.episode-timeline { --track-a:#5b6c76; --track-b:#718087; --track-active:#ba913e; --track-hover:#b8a781; --track-line:#1b2c3c; position:relative; z-index:1; max-width:1100px; padding:0 24px 12px; margin:auto; display:grid; grid-template-columns:190px minmax(0,1fr); gap:20px; align-items:center; }
+.episode-readout { min-width:0; }
+.episode-clock { display:flex; align-items:baseline; gap:5px; color:var(--ink,#2c3029); white-space:nowrap; font-size:17px; line-height:1.2; }
+.episode-current-time { font-size:19px; font-weight:600; font-variant-numeric:tabular-nums; }
+.episode-end-time { font-size:14px; opacity:.7; }
+.episode-current-title { font-size:14px; line-height:1.25; margin-top:4px; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; }
+.episode-transport { min-width:0; display:flex; gap:12px; align-items:center; }
+.episode-emblem { width:50px; height:50px; flex-shrink:0; color:var(--track-line); }
+.episode-track { position:relative; isolation:isolate; flex:1; min-width:0; height:54px; border-radius:2px; background:var(--track-line); }
+.episode-segment { appearance:none; position:absolute; top:0; bottom:0; min-width:0; margin:0; padding:0; border:0; border-radius:0; box-shadow:inset 2px 0 var(--track-line); background:var(--track-a); cursor:pointer; }
+.episode-segment:nth-of-type(even) { background:var(--track-b); }
+.episode-segment[aria-current=location] { background:var(--track-active); }
+.episode-segment:hover { background:var(--track-hover); }
+.episode-segment:focus-visible { outline:2px solid var(--track-active); outline-offset:3px; z-index:2; }
+.episode-track::before, .episode-track::after { content:''; position:absolute; left:0; right:0; pointer-events:none; z-index:3; }
+.episode-playhead { position:absolute; z-index:4; pointer-events:none; top:0; bottom:0; width:2px; background:var(--track-active); box-shadow:0 0 0 1px #fff8; }
+.episode-preview { position:fixed; z-index:5; width:max-content; max-width:min(320px,calc(100vw - 32px)); padding:12px 15px; background:#fffaf0; border:1px solid #d9cdb8; box-shadow:0 3px 12px #44382120; color:#584b36; font-size:16px; line-height:1.35; pointer-events:none; }
+.episode-preview[hidden] { display:none; }
+.episode-preview strong { display:block; font-weight:600; color:var(--track-line); margin-bottom:4px; }
+.episode-hover-time { color:#9f661f; font-size:18px; font-weight:600; font-variant-numeric:tabular-nums; }
+.episode-range { font-size:14px; color:#756d60; margin-top:2px; }
+/* Materials convey the theme; chapter boundaries are the only major divisions. */
+.episode-timeline[data-theme=film] .episode-segment { top:12px; bottom:12px; box-shadow:inset 3px 0 var(--track-line),inset -2px 0 var(--track-line); }
+.episode-timeline[data-theme=film] .episode-track::before,.episode-timeline[data-theme=film] .episode-track::after { left:3px; right:3px; height:6px; background:repeating-linear-gradient(90deg,var(--paper,#f7f1e6) 0 8px,transparent 8px 15px); }
+.episode-timeline[data-theme=film] .episode-track::before { top:3px; }
+.episode-timeline[data-theme=film] .episode-track::after { bottom:3px; }
+.episode-timeline[data-theme=tape] { --track-a:#eac23b; --track-b:#f0cb40; --track-active:#b85327; --track-hover:#dcb02d; --track-line:#826327; }
+.episode-timeline[data-theme=tape] .episode-segment[aria-current=location] { background:#d6a834; }
+.episode-timeline[data-theme=tape] .episode-track::before { top:0; height:12px; background:repeating-linear-gradient(90deg,transparent 0 calc(2.5% - 1px),#82632799 calc(2.5% - 1px) 2.5%); }
+.episode-timeline[data-theme=tape] .episode-track::after { bottom:0; height:6px; background:repeating-linear-gradient(90deg,transparent 0 calc(5% - 1px),#82632799 calc(5% - 1px) 5%); }
+.episode-timeline[data-theme=leather] { --track-a:#745139; --track-b:#805b40; --track-active:#bfa06d; --track-hover:#966b46; --track-line:#543b29; }
+.episode-timeline[data-theme=leather] .episode-segment[aria-current=location] { background:#9b6b42; }
+.episode-timeline[data-theme=leather] .episode-track { border-radius:5px; box-shadow:0 2px 4px #543b2926; }
+.episode-timeline[data-theme=leather] .episode-track::before,.episode-timeline[data-theme=leather] .episode-track::after { left:5px; right:5px; border-top:1px dashed #e5d1a5; }
+.episode-timeline[data-theme=leather] .episode-track::before { top:6px; }
+.episode-timeline[data-theme=leather] .episode-track::after { bottom:6px; }
+.episode-timeline[data-theme=receipt] { --track-a:#f6f2e7; --track-b:#eee8d9; --track-active:#af4a2f; --track-hover:#dfd7c5; --track-line:#b8ae97; }
+.episode-timeline[data-theme=receipt] .episode-preview strong { color:#344b3e; }
+.episode-timeline[data-theme=receipt] .episode-segment { box-shadow:inset 1px 0 #b8ae97; }
+.episode-timeline[data-theme=receipt] .episode-segment[aria-current=location] { background:#decab6; }
+.episode-timeline[data-theme=receipt] .episode-track::before,.episode-timeline[data-theme=receipt] .episode-track::after { height:5px; background:radial-gradient(circle at 4px 0,var(--paper,#f7f1e6) 0 3px,transparent 3.5px) 0 0/10px 5px repeat-x; }
+.episode-timeline[data-theme=receipt] .episode-track::before { top:0; }
+.episode-timeline[data-theme=receipt] .episode-track::after { bottom:0; transform:rotate(180deg); }
+.episode-timeline[data-theme=bezel] { --track-a:#c8d2c2; --track-b:#b9c6b6; --track-active:#96753e; --track-hover:#9cae98; --track-line:#536a56; }
+.episode-timeline[data-theme=bezel] .episode-track { box-shadow:0 0 0 1px #83927e,inset 0 2px 3px #fff7; border-radius:5px; }
+.episode-timeline[data-theme=bezel] .episode-segment[aria-current=location] { background:#8b9f89; }
+.episode-timeline[data-theme=bezel] .episode-track::before { inset:0; background:repeating-linear-gradient(0deg,#fff3 0 1px,transparent 1px 4px); border-top:3px solid #dce1d4; border-bottom:3px solid #a3b09b; }
+.episode-timeline[data-theme=circuit] { --track-a:#345d4f; --track-b:#426b5c; --track-active:#b1352c; --track-hover:#69816c; --track-line:#253c33; }
+.episode-timeline[data-theme=circuit] .episode-segment[aria-current=location] { background:#6b805e; }
+.episode-timeline[data-theme=circuit] .episode-track::before,.episode-timeline[data-theme=circuit] .episode-track::after { height:5px; background:repeating-linear-gradient(90deg,#c9c1a7 0 15px,#a94335 15px 30px); }
+.episode-timeline[data-theme=circuit] .episode-track::before { top:0; }
+.episode-timeline[data-theme=circuit] .episode-track::after { bottom:0; }
+.episode-timeline[data-theme=dashboard] { --track-a:#3c3932; --track-b:#4d493f; --track-active:#b63e31; --track-hover:#79725d; --track-line:#262622; }
+.episode-timeline[data-theme=dashboard] .episode-preview strong { color:#9b3328; }
+.episode-timeline[data-theme=dashboard] .episode-segment[aria-current=location] { background:#817155; }
+.episode-timeline[data-theme=dashboard] .episode-track::after { bottom:0; right:0; left:88%; height:5px; background:#b63e31; }
+/* Menus always paint above the track and its preview. */
+.top-inner,.navtop,.nav-row,.toprow,.navrow { position:relative; z-index:10; }
+.contents,.chapters,.chapter-menu { z-index:20 !important; }
+@media(max-width:700px) {
+  .episode-timeline { grid-template-columns:118px minmax(0,1fr); gap:8px; padding:0 16px 10px; }
+  .episode-transport { gap:6px; }
+  .episode-emblem { width:30px; height:30px; }
+  .episode-track { height:44px; }
+  .episode-current-time { font-size:17px; }
+  .episode-end-time { font-size:12px; }
+  .episode-current-title { font-size:13px; }
+  .episode-timeline[data-theme=film] .episode-segment { top:10px; bottom:10px; box-shadow:inset 1px 0 var(--track-line),inset -1px 0 var(--track-line); }
+  .episode-timeline[data-theme=film] .episode-track::before,.episode-timeline[data-theme=film] .episode-track::after { height:4px; background-size:9px; }
+}
+@media print { .episode-timeline { display:none; } }
