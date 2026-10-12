@@ -24,6 +24,8 @@ Artifact links open the full HTML page directly. Each artifact should include a 
 
 For Acquired episodes, follow the [artifact writing and design guide](docs/acquired-artifacts.md).
 
+All Acquired companions should use the illustrated editorial style established by the Disney and Home Depot artifacts: warm paper backgrounds, large serif headings, readable prose, and original watercolor illustrations with textured paper, loose pigment washes, and soft edges. Include a watercolor cover and add relevant scenes at major story moments where they help explain the narrative. Adapt restrained accent colors to the company, keep illustrations responsive with descriptive alt text, and label imagined scenes as conceptual rather than historical photographs or exact reconstructions. Keep diagrams precise and readable alongside the artwork.
+
 1. Save its HTML under `public/artifacts/<collection>/`.
 2. Add an entry to `content/library.json`. Add a collection to `categories` if needed.
 3. Run `npm run build`.
