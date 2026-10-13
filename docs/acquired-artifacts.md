@@ -1,6 +1,13 @@
 # Acquired episode artifacts
 
-Create an illustrated reading companion that tells the episode’s story and explains its business significance. It should work for someone who has not listened and help listeners revisit the episode.
+Create an illustrated reading companion that faithfully tells the Acquired episode’s story and explains the hosts’ analysis. It should work for someone who has not listened and help listeners revisit the episode. The episode is the content boundary: do not supplement it with outside research or independently written business lessons.
+
+## Episode evidence
+
+- Read the full episode transcript before writing or revising. Use the official transcript when available. A transcript mirror may provide access to the same recording, but identify it as a mirror; do not use that site’s summaries or commentary as evidence or call it an official transcript.
+- Ground every substantive event, figure, anecdote, comparison, diagram, and analytical claim in the recording. The official episode page may supply metadata and explicitly identified corrections. Its research bibliography is not permission to import facts from those outside sources.
+- Preserve what the hosts qualify: estimates, disputed stories, uncertainty, disagreement, and the time of recording. Do not update figures with later company reports or silently present the hosts’ interpretation as established fact.
+- Maintain a section-by-section evidence map while editing, noting transcript passages or listening cues for consequential claims. Remove unsupported material rather than merely deleting its source link.
 
 ## Prose and level of detail
 
@@ -8,16 +15,16 @@ Create an illustrated reading companion that tells the episode’s story and exp
 - Introduce people through their backgrounds, incentives, and constraints. Include concrete decisions, contracts, setbacks, dates, and financial figures when they explain the story.
 - Start with biography and concrete events, letting business meaning emerge from the story. Give major turning points several substantial paragraphs; compress transitions.
 - Use plain language and a measured voice. Avoid generic motivational lessons and hindsight that makes uncertain decisions sound inevitable.
-- Use occasional brief italic takeaways within the narrative. Ground business lessons in specific events; distinguish facts, the hosts’ arguments, and your interpretation.
+- Use occasional brief italic takeaways only to restate a point the hosts make. Attribute their arguments and distinguish them from narrated events; do not add your own strategic advice or extrapolated lessons.
 
 ## Sections
 
 1. **Cover:** episode/company title, optional creative title, short premise, season, linked episode attribution, **Released** date, **Created** date, scope, and estimated reading time. Created is the catalog's original `addedOn` date. Include a meaningful opening illustration when useful.
-2. **Chronological chapters:** chapter number, era, descriptive heading, short framing line, narrative paragraphs, and a concise business lesson. Include verified listening timestamps.
+2. **Chronological chapters:** chapter number, era, descriptive heading, short framing line, and narrative paragraphs. Include verified listening timestamps. A brief closing point is optional and must come from the hosts’ discussion.
 3. **Explanatory interludes:** place diagrams, timelines, or interactive models where they clarify ownership, financing, distribution, or reinforcing businesses.
-4. **Concluding analysis:** explain the business model, competitive advantages, what is hard to reproduce, and vulnerabilities. Use frameworks such as Seven Powers only when helpful.
-5. **Playbook:** a compact index of specific lessons linking back to their chapters, without repeating the story.
-6. **Sources:** the episode and reliable supporting references, presented unobtrusively.
+4. **Concluding analysis:** faithfully explain the hosts’ discussion of the business model, competitive advantages, and vulnerabilities. Use Seven Powers or other frameworks only as the hosts apply them, including their qualifications and disagreements.
+5. **Episode index:** an optional compact index of the hosts’ observations linking back to their chapters, without adding advice or repeating the story.
+6. **Sources:** the episode, the transcript used, and clearly identified official corrections, presented unobtrusively. Explain transcript and timestamp provenance accurately; exclude outside research references.
 
 Cover the full episode, including the hosts’ concluding analysis. Combine or omit sections that do not earn their place; do not force equal chapter lengths or fourteen chapters.
 
