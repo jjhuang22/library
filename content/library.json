@@ -65,6 +65,14 @@
       "addedOn": "2026-10-12",
       "releasedOn": "2026-04-13",
       "file": "/artifacts/acquired/ferrari.html"
+    },
+    {
+      "id": "tsmc",
+      "title": "TSMC",
+      "category": "acquired",
+      "addedOn": "2026-10-14",
+      "releasedOn": "2021-09-07",
+      "file": "/artifacts/acquired/tsmc.html"
     }
   ]
 }
