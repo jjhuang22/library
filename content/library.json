@@ -73,6 +73,14 @@
       "addedOn": "2026-10-14",
       "releasedOn": "2021-09-07",
       "file": "/artifacts/acquired/tsmc.html"
+    },
+    {
+      "id": "spacex",
+      "title": "SpaceX",
+      "category": "acquired",
+      "addedOn": "2026-10-15",
+      "releasedOn": "2020-05-26",
+      "file": "/artifacts/acquired/spacex.html"
     }
   ]
 }
