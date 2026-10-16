@@ -32,7 +32,8 @@
       "category": "acquired",
       "addedOn": "2026-10-12",
       "releasedOn": "2024-02-20",
-      "file": "/artifacts/acquired/hermes.html"
+      "file": "/artifacts/acquired/hermes.html",
+      "published": false
     },
     {
       "id": "costco",
@@ -48,7 +49,8 @@
       "category": "acquired",
       "addedOn": "2026-10-12",
       "releasedOn": "2025-02-24",
-      "file": "/artifacts/acquired/rolex.html"
+      "file": "/artifacts/acquired/rolex.html",
+      "published": false
     },
     {
       "id": "formula-1",
@@ -56,7 +58,8 @@
       "category": "acquired",
       "addedOn": "2026-10-12",
       "releasedOn": "2026-03-02",
-      "file": "/artifacts/acquired/formula-1.html"
+      "file": "/artifacts/acquired/formula-1.html",
+      "published": false
     },
     {
       "id": "ferrari",
@@ -64,7 +67,8 @@
       "category": "acquired",
       "addedOn": "2026-10-12",
       "releasedOn": "2026-04-13",
-      "file": "/artifacts/acquired/ferrari.html"
+      "file": "/artifacts/acquired/ferrari.html",
+      "published": false
     },
     {
       "id": "tsmc",

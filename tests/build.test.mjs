@@ -45,12 +45,44 @@ for (const [name, mutate, error] of [
   ['missing dates', l => delete l.artifacts[0].addedOn, /Invalid addedOn/],
   ['path traversal', l => l.artifacts[0].file = '/artifacts/../index.html', /Invalid artifact file/],
   ['missing HTML', l => l.artifacts[0].file = '/artifacts/missing.html', /ENOENT/],
+  ['non-boolean publication flags', l => l.artifacts[0].published = 'false', /Invalid published flag/],
 ]) {
   test(`rejects ${name}`, async t => {
     const root = await fixture(t, mutate);
     await assert.rejects(buildLibrary(root), error);
   });
 }
+
+test('unpublishes both URLs and the catalog while preserving source, then republishes unchanged', async t => {
+  const root = await fixture(t);
+  const catalogPath = path.join(root, 'content/library.json');
+  const catalog = JSON.parse(await readFile(catalogPath, 'utf8'));
+  const html = '<h1>Saved for later</h1>';
+  const queued = { id: 'queued', title: 'Queued episode', category: 'podcasts', addedOn: '2026-10-06', file: '/artifacts/queued.html' };
+  catalog.artifacts.push(queued);
+  const saveCatalog = () => writeFile(catalogPath, JSON.stringify(catalog));
+  await writeFile(path.join(root, 'public/artifacts/queued.html'), html);
+  await saveCatalog();
+  await buildLibrary(root);
+  const urls = ['dist/artifacts/queued.html', 'dist/podcasts/queued/index.html'];
+  for (const url of urls) assert.equal(await readFile(path.join(root, url), 'utf8'), html);
+
+  queued.published = false;
+  await saveCatalog();
+  const hidden = await buildLibrary(root);
+  assert.deepEqual(hidden.artifacts.map(a => a.id), ['example', 'example']);
+  const deployed = JSON.parse(await readFile(path.join(root, 'dist/library.json'), 'utf8'));
+  assert.deepEqual(deployed.artifacts, hidden.artifacts);
+  for (const url of urls) await assert.rejects(readFile(path.join(root, url)), { code: 'ENOENT' });
+  assert.equal(await readFile(path.join(root, 'public/artifacts/queued.html'), 'utf8'), html);
+  assert.equal(await readFile(path.join(root, 'dist/podcasts/example/index.html'), 'utf8'), '<h1>Independent HTML</h1>');
+
+  queued.published = true;
+  await saveCatalog();
+  const restored = await buildLibrary(root);
+  assert.equal(restored.artifacts.find(a => a.id === 'queued').addedOn, '2026-10-06');
+  for (const url of urls) assert.equal(await readFile(path.join(root, url), 'utf8'), html);
+});
 
 test('converts historical numbered seasons by release date using the library convention', () => {
   for (const releasedOn of ['2024-01-22', '2024-02-20', '2024-03-18', '2024-04-22', '2024-06-04', '2024-07-22', '2024-08-31']) {
