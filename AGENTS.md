@@ -5,5 +5,3 @@ When the user asks to create an artifact or supplies an Acquired transcript, cre
 Read repository and hosting configuration before choosing a destination. Prefer /workspace/library over the older /workspace/acquired checkout for the shared Library. User instructions can override this default.
 
 Hosting is GitHub → Vercel: push the agreed changes to `main` at `https://github.com/jjhuang22/library`; the existing Vercel integration builds and deploys the site. Use `npm run build` and the `dist/` output. Do not use ChatGPT Sites or create another hosting project. Check the pushed commit's Vercel deployment status when available.
-
-The live library represents episodes the owner has listened to. Save new Acquired companions with `"published": false` in `content/library.json` unless the owner confirms listening or explicitly requests that episode live. Commit and push queued source, but keep it excluded from deployment output. Enable an episode individually when requested, preserving its original creation date. Never publish other queued episodes as part of an unrelated deployment.

@@ -22,12 +22,6 @@ npm test       # Test the catalog and generated pages using Node's built-in runn
 
 Artifact links open the full HTML page directly. Each artifact should include a Home link to `/` and its original source link. Keep HTML self-contained or use root-relative asset URLs so it works at both its file path and public URL. Search uses artifact and collection titles, seasons, and release dates; it does not depend on an artifact's internal JavaScript or HTML structure.
 
-## Save an artifact for later
-
-The live library represents episodes the owner has listened to. Keep companions prepared ahead of listening in the repository with `"published": false` on their entry in `content/library.json`. The build omits these entries from the public catalog (including navigation and search) and excludes both their generated routes and original HTML files from `dist/`. Their source, artwork, and original creation dates stay saved in Git. This controls publication, not repository privacy; previously shared or downloaded copies are unaffected.
-
-When the owner is ready to publish an episode, change its flag to `"published": true`, build and test, then commit, push, and deploy through the existing hosting workflow. Do not change its creation date. Omitting the flag also publishes an entry for compatibility with existing artifacts. New Acquired companions should use `"published": false` until the owner confirms they have listened or explicitly asks to put that episode live. Do not automatically publish other queued episodes when deploying an unrelated update.
-
 ## Add an artifact
 
 For Acquired episodes, follow the [artifact writing and design guide](docs/acquired-artifacts.md).
@@ -45,7 +39,7 @@ Keep Home and Chapters above the design, with no internal timeline scrollbars, p
 Use actual watercolor image assets for the cover and selected story scenes; basic geometric SVG drawings are not substitutes for painted artwork. Reserve SVG for precise explanatory diagrams and navigation. Link `public/artifact-type.css` last in each companion's head so typography stays consistent. Check the finished images and themed navigation in a real browser at desktop and mobile widths.
 
 1. Save its HTML under `public/artifacts/<collection>/`.
-2. Add an entry to `content/library.json`. Set `"published": false` for queued episodes; publish only when the owner has listened or explicitly requests it live. Add a collection to `categories` if needed.
+2. Add an entry to `content/library.json`. Add a collection to `categories` if needed.
 3. Run `npm run build` and `npm test`, then check the artifact in a browser at desktop and mobile widths.
 4. Commit the HTML, catalog, fonts/styles, and all referenced image assets to this repository. Push the commit to the agreed remote branch; local or generated `dist/` files alone are not repository delivery.
 

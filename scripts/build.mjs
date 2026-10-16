@@ -27,7 +27,6 @@ export async function buildLibrary(root = defaultRoot) {
   const routes = new Set();
   for (const artifact of library.artifacts) {
     if (!categories.has(artifact.category) || !slug.test(artifact.id) || !artifact.title) throw new Error('Invalid artifact');
-    if (artifact.published !== undefined && typeof artifact.published !== 'boolean') throw new Error('Invalid published flag');
     validateDate(artifact.addedOn, 'addedOn');
     if (artifact.releasedOn !== undefined || artifact.category === 'acquired') validateDate(artifact.releasedOn, 'releasedOn');
     if (artifact.category === 'acquired') artifact.season = acquiredSeason(artifact.releasedOn);
@@ -38,19 +37,10 @@ export async function buildLibrary(root = defaultRoot) {
     if (!/^\/artifacts\/(?:[a-z0-9-]+\/)*[a-z0-9-]+\.html$/.test(artifact.file)) throw new Error('Invalid artifact file');
     await readFile(path.join(root, 'public', artifact.file.slice(1)));
   }
-  // Keep queued companions in source control, but exclude both their raw HTML
-  // and generated routes from deployment, as well as the public catalog.
-  const unpublishedFiles = new Set(library.artifacts
-    .filter(artifact => artifact.published === false)
-    .map(artifact => path.resolve(root, 'public', artifact.file.slice(1))));
-  library.artifacts = library.artifacts.filter(artifact => artifact.published !== false);
   const dist = path.join(root, 'dist');
   await rm(dist, { recursive: true, force: true });
   await mkdir(dist, { recursive: true });
-  await cp(path.join(root, 'public'), dist, {
-    recursive: true,
-    filter: source => !unpublishedFiles.has(path.resolve(source))
-  });
+  await cp(path.join(root, 'public'), dist, { recursive: true });
   await writeFile(path.join(dist, 'library.json'), JSON.stringify(library));
   for (const artifact of library.artifacts) {
     const folder = path.join(dist, artifact.url.slice(1));
