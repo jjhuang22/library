@@ -57,11 +57,23 @@
       "position": 3,
       "id": "trader-joes",
       "title": "Trader Joe's",
-      "status": "pending",
-      "attempts": 0,
+      "status": "completed",
+      "attempts": 1,
       "blocker": null,
-      "artifact_commit": null,
-      "review_status": "not_started"
+      "artifact_commit": "5943918e3572dcb4496dda81e572ba7ce5c51fa0",
+      "review_status": "approved_after_fixes",
+      "started_at": "2026-10-19T06:05:12.781518+00:00",
+      "reviewer": "/root/review_trader_joes_final",
+      "completed_at": "2026-10-19T08:13:47.668222+00:00",
+      "validation": {
+        "build": "passed",
+        "tests": "passed (11 tests)",
+        "desktop_1440": "passed",
+        "mobile_390": "passed",
+        "mobile_320": "passed",
+        "original_watercolors": 2
+      },
+      "evidence_map": "docs/evidence/trader-joes.md"
     },
     {
       "position": 4,
