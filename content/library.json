@@ -97,6 +97,14 @@
       "addedOn": "2026-10-19",
       "releasedOn": "2025-06-30",
       "file": "/artifacts/acquired/google-the-origin-of-search.html"
+    },
+    {
+      "id": "ikea",
+      "title": "IKEA",
+      "category": "acquired",
+      "addedOn": "2026-10-19",
+      "releasedOn": "2024-11-18",
+      "file": "/artifacts/acquired/ikea.html"
     }
   ]
 }
