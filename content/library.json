@@ -121,6 +121,14 @@
       "addedOn": "2026-10-19",
       "releasedOn": "2023-11-27",
       "file": "/artifacts/acquired/visa.html"
+    },
+    {
+      "id": "meta",
+      "title": "Meta",
+      "category": "acquired",
+      "addedOn": "2026-10-19",
+      "releasedOn": "2024-10-28",
+      "file": "/artifacts/acquired/meta.html"
     }
   ]
 }
