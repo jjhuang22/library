@@ -57,6 +57,14 @@
       "addedOn": "2026-10-18",
       "releasedOn": "2026-08-10",
       "file": "/artifacts/acquired/disney-the-renaissance-and-the-empire.html"
+    },
+    {
+      "id": "coca-cola",
+      "title": "Coca-Cola",
+      "category": "acquired",
+      "addedOn": "2026-10-18",
+      "releasedOn": "2025-11-24",
+      "file": "/artifacts/acquired/coca-cola.html"
     }
   ]
 }
