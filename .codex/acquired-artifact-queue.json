@@ -13,11 +13,23 @@
       "position": 1,
       "id": "disney-the-renaissance-and-the-empire",
       "title": "Disney: The Renaissance and the Empire",
-      "status": "pending",
-      "attempts": 0,
+      "status": "completed",
+      "attempts": 1,
       "blocker": null,
-      "artifact_commit": null,
-      "review_status": "not_started"
+      "artifact_commit": "3ad3aba2b203dcb53ef1950b39c3a12daa478631",
+      "review_status": "approved_after_fixes",
+      "started_at": "2026-10-19T04:07:10.230807+00:00",
+      "completed_at": "2026-10-19T04:18:51.773296+00:00",
+      "reviewer": "/root/review_disney_artifact",
+      "validation": {
+        "build": "passed",
+        "tests": "passed",
+        "desktop_1440": "passed",
+        "mobile_390": "passed",
+        "mobile_320": "passed",
+        "original_watercolors": 2
+      },
+      "evidence_map": "docs/evidence/disney-the-renaissance-and-the-empire.md"
     },
     {
       "position": 2,
