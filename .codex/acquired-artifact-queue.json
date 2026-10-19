@@ -1,0 +1,485 @@
+{
+  "schema_version": 1,
+  "requested_on": "2026-10-18",
+  "timezone": "America/New_York",
+  "repository": "jjhuang22/library",
+  "branch": "queued/acquired-selected-episodes",
+  "publication": "queued_only_no_main_push_no_deploy",
+  "process": "sequential_author_independent_subagent_review_fix_recheck_verify_commit_repeat",
+  "automation_id": "6ad5881e8d488191a132e7ba1d4da6d9",
+  "active_episode": null,
+  "episodes": [
+    {
+      "position": 1,
+      "id": "disney-the-renaissance-and-the-empire",
+      "title": "Disney: The Renaissance and the Empire",
+      "status": "pending",
+      "attempts": 0,
+      "blocker": null,
+      "artifact_commit": null,
+      "review_status": "not_started"
+    },
+    {
+      "position": 2,
+      "id": "coca-cola",
+      "title": "Coca-Cola",
+      "status": "pending",
+      "attempts": 0,
+      "blocker": null,
+      "artifact_commit": null,
+      "review_status": "not_started"
+    },
+    {
+      "position": 3,
+      "id": "trader-joes",
+      "title": "Trader Joe's",
+      "status": "pending",
+      "attempts": 0,
+      "blocker": null,
+      "artifact_commit": null,
+      "review_status": "not_started"
+    },
+    {
+      "position": 4,
+      "id": "google-the-ai-company",
+      "title": "Google: The AI Company",
+      "status": "pending",
+      "attempts": 0,
+      "blocker": null,
+      "artifact_commit": null,
+      "review_status": "not_started"
+    },
+    {
+      "position": 5,
+      "id": "alphabet-inc",
+      "title": "Alphabet Inc.",
+      "status": "pending",
+      "attempts": 0,
+      "blocker": null,
+      "artifact_commit": null,
+      "review_status": "not_started"
+    },
+    {
+      "position": 6,
+      "id": "google-the-origin-of-search",
+      "title": "Google: The Origin of Search",
+      "status": "pending",
+      "attempts": 0,
+      "blocker": null,
+      "artifact_commit": null,
+      "review_status": "not_started"
+    },
+    {
+      "position": 7,
+      "id": "ikea",
+      "title": "IKEA",
+      "status": "pending",
+      "attempts": 0,
+      "blocker": null,
+      "artifact_commit": null,
+      "review_status": "not_started"
+    },
+    {
+      "position": 8,
+      "id": "the-nfl",
+      "title": "The NFL (2026 remaster and follow-up)",
+      "status": "pending",
+      "attempts": 0,
+      "blocker": null,
+      "artifact_commit": null,
+      "review_status": "not_started"
+    },
+    {
+      "position": 9,
+      "id": "visa",
+      "title": "Visa",
+      "status": "pending",
+      "attempts": 0,
+      "blocker": null,
+      "artifact_commit": null,
+      "review_status": "not_started"
+    },
+    {
+      "position": 10,
+      "id": "meta",
+      "title": "Meta",
+      "status": "pending",
+      "attempts": 0,
+      "blocker": null,
+      "artifact_commit": null,
+      "review_status": "not_started"
+    },
+    {
+      "position": 11,
+      "id": "mars-inc",
+      "title": "Mars Inc. (the chocolate story)",
+      "status": "pending",
+      "attempts": 0,
+      "blocker": null,
+      "artifact_commit": null,
+      "review_status": "not_started"
+    },
+    {
+      "position": 12,
+      "id": "epic-systems",
+      "title": "Epic Systems (MyChart)",
+      "status": "pending",
+      "attempts": 0,
+      "blocker": null,
+      "artifact_commit": null,
+      "review_status": "not_started"
+    },
+    {
+      "position": 13,
+      "id": "microsoft-volume-i",
+      "title": "Microsoft Volume I",
+      "status": "pending",
+      "attempts": 0,
+      "blocker": null,
+      "artifact_commit": null,
+      "review_status": "not_started"
+    },
+    {
+      "position": 14,
+      "id": "microsoft-volume-ii",
+      "title": "Microsoft Volume II",
+      "status": "pending",
+      "attempts": 0,
+      "blocker": null,
+      "artifact_commit": null,
+      "review_status": "not_started"
+    },
+    {
+      "position": 15,
+      "id": "novo-nordisk",
+      "title": "Novo Nordisk (Ozempic)",
+      "status": "pending",
+      "attempts": 0,
+      "blocker": null,
+      "artifact_commit": null,
+      "review_status": "not_started"
+    },
+    {
+      "position": 16,
+      "id": "starbucks",
+      "title": "Starbucks (with Howard Schultz)",
+      "status": "pending",
+      "attempts": 0,
+      "blocker": null,
+      "artifact_commit": null,
+      "review_status": "not_started"
+    },
+    {
+      "position": 17,
+      "id": "nike",
+      "title": "Nike",
+      "status": "pending",
+      "attempts": 0,
+      "blocker": null,
+      "artifact_commit": null,
+      "review_status": "not_started"
+    },
+    {
+      "position": 18,
+      "id": "nvidia-part-i",
+      "title": "Nvidia Part I: The GPU Company (1993–2006)",
+      "status": "pending",
+      "attempts": 0,
+      "blocker": null,
+      "artifact_commit": null,
+      "review_status": "not_started"
+    },
+    {
+      "position": 19,
+      "id": "nvidia-part-ii",
+      "title": "Nvidia Part II: The Machine Learning Company (2006–2022)",
+      "status": "pending",
+      "attempts": 0,
+      "blocker": null,
+      "artifact_commit": null,
+      "review_status": "not_started"
+    },
+    {
+      "position": 20,
+      "id": "nvidia-part-iii",
+      "title": "Nvidia Part III: The Dawn of the AI Era (2022–2023)",
+      "status": "pending",
+      "attempts": 0,
+      "blocker": null,
+      "artifact_commit": null,
+      "review_status": "not_started"
+    },
+    {
+      "position": 21,
+      "id": "lvmh",
+      "title": "LVMH",
+      "status": "pending",
+      "attempts": 0,
+      "blocker": null,
+      "artifact_commit": null,
+      "review_status": "not_started"
+    },
+    {
+      "position": 22,
+      "id": "enron",
+      "title": "Enron",
+      "status": "pending",
+      "attempts": 0,
+      "blocker": null,
+      "artifact_commit": null,
+      "review_status": "not_started"
+    },
+    {
+      "position": 23,
+      "id": "qualcomm",
+      "title": "Qualcomm",
+      "status": "pending",
+      "attempts": 0,
+      "blocker": null,
+      "artifact_commit": null,
+      "review_status": "not_started"
+    },
+    {
+      "position": 24,
+      "id": "amazon-web-services",
+      "title": "Amazon Web Services",
+      "status": "pending",
+      "attempts": 0,
+      "blocker": null,
+      "artifact_commit": null,
+      "review_status": "not_started"
+    },
+    {
+      "position": 25,
+      "id": "amazon-com",
+      "title": "Amazon.com",
+      "status": "pending",
+      "attempts": 0,
+      "blocker": null,
+      "artifact_commit": null,
+      "review_status": "not_started"
+    },
+    {
+      "position": 26,
+      "id": "walmart",
+      "title": "Walmart",
+      "status": "pending",
+      "attempts": 0,
+      "blocker": null,
+      "artifact_commit": null,
+      "review_status": "not_started"
+    },
+    {
+      "position": 27,
+      "id": "benchmark-part-i",
+      "title": "Benchmark Part I",
+      "status": "pending",
+      "attempts": 0,
+      "blocker": null,
+      "artifact_commit": null,
+      "review_status": "not_started"
+    },
+    {
+      "position": 28,
+      "id": "andreessen-horowitz-part-i",
+      "title": "Andreessen Horowitz Part I",
+      "status": "pending",
+      "attempts": 0,
+      "blocker": null,
+      "artifact_commit": null,
+      "review_status": "not_started"
+    },
+    {
+      "position": 29,
+      "id": "andreessen-horowitz-part-ii",
+      "title": "Andreessen Horowitz Part II",
+      "status": "pending",
+      "attempts": 0,
+      "blocker": null,
+      "artifact_commit": null,
+      "review_status": "not_started"
+    },
+    {
+      "position": 30,
+      "id": "berkshire-hathaway-part-i",
+      "title": "Berkshire Hathaway Part I",
+      "status": "pending",
+      "attempts": 0,
+      "blocker": null,
+      "artifact_commit": null,
+      "review_status": "not_started"
+    },
+    {
+      "position": 31,
+      "id": "berkshire-hathaway-part-ii",
+      "title": "Berkshire Hathaway Part II",
+      "status": "pending",
+      "attempts": 0,
+      "blocker": null,
+      "artifact_commit": null,
+      "review_status": "not_started"
+    },
+    {
+      "position": 32,
+      "id": "berkshire-hathaway-part-iii",
+      "title": "Berkshire Hathaway Part III",
+      "status": "pending",
+      "attempts": 0,
+      "blocker": null,
+      "artifact_commit": null,
+      "review_status": "not_started"
+    },
+    {
+      "position": 33,
+      "id": "bitcoin",
+      "title": "Bitcoin",
+      "status": "pending",
+      "attempts": 0,
+      "blocker": null,
+      "artifact_commit": null,
+      "review_status": "not_started"
+    },
+    {
+      "position": 34,
+      "id": "airbnb",
+      "title": "Airbnb",
+      "status": "pending",
+      "attempts": 0,
+      "blocker": null,
+      "artifact_commit": null,
+      "review_status": "not_started"
+    },
+    {
+      "position": 35,
+      "id": "doordash",
+      "title": "DoorDash",
+      "status": "pending",
+      "attempts": 0,
+      "blocker": null,
+      "artifact_commit": null,
+      "review_status": "not_started"
+    },
+    {
+      "position": 36,
+      "id": "sequoia-capital-part-i",
+      "title": "Sequoia Capital (Part 1)",
+      "status": "pending",
+      "attempts": 0,
+      "blocker": null,
+      "artifact_commit": null,
+      "review_status": "not_started"
+    },
+    {
+      "position": 37,
+      "id": "google-maps",
+      "title": "Google Maps",
+      "status": "pending",
+      "attempts": 0,
+      "blocker": null,
+      "artifact_commit": null,
+      "review_status": "not_started"
+    },
+    {
+      "position": 38,
+      "id": "huawei",
+      "title": "Huawei",
+      "status": "pending",
+      "attempts": 0,
+      "blocker": null,
+      "artifact_commit": null,
+      "review_status": "not_started"
+    },
+    {
+      "position": 39,
+      "id": "the-shopify-ipo",
+      "title": "The Shopify IPO",
+      "status": "pending",
+      "attempts": 0,
+      "blocker": null,
+      "artifact_commit": null,
+      "review_status": "not_started"
+    },
+    {
+      "position": 40,
+      "id": "espn",
+      "title": "ESPN",
+      "status": "pending",
+      "attempts": 0,
+      "blocker": null,
+      "artifact_commit": null,
+      "review_status": "not_started"
+    },
+    {
+      "position": 41,
+      "id": "tencent",
+      "title": "Tencent",
+      "status": "pending",
+      "attempts": 0,
+      "blocker": null,
+      "artifact_commit": null,
+      "review_status": "not_started"
+    },
+    {
+      "position": 42,
+      "id": "netflix-part-i",
+      "title": "Netflix (Part 1)",
+      "status": "pending",
+      "attempts": 0,
+      "blocker": null,
+      "artifact_commit": null,
+      "review_status": "not_started"
+    },
+    {
+      "position": 43,
+      "id": "netflix-part-ii",
+      "title": "Netflix (Part 2)",
+      "status": "pending",
+      "attempts": 0,
+      "blocker": null,
+      "artifact_commit": null,
+      "review_status": "not_started"
+    },
+    {
+      "position": 44,
+      "id": "alibaba",
+      "title": "Alibaba",
+      "status": "pending",
+      "attempts": 0,
+      "blocker": null,
+      "artifact_commit": null,
+      "review_status": "not_started"
+    },
+    {
+      "position": 45,
+      "id": "tesla",
+      "title": "Tesla",
+      "status": "pending",
+      "attempts": 0,
+      "blocker": null,
+      "artifact_commit": null,
+      "review_status": "not_started"
+    },
+    {
+      "position": 46,
+      "id": "whole-foods-market",
+      "title": "Whole Foods Market",
+      "status": "pending",
+      "attempts": 0,
+      "blocker": null,
+      "artifact_commit": null,
+      "review_status": "not_started"
+    }
+  ],
+  "excluded_by_user": [
+    {
+      "id": "benchmark-part-ii",
+      "title": "Benchmark Part II: The Dinner",
+      "reason": "Listen later; exclude from artifact format"
+    },
+    {
+      "id": "sequoia-capital-part-ii",
+      "title": "Sequoia Capital Part II (with Doug Leone)",
+      "reason": "Listen later; exclude from artifact format"
+    }
+  ]
+}
