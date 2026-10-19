@@ -35,11 +35,23 @@
       "position": 2,
       "id": "coca-cola",
       "title": "Coca-Cola",
-      "status": "pending",
-      "attempts": 0,
+      "status": "completed",
+      "attempts": 1,
       "blocker": null,
-      "artifact_commit": null,
-      "review_status": "not_started"
+      "artifact_commit": "a5de30a2a515d5b5bd053b674f868074d0222fc8",
+      "review_status": "approved_after_fixes",
+      "started_at": "2026-10-19T05:04:44.180377+00:00",
+      "completed_at": "2026-10-19T05:14:47.026744+00:00",
+      "reviewer": "/root/review_coca_cola",
+      "validation": {
+        "build": "passed",
+        "tests": "passed",
+        "desktop_1440": "passed",
+        "mobile_390": "passed",
+        "mobile_320": "passed",
+        "original_watercolors": 2
+      },
+      "evidence_map": "docs/evidence/coca-cola.md"
     },
     {
       "position": 3,
