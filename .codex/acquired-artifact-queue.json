@@ -123,11 +123,23 @@
       "position": 6,
       "id": "google-the-origin-of-search",
       "title": "Google: The Origin of Search",
-      "status": "pending",
-      "attempts": 0,
+      "status": "completed",
+      "attempts": 1,
       "blocker": null,
-      "artifact_commit": null,
-      "review_status": "not_started"
+      "artifact_commit": "7f9b8b369307a697c9702ae8fb322f386a9ce615",
+      "review_status": "approved",
+      "started_at": "2026-10-19T11:07:05.916631+00:00",
+      "completed_at": "2026-10-19T11:16:28.993823+00:00",
+      "reviewer": "/root/review_google_origin",
+      "validation": {
+        "build": "passed",
+        "tests": "passed",
+        "desktop_1440": "passed",
+        "mobile_390": "passed",
+        "mobile_320": "passed",
+        "original_watercolors": 2
+      },
+      "evidence_map": "docs/evidence/google-the-origin-of-search.md"
     },
     {
       "position": 7,
@@ -242,7 +254,7 @@
     {
       "position": 18,
       "id": "nvidia-part-i",
-      "title": "Nvidia Part I: The GPU Company (1993–2006)",
+      "title": "Nvidia Part I: The GPU Company (1993\u20132006)",
       "status": "pending",
       "attempts": 0,
       "blocker": null,
@@ -252,7 +264,7 @@
     {
       "position": 19,
       "id": "nvidia-part-ii",
-      "title": "Nvidia Part II: The Machine Learning Company (2006–2022)",
+      "title": "Nvidia Part II: The Machine Learning Company (2006\u20132022)",
       "status": "pending",
       "attempts": 0,
       "blocker": null,
@@ -262,7 +274,7 @@
     {
       "position": 20,
       "id": "nvidia-part-iii",
-      "title": "Nvidia Part III: The Dawn of the AI Era (2022–2023)",
+      "title": "Nvidia Part III: The Dawn of the AI Era (2022\u20132023)",
       "status": "pending",
       "attempts": 0,
       "blocker": null,
