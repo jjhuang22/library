@@ -189,11 +189,23 @@
       "position": 9,
       "id": "visa",
       "title": "Visa",
-      "status": "pending",
-      "attempts": 0,
+      "status": "completed",
+      "attempts": 1,
       "blocker": null,
-      "artifact_commit": null,
-      "review_status": "not_started"
+      "artifact_commit": "2b4907d01ffba5aca36bc6e3019b49889edc9f64",
+      "review_status": "approved_after_fixes",
+      "started_at": "2026-10-19T14:12:16.315678+00:00",
+      "completed_at": "2026-10-19T14:26:28.409397+00:00",
+      "reviewer": "/root/review_visa",
+      "validation": {
+        "build": "passed",
+        "tests": "passed",
+        "desktop_1440": "passed",
+        "mobile_390": "passed",
+        "mobile_320": "passed",
+        "original_watercolors": 2
+      },
+      "evidence_map": "docs/evidence/visa.md"
     },
     {
       "position": 10,
@@ -278,7 +290,7 @@
     {
       "position": 18,
       "id": "nvidia-part-i",
-      "title": "Nvidia Part I: The GPU Company (1993\u20132006)",
+      "title": "Nvidia Part I: The GPU Company (1993–2006)",
       "status": "pending",
       "attempts": 0,
       "blocker": null,
@@ -288,7 +300,7 @@
     {
       "position": 19,
       "id": "nvidia-part-ii",
-      "title": "Nvidia Part II: The Machine Learning Company (2006\u20132022)",
+      "title": "Nvidia Part II: The Machine Learning Company (2006–2022)",
       "status": "pending",
       "attempts": 0,
       "blocker": null,
@@ -298,7 +310,7 @@
     {
       "position": 20,
       "id": "nvidia-part-iii",
-      "title": "Nvidia Part III: The Dawn of the AI Era (2022\u20132023)",
+      "title": "Nvidia Part III: The Dawn of the AI Era (2022–2023)",
       "status": "pending",
       "attempts": 0,
       "blocker": null,
