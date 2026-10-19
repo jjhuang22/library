@@ -113,6 +113,14 @@
       "addedOn": "2026-10-19",
       "releasedOn": "2026-01-27",
       "file": "/artifacts/acquired/the-nfl.html"
+    },
+    {
+      "id": "visa",
+      "title": "Visa",
+      "category": "acquired",
+      "addedOn": "2026-10-19",
+      "releasedOn": "2023-11-27",
+      "file": "/artifacts/acquired/visa.html"
     }
   ]
 }
