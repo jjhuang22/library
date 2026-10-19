@@ -81,6 +81,14 @@
       "addedOn": "2026-10-19",
       "releasedOn": "2025-10-06",
       "file": "/artifacts/acquired/google-the-ai-company.html"
+    },
+    {
+      "id": "alphabet-inc",
+      "title": "Alphabet Inc.",
+      "category": "acquired",
+      "addedOn": "2026-10-19",
+      "releasedOn": "2025-08-26",
+      "file": "/artifacts/acquired/alphabet-inc.html"
     }
   ]
 }
