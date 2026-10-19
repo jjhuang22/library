@@ -211,11 +211,23 @@
       "position": 10,
       "id": "meta",
       "title": "Meta",
-      "status": "pending",
-      "attempts": 0,
+      "status": "completed",
+      "attempts": 1,
       "blocker": null,
-      "artifact_commit": null,
-      "review_status": "not_started"
+      "artifact_commit": "8cbdb934efcabcc2d74b67b5b649e94dfe5b96c8",
+      "review_status": "approved",
+      "started_at": "2026-10-19T15:04:38.409983+00:00",
+      "completed_at": "2026-10-19T15:17:53.606933+00:00",
+      "reviewer": "/root/review_meta",
+      "validation": {
+        "build": "passed",
+        "tests": "passed",
+        "desktop_1440": "passed",
+        "mobile_390": "passed",
+        "mobile_320": "passed",
+        "original_watercolors": 2
+      },
+      "evidence_map": "docs/evidence/meta.md"
     },
     {
       "position": 11,
