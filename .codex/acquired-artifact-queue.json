@@ -79,11 +79,23 @@
       "position": 4,
       "id": "google-the-ai-company",
       "title": "Google: The AI Company",
-      "status": "pending",
-      "attempts": 0,
+      "status": "completed",
+      "attempts": 1,
       "blocker": null,
-      "artifact_commit": null,
-      "review_status": "not_started"
+      "artifact_commit": "d392f8a2c1777121be6e6d5d084e790628a26208",
+      "review_status": "approved_after_fixes",
+      "started_at": "2026-10-19T09:04:52.424210+00:00",
+      "reviewer": "/root/review_google_ai",
+      "completed_at": "2026-10-19T09:15:02.466876+00:00",
+      "validation": {
+        "build": "passed",
+        "tests": "passed",
+        "desktop_1440": "passed",
+        "mobile_390": "passed",
+        "mobile_320": "passed",
+        "original_watercolors": 2
+      },
+      "evidence_map": "docs/evidence/google-the-ai-company.md"
     },
     {
       "position": 5,
