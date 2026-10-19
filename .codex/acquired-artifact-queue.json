@@ -101,11 +101,23 @@
       "position": 5,
       "id": "alphabet-inc",
       "title": "Alphabet Inc.",
-      "status": "pending",
-      "attempts": 0,
+      "status": "completed",
+      "attempts": 1,
       "blocker": null,
-      "artifact_commit": null,
-      "review_status": "not_started"
+      "artifact_commit": "00808ce3dbc5016c8e851333284998b57af1c3bf",
+      "review_status": "approved_after_fixes",
+      "started_at": "2026-10-19T10:06:55.821652+00:00",
+      "reviewer": "/root/review_alphabet",
+      "completed_at": "2026-10-19T10:17:04.011158+00:00",
+      "validation": {
+        "build": "passed",
+        "tests": "passed",
+        "desktop_1440": "passed",
+        "mobile_390": "passed",
+        "mobile_320": "passed",
+        "original_watercolors": 2
+      },
+      "evidence_map": "docs/evidence/alphabet-inc.md"
     },
     {
       "position": 6,
