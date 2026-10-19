@@ -65,6 +65,14 @@
       "addedOn": "2026-10-18",
       "releasedOn": "2025-11-24",
       "file": "/artifacts/acquired/coca-cola.html"
+    },
+    {
+      "id": "trader-joes",
+      "title": "Trader Joe's",
+      "category": "acquired",
+      "addedOn": "2026-10-19",
+      "releasedOn": "2025-10-27",
+      "file": "/artifacts/acquired/trader-joes.html"
     }
   ]
 }
