@@ -3,10 +3,14 @@
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "engines": { "node": ">=22" },
+  "engines": {
+    "node": ">=22"
+  },
   "scripts": {
     "build": "node scripts/build.mjs",
     "dev": "node scripts/serve.mjs",
-    "test": "node --test"
+    "test": "node --test",
+    "artifact:publish": "node scripts/publish-artifact.mjs",
+    "queue:list": "node scripts/publish-artifact.mjs --list"
   }
 }

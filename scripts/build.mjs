@@ -34,18 +34,28 @@ export async function buildLibrary(root = defaultRoot) {
     if (routes.has(artifact.url)) throw new Error(`Duplicate route: ${artifact.url}`);
     routes.add(artifact.url);
     // Standalone HTML is opaque to the library; no assumptions about its scripts or markup.
-    if (!/^\/artifacts\/(?:[a-z0-9-]+\/)*[a-z0-9-]+\.html$/.test(artifact.file)) throw new Error('Invalid artifact file');
+    if (artifact.file !== `/artifacts/${artifact.category}/${artifact.id}/index.html`) throw new Error('Invalid artifact file');
     await readFile(path.join(root, 'public', artifact.file.slice(1)));
   }
   const dist = path.join(root, 'dist');
   await rm(dist, { recursive: true, force: true });
   await mkdir(dist, { recursive: true });
-  await cp(path.join(root, 'public'), dist, { recursive: true });
+  // Copy the shell and shared assets, never every source artifact folder.
+  const publicRoot = path.join(root, 'public');
+  await cp(publicRoot, dist, {
+    recursive: true,
+    filter: source => source !== path.join(publicRoot, 'artifacts')
+  });
   await writeFile(path.join(dist, 'library.json'), JSON.stringify(library));
   for (const artifact of library.artifacts) {
     const folder = path.join(dist, artifact.url.slice(1));
     await mkdir(folder, { recursive: true });
-    await cp(path.join(root, 'public', artifact.file.slice(1)), path.join(folder, 'index.html'));
+    const source = path.join(root, 'public', path.dirname(artifact.file).slice(1));
+    const bundle = path.join(dist, path.dirname(artifact.file).slice(1));
+    await cp(source, bundle, { recursive: true });
+    await cp(source, folder, { recursive: true });
+    // Keep previously shared raw-HTML URLs usable after bundling.
+    await cp(path.join(source, 'index.html'), path.join(dist, 'artifacts', artifact.category, `${artifact.id}.html`));
   }
   return library;
 }

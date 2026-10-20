@@ -1,0 +1,164 @@
+{
+  "artifacts": [
+    {
+      "id": "hermes",
+      "title": "Hermès",
+      "category": "acquired",
+      "branch": "queue/acquired/hermes",
+      "reviewStatus": "verified",
+      "notes": "Full transcript audited; official-site retrieval limitation and complete-source fallback recorded in retained source map."
+    },
+    {
+      "id": "rolex",
+      "title": "Rolex",
+      "category": "acquired",
+      "branch": "queue/acquired/rolex",
+      "reviewStatus": "verified",
+      "notes": "Full transcript audited; official-site retrieval limitation and complete-source fallback recorded in retained source map."
+    },
+    {
+      "id": "formula-1",
+      "title": "Formula 1",
+      "category": "acquired",
+      "branch": "queue/acquired/formula-1",
+      "reviewStatus": "verified",
+      "notes": "Full transcript audited; official-site retrieval limitation and complete-source fallback recorded in retained source map."
+    },
+    {
+      "id": "ferrari",
+      "title": "Ferrari",
+      "category": "acquired",
+      "branch": "queue/acquired/ferrari",
+      "reviewStatus": "verified",
+      "notes": "Full transcript audited; official-site retrieval limitation and complete-source fallback recorded in retained source map."
+    },
+    {
+      "id": "nba",
+      "title": "The NBA",
+      "category": "acquired",
+      "branch": "queue/acquired/nba",
+      "reviewStatus": "verified",
+      "notes": "Full transcript audited; official-site retrieval limitation and complete-source fallback recorded in retained source map."
+    },
+    {
+      "id": "vanguard",
+      "title": "Vanguard",
+      "category": "acquired",
+      "branch": "queue/acquired/vanguard",
+      "reviewStatus": "verified",
+      "notes": "Full transcript audited; official-site retrieval limitation and complete-source fallback recorded in retained source map."
+    },
+    {
+      "id": "disney-the-renaissance-and-the-empire",
+      "title": "Disney The Renaissance and the Empire",
+      "category": "acquired",
+      "branch": "queue/acquired/disney-the-renaissance-and-the-empire",
+      "reviewStatus": "source-unavailable",
+      "notes": "Original chat reports completion on local-only queued/acquired-selected-episodes; recover that branch and source files before migration or re-verification."
+    },
+    {
+      "id": "coca-cola",
+      "title": "Coca-Cola",
+      "category": "acquired",
+      "branch": "queue/acquired/coca-cola",
+      "reviewStatus": "source-unavailable",
+      "notes": "Original chat reports completion on local-only queued/acquired-selected-episodes; recover that branch and source files before migration or re-verification."
+    },
+    {
+      "id": "trader-joes",
+      "title": "Trader Joe's",
+      "category": "acquired",
+      "branch": "queue/acquired/trader-joes",
+      "reviewStatus": "source-unavailable",
+      "notes": "Original chat reports completion on local-only queued/acquired-selected-episodes; recover that branch and source files before migration or re-verification."
+    },
+    {
+      "id": "google-the-ai-company",
+      "title": "Google The AI Company",
+      "category": "acquired",
+      "branch": "queue/acquired/google-the-ai-company",
+      "reviewStatus": "source-unavailable",
+      "notes": "Original chat reports completion on local-only queued/acquired-selected-episodes; recover that branch and source files before migration or re-verification."
+    },
+    {
+      "id": "alphabet-inc",
+      "title": "Alphabet Inc.",
+      "category": "acquired",
+      "branch": "queue/acquired/alphabet-inc",
+      "reviewStatus": "source-unavailable",
+      "notes": "Original chat reports completion on local-only queued/acquired-selected-episodes; recover that branch and source files before migration or re-verification."
+    },
+    {
+      "id": "google-the-origin-of-search",
+      "title": "Google The Origin of Search",
+      "category": "acquired",
+      "branch": "queue/acquired/google-the-origin-of-search",
+      "reviewStatus": "source-unavailable",
+      "notes": "Original chat reports completion on local-only queued/acquired-selected-episodes; recover that branch and source files before migration or re-verification."
+    },
+    {
+      "id": "ikea",
+      "title": "IKEA",
+      "category": "acquired",
+      "branch": "queue/acquired/ikea",
+      "reviewStatus": "source-unavailable",
+      "notes": "Original chat reports completion on local-only queued/acquired-selected-episodes; recover that branch and source files before migration or re-verification."
+    },
+    {
+      "id": "the-nfl",
+      "title": "The NFL",
+      "category": "acquired",
+      "branch": "queue/acquired/the-nfl",
+      "reviewStatus": "source-unavailable",
+      "notes": "Original chat reports completion on local-only queued/acquired-selected-episodes; recover that branch and source files before migration or re-verification."
+    },
+    {
+      "id": "visa",
+      "title": "Visa",
+      "category": "acquired",
+      "branch": "queue/acquired/visa",
+      "reviewStatus": "source-unavailable",
+      "notes": "Original chat reports completion on local-only queued/acquired-selected-episodes; recover that branch and source files before migration or re-verification."
+    },
+    {
+      "id": "meta",
+      "title": "Meta",
+      "category": "acquired",
+      "branch": "queue/acquired/meta",
+      "reviewStatus": "source-unavailable",
+      "notes": "Original chat reports completion on local-only queued/acquired-selected-episodes; recover that branch and source files before migration or re-verification."
+    },
+    {
+      "id": "mars-inc",
+      "title": "Mars Inc.",
+      "category": "acquired",
+      "branch": "queue/acquired/mars-inc",
+      "reviewStatus": "source-unavailable",
+      "notes": "Original chat reports completion on local-only queued/acquired-selected-episodes; recover that branch and source files before migration or re-verification."
+    },
+    {
+      "id": "epic-systems",
+      "title": "Epic Systems",
+      "category": "acquired",
+      "branch": "queue/acquired/epic-systems",
+      "reviewStatus": "source-unavailable",
+      "notes": "Original chat reports completion on local-only queued/acquired-selected-episodes; recover that branch and source files before migration or re-verification."
+    },
+    {
+      "id": "microsoft-volume-i",
+      "title": "Microsoft Volume I",
+      "category": "acquired",
+      "branch": "queue/acquired/microsoft-volume-i",
+      "reviewStatus": "source-unavailable",
+      "notes": "Original chat reports completion on local-only queued/acquired-selected-episodes; recover that branch and source files before migration or re-verification."
+    },
+    {
+      "id": "microsoft-volume-ii",
+      "title": "Microsoft Volume II",
+      "category": "acquired",
+      "branch": "queue/acquired/microsoft-volume-ii",
+      "reviewStatus": "source-unavailable",
+      "notes": "Original chat reports completion on local-only queued/acquired-selected-episodes; recover that branch and source files before migration or re-verification."
+    }
+  ]
+}

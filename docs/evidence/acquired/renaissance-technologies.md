@@ -1,11 +1,11 @@
 # Renaissance Technologies companion: evidence map
 
-Artifact: `public/artifacts/acquired/renaissance-technologies.html`
+Artifact: `public/artifacts/acquired/renaissance-technologies/index.html`
 Created: 2026-10-18. Released: 2024-03-18. Library season: Spring 2024. Original attribution: Season 14, Episode 3.
 
 ## Source boundary
 
-The full user-supplied transcript was read, including the closing analysis, recommendations, acknowledgments, and the corrections appended to the supplied page. Local source: `/workspace/attachments/c3707eec-654d-41a7-ae4d-dd2c9200a215/Pasted text.txt` (1,591 lines, 31,247 words). The narrative is drawn from that supplied transcript, not outside research. The official episode page was opened only to verify release metadata and its explicitly labeled corrections: <https://www.acquired.fm/episodes/renaissance-technologies>.
+The full user-supplied transcript was read, including the closing analysis, recommendations, acknowledgments, and the corrections appended to the supplied page. Source copy: the full reader-supplied official-page transcript. The narrative is drawn from that supplied transcript, not outside research. The official episode page was opened only to verify release metadata and its explicitly labeled corrections: <https://www.acquired.fm/episodes/renaissance-technologies>.
 
 No direct quotations from the official webpage or outside publications are used. Books mentioned in the episode remain the hosts’ sources, not independently consulted evidence. Financial information is kept in the episode’s March 2024 timeframe and the historical return windows it names.
 
@@ -43,10 +43,8 @@ Verified displayed cue starts: opening 0:00:00; biography 0:04:42; IDA 0:17:20; 
 
 The mirror includes dynamic ads and promotional omissions relative to the supplied version. No original-upload duration is mixed with these cues. Users are told player versions may differ. The signal trace maps x-position linearly to time; waveform height is decorative, with no financial meaning. Markers and hover/click use the shared timeline model. Reading-position interpolation is distinguished from audio playback.
 
-## Artwork and implementation checks
+## Artwork
 
-- Original conceptual watercolor cover: `images/renaissance-cover.png`, 1536×1024. Imagined wooded campus; caption explicitly rejects an exact office depiction.
-- Original conceptual watercolor scene: `images/renaissance-study.png`, 1536×1024. Imagined 1980s California research room; caption rejects exact reconstruction.
+- Original conceptual watercolor cover: `images/cover.png`, 1536×1024. Imagined wooded campus; caption explicitly rejects an exact office depiction.
+- Original conceptual watercolor scene: `images/study.png`, 1536×1024. Imagined 1980s California research room; caption rejects exact reconstruction.
 - Both image files are local repository assets, with width/height, descriptive alt text, responsive sizing; scene is lazy loaded.
-- Static parser checks: one h1, 27 unique IDs, all fragment links resolve, all five local assets resolve, external links include `_blank` and `noopener noreferrer`.
-- Shared typography loaded last. Home and Chapters precede the signal design; menu provides generous touch targets. Root agent runs integration build/tests and browser inspection across desktop/mobile.

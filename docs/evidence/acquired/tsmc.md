@@ -1,6 +1,6 @@
 # TSMC episode evidence map
 
-Artifact: `public/artifacts/acquired/tsmc.html`.
+Artifact: `public/artifacts/acquired/tsmc/index.html`.
 
 The narrative uses the complete reader-supplied Acquired transcript, headed Season 9 Episode 3 TSMC, including the separate 2025 remaster introduction and the original closing analysis. Paragraph references below use distinctive spoken phrases so the map remains usable without preserving the uploaded file's transient local path. No external company research is used.
 
