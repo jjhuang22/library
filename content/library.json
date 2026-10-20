@@ -57,6 +57,14 @@
       "addedOn": "2026-10-18",
       "releasedOn": "2024-03-18",
       "file": "/artifacts/acquired/renaissance-technologies/index.html"
+    },
+    {
+      "id": "epic-systems",
+      "title": "Epic Systems (MyChart)",
+      "category": "acquired",
+      "addedOn": "2026-10-19",
+      "releasedOn": "2025-04-21",
+      "file": "/artifacts/acquired/epic-systems/index.html"
     }
   ]
 }

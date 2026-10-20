@@ -138,11 +138,11 @@
     },
     {
       "id": "epic-systems",
-      "title": "Epic Systems",
+      "title": "Epic Systems (MyChart)",
       "category": "acquired",
       "branch": "queue/acquired/epic-systems",
-      "reviewStatus": "source-unavailable",
-      "notes": "Original chat reports completion on local-only queued/acquired-selected-episodes; recover that branch and source files before migration or re-verification."
+      "reviewStatus": "verified",
+      "notes": "Recovered full bundle and retained source map from 8eeb220; prior complete-transcript independent review approved_after_fixes. Rechecked bundle migration; original source review is preserved, not newly invented."
     },
     {
       "id": "microsoft-volume-i",
