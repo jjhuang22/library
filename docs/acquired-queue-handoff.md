@@ -64,3 +64,7 @@ Prior complete-transcript independent reviews are carried forward from the commi
 | 12 | Epic Systems (MyChart) | `queue/acquired/epic-systems` | `ff37431b11a62e45c5b8e54c8438d63655000366` | `8eeb220d9ba02049cc36660145f4e8285dbfc8d4` |
 | 13 | Microsoft Volume I | `queue/acquired/microsoft-volume-i` | `01061616ddd7f8d69aa9de947894c0fbcd142c8a` | `8210dddc516f381f19120a158cc77dac87cf1309` |
 | 14 | Microsoft Volume II | `queue/acquired/microsoft-volume-ii` | `b922c2238447431e380eb257609ea189c7389c61` | `cd136445de0784fc7111fcfaac8882b36de139b2` |
+
+## Selective handoff integration check
+
+All fourteen individual sources successfully passed the selective publication tool’s preparation checks in an isolated local fixture containing the shared workflow and updated registry. Each preparation built and tested the selected bundle while preserving the other catalog entries. The fixture deliberately models the prerequisite maintenance being present; real GitHub main was not moved, no prepared publication was pushed, and this is not authorization to publish.
