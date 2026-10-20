@@ -649,5 +649,8 @@
       "title": "Sequoia Capital Part II (with Doug Leone)",
       "reason": "Listen later; exclude from artifact format"
     }
-  ]
+  ],
+  "canonical_state": "content/acquired-artifact-queue.json",
+  "registry_branch": "codex/recover-acquired-queue",
+  "combined_branch_role": "recovery_archive_do_not_merge"
 }
