@@ -57,6 +57,14 @@
       "addedOn": "2026-10-18",
       "releasedOn": "2024-03-18",
       "file": "/artifacts/acquired/renaissance-technologies/index.html"
+    },
+    {
+      "id": "microsoft-volume-ii",
+      "title": "Microsoft Volume II",
+      "category": "acquired",
+      "addedOn": "2026-10-19",
+      "releasedOn": "2024-07-22",
+      "file": "/artifacts/acquired/microsoft-volume-ii/index.html"
     }
   ]
 }
