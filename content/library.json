@@ -57,6 +57,14 @@
       "addedOn": "2026-10-18",
       "releasedOn": "2024-03-18",
       "file": "/artifacts/acquired/renaissance-technologies/index.html"
+    },
+    {
+      "id": "formula-1",
+      "title": "Formula 1",
+      "category": "acquired",
+      "addedOn": "2026-10-12",
+      "releasedOn": "2026-03-02",
+      "file": "/artifacts/acquired/formula-1/index.html"
     }
   ]
 }
