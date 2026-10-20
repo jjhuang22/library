@@ -7,7 +7,7 @@
   "publication": "queued_only_no_main_push_no_deploy",
   "process": "sequential_author_independent_subagent_review_fix_recheck_verify_commit_repeat",
   "automation_id": "6ad5881e8d488191a132e7ba1d4da6d9",
-  "active_episode": "epic-systems",
+  "active_episode": null,
   "episodes": [
     {
       "position": 1,
@@ -255,12 +255,23 @@
       "position": 12,
       "id": "epic-systems",
       "title": "Epic Systems (MyChart)",
-      "status": "in_progress",
+      "status": "completed",
       "attempts": 1,
       "blocker": null,
-      "artifact_commit": null,
-      "review_status": "not_started",
-      "started_at": "2026-10-20T01:16:08.250278+00:00"
+      "artifact_commit": "8eeb220d9ba02049cc36660145f4e8285dbfc8d4",
+      "review_status": "approved_after_fixes",
+      "started_at": "2026-10-20T01:16:08.250278+00:00",
+      "reviewer": "/root/review_epic",
+      "completed_at": "2026-10-20T01:26:20.652763+00:00",
+      "validation": {
+        "build": "passed",
+        "tests": "passed",
+        "desktop_1440": "passed",
+        "mobile_390": "passed",
+        "mobile_320": "passed",
+        "original_watercolors": 2
+      },
+      "evidence_map": "docs/evidence/epic-systems.md"
     },
     {
       "position": 13,
