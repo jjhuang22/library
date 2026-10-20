@@ -49,6 +49,14 @@
       "addedOn": "2026-10-15",
       "releasedOn": "2020-05-26",
       "file": "/artifacts/acquired/spacex.html"
+    },
+    {
+      "id": "renaissance-technologies",
+      "title": "Renaissance Technologies",
+      "category": "acquired",
+      "addedOn": "2026-10-18",
+      "releasedOn": "2024-03-18",
+      "file": "/artifacts/acquired/renaissance-technologies.html"
     }
   ]
 }

@@ -1,0 +1,396 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="An illustrated companion to Acquired’s Renaissance Technologies episode: Jim Simons, Medallion, data, mathematics, and the hosts’ analysis of incentives and process power."><title>Renaissance Technologies · Finding signal</title>
+<style>*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:190px}body{margin:0;background:#f5f0e6;color:#292f2b;font:26px/1.65 Georgia,serif}a{color:#427065;text-underline-offset:4px}a:hover{color:#385d58}a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid #427065;outline-offset:4px}h1,h2,h3{font-weight:400;line-height:1.1}h1{font-size:clamp(100px,18vw,190px);letter-spacing:-.07em;margin:10px 0}h2{font-size:clamp(39px,6vw,65px);letter-spacing:-.025em;margin:14px 0 20px}h3{font-size:34px;margin:10px 0 25px}p{margin:0 0 1.2em}.skip{position:absolute;top:-100px;z-index:100;background:#fffaf0;padding:12px}.skip:focus{top:0}.navigation{position:sticky;top:0;z-index:50;background:#f5f0e6f7;border-bottom:1px solid #d0c6b7;backdrop-filter:blur(8px)}.nav-row{max-width:1100px;margin:auto;display:flex;gap:24px;align-items:center;padding:6px 24px}.nav-title{flex:1;min-width:0;color:#4b655c;font-size:15px;letter-spacing:.05em}.chapters{position:relative;margin-left:auto;flex-shrink:0}.chapters summary{list-style:none;cursor:pointer;min-height:44px;display:flex;align-items:center;gap:8px}.chapters summary::after{content:'⌄'}.chapters[open] summary::after{content:'⌃'}.menu{position:absolute;right:0;top:48px;width:min(400px,calc(100vw - 32px));max-height:65vh;overflow:auto;padding:12px;background:#fffaf0;border:1px solid #d0c6b7;box-shadow:0 10px 35px #292f2b25}.menu a{display:block;font-size:18px;line-height:1.4;min-height:44px;padding:10px}.eyebrow,.era{font-size:14px;letter-spacing:.13em;text-transform:uppercase;color:#427065}.cover{max-width:1100px;margin:auto;padding:65px 24px 0}.cover-copy{max-width:740px;margin:auto}.subtitle{font-size:clamp(32px,5vw,47px);line-height:1.15;margin:18px 0 28px}.premise{font-size:27px;line-height:1.5;font-style:italic}.meta{display:flex;flex-wrap:wrap;gap:8px 24px;font-size:16px;color:#625e53;border-top:1px solid #d0c6b7;padding-top:20px;margin-top:30px}.scope{font-size:16px;color:#625e53;margin-top:14px}.hero{margin:30px auto 0;max-width:1000px}.hero img,.scene img{mix-blend-mode:multiply}.hero figcaption,.scene figcaption{max-width:740px;margin:12px auto 0;text-align:center;color:#6c6458}.chapter{padding:75px 24px 0;margin:60px auto 0;max-width:1100px;border-top:1px solid #d0c6b7;scroll-margin-top:10px}.chapter-head,.reading{max-width:740px;margin:auto}.chapter-head{margin-bottom:34px}.frame{font-style:italic;color:#687066;font-size:25px;margin:16px 0}.listen{font-size:16px;color:#427065}.number{color:#427065;font-size:27px;float:left;margin-right:16px;line-height:1}.scene{max-width:1000px;margin:42px auto 0}.interlude{max-width:1000px;margin:45px auto 0;padding:35px;background:#e8e5d9;border:1px solid #d0c6b7}.diagram-note{font-size:17px;line-height:1.5;color:#626457;margin:24px 0 0}.yield-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.yield-grid strong{display:block;font-size:38px;color:#427065;font-weight:400}.yield-grid span{font-size:20px;line-height:1.4;display:block}.ownership{display:flex;gap:2px}.ownership div{background:#385d58;color:#fffaf0;padding:20px 12px;min-width:0}.ownership div:nth-child(2){background:#586f68}.ownership div:nth-child(3){background:#427065}.ownership strong{display:block;font-size:36px;font-weight:400}.ownership span{font-size:19px;line-height:1.3;display:block}.chain{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}.chain div{border-top:2px solid #385d58;padding:16px 0}.chain b{display:block;font-weight:600;font-size:25px;line-height:1.2}.chain span{font-size:19px;line-height:1.4;display:block;margin-top:12px}.cycle,.euv-flow{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;padding:0;list-style:none;counter-reset:step}.cycle li,.euv-flow li{padding:18px 0;border-top:1px solid #a6b2a6;counter-increment:step}.cycle li::before,.euv-flow li::before{content:counter(step) ' →';display:block;color:#427065;font-size:22px;margin-bottom:10px}.cycle b,.euv-flow b{display:block;font-size:24px;line-height:1.2}.cycle span,.euv-flow span{display:block;font-size:19px;line-height:1.4;margin-top:10px}.euv-flow{grid-template-columns:repeat(3,1fr)}.capital{margin:0}.capital div{display:flex;justify-content:space-between;gap:20px;border-bottom:1px solid #c8c7b7;padding:12px 0;font-size:22px}.capital dd{margin:0;color:#427065;white-space:nowrap}.power-table table{border-collapse:collapse;width:100%;font-size:21px;line-height:1.45}.power-table td,.power-table th{text-align:left;vertical-align:top;padding:14px 12px;border-bottom:1px solid #c8c7b7}.power-table th{font-weight:600;width:30%}.power-table thead th{color:#427065}.index,.sources{max-width:788px;padding:70px 24px;margin:auto}.index h2,.sources h2{font-size:45px}.index ol{list-style:none;padding:0;font-size:22px;line-height:1.45}.index li{border-top:1px solid #d0c6b7;padding:15px 0}.sources p,.sources li{font-size:17px;line-height:1.6}.sources li{margin:12px 0}.footer{text-align:center;border-top:1px solid #d0c6b7;padding:25px;font-size:16px}h1{font-size:clamp(49px,9vw,105px);letter-spacing:-.035em;overflow-wrap:normal}.cover-copy{max-width:800px}.hero img,.scene img{display:block;width:100%;height:auto}.tapestry{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.tapestry div{border-top:2px solid #427065;padding-top:15px}.tapestry h4{font-size:27px;font-weight:500;line-height:1.15;margin:0 0 15px}.tapestry p{font-size:21px;line-height:1.45;margin:0}.comparison{display:grid;grid-template-columns:1fr 1fr;gap:24px}.comparison h4{font-size:29px;margin:0 0 15px;font-weight:500}.comparison p{font-size:21px;line-height:1.45}.comparison b{color:#427065}.sources a{overflow-wrap:anywhere}.episode-timeline[data-theme=signal]{--track-line:#385d58;--track-active:#a27735;grid-template-columns:175px minmax(0,1fr)}.episode-timeline[data-theme=signal] .episode-track{height:68px;background:#e4e7da;border:1px solid #9aa99a;background-image:repeating-linear-gradient(0deg,transparent 0 15px,#385d5815 15px 16px),repeating-linear-gradient(90deg,transparent 0 19px,#385d5815 19px 20px);border-radius:3px}.signal-wave{position:absolute;width:100%;height:100%;inset:0;pointer-events:none}.episode-timeline[data-theme=signal] .episode-segment{top:0;bottom:0;background:transparent;box-shadow:none;border:0;display:flex;align-items:center;justify-content:flex-start;z-index:2}.signal-dot{width:8px;height:8px;background:#385d58;border:1px solid #f5f0e6;border-radius:50%;box-shadow:0 0 0 1px #385d58}.episode-timeline[data-theme=signal] .episode-segment[aria-current=location] .signal-dot{background:#a27735;box-shadow:0 0 0 2px #a27735}.episode-timeline[data-theme=signal] .episode-playhead{background:#a27735;top:5px;bottom:5px}.episode-current-title{min-height:2.5em}.menu{z-index:30}.episode-preview strong{color:#385d58}@media(max-width:700px){.tapestry,.comparison{grid-template-columns:1fr}.cover-copy{max-width:100%}.episode-timeline[data-theme=signal]{grid-template-columns:105px minmax(0,1fr)}.episode-timeline[data-theme=signal] .episode-track{height:48px}.episode-timeline[data-theme=signal] .episode-emblem{display:none}.signal-dot{width:4px;height:7px;border-radius:2px;border:0;box-shadow:none}.episode-end-time{font-size:11px}.episode-current-title{font-size:12px}.nav-title{max-width:110px;font-size:11px}.nav-row{gap:12px}.comparison p,.tapestry p{font-size:21px}}</style>
+
+<link rel="stylesheet" href="/episode-timeline.css?v=2">
+<style>.episode-timeline[data-theme=signal] .episode-track{background-color:#e4e7da}.episode-timeline[data-theme=signal] .episode-segment{background:transparent;box-shadow:none}.episode-timeline[data-theme=signal] .episode-segment:hover{background:#a2773518}.episode-timeline[data-theme=signal] .episode-segment[aria-current=location]{background:transparent}</style>
+
+<script src="/episode-timeline.js?v=2" defer></script>
+
+<link rel="stylesheet" href="/artifact-type.css"></head><body><a class="skip" href="#main">Skip to story</a>
+<nav class="navigation" aria-label="Reading navigation">
+<div class="nav-row"><a href="/">← Home</a><span class="nav-title">Renaissance · Acquired companion</span><details class="chapters"><summary>Chapters</summary>
+<div class="menu"><a href="#beginnings">01 · A mathematician with a taste for risk</a><a href="#codebreakers">02 · The market looks like an intercepted message</a><a href="#trading">03 · Brilliant people, ordinary human judgment</a><a href="#data">04 · The valuable work looked like housekeeping</a><a href="#medallion">05 · Many small bets replace a few large convictions</a><a href="#equities">06 · Speech researchers meet the stock market</a><a href="#crisis">07 · A model still has people responsible for it</a><a href="#capacity">08 · The fund grows by refusing money</a><a href="#incentives">09 · A small team shares a very large machine</a><a href="#leverage">10 · A small fund controls a much larger portfolio</a><a href="#power">11 · The advantage is difficult to isolate</a><a href="#future">12 · The house has an edge—and an operating risk</a><a href="#sources">Sources</a></div>
+</details></div>
+
+<div class="episode-timeline" data-theme="signal">
+<div class="episode-readout">
+<div class="episode-clock"><strong class="episode-current-time">0:00:00</strong><span class="episode-end-time">/ 3:05:05</span></div>
+
+<div class="episode-current-title">Opening</div>
+</div>
+
+<div class="episode-transport"><svg class="episode-emblem" viewBox="0 0 60 60" aria-hidden="true"><circle cx="30" cy="30" r="25" fill="none" stroke="currentColor"/><path d="M8 32l6-3 6 9 6-18 6 22 6-17 7 7 7-4" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+<div class="episode-track" role="group" aria-label="Episode cues on a conceptual signal trace"><svg class="signal-wave" viewBox="0 0 1000 68" preserveAspectRatio="none" aria-hidden="true"><path d="M0 34L15 32 30 37 45 20 60 45 75 30 90 34 115 33 135 16 150 51 165 26 185 34 220 34 240 41 255 23 270 37 290 33 315 35 335 17 350 45 365 34 410 34 425 28 440 43 455 16 470 36 515 34 545 39 560 22 575 43 590 34 640 34 665 20 680 46 700 29 720 35 760 34 785 27 800 43 820 16 840 40 860 34 895 34 920 25 940 44 960 30 980 35 1000 34" fill="none" stroke="#385d58" stroke-width="1.8"/></svg><button class="episode-segment" type="button" data-episode="0" style="left:0.00000000%;width:2.53939667%" aria-label="Opening. 0:00:00"><span class="signal-dot" aria-hidden="true"></span></button><button class="episode-segment" type="button" data-episode="1" style="left:2.53939667%;width:6.82575416%" aria-label="A mathematician with a taste for risk. 0:04:42"><span class="signal-dot" aria-hidden="true"></span></button><button class="episode-segment" type="button" data-episode="2" style="left:9.36515083%;width:11.40927510%" aria-label="The market looks like an intercepted message. 0:17:20"><span class="signal-dot" aria-hidden="true"></span></button><button class="episode-segment" type="button" data-episode="3" style="left:20.77442593%;width:5.88023413%" aria-label="Brilliant people, ordinary human judgment. 0:38:27"><span class="signal-dot" aria-hidden="true"></span></button><button class="episode-segment" type="button" data-episode="4" style="left:26.65466006%;width:3.55695633%" aria-label="The valuable work looked like housekeeping. 0:49:20"><span class="signal-dot" aria-hidden="true"></span></button><button class="episode-segment" type="button" data-episode="5" style="left:30.21161639%;width:10.46375507%" aria-label="Many small bets replace a few large convictions. 0:55:55"><span class="signal-dot" aria-hidden="true"></span></button><button class="episode-segment" type="button" data-episode="6" style="left:40.67537145%;width:7.03286808%" aria-label="Speech researchers meet the stock market. 1:15:17"><span class="signal-dot" aria-hidden="true"></span></button><button class="episode-segment" type="button" data-episode="7" style="left:47.70823953%;width:5.87122918%" aria-label="A model still has people responsible for it. 1:28:18"><span class="signal-dot" aria-hidden="true"></span></button><button class="episode-segment" type="button" data-episode="8" style="left:53.57946871%;width:9.20306168%" aria-label="The fund grows by refusing money. 1:39:10"><span class="signal-dot" aria-hidden="true"></span></button><button class="episode-segment" type="button" data-episode="9" style="left:62.78253039%;width:7.03286808%" aria-label="A small team shares a very large machine. 1:56:12"><span class="signal-dot" aria-hidden="true"></span></button><button class="episode-segment" type="button" data-episode="10" style="left:69.81539847%;width:5.19585772%" aria-label="A small fund controls a much larger portfolio. 2:09:13"><span class="signal-dot" aria-hidden="true"></span></button><button class="episode-segment" type="button" data-episode="11" style="left:75.01125619%;width:12.64295362%" aria-label="The advantage is difficult to isolate. 2:18:50"><span class="signal-dot" aria-hidden="true"></span></button><button class="episode-segment" type="button" data-episode="12" style="left:87.65420982%;width:12.34579018%" aria-label="The house has an edge—and an operating risk. 2:42:14"><span class="signal-dot" aria-hidden="true"></span></button><span class="episode-playhead" aria-hidden="true"></span></div>
+</div>
+
+<div class="episode-preview" id="renaissance-preview" role="tooltip" hidden><strong></strong><span class="episode-hover-time"></span>
+<div class="episode-range"></div>
+</div>
+
+<script class="episode-timeline-data" type="application/json">{"chapters": [{"start": 0, "target": "main", "title": "Opening"}, {"start": 282, "target": "beginnings", "title": "A mathematician with a taste for risk"}, {"start": 1040, "target": "codebreakers", "title": "The market looks like an intercepted message"}, {"start": 2307, "target": "trading", "title": "Brilliant people, ordinary human judgment"}, {"start": 2960, "target": "data", "title": "The valuable work looked like housekeeping"}, {"start": 3355, "target": "medallion", "title": "Many small bets replace a few large convictions"}, {"start": 4517, "target": "equities", "title": "Speech researchers meet the stock market"}, {"start": 5298, "target": "crisis", "title": "A model still has people responsible for it"}, {"start": 5950, "target": "capacity", "title": "The fund grows by refusing money"}, {"start": 6972, "target": "incentives", "title": "A small team shares a very large machine"}, {"start": 7753, "target": "leverage", "title": "A small fund controls a much larger portfolio"}, {"start": 8330, "target": "power", "title": "The advantage is difficult to isolate"}, {"start": 9734, "target": "future", "title": "The house has an edge\u2014and an operating risk"}], "end": 11105}</script>
+</div>
+</nav>
+
+<main id="main">
+<header class="cover">
+<div class="cover-copy">
+<p class="eyebrow">Acquired · Spring 2024 · Season 14, Episode 3</p>
+
+<h1>Renaissance<br> Technologies</h1>
+
+<p class="subtitle">Finding signal</p>
+
+<p class="premise">A restless mathematician, a quarter century of experimentation, and a research culture that turned small statistical edges into an extraordinary fund.</p>
+
+<div class="meta"><span>Released · March 18, 2024</span><span>Created · October 18, 2026</span><span>About 25 minutes to read</span></div>
+
+<p class="scope">An independent illustrated reading companion to <a href="https://www.acquired.fm/episodes/renaissance-technologies" target="_blank" rel="noopener noreferrer">Ben Gilbert and David Rosenthal’s Acquired episode</a>. Follows the full supplied transcript and official corrections. Figures retain the episode’s timeframe.</p>
+</div>
+
+<figure class="hero"><img src="/artifacts/acquired/images/renaissance-cover.png" width="1536" height="1024" fetchpriority="high" alt="Watercolor of a quiet wooded research campus with glowing windows and faint abstract signals drifting above the trees."><figcaption>Conceptual watercolor: a secluded research community and the search for patterns. An imagined campus, not an exact view of Renaissance’s offices.</figcaption></figure>
+</header>
+
+<section class="chapter" id="beginnings" aria-labelledby="heading-beginnings">
+<header class="chapter-head"><span class="number">01</span>
+<p class="era">1938–early 1960s</p>
+
+<h2 id="heading-beginnings">A mathematician with a taste for risk</h2>
+
+<p class="frame">Before the trading system came a restless scientist who liked people, problems, and money.</p>
+<a class="listen" href="https://podscripts.co/podcasts/acquired/renaissance-technologies" target="_blank" rel="noopener noreferrer">Listening cue · 0:04:42</a></header>
+
+<div class="reading">
+<p>Jim Simons grew up in Newton, Massachusetts, an only child in a comfortable family. His father sold packages of films to cinemas for 20th Century Fox. His Russian immigrant grandfather owned a shoe factory, where Jim spent time amid stories, cigarettes, and a very different kind of education. He could see the appeal of wealth without feeling much attraction to the ordinary work of running a business.</p>
+
+<p>Mathematics offered something more absorbing. At MIT, an ambitious graduate seminar during his freshman year also taught him that intelligence had degrees. He could keep company with extraordinary mathematicians without always being the quickest person in the room. As the hosts tell it, his distinguishing ability was choosing worthwhile problems and drawing other talented people into them. He was sociable, adventurous, and capable of leading a group of people who might not otherwise have wanted a leader.</p>
+
+<p>After MIT came a motor scooter expedition from Boston to Bogotá, then doctoral work at Berkeley with Shiing-Shen Chern. A wedding gift of about $5,000 briefly became trading capital. Jim spent mornings in a San Francisco brokerage office, made roughly fifty percent in a few days, and lost the gains just as quickly. With a child on the way, Barbara Simons persuaded him to stop. He completed his doctorate in two years and returned east to teach at MIT at twenty-three.</p>
+
+<p>Academia did not settle him. A friend from the scooter trip proposed manufacturing flooring tiles in Colombia, where the products available seemed inferior to the ones they knew in Boston. Jim took a year away to help establish the company, kept an ownership stake, and returned to a professorship at Harvard. This apparently unrelated detour mattered later: the sale of that business would provide part of the capital for his trading operation.</p>
+</div>
+</section>
+
+<section class="chapter" id="codebreakers" aria-labelledby="heading-codebreakers">
+<header class="chapter-head"><span class="number">02</span>
+<p class="era">1960s–1970s</p>
+
+<h2 id="heading-codebreakers">The market looks like an intercepted message</h2>
+
+<p class="frame">A codebreaking laboratory supplies both a mathematical idea and an organizational example.</p>
+<a class="listen" href="https://podscripts.co/podcasts/acquired/renaissance-technologies" target="_blank" rel="noopener noreferrer">Listening cue · 0:17:20</a></header>
+
+<div class="reading">
+<p>The Institute for Defense Analyses in Princeton offered Jim something the junior academic ladder did not: more money, brilliant colleagues, and freedom to pursue research. The civilian organization worked on government codebreaking and signal intelligence. In the hosts’ account, recruits could roughly double academic salaries while dividing their time between classified work and their own mathematical investigations. Collaboration was part of the attraction.</p>
+
+<p>Jim began to see a resemblance between the messages they were decoding and the prices coming from financial markets. Both contained patterns buried in noise. In 1964, he and colleagues published a paper proposing probabilistic models for stock market behavior. Leonard “Lenny” Baum brought expertise in hidden Markov models, which infer the probabilities of transitions between states rather than requiring a complete causal explanation for the system.</p>
+
+<p>The hosts explain the idea with a baseball game. Even someone who does not know the rules can learn, from enough observations, that a full count permits a narrower set of immediate outcomes than the start of an at-bat. Their analogy is about probabilistic prediction. It does not claim that a financial market follows baseball’s fixed rules, or that identifying a likely next state makes a trade certain.</p>
+
+<p>The proposed fund went nowhere. Outsiders had little reason to hand money to secretive academics selling an algorithm instead of investment judgment. A prospectus left on the office copier exposed the fundraising attempt to their employer. Then Jim’s public opposition to the Vietnam War cost him his IDA job in 1967. He moved to Stony Brook, where New York’s ambition to build a major mathematics department gave him unusual freedom to recruit.</p>
+
+<p>He offered professors better pay and relief from academic bureaucracy. James Ax was among the exceptional mathematicians he attracted. During a later Berkeley sabbatical, Jim collaborated with Chern on the work that became his lasting mathematical contribution. Yet recognition did not extinguish his restlessness. When the Colombian flooring investment paid out, he had both money and a circle of mathematicians who trusted him. In 1978, he left academia to trade full time, to the dismay of colleagues who thought commerce squandered his talent.</p>
+</div>
+</section>
+
+<section class="chapter" id="trading" aria-labelledby="heading-trading">
+<header class="chapter-head"><span class="number">03</span>
+<p class="era">1978–mid-1980s</p>
+
+<h2 id="heading-trading">Brilliant people, ordinary human judgment</h2>
+
+<p class="frame">The first trading operation had famous mathematicians and very little automation.</p>
+<a class="listen" href="https://podscripts.co/podcasts/acquired/renaissance-technologies" target="_blank" rel="noopener noreferrer">Listening cue · 0:38:27</a></header>
+
+<div class="reading">
+<p>Moneymetrics began in a Long Island strip mall beside a pizza shop, with a little under $4 million assembled from Jim, his partners, and Baum, according to David’s estimate. Ax joined too. The credentials were remarkable; the process was still immature. They concentrated on currencies and commodities, using models to suggest ideas but retaining human control over the actual bets.</p>
+
+<p>A model might identify a relationship, but the traders wanted a persuasive account of why it should exist. They also took positions based on beliefs about governments and central bankers. The hosts connect that reluctance to the mathematicians’ training: a convincing proof mattered. Computers were less capable, the data was poorer, and the organization did not yet have the engineering needed to put the whole operation into software.</p>
+
+<p>Jim also wanted diversification. In 1982, he joined Howard Morgan, a Penn computer science and Wharton professor involved in early networking and technology investing, to establish Renaissance Technologies. The name embraced two different activities: Jim’s trading and Howard’s venture investments. For a time, the hosts describe a roughly even split between the two. This was largely their own money, rather than an institutional promise to maintain a single strategy.</p>
+
+<p>The trading side nearly collapsed when Baum held a large government bond position through losses. A decline of about forty percent triggered a contractual provision, the portfolio was liquidated, and Baum departed. Venture capital became the part that worked. At the low point, a single investment in Franklin electronic dictionaries represented about half of Jim’s net worth. The eventual machine emerged from this uneven experimentation, rather than arriving fully formed.</p>
+</div>
+</section>
+
+<section class="chapter" id="data" aria-labelledby="heading-data">
+<header class="chapter-head"><span class="number">04</span>
+<p class="era">Mid-1980s</p>
+
+<h2 id="heading-data">The valuable work looked like housekeeping</h2>
+
+<p class="frame">Sandor Straus builds a usable memory of the markets.</p>
+<a class="listen" href="https://podscripts.co/podcasts/acquired/renaissance-technologies" target="_blank" rel="noopener noreferrer">Listening cue · 0:49:20</a></header>
+
+<div class="reading">
+<p>Ax and Sandor Straus moved to California and formed Axcom, which contracted to manage Renaissance’s remaining trading operations. Jim held a stake in the separate business. The arrangement put quantitative trading at arm’s length just before it began to work. Nobody in the story, the hosts emphasize, understood how valuable the operation would become.</p>
+
+<p>Straus supplied the computing and data infrastructure. Instead of accepting only opening and closing prices, he collected movements within the trading day. He also sought older historical records, including data stretching back into the nineteenth century, and made the different sources consistent enough for computers to use together. This was not a glamorous forecast. It was the painstaking construction of a clean research base.</p>
+
+<p>Jim introduced the team to Berkeley mathematician Elwyn Berlekamp, whose background included work with John Kelly on bet sizing. Better data met a more systematic approach to how much capital to put behind a prediction. The hosts describe trading returns above twenty percent in the mid-1980s, while stressing that a few successful years did not yet establish durable performance across market conditions.</p>
+
+<p>In 1988, Howard took the venture activities into a separate operation. Years later, he would co-found First Round Capital, with Jim investing in its funds and Howard remaining an investor in Renaissance. David recounts a remarkably successful early institutional First Round fund, but the immediate consequence in this story was simpler: Renaissance could concentrate on the quantitative activity that Axcom had made promising.</p>
+</div>
+
+<figure class="scene"><img src="/artifacts/acquired/images/renaissance-study.png" width="1536" height="1024" loading="lazy" alt="Watercolor of a quiet research room with beige computers, market data papers, a chalkboard, and greenery outside the window."><figcaption>Conceptual watercolor of the California research years: gathering records and building systems. An imagined scene, not a reconstruction of Axcom’s offices.</figcaption></figure>
+</section>
+
+<section class="chapter" id="medallion" aria-labelledby="heading-medallion">
+<header class="chapter-head"><span class="number">05</span>
+<p class="era">1988–1993</p>
+
+<h2 id="heading-medallion">Many small bets replace a few large convictions</h2>
+
+<p class="frame">Medallion brings the data, models, and execution into a working system.</p>
+<a class="listen" href="https://podscripts.co/podcasts/acquired/renaissance-technologies" target="_blank" rel="noopener noreferrer">Listening cue · 0:55:55</a></header>
+
+<div class="reading">
+<p>The new joint venture between Renaissance and Axcom was named Medallion for the mathematicians’ awards. It still traded currencies and commodity futures. The first results disappointed, and Ax burned out. Berlekamp bought most of Ax’s stake in the summer of 1989, moved the operation to Berkeley, and pressed for much more frequent trading.</p>
+
+<p>His reasoning connected probability to repetition. A modest edge is hard to distinguish from luck over a handful of bets; repeated carefully, with appropriate sizing, it can become economically meaningful. Shorter horizons also leave less time for the world to diverge from a prediction. The hosts use several win-rate examples, including a Mercer remark about being right 50.75 percent of the time. Ben explicitly treats that number as illustrative. It is not a disclosed Medallion accuracy rate.</p>
+
+<p>The casino analogy has practical limits. Real trades incur costs, reveal information, and change the prices available for the next trade. A quoted price does not mean an unlimited quantity can be bought there. As an order consumes willing sellers, its later portions can cost more. The hosts call this slippage, and it becomes the recurring constraint on the size of the business.</p>
+
+<p>In 1990, Medallion returned 77.8 percent before fees and about 55 percent after them, according to the episode. The five percent annual management fee sounds extraordinary beside conventional funds, but the computer system required an $800,000 budget. Acquired’s official correction confirms that the fee was calculated against an original $16 million fund and that the initial performance allocation was twenty percent, resolving the hosts’ uncertainty between twenty and twenty-five.</p>
+
+<p>Jim wanted to centralize and expand. Berlekamp preferred Berkeley and offered to be bought out if Jim was so confident. Jim paid about six times Berlekamp’s purchase basis from a year earlier and brought the operation back under Renaissance. Henry Laufer joined full time. One detail in the spoken account needs correction: Straus did not return to Stony Brook. Acquired states that he remained in Northern California and ran that office.</p>
+
+<p>The results continued. The hosts cite 54.3 percent gross in 1991 and 47 percent in 1992. At the end of 1993, Jim stopped accepting new investors. The decision was already pointing toward the later business: improving the performance of the existing capital could matter more than collecting fees on additional money.</p>
+</div>
+</section>
+
+<section class="chapter" id="equities" aria-labelledby="heading-equities">
+<header class="chapter-head"><span class="number">06</span>
+<p class="era">1993–late 1990s</p>
+
+<h2 id="heading-equities">Speech researchers meet the stock market</h2>
+
+<p class="frame">A deeper market requires a different level of systems engineering.</p>
+<a class="listen" href="https://podscripts.co/podcasts/acquired/renaissance-technologies" target="_blank" rel="noopener noreferrer">Listening cue · 1:15:17</a></header>
+
+<div class="reading">
+<p>By the mid-1990s, a fund of a few hundred million dollars could already move the currency and commodity markets in which it operated. Equities offered more securities, more relationships to study, and deeper trading volume. They also presented a much larger computing problem. Every stock could relate to many others across different times, exchanges, currencies, and hedges.</p>
+
+<p>Nick Patterson noticed that IBM was cutting costs and recognized the talent in its speech recognition group. Renaissance recruited Peter Brown, Bob Mercer, and programmer David Magerman. Their work involved extracting likely sequences from noisy observations, much like the task the market models performed. They also knew how to build large operational systems, an experience the academic founders largely lacked.</p>
+
+<p>Brown and Mercer helped move the firm toward a common model spanning equities, currencies, and commodities. The analytical attraction was that relationships did not respect the boundaries of separate trading teams. A useful pattern in one market could inform another. Acquired’s official correction qualifies the phrase “one model”: there are many instances of special-case code for different markets. Shared architecture does not mean every instrument receives identical treatment.</p>
+
+<p>David argues that the organizational change mattered even more. With one research system, an improvement could flow directly into everyone’s work instead of waiting for a different team to learn about it and rewrite it. Shared access to the code and data matched Jim’s preferred academic culture. The hosts contrast this with firms organized around competing portfolios; their assessment describes what they learned in their research, rather than an independently verified census of every rival.</p>
+
+<p>Medallion continued compounding while entering equities. By the end of the decade it approached $2 billion under management. Because the fund had closed to new investors, that expansion largely reflected investment gains. The capacity problem had been postponed by a deeper market and better systems. It had not disappeared.</p>
+</div>
+</section>
+
+<section class="chapter" id="crisis" aria-labelledby="heading-crisis">
+<header class="chapter-head"><span class="number">07</span>
+<p class="era">2000 and the later quant quake</p>
+
+<h2 id="heading-crisis">A model still has people responsible for it</h2>
+
+<p class="frame">Exceptional annual returns can include frightening days.</p>
+<a class="listen" href="https://podscripts.co/podcasts/acquired/renaissance-technologies" target="_blank" rel="noopener noreferrer">Listening cue · 1:28:18</a></header>
+
+<div class="reading">
+<p>The year the technology bubble burst became one of Medallion’s most extraordinary: the hosts report 128 percent gross and 98.5 percent net returns in 2000. They attribute its ability to profit during turbulent markets to signals created when other participants act under pressure. That is their explanation for the results, not proof that any particular fearful seller necessarily loses to Medallion.</p>
+
+<p>The first days of the selloff were painful for the fund. In a smoke-filled office, Jim and his colleagues debated the losses and the possibility that the models were encountering unfamiliar behavior. Jim reduced risk. Peter Brown offered to resign afterward. Jim’s response, as the hosts recount it, was that Peter’s experience now made him more valuable: he had learned why a model could not simply be trusted in every situation.</p>
+
+<p>A later quant-market dislocation produced another disagreement. Peter urged confidence in the models; Jim again restrained risk. Around the eventual leadership transition, Peter worried that without Jim’s resistance he might become too aggressive. Jim thought the responsibility of the top job would change that behavior. David treats the exchange as an example of Jim’s understanding of people, including how their positions adapt to the person across the table.</p>
+
+<p>The hosts also discuss risk-adjusted performance through the Sharpe ratio: excess return over the risk-free rate divided by the variability of returns. They cite unusually high historical ratios, but their central comparison is qualitative. A large gain alone does not establish a great strategy; it matters whether the gains repeat and how much risk accompanies them. A record of profitable years does not mean there were no drawdowns within those years.</p>
+</div>
+</section>
+
+<section class="chapter" id="capacity" aria-labelledby="heading-capacity">
+<header class="chapter-head"><span class="number">08</span>
+<p class="era">2001–2022, as discussed in March 2024</p>
+
+<h2 id="heading-capacity">The fund grows by refusing money</h2>
+
+<p class="frame">Medallion’s capacity limit creates a separate institutional business.</p>
+<a class="listen" href="https://podscripts.co/podcasts/acquired/renaissance-technologies" target="_blank" rel="noopener noreferrer">Listening cue · 1:39:10</a></header>
+
+<div class="reading">
+<p>Medallion increased its performance allocation to thirty-six percent in 2001 and forty-four percent in 2002, while retaining the five percent management fee. Beginning in 2003, outside investors were required to leave; current employees and some alumni remained. Ben interprets the pricing partly as a recognition that Medallion delivered a scarce product. David returns later to another possible purpose for charging insiders such high fees.</p>
+
+<p>At roughly $5 billion of equity capital, slippage was again constraining the short-horizon strategy. The answer for institutions was a different product, the Renaissance Institutional Equities Fund. The hosts describe its ambition as equity-market-like returns with less volatility, rather than Medallion’s exceptional gains. Positions could last months instead of around a day or a day and a half. The fee structure, one percent plus ten percent of performance, also reflected a different offering.</p>
+
+<p>The distinction matters when looking at Renaissance’s public holdings. Ben found thousands of small positions in institutional-fund filings; a quarterly snapshot does not reveal the full moving system. Nor does a Renaissance name on the product make it Medallion. The hosts say the institutional funds had not performed remotely like the flagship. Their much larger asset base therefore cannot be used to scale up Medallion’s reported returns.</p>
+
+<p>The financial crisis supplied another striking comparison: the episode cites gross Medallion returns of about 136 percent in 2007 and 152 percent in 2008. Jim retired at the end of 2009; Brown and Mercer became co-CEOs in 2010. They raised the capital base from around $5 billion to around $10 billion. The hosts interpret that as confidence in additional trading capacity. They mention reports of $15 billion later, but could not establish that figure firmly.</p>
+
+<p>For the full 1988–2022 period, David’s calculation is about 68 percent annualized before fees and 40 percent after fees. That is a longer window than the often-quoted 66 percent gross and roughly 39 percent net through 2020. They estimate about $60 billion in cumulative performance fees. These are historical figures discussed in the episode, not an audited current return series or a hypothetical promise that outside money could have remained invested indefinitely.</p>
+
+<p>The resulting wealth reached well beyond finance. The hosts discuss Mercer’s backing of Breitbart, Cambridge Analytica, Trump, and Brexit, alongside substantial Democratic giving by Simons, Laufer, and others. They recount Jim asking Mercer to step down as co-CEO in 2017 while he continued as a scientist. They are struck by colleagues maintaining working relationships despite opposing political commitments. That surprise belongs to their account of the culture.</p>
+</div>
+
+<aside class="interlude">
+<p class="eyebrow">Two products in the episode</p>
+
+<h3>The name is shared; the strategy differs</h3>
+
+<div class="comparison">
+<div>
+<h4>Medallion</h4>
+
+<p><b>Insiders’ capital.</b> Shorter holding periods, limited capacity, five percent management fee and forty-four percent performance allocation in the later period.</p>
+</div>
+
+<div>
+<h4>Institutional funds</h4>
+
+<p><b>Outside investors.</b> Longer holding periods, much larger assets, and a distinct risk and return objective. The episode cites one percent and ten percent for RIEF.</p>
+</div>
+</div>
+
+<p class="diagram-note">A comparison of the hosts’ descriptions, not a current offering document. Assets under management, trading positions, fees, and investment returns are different measures.</p>
+</aside>
+</section>
+
+<section class="chapter" id="incentives" aria-labelledby="heading-incentives">
+<header class="chapter-head"><span class="number">09</span>
+<p class="era">The hosts’ organizational analysis</p>
+
+<h2 id="heading-incentives">A small team shares a very large machine</h2>
+
+<p class="frame">David’s “tapestry” links collaboration, scale, and an unusual incentive structure.</p>
+<a class="listen" href="https://podscripts.co/podcasts/acquired/renaissance-technologies" target="_blank" rel="noopener noreferrer">Listening cue · 1:56:12</a></header>
+
+<div class="reading">
+<p>Hiring excellent scientists and buying excellent infrastructure do not alone explain the gap, David argues. Other wealthy firms can do both. His explanation links three features: a common model, a small research organization, and the economics of employees being both the people operating the fund and the people investing in it.</p>
+
+<p>The hosts describe fewer than four hundred employees, with perhaps 150–200 in research and engineering. Ben’s LinkedIn check suggested a fourteen-year median tenure. These were rough, source-dependent observations in 2024. The point is the human scale. Colleagues could know each other and their families, share an isolated Long Island campus, and improve a system whose success benefited the same small group.</p>
+
+<p>The third element is explicitly David’s hypothesis. Why retain a general-partner/limited-partner fund charging five percent and forty-four percent when the investors are insiders? He proposes that it transfers value from those with accumulated investment balances to the people doing the current work. A new employee begins with relatively little capital but can participate in compensation for operating the system. A long-tenured colleague increasingly benefits as an investor while paying for the next generation’s work.</p>
+
+<p>Ben likes the comparison to academic tenure: the structure may offer a clearer succession of economic interests than a permanent owner distributing discretionary bonuses. Neither host establishes the actual internal allocation rules. Their rounded 51/49 illustration is a storytelling device, not a fee calculation or verified compensation formula. The enduring claim is their interpretation of the incentives, rather than a disclosed design document.</p>
+
+<p>The legal agreements are only one layer of retention in David’s view. He distinguishes lifelong confidentiality from non-competes of uncertain duration, then adds economic and social reasons to stay. An exceptionally profitable common system, a familiar community, and access to colleagues’ research can make departure unattractive even before a contract enters the discussion.</p>
+</div>
+
+<aside class="interlude">
+<p class="eyebrow">David’s interpretation · not disclosed internal rules</p>
+
+<h3>Three parts that reinforce each other</h3>
+
+<div class="tapestry">
+<div>
+<h4>One shared system</h4>
+
+<p>Research and engineering improvements can benefit colleagues directly.</p>
+</div>
+
+<div>
+<h4>A small community</h4>
+
+<p>Long relationships and shared outcomes support collaboration.</p>
+</div>
+
+<div>
+<h4>Insider investors</h4>
+
+<p>David hypothesizes that fees reward current work while accumulated capital rewards tenure.</p>
+</div>
+</div>
+
+<p class="diagram-note">The official correction specifies special-case market code within the common model. The incentive explanation remains the hosts’ hypothesis.</p>
+</aside>
+</section>
+
+<section class="chapter" id="leverage" aria-labelledby="heading-leverage">
+<header class="chapter-head"><span class="number">10</span>
+<p class="era">2002–2021, revisited in analysis</p>
+
+<h2 id="heading-leverage">A small fund controls a much larger portfolio</h2>
+
+<p class="frame">Leverage changes what a capacity number actually means.</p>
+<a class="listen" href="https://podscripts.co/podcasts/acquired/renaissance-technologies" target="_blank" rel="noopener noreferrer">Listening cue · 2:09:13</a></header>
+
+<div class="reading">
+<p>The hosts return to a missing part of the trading story: borrowing. Medallion was not simply finding profitable uses for $5 billion of unlevered cash. Basket options gave it exposure to a portfolio whose legal owner was a bank, while Medallion’s systems directed the trading activity. The option’s value followed the performance of that basket.</p>
+
+<p>Ben cites roughly $12.50 of financial positions for each dollar of cash under the arrangement, with still greater leverage for particularly attractive opportunities. He describes more than $60 billion in positions controlled against around $5 billion of capital in 2002. These are exposures, not another $60 billion fund of investor contributions. David stresses that the unlevered returns would have been considerably lower.</p>
+
+<p>The arrangement also supported a disputed tax treatment. Renaissance treated an option held for more than a year as a long-term position even though the bank-owned basket contained very frequent trades. In the hosts’ account, the IRS rejected that separation. They describe a 2021 resolution involving $6.8 billion in unpaid taxes, interest, and penalties; Ben cites $670 million paid by Simons alone. The episode presents those amounts as part of the cost of the basket-option strategy.</p>
+
+<p>Their subsequent revenue discussion is a hypothetical exercise using assumed fund sizes, fees, and returns, not reported financial statements. It also reveals an accounting difficulty: the Medallion investors and the people earning its fees overlap. Adding a fee stream to the investors’ gains without distinguishing who receives each dollar would obscure the economics. The companion therefore keeps the historical return figures separate from business revenue estimates.</p>
+</div>
+</section>
+
+<section class="chapter" id="power" aria-labelledby="heading-power">
+<header class="chapter-head"><span class="number">11</span>
+<p class="era">The hosts’ Seven Powers and playbook</p>
+
+<h2 id="heading-power">The advantage is difficult to isolate</h2>
+
+<p class="frame">They agree on accumulated process and disagree about what else best explains it.</p>
+<a class="listen" href="https://podscripts.co/podcasts/acquired/renaissance-technologies" target="_blank" rel="noopener noreferrer">Listening cue · 2:18:50</a></header>
+
+<div class="reading">
+<p>Both hosts settle on process power as a major explanation. Decades of data cleaning, trading systems, research habits, and operational knowledge form something hard to reproduce by buying computers or hiring a handful of people. Ben speculates that nobody holds the entire model in their head, but acknowledges he did not verify that. It is his interpretation of accumulated complexity, not an established fact about every employee’s knowledge.</p>
+
+<p>Ben also sees a cornered resource in the historical data. Straus began collecting and standardizing records before doing so was commonplace. David accepts the possible advantage but notes that rivals spend heavily too, that old data can lose relevance, and that the model may be continually reinvented. They discuss a roughly two-year renewal cycle as something heard during research, not a publicly demonstrated engineering schedule.</p>
+
+<p>David’s other candidate is counter-positioning. A fund owned by its own participants may be unusually willing to limit assets to protect performance, while rivals face incentives to raise more fee-paying capital. Ben only partly accepts the category; he thinks superior mathematical execution and a culture that compounds knowledge could explain much of the result. Their final classifications differ: process power and counter-positioning for David, process power and cornered resource for Ben.</p>
+
+<p>They rule out ordinary scale economies as the core moat because more capital can make the strategy worse. They do not see a conventional network effect or customer switching-cost story. Branding may help raise institutional money, but that is a different business from the insider fund. The resulting analysis is deliberately narrower than a claim that Renaissance possesses every possible competitive advantage.</p>
+
+<p>Ben’s playbook returns to the portability of signal processing. An astronomer reducing noise in a distant observation and a speech researcher recognizing likely sounds can have useful skills without becoming conventional stock analysts. The hosts think Medallion can act on statistically useful relationships without a human inventing a persuasive economic story first. Their hypothetical stock-and-futures examples illustrate that idea; they are not revealed signals from the fund.</p>
+
+<p>They also distinguish complexity from sheer speed. Medallion falls in their “smart and slower” quadrant: the advantage lies in discovering non-obvious relationships rather than winning every race to an exchange. Execution still matters. Splitting orders into small pieces and disguising activity helps avoid moving prices or attracting traders who anticipate the next order. A high daily trade count therefore does not alone make it the kind of high-frequency business the hosts describe elsewhere.</p>
+</div>
+</section>
+
+<section class="chapter" id="future" aria-labelledby="heading-future">
+<header class="chapter-head"><span class="number">12</span>
+<p class="era">The concluding discussion</p>
+
+<h2 id="heading-future">The house has an edge—and an operating risk</h2>
+
+<p class="frame">The closing questions concern value, culture, and whether the rest of the world can catch up.</p>
+<a class="listen" href="https://podscripts.co/podcasts/acquired/renaissance-technologies" target="_blank" rel="noopener noreferrer">Listening cue · 2:42:14</a></header>
+
+<div class="reading">
+<p>A profitable mathematical idea still needs reliable software and controls. Ben illustrates the danger through another firm, Knight Capital, which he says lost about $460 million after a deployment error in 2012. His description emphasizes millions of executions over forty-five minutes and inadequate ways to stop them. This is a comparison used by the hosts, not a claim that Renaissance experienced the same failure.</p>
+
+<p>Ben then calls Medallion the house in a casino: it accepts many trades with a small expected advantage, rather than providing growth capital to companies in the ordinary sense of investing. The hosts debate how zero-sum that makes the activity. They acknowledge that counterparties with different time horizons can both achieve their objectives. David also argues that quant firms provide a service through liquidity, faster execution, and narrower spreads.</p>
+
+<p>They agree that quantitative finance creates some value and captures a great deal of it. Ben suggests that demand from trading firms helped support useful computing and networking technology, while qualifying his specific example about Mellanox. Their discussion does not establish that Renaissance’s secret research directly created public breakthroughs in AI. When they asked AI researchers and historians how early the firm’s methods were, secrecy made a confident answer impossible.</p>
+
+<p>The bull case is continuity: maintain the culture, attract exceptional scientists, and keep the institutional business from overwhelming what makes Medallion special. The bear case is change. Competitors may gain better tools; hiring may become less distinctive; leadership and incentives may evolve. They discuss David Lippe’s appointment as co-CEO from the institutional side as a possible source of concern, while stressing that outsiders cannot tell whether that narrative is right.</p>
+
+<p>David’s final fascination is a research environment with unusually direct incentives: a small group develops a system and also receives its economic results. Ben’s is the possibility of learning useful relationships inside a complex adaptive market without explaining every causal mechanism. Both stop short of knowing why the performance persists or whether publicly available AI will erode it. The secrecy that makes the story compelling also limits their conclusion.</p>
+
+<p>The conversation closes with lighter recommendations, including The New Look and Class of Palm Beach, and thanks to the researchers and industry participants who helped the hosts. Those acknowledgments do not make the outside books and articles additional evidence for this companion. The account here follows the supplied episode, with Acquired’s own corrections identified where they change it.</p>
+</div>
+</section>
+
+<section class="sources" id="sources">
+<p class="eyebrow">Episode evidence and listening notes</p>
+
+<h2>Sources</h2>
+
+<p>This companion follows the full Acquired transcript supplied by the reader, including the concluding analysis. The official episode page verifies the March 18, 2024 release and the original Season 14, Episode 3 attribution. Spring 2024 is this library’s January–August season convention. No later financial results or outside business lessons have been added.</p>
+
+<p>Three official corrections are applied: Sandor Straus stayed in Northern California after his 1985 move; Medallion’s original carry was twenty percent, with the five percent fee funding an $800,000 computer budget against a $16 million fund; and the common model contains special-case code for different markets. These corrections also appear at the end of the supplied material and on Acquired’s episode page.</p>
+
+<p>Listening cues come from Podscripts’ timestamped transcription of the same conversation, a third-party mirror used only for timing. That version contains inserted advertisements and differs from the supplied transcript’s incidental promotional segments. The 3:05:05 endpoint is its last displayed timestamp, covering the farewell, not a claimed exact audio duration. These are verified transcript cues, not official chapters or timestamps checked against every audio player. Dynamic advertisements can shift times.</p>
+
+<p>The conceptual signal trace maps time linearly from left to right; its painted-looking fluctuations do not encode market prices, investment returns, or nonuniform timing. Reading progress is interpolated between chapter anchors and does not indicate audio playback. The original watercolors are imagined editorial scenes, not photographs or historical reconstructions. The fee-incentive explanation is explicitly the hosts’ hypothesis; illustrative win rates and the rounded 51/49 example are not disclosed statistics or a compensation formula.</p>
+
+<ol>
+<li><a href="https://www.acquired.fm/episodes/renaissance-technologies" target="_blank" rel="noopener noreferrer">Acquired · Renaissance Technologies · Official episode, release metadata, and corrections</a></li>
+
+<li><a href="https://www.acquired.fm/episodes/renaissance-technologies#transcript" target="_blank" rel="noopener noreferrer">Acquired · Renaissance Technologies · Transcript supplied by the reader</a></li>
+
+<li><a href="https://podscripts.co/podcasts/acquired/renaissance-technologies" target="_blank" rel="noopener noreferrer">Podscripts · Timestamped mirror used only for listening cues</a></li>
+</ol>
+</section>
+</main>
+
+<footer class="footer">Renaissance Technologies · An independent illustrated companion to Acquired · <a href="/">Return to the library</a></footer>
+
+<script>const menu=document.querySelector('.chapters');document.addEventListener('click',e=>{if(!menu.contains(e.target))menu.open=false});document.addEventListener('keydown',e=>{if(e.key==='Escape')menu.open=false});</script>
+</body></html>
