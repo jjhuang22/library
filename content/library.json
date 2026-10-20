@@ -57,6 +57,14 @@
       "addedOn": "2026-10-18",
       "releasedOn": "2024-03-18",
       "file": "/artifacts/acquired/renaissance-technologies/index.html"
+    },
+    {
+      "id": "visa",
+      "title": "Visa",
+      "category": "acquired",
+      "addedOn": "2026-10-19",
+      "releasedOn": "2023-11-27",
+      "file": "/artifacts/acquired/visa/index.html"
     }
   ]
 }

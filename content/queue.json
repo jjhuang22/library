@@ -117,8 +117,8 @@
       "title": "Visa",
       "category": "acquired",
       "branch": "queue/acquired/visa",
-      "reviewStatus": "source-unavailable",
-      "notes": "Original chat reports completion on local-only queued/acquired-selected-episodes; recover that branch and source files before migration or re-verification."
+      "reviewStatus": "verified",
+      "notes": "Recovered full bundle and retained source map from 2b4907d; prior complete-transcript independent review approved_after_fixes. Rechecked bundle migration; original source review is preserved, not newly invented."
     },
     {
       "id": "meta",
