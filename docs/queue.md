@@ -19,13 +19,9 @@ Original files remain recoverable from `b808799` (NBA/Vanguard and already-publi
 
 ## Scheduled workflow source recovery
 
-The automation **Create Acquired companions** points to the chat **Find missing Acquired artifacts**. Its last recorded completion reports Microsoft Volume II at commit `cd13644`, fourteen of forty-six episodes completed, with Novo Nordisk next. It saved the completed files and state locally on `queued/acquired-selected-episodes`; the corresponding branch was not pushed to GitHub and is absent from this workspace.
+The fourteen completed companions reported by the original chat have now been recovered from `queued/acquired-selected-episodes`, migrated to individual `queue/acquired/<id>` branches, and checked under the bundle workflow. Their prior full-transcript review records and original authoring commits are preserved rather than recreated from episode titles.
 
-Reported completed episodes are Disney The Renaissance and the Empire, Coca-Cola, Trader Joe's, Google The AI Company, Alphabet Inc., Google The Origin of Search, IKEA, The NFL, Visa, Meta, Mars Inc., Epic Systems, Microsoft Volume I, and Microsoft Volume II. They are registered as `source-unavailable`, not falsely counted as locally audited or migrated. Chat history reports reviews and tests, but does not substitute for recovering actual HTML, image assets, evidence maps, and the committed authoring state.
-
-Recover and push the original combined branch from that chat's workspace without merging it into main. Then migrate each recovered episode from that source into its registered individual queue branch, reconcile the original `.codex/acquired-artifact-queue.json` state into `content/acquired-artifact-queue.json`, and recheck sources, maps, assets, builds and browser behavior. Do not regenerate those fourteen based only on their titles or invent completion records. Preserve the original selection order, exclusions, creation dates, and completed work.
-
-The automation prompt now points to the new authoring/publishing documents, requires official-transcript-first lookup, individual saved queue branches and durable evidence maps, and backs up complete queue branches without publishing them. Its existing resume schedule and notification preferences are preserved.
+See [the recovery handoff](acquired-queue-handoff.md) for fetch commands, branch/commit inventory, workflow dependencies and verification. The reconciled state is `content/acquired-artifact-queue.json`: fourteen complete, thirty-two pending, Novo Nordisk next, with the original order and exclusions retained. The original `.codex` state remains on the combined recovery archive. Never merge that archive into main.
 
 ## Evidence consistency for published artifacts
 

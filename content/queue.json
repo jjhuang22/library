@@ -50,115 +50,115 @@
     },
     {
       "id": "disney-the-renaissance-and-the-empire",
-      "title": "Disney The Renaissance and the Empire",
+      "title": "Disney: The Renaissance and the Empire",
       "category": "acquired",
       "branch": "queue/acquired/disney-the-renaissance-and-the-empire",
-      "reviewStatus": "source-unavailable",
-      "notes": "Original chat reports completion on local-only queued/acquired-selected-episodes; recover that branch and source files before migration or re-verification."
+      "reviewStatus": "verified",
+      "notes": "Recovered and migrated to d823db5; prior independent full-transcript review retained from 3ad3aba. Bundle, assets, build and browser behavior rechecked."
     },
     {
       "id": "coca-cola",
       "title": "Coca-Cola",
       "category": "acquired",
       "branch": "queue/acquired/coca-cola",
-      "reviewStatus": "source-unavailable",
-      "notes": "Original chat reports completion on local-only queued/acquired-selected-episodes; recover that branch and source files before migration or re-verification."
+      "reviewStatus": "verified",
+      "notes": "Recovered and migrated to 4505772; prior independent full-transcript review retained from a5de30a. Bundle, assets, build and browser behavior rechecked."
     },
     {
       "id": "trader-joes",
       "title": "Trader Joe's",
       "category": "acquired",
       "branch": "queue/acquired/trader-joes",
-      "reviewStatus": "source-unavailable",
-      "notes": "Original chat reports completion on local-only queued/acquired-selected-episodes; recover that branch and source files before migration or re-verification."
+      "reviewStatus": "verified",
+      "notes": "Recovered and migrated to 56d1670; prior independent full-transcript review retained from 5943918. Bundle, assets, build and browser behavior rechecked."
     },
     {
       "id": "google-the-ai-company",
-      "title": "Google The AI Company",
+      "title": "Google: The AI Company",
       "category": "acquired",
       "branch": "queue/acquired/google-the-ai-company",
-      "reviewStatus": "source-unavailable",
-      "notes": "Original chat reports completion on local-only queued/acquired-selected-episodes; recover that branch and source files before migration or re-verification."
+      "reviewStatus": "verified",
+      "notes": "Recovered and migrated to 86cddc1; prior independent full-transcript review retained from d392f8a. Bundle, assets, build and browser behavior rechecked."
     },
     {
       "id": "alphabet-inc",
       "title": "Alphabet Inc.",
       "category": "acquired",
       "branch": "queue/acquired/alphabet-inc",
-      "reviewStatus": "source-unavailable",
-      "notes": "Original chat reports completion on local-only queued/acquired-selected-episodes; recover that branch and source files before migration or re-verification."
+      "reviewStatus": "verified",
+      "notes": "Recovered and migrated to 085e92a; prior independent full-transcript review retained from 00808ce. Bundle, assets, build and browser behavior rechecked."
     },
     {
       "id": "google-the-origin-of-search",
-      "title": "Google The Origin of Search",
+      "title": "Google: The Origin of Search",
       "category": "acquired",
       "branch": "queue/acquired/google-the-origin-of-search",
-      "reviewStatus": "source-unavailable",
-      "notes": "Original chat reports completion on local-only queued/acquired-selected-episodes; recover that branch and source files before migration or re-verification."
+      "reviewStatus": "verified",
+      "notes": "Recovered and migrated to 8362d8e; prior independent full-transcript review retained from 7f9b8b3. Bundle, assets, build and browser behavior rechecked."
     },
     {
       "id": "ikea",
       "title": "IKEA",
       "category": "acquired",
       "branch": "queue/acquired/ikea",
-      "reviewStatus": "source-unavailable",
-      "notes": "Original chat reports completion on local-only queued/acquired-selected-episodes; recover that branch and source files before migration or re-verification."
+      "reviewStatus": "verified",
+      "notes": "Recovered and migrated to 45e06e6; prior independent full-transcript review retained from 99171f8. Bundle, assets, build and browser behavior rechecked."
     },
     {
       "id": "the-nfl",
-      "title": "The NFL",
+      "title": "The NFL (2026 remaster and follow-up)",
       "category": "acquired",
       "branch": "queue/acquired/the-nfl",
-      "reviewStatus": "source-unavailable",
-      "notes": "Original chat reports completion on local-only queued/acquired-selected-episodes; recover that branch and source files before migration or re-verification."
+      "reviewStatus": "verified",
+      "notes": "Recovered and migrated to 99c7177; prior independent full-transcript review retained from 6dfd537. Bundle, assets, build and browser behavior rechecked."
     },
     {
       "id": "visa",
       "title": "Visa",
       "category": "acquired",
       "branch": "queue/acquired/visa",
-      "reviewStatus": "source-unavailable",
-      "notes": "Original chat reports completion on local-only queued/acquired-selected-episodes; recover that branch and source files before migration or re-verification."
+      "reviewStatus": "verified",
+      "notes": "Recovered and migrated to 659192f; prior independent full-transcript review retained from 2b4907d. Bundle, assets, build and browser behavior rechecked."
     },
     {
       "id": "meta",
       "title": "Meta",
       "category": "acquired",
       "branch": "queue/acquired/meta",
-      "reviewStatus": "source-unavailable",
-      "notes": "Original chat reports completion on local-only queued/acquired-selected-episodes; recover that branch and source files before migration or re-verification."
+      "reviewStatus": "verified",
+      "notes": "Recovered and migrated to 07aee5c; prior independent full-transcript review retained from 8cbdb93. Bundle, assets, build and browser behavior rechecked."
     },
     {
       "id": "mars-inc",
-      "title": "Mars Inc.",
+      "title": "Mars Inc. (the chocolate story)",
       "category": "acquired",
       "branch": "queue/acquired/mars-inc",
-      "reviewStatus": "source-unavailable",
-      "notes": "Original chat reports completion on local-only queued/acquired-selected-episodes; recover that branch and source files before migration or re-verification."
+      "reviewStatus": "verified",
+      "notes": "Recovered and migrated to 05487d1; prior independent full-transcript review retained from 97c29da. Bundle, assets, build and browser behavior rechecked."
     },
     {
       "id": "epic-systems",
-      "title": "Epic Systems",
+      "title": "Epic Systems (MyChart)",
       "category": "acquired",
       "branch": "queue/acquired/epic-systems",
-      "reviewStatus": "source-unavailable",
-      "notes": "Original chat reports completion on local-only queued/acquired-selected-episodes; recover that branch and source files before migration or re-verification."
+      "reviewStatus": "verified",
+      "notes": "Recovered and migrated to ff37431; prior independent full-transcript review retained from 8eeb220. Bundle, assets, build and browser behavior rechecked."
     },
     {
       "id": "microsoft-volume-i",
       "title": "Microsoft Volume I",
       "category": "acquired",
       "branch": "queue/acquired/microsoft-volume-i",
-      "reviewStatus": "source-unavailable",
-      "notes": "Original chat reports completion on local-only queued/acquired-selected-episodes; recover that branch and source files before migration or re-verification."
+      "reviewStatus": "verified",
+      "notes": "Recovered and migrated to 0106161; prior independent full-transcript review retained from 8210ddd. Bundle, assets, build and browser behavior rechecked."
     },
     {
       "id": "microsoft-volume-ii",
       "title": "Microsoft Volume II",
       "category": "acquired",
       "branch": "queue/acquired/microsoft-volume-ii",
-      "reviewStatus": "source-unavailable",
-      "notes": "Original chat reports completion on local-only queued/acquired-selected-episodes; recover that branch and source files before migration or re-verification."
+      "reviewStatus": "verified",
+      "notes": "Recovered and migrated to b922c22; prior independent full-transcript review retained from cd13644. Bundle, assets, build and browser behavior rechecked."
     }
   ]
 }
