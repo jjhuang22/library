@@ -106,11 +106,11 @@
     },
     {
       "id": "the-nfl",
-      "title": "The NFL",
+      "title": "The NFL (2026 remaster and follow-up)",
       "category": "acquired",
       "branch": "queue/acquired/the-nfl",
-      "reviewStatus": "source-unavailable",
-      "notes": "Original chat reports completion on local-only queued/acquired-selected-episodes; recover that branch and source files before migration or re-verification."
+      "reviewStatus": "verified",
+      "notes": "Recovered full bundle and retained source map from 6dfd537; prior complete-transcript independent review approved_after_fixes. Rechecked bundle migration; original source review is preserved, not newly invented."
     },
     {
       "id": "visa",
