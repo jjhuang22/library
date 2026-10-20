@@ -233,11 +233,23 @@
       "position": 11,
       "id": "mars-inc",
       "title": "Mars Inc. (the chocolate story)",
-      "status": "pending",
-      "attempts": 0,
+      "status": "completed",
+      "attempts": 1,
       "blocker": null,
-      "artifact_commit": null,
-      "review_status": "not_started"
+      "artifact_commit": "97c29da819803e9da9f27735a82a25f5800abab9",
+      "review_status": "approved",
+      "started_at": "2026-10-20T01:05:35.693774+00:00",
+      "reviewer": "/root/review_mars",
+      "completed_at": "2026-10-20T01:15:57.604417+00:00",
+      "validation": {
+        "build": "passed",
+        "tests": "passed",
+        "desktop_1440": "passed",
+        "mobile_390": "passed",
+        "mobile_320": "passed",
+        "original_watercolors": 2
+      },
+      "evidence_map": "docs/evidence/mars-inc.md"
     },
     {
       "position": 12,
