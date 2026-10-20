@@ -57,6 +57,14 @@
       "addedOn": "2026-10-18",
       "releasedOn": "2024-03-18",
       "file": "/artifacts/acquired/renaissance-technologies/index.html"
+    },
+    {
+      "id": "ferrari",
+      "title": "Ferrari",
+      "category": "acquired",
+      "addedOn": "2026-10-12",
+      "releasedOn": "2026-04-13",
+      "file": "/artifacts/acquired/ferrari/index.html"
     }
   ]
 }
