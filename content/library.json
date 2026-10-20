@@ -137,6 +137,14 @@
       "addedOn": "2026-10-19",
       "releasedOn": "2024-12-16",
       "file": "/artifacts/acquired/mars-inc.html"
+    },
+    {
+      "id": "epic-systems",
+      "title": "Epic Systems (MyChart)",
+      "category": "acquired",
+      "addedOn": "2026-10-19",
+      "releasedOn": "2025-04-21",
+      "file": "/artifacts/acquired/epic-systems.html"
     }
   ]
 }
