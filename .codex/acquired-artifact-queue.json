@@ -7,7 +7,7 @@
   "publication": "queued_only_no_main_push_no_deploy",
   "process": "sequential_author_independent_subagent_review_fix_recheck_verify_commit_repeat",
   "automation_id": "6ad5881e8d488191a132e7ba1d4da6d9",
-  "active_episode": "microsoft-volume-i",
+  "active_episode": null,
   "episodes": [
     {
       "position": 1,
@@ -277,12 +277,23 @@
       "position": 13,
       "id": "microsoft-volume-i",
       "title": "Microsoft Volume I",
-      "status": "in_progress",
+      "status": "completed",
       "attempts": 1,
       "blocker": null,
-      "artifact_commit": null,
-      "review_status": "not_started",
-      "started_at": "2026-10-20T01:26:28.636677+00:00"
+      "artifact_commit": "8210dddc516f381f19120a158cc77dac87cf1309",
+      "review_status": "approved_after_fixes",
+      "started_at": "2026-10-20T01:26:28.636677+00:00",
+      "reviewer": "/root/review_microsoft_i",
+      "completed_at": "2026-10-20T01:34:46.775271+00:00",
+      "validation": {
+        "build": "passed",
+        "tests": "passed",
+        "desktop_1440": "passed",
+        "mobile_390": "passed",
+        "mobile_320": "passed",
+        "original_watercolors": 2
+      },
+      "evidence_map": "docs/evidence/microsoft-volume-i.md"
     },
     {
       "position": 14,
