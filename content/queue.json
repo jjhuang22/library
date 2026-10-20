@@ -130,11 +130,11 @@
     },
     {
       "id": "mars-inc",
-      "title": "Mars Inc.",
+      "title": "Mars Inc. (the chocolate story)",
       "category": "acquired",
       "branch": "queue/acquired/mars-inc",
-      "reviewStatus": "source-unavailable",
-      "notes": "Original chat reports completion on local-only queued/acquired-selected-episodes; recover that branch and source files before migration or re-verification."
+      "reviewStatus": "verified",
+      "notes": "Recovered full bundle and retained source map from 97c29da; prior complete-transcript independent review approved. Rechecked bundle migration; original source review is preserved, not newly invented."
     },
     {
       "id": "epic-systems",
