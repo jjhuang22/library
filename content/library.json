@@ -129,6 +129,14 @@
       "addedOn": "2026-10-19",
       "releasedOn": "2024-10-28",
       "file": "/artifacts/acquired/meta.html"
+    },
+    {
+      "id": "mars-inc",
+      "title": "Mars Inc.",
+      "category": "acquired",
+      "addedOn": "2026-10-19",
+      "releasedOn": "2024-12-16",
+      "file": "/artifacts/acquired/mars-inc.html"
     }
   ]
 }
