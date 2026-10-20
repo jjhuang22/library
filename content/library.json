@@ -153,6 +153,14 @@
       "addedOn": "2026-10-19",
       "releasedOn": "2024-04-22",
       "file": "/artifacts/acquired/microsoft-volume-i.html"
+    },
+    {
+      "id": "microsoft-volume-ii",
+      "title": "Microsoft Volume II",
+      "category": "acquired",
+      "addedOn": "2026-10-19",
+      "releasedOn": "2024-07-22",
+      "file": "/artifacts/acquired/microsoft-volume-ii.html"
     }
   ]
 }

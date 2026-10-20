@@ -7,7 +7,7 @@
   "publication": "queued_only_no_main_push_no_deploy",
   "process": "sequential_author_independent_subagent_review_fix_recheck_verify_commit_repeat",
   "automation_id": "6ad5881e8d488191a132e7ba1d4da6d9",
-  "active_episode": null,
+  "active_episode": "microsoft-volume-ii",
   "episodes": [
     {
       "position": 1,
@@ -299,11 +299,12 @@
       "position": 14,
       "id": "microsoft-volume-ii",
       "title": "Microsoft Volume II",
-      "status": "pending",
-      "attempts": 0,
+      "status": "in_progress",
+      "attempts": 1,
       "blocker": null,
       "artifact_commit": null,
-      "review_status": "not_started"
+      "review_status": "not_started",
+      "started_at": "2026-10-20T01:36:02.791971+00:00"
     },
     {
       "position": 15,
