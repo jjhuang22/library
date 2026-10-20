@@ -1,0 +1,31 @@
+# The NBA — source evidence
+
+## Source and provenance
+
+Official episode: [Acquired — The NBA](https://www.acquired.fm/episodes/the-nba), Season 7, Episode 4, released September 30, 2020. Release metadata checked October 20, 2026. The companion retains its October 18, 2026 creation date and the library’s Fall 2020 season label.
+
+The complete reader-supplied copy of the episode transcript is the spoken-content source, read through the final power, playbook, grading, and closing conversation. On October 20, 2026, the official episode URL and its explicit [Transcript view](https://www.acquired.fm/episodes/the-nba#transcript) both returned only the overview, playbook notes, and links through the available web reader; neither exposed the dialogue or another transcript link. Direct HTML/browser access was unavailable because the configured network proxy refused the connection, preventing inspection or expansion of any client-rendered transcript tab. The supplied full copy is therefore the documented fallback. Show notes and bibliographies are not used as substitutes for the conversation.
+
+The retrievable official page has a “corrections” heading but no correction entries. No outside corrections, later outcomes, or company updates have been imported.
+
+## Passage map
+
+Passage anchors below refer to the dialogue in the full supplied transcript, not its appended summary.
+
+| Companion section | Distinctive source passages | Claims and qualifications |
+| --- | --- | --- |
+| 01 · A game travels | “He found himself teaching at the Young Men’s Christian Association Training School”; “professional basketball leagues don’t really take hold, but what does is professional basketball teams” | Naismith’s winter game; YMCA distribution, including China before 1900; early women’s play; Globetrotters and Rens. Excludes the hosts’ uncertain football-origin and oldest-court details. |
+| 02 · Hockey’s empty nights | “exactly two years to the day after D-day”; “a landmark five-year $4 million TV rights deal with ABC” | 1946 BAA and arena economics; initial racial exclusion, Misaka and 1950 Black players; 1949 NBA formation; shot-clock problem; Russell, Chamberlain, Arledge. Does not give the hosts’ inconsistent shot-clock chronology a false exact adoption year. |
+| 03 · Players discover leverage | “Literally, two hours before the broadcast of the All-Star Game”; “what drives the players to settle is they get a major concession” | 1964 pension bargaining; ABA competition and earlier recruitment; Dr. J, entertainment innovations; Chamberlain’s $250,000 annual deal; Alcindor’s offers remain the hosts’ recollection; merger litigation and 1976 reserve-clause concession. |
+| 04 · Merger entry terms | “the leverage shifts entirely to the NBA”; “They have to pay $3.2 million”; “The only reason is Bill Simmons writes about this in his book” | Incoming clubs, Nets’ $4.8 million indemnity and sale of Erving, television restrictions; St. Louis television-share anecdote retains uncertainty about payment category and later status, with receipts cited only through 2009; 1979 Bird/Magic, three-pointer and ESPN. |
+| 05 · Stern expands audience | “In March of 1983”; “53% of the total gross revenue”; “two new 4-year TV deals with NBC and with Turner for $875 million” | Stern’s background; player participation versus equity; hosts’ inferred ~$150 million league revenue; profitability disagreement; 1989 rights, drug program, Dream Team, WNBA, mid-1990s League Pass. Avoids uncertain Len Bias particulars and does not label the original League Pass product internet streaming. |
+| 06 · The person becomes a business | “The deal gets done in 1984”; “The legacy these two dudes, Jordan and Stern”; “They’re targeting my generation, the hip hop generation” | Jordan’s Nike relationship and cited 2020 economics; alumni businesses; Charlotte valuations; dress-code critique and players’ fashion response. No later ownership or financial updates. |
+| 07 · One league, many ways | “He brought China to the NBA”; “this one should be called empowering the players”; “Their two strategies are directly at odds” | Yao and estimated Chinese participation/viewing; international rosters; Turner, Tencent’s five-year $1.5 billion deal; 2K; combined platform follower counts rather than unique people; bubble and protests; Morey dispute, $400 million loss estimate, Ben/David disagreement over Silver; Yao as possible bridge. |
+| 08 · Competitors share proceeds | “Before we can do that, we should probably talk about where the NBA’s revenue comes from”; “whether the League Pass revenue is part of that”; “The vast, vast majority of these arenas” | ~$8.8 billion revenue, player share and separate inter-team redistribution, ~$109 million soft cap, estimated revenue buckets and unresolved classification. Diagram is conceptual; categories may overlap and are not an additive audited bridge. Arena-brand interpretation attributed to Ben. |
+| 09 · Powerful league, uncertain investment | “The less interesting one is power versus other forms of basketball”; “I’m not sure it has a ton”; “Let’s start with the F”; “A+ is a little baked in at this point” | Cornered-resource distinction, scale and possible network economies; expansion execution not itself Helmer power; attention competition, younger fans and entrepreneurial owners; 2020 future scenarios; ownership-cost and future bargaining risks, existing sharing mitigants; seven-to-fourteen revenue multiples, scarcity, Ballmer, real-estate comparison. Concluding uncertainty and carve-outs retained. |
+
+## Timing and presentation
+
+The full supplied transcript has no verified listening timestamps or audio endpoint. The court navigates nine reading chapters; marker spacing is editorial and does not represent elapsed time. No timestamps or duration are inferred, and the sources section explains that limitation. Native chapter links and the dropdown provide navigation without a fabricated listening scale.
+
+The two original watercolor images are labeled conceptual rather than historical reconstructions. Financial figures, follower counts, business arrangements, and forecasts retain the September 2020 recording perspective; the hosts’ estimates, uncertainty, and disagreements remain explicit.

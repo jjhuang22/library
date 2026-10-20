@@ -57,6 +57,14 @@
       "addedOn": "2026-10-18",
       "releasedOn": "2024-03-18",
       "file": "/artifacts/acquired/renaissance-technologies/index.html"
+    },
+    {
+      "id": "nba",
+      "title": "The NBA",
+      "category": "acquired",
+      "addedOn": "2026-10-18",
+      "releasedOn": "2020-09-30",
+      "file": "/artifacts/acquired/nba/index.html"
     }
   ]
 }
