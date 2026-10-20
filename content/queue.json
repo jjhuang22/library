@@ -90,11 +90,11 @@
     },
     {
       "id": "google-the-origin-of-search",
-      "title": "Google The Origin of Search",
+      "title": "Google: The Origin of Search",
       "category": "acquired",
       "branch": "queue/acquired/google-the-origin-of-search",
-      "reviewStatus": "source-unavailable",
-      "notes": "Original chat reports completion on local-only queued/acquired-selected-episodes; recover that branch and source files before migration or re-verification."
+      "reviewStatus": "verified",
+      "notes": "Recovered full bundle and retained source map from 7f9b8b3; prior complete-transcript independent review approved. Rechecked bundle migration; original source review is preserved, not newly invented."
     },
     {
       "id": "ikea",
