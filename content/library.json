@@ -57,6 +57,14 @@
       "addedOn": "2026-10-18",
       "releasedOn": "2024-03-18",
       "file": "/artifacts/acquired/renaissance-technologies/index.html"
+    },
+    {
+      "id": "meta",
+      "title": "Meta",
+      "category": "acquired",
+      "addedOn": "2026-10-19",
+      "releasedOn": "2024-10-28",
+      "file": "/artifacts/acquired/meta/index.html"
     }
   ]
 }

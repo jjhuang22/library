@@ -125,8 +125,8 @@
       "title": "Meta",
       "category": "acquired",
       "branch": "queue/acquired/meta",
-      "reviewStatus": "source-unavailable",
-      "notes": "Original chat reports completion on local-only queued/acquired-selected-episodes; recover that branch and source files before migration or re-verification."
+      "reviewStatus": "verified",
+      "notes": "Recovered full bundle and retained source map from 8cbdb93; prior complete-transcript independent review approved. Rechecked bundle migration; original source review is preserved, not newly invented."
     },
     {
       "id": "mars-inc",
