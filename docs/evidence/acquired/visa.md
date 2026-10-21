@@ -1,3 +1,4 @@
+<!-- artifact-review: {"status":"verified","bundleTree":"6e4c02f5a6b3b42c766e6ea73a47198b2052af53"} -->
 # Visa — source evidence
 
 Official episode: <https://www.acquired.fm/episodes/visa>. Complete spoken transcript used: <https://podscripts.co/podcasts/acquired/visa> (third-party mirror, not official).
