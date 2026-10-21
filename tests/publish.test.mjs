@@ -1,11 +1,11 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { execFileSync } from 'node:child_process';
-import { mkdtemp, mkdir, writeFile, readFile, cp, rm } from 'node:fs/promises';
+import { mkdtemp, mkdir, writeFile, readFile, readdir, cp, rm } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { preparePublication, publishPrepared } from '../scripts/publish-artifact.mjs';
+import { preparePublication, publishPrepared, listQueue } from '../scripts/publish-artifact.mjs';
 
 const sourceRoot = fileURLToPath(new URL('../', import.meta.url));
 const git = (root, ...args) => execFileSync('git', args, { cwd: root, encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'] }).trim();
@@ -23,8 +23,6 @@ async function fixture(t, { status = 'verified', sharedChange = false, missingEv
   await writeFile(path.join(root, 'public/index.html'), '<h1>Library</h1>');
   await writeFile(path.join(root, '.gitignore'), 'dist/\n');
   await json(path.join(root, 'package.json'), { type: 'module' });
-  const registry = { artifacts: ['one', 'two'].map(id => ({ id, title: id, category: 'acquired', branch: `queue/acquired/${id}`, reviewStatus: status })), authoring: { active_episode: null, episodes: [{ id: 'one', status: 'completed' }, { id: 'future', status: 'pending' }], excluded_by_user: ['excluded'] } };
-  await json(path.join(root, 'content/queue.json'), registry);
   await json(path.join(root, 'content/library.json'), { categories: [{ id: 'acquired', title: 'Acquired' }], artifacts: [] });
   git(root, 'add', '.'); git(root, 'commit', '-m', 'Main foundation');
   git(root, 'remote', 'add', 'origin', remote); git(root, 'push', 'origin', 'main');
@@ -35,7 +33,10 @@ async function fixture(t, { status = 'verified', sharedChange = false, missingEv
   await writeFile(path.join(root, 'public/artifacts/acquired/one/images/cover.png'), 'watercolor');
   const catalog = { categories: [{ id: 'acquired', title: 'Acquired' }], artifacts: [{ id: 'one', category: 'acquired', title: 'One', addedOn: '2026-10-18', releasedOn: '2024-03-18', file: '/artifacts/acquired/one/index.html' }] };
   await json(path.join(root, 'content/library.json'), catalog);
-  if (!missingEvidence) { await mkdir(path.join(root, 'docs/evidence/acquired'), { recursive: true }); await writeFile(path.join(root, 'docs/evidence/acquired/one.md'), '# Source map\n\nVerified source passages.\n'); }
+  git(root, 'add', 'public', 'content');
+  const tree = git(root, 'write-tree');
+  const bundleTree = git(root, 'rev-parse', `${tree}:public/artifacts/acquired/one`);
+  if (!missingEvidence) { await mkdir(path.join(root, 'docs/evidence/acquired'), { recursive: true }); await writeFile(path.join(root, 'docs/evidence/acquired/one.md'), `<!-- artifact-review: ${JSON.stringify({ status, bundleTree })} -->\n# Source map\n\nVerified source passages.\n`); }
   if (sharedChange) await writeFile(path.join(root, 'public/styles.css'), 'unapproved shared change');
   git(root, 'add', '.'); git(root, 'commit', '-m', 'Queue one'); git(root, 'push', 'origin', 'queue/acquired/one');
   git(root, 'switch', 'main'); git(root, 'fetch', 'origin');
@@ -57,15 +58,14 @@ test('selects one episode from an older queue branch and publishes exactly one i
   const saved = JSON.parse(await readFile(path.join(prepared.worktree, 'content/library.json'), 'utf8'));
   assert.deepEqual(saved.artifacts.map(a => a.id), ['newer', 'one']);
   assert.equal(saved.artifacts[1].addedOn, '2026-10-18');
-  assert.deepEqual(JSON.parse(await readFile(path.join(prepared.worktree, 'content/queue.json'), 'utf8')).artifacts.map(a => a.id), ['two']);
-  assert.deepEqual(JSON.parse(await readFile(path.join(prepared.worktree, 'content/queue.json'), 'utf8')).authoring, JSON.parse(await readFile(path.join(f.root, 'content/queue.json'), 'utf8')).authoring);
+  assert.deepEqual(await readdir(path.join(prepared.worktree, 'content')), ['library.json']);
   assert.equal(await readFile(path.join(prepared.worktree, 'dist/acquired/one/images/cover.png'), 'utf8'), 'watercolor');
   const pushed = await publishPrepared(f);
   assert.equal(pushed.status, 'pushed');
   assert.equal(git(f.root, 'show', '-s', '--format=%P', pushed.commit), prior);
   assert.equal(git(f.root, 'rev-list', '--count', `${prior}..${pushed.commit}`), '1');
   const files = git(f.root, 'diff', '--name-only', prior, pushed.commit).split('\n');
-  assert.ok(files.every(file => ['content/library.json', 'content/queue.json', 'docs/evidence/acquired/one.md'].includes(file) || file.startsWith('public/artifacts/acquired/one/')));
+  assert.ok(files.every(file => ['content/library.json', 'docs/evidence/acquired/one.md'].includes(file) || file.startsWith('public/artifacts/acquired/one/')));
   const again = await preparePublication(f);
   assert.equal(again.status, 'already-published');
   assert.equal((await publishPrepared(f)).status, 'already-published');
@@ -74,7 +74,7 @@ test('selects one episode from an older queue branch and publishes exactly one i
 for (const [name, options, pattern] of [
   ['pending source reviews', { status: 'needs-source-review' }, /complete source review/],
   ['shared file changes hidden in a queue branch', { sharedChange: true }, /unrelated file/],
-  ['missing retained evidence', { missingEvidence: true }, /does not exist|exists on disk|path/]
+  ['missing retained evidence', { missingEvidence: true }, /complete source review.*Missing evidence/]
 ]) test(`refuses ${name}`, async t => {
   const f = await fixture(t, options);
   await assert.rejects(preparePublication(f), pattern);
@@ -123,8 +123,8 @@ test('rejects unrelated staged edits even when working bytes match main', async 
 test('requires renewed preparation when the selected queue changes or review is revoked', async t => {
   const f = await fixture(t); await preparePublication(f);
   git(f.root, 'switch', 'queue/acquired/one');
-  const file = path.join(f.root, 'content/queue.json'); const registry = JSON.parse(await readFile(file, 'utf8'));
-  registry.artifacts[0].reviewStatus = 'needs-source-review'; await json(file, registry);
+  const file = path.join(f.root, 'docs/evidence/acquired/one.md');
+  await writeFile(file, (await readFile(file, 'utf8')).replace('\"verified\"', '\"needs-source-review\"'));
   git(f.root, 'add', '.'); git(f.root, 'commit', '-m', 'Revoke incomplete source review'); git(f.root, 'push', 'origin', 'queue/acquired/one');
   git(f.root, 'switch', 'main');
   await assert.rejects(publishPrepared(f), /Queue source changed/);
@@ -138,4 +138,43 @@ test('rejects evidence deleted or emptied after preparation', async t => {
   await assert.rejects(publishPrepared(f), /ENOENT/);
   await writeFile(file, '   ');
   await assert.rejects(publishPrepared(f), /nonempty ordinary evidence/);
+});
+
+test('discovers remote branches without a registry, distinguishes drafts, hides publications and prunes deleted branches', async t => {
+  const f = await fixture(t);
+  git(f.root, 'branch', 'queue/books/two', 'main');
+  git(f.root, 'push', 'origin', 'queue/books/two');
+  const items = await listQueue(f.root);
+  assert.deepEqual(items.map(a => [a.category, a.id, a.reviewStatus]), [['acquired', 'one', 'verified'], ['books', 'two', 'draft']]);
+  await preparePublication(f); await publishPrepared(f);
+  assert.deepEqual((await listQueue(f.root)).map(a => a.id), ['two']);
+  git(f.root, 'push', 'origin', '--delete', 'queue/books/two');
+  assert.deepEqual(await listQueue(f.root), []);
+});
+
+test('bundle edits invalidate readiness until the changed bundle is reviewed', async t => {
+  const f = await fixture(t);
+  git(f.root, 'switch', 'queue/acquired/one');
+  await writeFile(path.join(f.root, 'public/artifacts/acquired/one/index.html'), '<h1>Unreviewed replacement</h1>');
+  git(f.root, 'add', '.'); git(f.root, 'commit', '-m', 'Change content without renewed review'); git(f.root, 'push', 'origin', 'queue/acquired/one');
+  git(f.root, 'switch', 'main');
+  assert.equal((await listQueue(f.root))[0].reviewStatus, 'needs-source-review');
+  await assert.rejects(preparePublication(f), /Bundle changed after review/);
+});
+
+test('refuses changes to the prepared bundle or evidence after the reviewed source was selected', async t => {
+  const f = await fixture(t); const prepared = await preparePublication(f);
+  await writeFile(path.join(prepared.worktree, 'public/artifacts/acquired/one/index.html'), '<h1>Unreviewed prepared edit</h1>');
+  await assert.rejects(publishPrepared(f), /changed after source review/);
+  assert.equal(git(f.root, 'rev-parse', 'origin/main'), f.main);
+});
+
+test('preserves selected source metadata and refuses unreviewed catalog changes', async t => {
+  const f = await fixture(t); const prepared = await preparePublication(f);
+  const file = path.join(prepared.worktree, 'content/library.json');
+  const catalog = JSON.parse(await readFile(file, 'utf8'));
+  Object.assign(catalog.artifacts[0], { title: 'Changed title', addedOn: '2030-01-01', releasedOn: '2030-01-01' });
+  await json(file, catalog);
+  await assert.rejects(publishPrepared(f), /selected source metadata/);
+  assert.equal(git(f.root, 'rev-parse', 'origin/main'), f.main);
 });

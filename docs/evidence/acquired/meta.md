@@ -1,3 +1,4 @@
+<!-- artifact-review: {"status":"verified","bundleTree":"9b3f43879d328229d4ba2c43b5c1f2830b2c8824"} -->
 # Meta — episode evidence map
 
 ## Sources and provenance
