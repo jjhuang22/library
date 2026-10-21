@@ -1,3 +1,4 @@
+<!-- artifact-review: {"status":"verified","bundleTree":"336816176855dd13600344e21bcc8921e61fa543"} -->
 # Google: The AI Company — source evidence
 
 ## Provenance and corrections
