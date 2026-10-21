@@ -12,40 +12,40 @@ Line ranges refer to the linked mirror’s numbered transcript extraction; times
 
 | Chapter | Cue | Passage |
 |---|---|---|
-| [A business education before a computer education](index.html#gates) | 00:03:06 | 48–76 |
-| [The company that was the computer industry](index.html#computing) | 00:13:48 | 77–93;  665–670 |
-| [Learn the machine, then negotiate a royalty](index.html#programmers) | 00:20:22 | 94–111 |
-| [The traffic machine that taught them emulation](index.html#trafo) | 00:25:51 | 111–133 |
-| [Waiting for a computer powerful enough to matter](index.html#harvard) | 00:33:13 | 134–147 |
-| [Sell the possibility, then build the interpreter](index.html#altair) | 00:40:00 | 153–168 |
-| [An unlikely hardware company makes the market](index.html#mits) | 00:45:45 | 169–190 |
-| [The first contract gave away too much control](index.html#license) | 00:52:42 | 190–201 |
-| [A license could travel with the machine](index.html#copyright) | 00:56:58 | 202–217 |
-| [Win the right to sell to everyone](index.html#freedom) | 01:02:43 | 218–243 |
-| [Make compatibility the easy choice](index.html#spiral) | 01:09:30 | 233–250 |
-| [International before there was much company](index.html#japan) | 01:15:14 | 250–265;  official correction 291 |
-| [IBM starts a garage inside the elephant](index.html#chess) | 01:29:39 | 272–310 |
-| [The operating system opportunity almost passed by](index.html#digital) | 01:36:25 | 311–327 |
-| [Buy a beginning, then turn it into DOS](index.html#dos) | 01:42:00 | 328–340 |
-| [Let IBM create demand; retain the right to serve it](index.html#ibmdeal) | 01:47:02 | 341–357 |
-| [The standard escapes its original manufacturer](index.html#clones) | 01:53:20 | 357–380;  official correction 288 |
-| [Outside money arrived after the cash machine worked](index.html#capital) | 02:01:55 | 381–410 |
-| [Multiplan loses to a focused spreadsheet](index.html#applications) | 02:12:26 | 411–440;  official correction 283 |
-| [The Mac needed Excel, and Excel needed a new platform](index.html#mac) | 02:24:02 | 447–464;  official correction 290 |
-| [A suite starts as a box and a price](index.html#office) | 02:30:25 | 465–475;  790 |
-| [The graphical hedge was not the favored project](index.html#windows) | 02:34:29 | 476–499;  official correction 284 |
-| [Staying on the bear while encouraging the rebels](index.html#os2) | 02:41:52 | 495–510;  official correction 285–287 |
-| [Windows finally becomes the main bet](index.html#plan-a) | 02:47:15 | 511–534;  668–669 |
-| [Build the applications, recruit the developers, win the OEMs](index.html#ecosystem) | 02:55:09 | 534–549 |
-| [Employees brought the opening; Ballmer built the sales motion](index.html#enterprise) | 03:00:24 | 550–569 |
-| [Two implementations of the Windows future](index.html#nt) | 03:07:22 | 570–584;  official correction 289 |
-| [An ordinary destination rather than a distant promise](index.html#chicago) | 03:13:28 | 585–592;  603–618;  621–624 |
-| [Software becomes a mass-market event](index.html#launch) | 03:16:03 | 593–631 |
-| [Capital efficiency preserved unusually large ownership](index.html#founders) | 03:28:26 | 628–657 |
-| [Conviction about software, flexibility about the route](index.html#hedges) | 03:38:47 | 658–670 |
-| [Talent, local markets and software that is never finished](index.html#organization) | 03:42:55 | 671–705 |
-| [Seven possible powers, with unequal strength](index.html#powers) | 03:53:23 | 706–730 |
-| [The place where the industry had to meet](index.html#conclusion) | 04:00:58 | 730–748 |
+| A business education before a computer education (`#gates`) | 00:03:06 | 48–76 |
+| The company that was the computer industry (`#computing`) | 00:13:48 | 77–93;  665–670 |
+| Learn the machine, then negotiate a royalty (`#programmers`) | 00:20:22 | 94–111 |
+| The traffic machine that taught them emulation (`#trafo`) | 00:25:51 | 111–133 |
+| Waiting for a computer powerful enough to matter (`#harvard`) | 00:33:13 | 134–147 |
+| Sell the possibility, then build the interpreter (`#altair`) | 00:40:00 | 153–168 |
+| An unlikely hardware company makes the market (`#mits`) | 00:45:45 | 169–190 |
+| The first contract gave away too much control (`#license`) | 00:52:42 | 190–201 |
+| A license could travel with the machine (`#copyright`) | 00:56:58 | 202–217 |
+| Win the right to sell to everyone (`#freedom`) | 01:02:43 | 218–243 |
+| Make compatibility the easy choice (`#spiral`) | 01:09:30 | 233–250 |
+| International before there was much company (`#japan`) | 01:15:14 | 250–265;  official correction 291 |
+| IBM starts a garage inside the elephant (`#chess`) | 01:29:39 | 272–310 |
+| The operating system opportunity almost passed by (`#digital`) | 01:36:25 | 311–327 |
+| Buy a beginning, then turn it into DOS (`#dos`) | 01:42:00 | 328–340 |
+| Let IBM create demand; retain the right to serve it (`#ibmdeal`) | 01:47:02 | 341–357 |
+| The standard escapes its original manufacturer (`#clones`) | 01:53:20 | 357–380;  official correction 288 |
+| Outside money arrived after the cash machine worked (`#capital`) | 02:01:55 | 381–410 |
+| Multiplan loses to a focused spreadsheet (`#applications`) | 02:12:26 | 411–440;  official correction 283 |
+| The Mac needed Excel, and Excel needed a new platform (`#mac`) | 02:24:02 | 447–464;  official correction 290 |
+| A suite starts as a box and a price (`#office`) | 02:30:25 | 465–475;  790 |
+| The graphical hedge was not the favored project (`#windows`) | 02:34:29 | 476–499;  official correction 284 |
+| Staying on the bear while encouraging the rebels (`#os2`) | 02:41:52 | 495–510;  official correction 285–287 |
+| Windows finally becomes the main bet (`#plan-a`) | 02:47:15 | 511–534;  668–669 |
+| Build the applications, recruit the developers, win the OEMs (`#ecosystem`) | 02:55:09 | 534–549 |
+| Employees brought the opening; Ballmer built the sales motion (`#enterprise`) | 03:00:24 | 550–569 |
+| Two implementations of the Windows future (`#nt`) | 03:07:22 | 570–584;  official correction 289 |
+| An ordinary destination rather than a distant promise (`#chicago`) | 03:13:28 | 585–592;  603–618;  621–624 |
+| Software becomes a mass-market event (`#launch`) | 03:16:03 | 593–631 |
+| Capital efficiency preserved unusually large ownership (`#founders`) | 03:28:26 | 628–657 |
+| Conviction about software, flexibility about the route (`#hedges`) | 03:38:47 | 658–670 |
+| Talent, local markets and software that is never finished (`#organization`) | 03:42:55 | 671–705 |
+| Seven possible powers, with unequal strength (`#powers`) | 03:53:23 | 706–730 |
+| The place where the industry had to meet (`#conclusion`) | 04:00:58 | 730–748 |
 
 ## Consequential claims and qualifications
 
