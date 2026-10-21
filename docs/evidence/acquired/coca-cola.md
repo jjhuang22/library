@@ -1,67 +1,51 @@
-# Coca-Cola — source evidence
+# Coca-Cola — source map
 
-Episode and sources The narrative follows the recording and the hosts’ analysis. Figures, estimates, and business conditions refer to their discussion at the time of recording, rather than later updates. Official Acquired episode page : November 24, 2025 release date and four published corrections. The corrections distinguish modern Fanta from its wartime namesake, clarify Sprite’s independent origin, identify the Depression as deflationary, and qualify the assessment of Berkshire’s returns by recognizing dividend reinvestment. Podscripts transcript mirror : the full recording transcript used for events, arguments, and listening cues. This is an automated third-party transcript, not an official Acquired transcript. Obvious transcription errors in names and isolated dates have been avoided or resolved from the surrounding discussion. Listening cues are verified paragraph starts in this mirror’s approximately 4:04:08 recording version. The navigation endpoint, 3:55:14, is the paragraph boundary after the main conclusion. Brief closing trivia and unrelated carve-outs continue afterward. The Peruvian-operation anecdote is drawn from that closing trivia and placed with the earlier ingredient history. No facts have been imported from the episode bibliography or the mirror’s summaries. The bottle-crate navigation maps elapsed listening time horizontally. Its moving readout interpolates reading position and does not play audio. Tiny chapter markers have equivalent large targets in the Chapters menu. The two original watercolors are conceptual illustrations; the explanatory visuals describe the hosts’ arguments without simulating financial returns.
+Bundle: `public/artifacts/acquired/coca-cola/index.html`
+Released 2025-11-24 · Original creation 2026-10-18 · Source access rechecked 2026-10-20.
 
-## Passage anchors and timing
+Official episode: https://www.acquired.fm/episodes/coca-cola. The official page and `#transcript` anchor were sought first; the web reader exposes Sources/overview, not the full conversation or an actionable Transcript tab, and rendered-site access is unavailable under the environment's network policy. This is a retrieval limitation, not evidence that the website has no transcript. Official metadata and all four corrections below were checked.
 
-These chapter titles and paragraph-start cues locate the retained source map in the transcript version identified above. Legacy retrieval line numbers below are secondary locators, not timestamps. The original complete-transcript review and its qualifications are preserved; bundle migration is not a new retrospective source audit.
+Transcript used: https://podscripts.co/podcasts/acquired/coca-cola — automated third-party mirror, not official. The established complete-source review read the full conversation, analysis, trivia, and credits. This map preserves that actual source work. The recovered narrative, official corrections, consequential financial measures, Seven Powers and closing discussion were rechecked against the same mirror on the access date above. Mirror summaries and outside bibliography are excluded.
 
-- `pemberton` — 0:12:14, A pharmacist searches for another market.
-- `coupons` — 0:25:07, A free glass aligned the whole chain.
-- `candler` — 0:36:10, The syrup company learned to blanket a country.
-- `bottling` — 0:42:06, The contract that made a system.
-- `identity` — 0:54:32, Making the real thing recognizable.
-- `woodruff` — 1:09:40, Woodruff made the promise consistent.
-- `pepsi` — 1:37:39, Twice as much for a nickel.
-- `war` — 1:48:35, A wartime route to the world.
-- `postwar` — 1:57:26, Pepsi found the people Coke overlooked.
-- `hilltop` — 2:17:31, A global feeling, assembled in an advertisement.
-- `challenge` — 2:27:58, The challenge came from a card table.
-- `diet` — 2:42:45, A new formula could be a separate promise.
-- `new-coke` — 2:54:43, The research measured the wrong decision.
-- `classic` — 3:05:43, The return was stronger than the retreat.
-- `beverages` — 3:16:42, The original business was hard to escape.
-- `today` — 3:27:51, The company and the system are different sizes.
-- `powers` — 3:38:01, Branding made scale more valuable.
-- `conclusion` — 3:50:22, A durable system still needed decisions.
+Listening cues are paragraph starts in the same mirror version, whose closing-music cue is 4:04:08. The 3:55:14 navigation endpoint is the boundary after the main conclusion, not total audio duration. Bottle-crate geometry maps elapsed time linearly; reading interpolation is not playback. Closing ingredient trivia is placed with the earlier history.
 
 ## Sections
 
-1. A pharmacist searches for another market — 00:12:14; transcript L57–110. Supports the events, figures, and analysis in the section.
+1. A pharmacist searches for another market — 00:12:14. Pemberton, patent medicines, prohibition, Robinson and the new drink; no recipe or medical endorsement.
 
-2. A free glass aligned the whole chain — 00:25:07; transcript L110–140. Supports the events, figures, and analysis in the section.
+2. A free glass aligned the whole chain — 00:25:07. Coupons align fountain operators, customers and syrup purchases; Candler consolidates rights.
 
-3. The syrup company learned to blanket a country — 00:36:10; transcript L132–154. Supports the events, figures, and analysis in the section.
+3. The syrup company learned to blanket a country — 00:36:10. Company versus fountain revenue/profit, national advertising and compact syrup distribution.
 
-4. The contract that made a system — 00:42:06; transcript L154–191; L241–242; L296–306. Supports the events, figures, and analysis in the section.
+4. The contract that made a system — 00:42:06. 1899 contract, assignability/perpetual fixed price, parent/local bottlers and reserved fountain channel.
 
-5. Making the real thing recognizable — 00:54:32; transcript L192–229; L686–690. Supports the events, figures, and analysis in the section.
+5. Making the real thing recognizable — 00:54:32. Trademark litigation, changed ingredients, contour bottle and coca/cocoa distinction.
 
-6. Woodruff made the promise consistent — 01:09:40; transcript L230–299. Supports the events, figures, and analysis in the section.
+6. Woodruff made the promise consistent — 01:09:40. 1919 sale, 1923 Woodruff leadership, emotional advertising, Santa imagery, quality control and cooler network.
 
-7. Twice as much for a nickel — 01:37:39; transcript L300–328; official Depression correction. Supports the events, figures, and analysis in the section.
+7. Twice as much for a nickel — 01:37:39; official Depression correction. Deflation correction, Pepsi’s twelve-ounce nickel bottle and incumbent constraints.
 
-8. A wartime route to the world — 01:48:35; transcript L335–360; official Fanta correction. Supports the events, figures, and analysis in the section.
+8. A wartime route to the world — 01:48:35; official Fanta correction. Military-supply terms, local plants, uncertain bottle count and modern-Fanta correction.
 
-9. Pepsi found the people Coke overlooked — 01:57:26; transcript L361–409. Supports the events, figures, and analysis in the section.
+9. Pepsi found the people Coke overlooked — 01:57:26. Racial exclusion, Pepsi customer/TV positioning, Tab, McDonald’s and qualified taste explanations.
 
-10. A global feeling, assembled in an advertisement — 02:17:31; transcript L410–431. Supports the events, figures, and analysis in the section.
+10. A global feeling, assembled in an advertisement — 02:17:31. Hilltop production setbacks, budget and emotional/global positioning.
 
-11. The challenge came from a card table — 02:27:58; transcript L447–484; earlier McCann research L380–383. Supports the events, figures, and analysis in the section.
+11. The challenge came from a card table — 02:27:58; earlier McCann research. Sculley/PET packaging, Dallas bottler tests, national Challenge and bottled versus total share.
 
-12. A new formula could be a separate promise — 02:42:45; transcript L485–517. Supports the events, figures, and analysis in the section.
+12. A new formula could be a separate promise — 02:42:45. Goizueta/Keough, diversification, distinct Diet Coke formula, July 1982 launch and taste positioning.
 
-13. The research measured the wrong decision — 02:54:43; transcript L517–544. Supports the events, figures, and analysis in the section.
+13. The research measured the wrong decision — 02:54:43. Tests versus replacement decision, Woodruff blessing as Goizueta’s account, consumer reaction and coexistence disagreement.
 
-14. The return was stronger than the retreat — 03:05:43; transcript L545–574; official Berkshire correction. Supports the events, figures, and analysis in the section.
+14. The return was stronger than the retreat — 03:05:43; official Berkshire correction. 79 days/July 10 Classic return, unplanned publicity, Berkshire dividend correction and Ovitz/CAA.
 
-15. The original business was hard to escape — 03:16:42; transcript L575–602. Supports the events, figures, and analysis in the section.
+15. The original business was hard to escape — 03:16:42. Category changes, rejected Quaker/Gatorade deal, minority Monster investment/brand swap/distribution and refranchising.
 
-16. The company and the system are different sizes — 03:27:51; transcript L603–633; official Sprite correction. Supports the events, figures, and analysis in the section.
+16. The company and the system are different sizes — 03:27:51; official Sprite correction. Sprite correction, 2.2bn servings, $47bn parent/$175bn system scopes, net versus gross margins.
 
-17. Branding made scale more valuable — 03:38:01; transcript L633–667. Supports the events, figures, and analysis in the section.
+17. Branding made scale more valuable — 03:38:01. Branding/scale, no network effect, little switching cost, uncertain process power and formula/resource disagreement.
 
-18. A durable system still needed decisions — 03:50:22; transcript L668–685. Supports the events, figures, and analysis in the section.
+18. A durable system still needed decisions — 03:50:22. Ham-sandwich disagreement, partner incentives, Woodruff mantra, repetition and health/packaging concerns.
 
 ## Consequential qualifications
 
