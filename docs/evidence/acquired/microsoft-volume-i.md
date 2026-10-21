@@ -1,3 +1,4 @@
+<!-- artifact-review: {"status":"verified","bundleTree":"fd81e46943651f8dcab4faaea566ace8fa7ce28a"} -->
 # Microsoft Volume I — evidence map
 
 ## Sources and timing
