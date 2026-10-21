@@ -4,14 +4,14 @@ Creating and publishing are separate actions. A new companion defaults to a save
 
 ## Queue an artifact
 
-1. Fetch current main and create `queue/<collection>/<id>` from it. Use one branch per artifact, even when several are requested together. Register the branch in `content/queue.json` on main in a metadata-only update; registration does not deploy artifact files.
+1. Fetch current main and create `queue/<collection>/<id>` from it. Use one branch per artifact, even when several are requested together. Register the branch in `content/queue.json` on main in a metadata-only update; registration does not deploy artifact files. Preserve all other registry entries and the `authoring` plan.
 2. Read the collection's authoring instructions. For Acquired, find the complete transcript on its official episode website first; follow `docs/acquired/authoring.md` if that text cannot be retrieved.
 3. Save `public/artifacts/<collection>/<id>/index.html` and all episode-specific images in that directory. Root-relative asset links must name that bundle. General shared assets belong on main before queue branches depend on them.
 4. Add exactly that episode to the branch's `content/library.json`, preserving its original `addedOn`. Acquired also requires the original `releasedOn`; seasons derive from that release date. Keep permanent source evidence in `docs/evidence/<collection>/<id>.md`.
 5. Set that branch's queue entry to `verified` only after reading the full transcript, checking consequential claims and corrections, and completing its evidence map. A reviewer may use the map but must check the source. `needs-source-review` means the branch can be preserved and previewed but cannot yet be published by the script. Missing legacy maps require a real review, not invented audit notes.
-6. Build, test, and inspect desktop and mobile rendering, image loading, links, and navigation. Commit all source and assets, and push the individual queue branch for backup. Queue branches can trigger Vercel previews; only main is the production publication boundary. GitHub and preview visibility are not confidentiality controls.
+6. Build, test, and inspect desktop and mobile rendering, image loading, links, and navigation. Commit all source and assets, and push the individual queue branch for backup. Copy the completed evidence map to the same path on main with the queue registration. Run `npm run evidence:check` there. Queue branches can trigger Vercel previews; only main is the production publication boundary. GitHub and preview visibility are not confidentiality controls.
 
-`npm run queue:list` lists registered queue branches. Queue entry notes record concrete outstanding work; evidence maps contain source evidence rather than production logs. The branch's selected queue entry is authoritative for its current source-review status; main's registry is a discovery index.
+`npm run queue:list` lists registered queue branches. Evidence maps contain source evidence rather than production logs. The branch's selected queue entry is authoritative for its current source-review status; main's registry is a discovery index.
 
 ## Publish one episode
 
@@ -32,6 +32,12 @@ The tool defaults to `--prepare`; `--push` is the explicit remote-write step. Th
 - Do not delete queue or archive branches automatically. After successful publication, main's catalog determines published status even if an old queue branch or archival combined branch still contains the episode.
 - The build publishes only catalog-listed bundles, plus the library shell and shared assets. Removing a catalog entry excludes its bundle from dist even if its source folder remains in a branch. Evidence, the queue registry, and source-review notes are never copied to dist.
 
-## Legacy cleanup
+## Scheduled authoring and retained evidence
 
-The migration inventory is in `docs/queue.md`. Previously combined sources remain recoverable in Git history. Canonical reader URLs stay `/<collection>/<id>/`; generated copies preserve old `/artifacts/<collection>/<id>.html` links. Artwork extraction preserves image bytes and appearance. Existing source maps move to the common evidence directory; missing maps are not silently declared complete.
+`content/queue.json` is the single source of queue state. Its `artifacts` array locates prepared branches and their source-review status. Its `authoring` object retains the requested episode order, active episode, attempts, blockers, original completion commits, independent review outcome, and exclusions. `completed` means authored and reviewed; main's catalog alone determines whether an episode is published. Publishing removes only the selected registry entry and preserves the authoring history.
+
+The scheduled loop reads current main's instructions and state at each run, resumes an active episode or selects the next unfinished actionable episode in order, and uses one author at a time with a separate independent reviewer. It commits and pushes the full bundle on `queue/<collection>/<id>`. After review and browser verification, a metadata-only main update registers the branch, retains its evidence map, and updates authoring progress. It never puts queued HTML or artwork on main or calls the publish command. Fetch and reconcile concurrent metadata updates before pushing; never overwrite another run's progress. Store any execution lock in Git's administrative directory, and verify worker liveness before treating a lock as active. Report capability blockers honestly rather than repeatedly retrying unchanged failures.
+
+Keep one concise evidence map for every published and completed queued artifact on main, even while its HTML and artwork remain on its queue branch. This makes coverage discoverable without checking out twenty branches. The branch retains the matching map used for its own review. Planned episodes with no artifact have no map yet. `npm run evidence:check` verifies coverage against the catalog and completed queue registry. Maps are maintainer documentation, never reader-facing build output. Do not retain separate migration inventories, handoff documents, duplicate queue state, temporary source copies, or test logs as standing documentation.
+
+Previously combined sources remain recoverable in Git history. Canonical reader URLs stay `/<collection>/<id>/`; generated copies preserve old `/artifacts/<collection>/<id>.html` links. Preserve artwork bytes and original creation dates during structural changes.
