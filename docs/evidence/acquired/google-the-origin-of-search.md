@@ -1,119 +1,52 @@
 # Google: The Origin of Search — source evidence
 
-Episode and sources This companion follows the recording through the hosts’ concluding playbook, Seven Powers discussion and final synthesis. Estimates and present-tense market comparisons refer to their June 2025 discussion. Official Acquired episode page : verifies June 30, 2025. Its corrections heading had no listed corrections when retrieved. Acquired calls the season Summer 2025; the Library groups January–August as Spring 2025. Full Podscripts transcript mirror : automated third-party transcription of the episode, titled Google. This is not an official Acquired transcript. The full transcript, including analysis, carve-outs and credits, was read; neither the mirror’s summary nor the official bibliography supplies substantive material here. All listening cues are paragraph starts from one mirror timing version. Its closing begins at 3:39:06. The navigation endpoint 3:31:42 is the final main-analysis paragraph before personal carve-outs, not the recording duration. Chapters follow listening order; the Overture and Toolbar branches explicitly revisit earlier events. These cues may differ from players with other advertisements. The linked-page navigation is a conceptual web graph with a linear time axis: horizontal position maps elapsed time, while node heights and connecting links are decorative. The moving reading clock interpolates document position and does not play audio. The menu offers larger chapter targets. Transcription noise is resolved from context; uncertain anecdotes, conflicting naming stories and the hosts’ framework disagreements remain qualified. Both watercolors are original generated conceptual scenes, not historical photographs or exact reconstructions. Diagrams are qualitative. The auction table repeats a simplified example, separate from quality-adjusted ranking. Company revenue, operating income and estimated first-party advertising gross margins have different scopes and are not interchangeable.
+## Provenance and corrections
 
-## Passage anchors and timing
+Official episode: [Acquired — Google: The Origin of Search](https://www.acquired.fm/episodes/google), June 30, 2025. Its Summer 2025 label maps to Spring 2025 under the library’s January–August convention. Created October 19, 2026.
 
-These chapter titles and paragraph-start cues locate the retained source map in the transcript version identified above. Legacy retrieval line numbers below are secondary locators, not timestamps. The original complete-transcript review and its qualifications are preserved; bundle migration is not a new retrospective source audit.
+The original October 19 record documents a complete read of the [Podscripts same-recording mirror, titled Google](https://podscripts.co/podcasts/acquired/google), through analysis, personal carve-outs and closing credits, plus independent full-source review. That actual earlier review is retained. The October 20 audit read the full companion and targeted consequential source passages and the complete ending, rather than claiming a fresh complete transcript read.
 
-- `larry` — 0:05:07, A childhood inside computing.
-- `sergey` — 0:09:50, Two equals find a difficult problem.
-- `annotations` — 0:15:56, The search engine began as annotations.
-- `backrub` — 0:23:40, To see incoming links, copy the web.
-- `excite` — 0:30:09, Better search could be bad for a portal.
-- `google` — 0:35:05, A simple page overwhelms Stanford.
-- `seed` — 0:43:51, A check written before the company existed.
-- `search-market` — 0:49:01, Relevance was only one of three requirements.
-- `infrastructure` — 0:59:34, Make unreliable parts into a reliable system.
-- `systems` — 1:09:14, Software absorbed the compromises.
-- `series-a` — 1:15:08, The business plan looked somewhere else.
-- `first-ads` — 1:26:03, Proving intent with an Amazon book link.
-- `portals` — 1:31:49, Powered by Google became a brand.
-- `schmidt` — 1:41:27, A third partner joins the founders.
-- `overture` — 1:48:47, Bill Gross found the paid-search model.
-- `overture-limits` — 1:56:51, An idea can be right before the market accepts it.
-- `ad-rank` — 2:05:53, Bid and relevance belonged in the same calculation.
-- `sunset` — 2:13:03, Replacing a working business was painful.
-- `aol` — 2:21:11, The $100 million promise.
-- `liquidity` — 2:32:50, More scale raised revenue per search.
-- `toolbar` — 2:39:06, The search box moved into the browser.
-- `adsense` — 2:48:43, A publisher’s page became advertising inventory.
-- `never-finished` — 2:54:44, Search was never finished.
-- `ipo` — 3:02:26, Going public without giving up control.
-- `gmail-bridge` — 3:11:28, One more reason to return to Google.
-- `playbook` — 3:17:21, The hosts’ explanation has several moving parts.
-- `timing` — 3:21:29, The window was narrow, and the analogy remains tentative.
-- `powers` — 3:24:18, Power, with the uncertainties left visible.
+Official-first retrieval was rechecked at the episode’s [Transcript view](https://www.acquired.fm/episodes/google#transcript). The available reader returned bibliography/notes and metadata, not dialogue or a further transcript link. Direct client-rendered tab access remained unavailable under the already established cloud network restriction. The complete mirror is the fallback, explicitly not an official transcript. The retrievable official corrections heading has no entries. Bibliography and mirror-summary material are excluded.
 
-## Sections
+## Section passages
 
-1. **A childhood inside computing** (`#larry`), 00:05:07: L61–75. Supports chronology, figures, anecdotes and attributed analysis in this section.
+Each cue is a paragraph start in the one Podscripts version used by the companion, with the qualifications preserved by the original complete-source review.
 
-2. **Two equals find a difficult problem** (`#sergey`), 00:09:50: L75–94. Supports chronology, figures, anecdotes and attributed analysis in this section.
+| Section | Cue | Content and qualification |
+| --- | --- | --- |
+| [A childhood inside computing](#larry) | 00:05:07 | Larry’s 1973 birth, academic computing family, Stanford sabbatical and 1995 studies; commercial ambition alongside research, not an accidental business. |
+| [Two equals find a difficult problem](#sergey) | 00:09:50 | Sergey’s background and education, 1995 Stanford meeting; tour/bar accounts attributed recollections rather than invented dialogue. |
+| [The search engine began as annotations](#annotations) | 00:15:56 | Annotation origins, Winograd, academic citations; backlink authority distinct from anchor-text description; PageRank name. |
+| [To see incoming links, copy the web](#backrub) | 00:23:40 | Incoming links require crawling the web; Scott Hassan’s research contribution not Google employment; early component/licensing business plan. |
+| [Better search could be bad for a portal](#excite) | 00:30:09 | Excite ~$1 million proposal/demo treated as qualified lore; portal impression incentives explain strategic conflict. |
+| [A simple page overwhelms Stanford](#google) | 00:35:05 | Name/spelling uncertainty, spare interface, ~10,000 daily queries and Stanford bandwidth; commercialization and university equity. |
+| [A check written before the company existed](#seed) | 00:43:51 | Bechtolsheim/Cheriton $100,000 each, Shriram/Bezos $250,000 each; hosts’ $1 million total/$10 million post not reconciled by inventing missing allocation. Bezos return hypothetical if shares retained. |
+| [Relevance was only one of three requirements](#search-market) | 00:49:01 | AltaVista index, relevance/coverage/speed and Yahoo directory; valuable consumer use without a settled monetization plan. |
+| [Make unreliable parts into a reliable system](#infrastructure) | 00:59:34 | Hölzle/Dean and evolving distributed architecture; commodity hardware, reported failure rates, corkboard and qualified neighboring-power anecdote. |
+| [Software absorbed the compromises](#systems) | 01:09:14 | Failure-tolerant software, GFS/MapReduce evolving over time; no claim all later components existed in garage; ambiguous parity details omitted. |
+| [The business plan looked somewhere else](#series-a) | 01:15:08 | Enterprise, portal and ad plan; Red Hat $20,000, $25 million Series A/$100 million post; unprecedented split-round legend qualified; no uncertain quote attribution. |
+| [Proving intent with an Amazon book link](#first-ads) | 01:26:03 | Amazon affiliate links demonstrate conversions, not large revenue; manual fax/CPM/text-first sales precede self-service and auction. |
+| [Powered by Google became a brand](#portals) | 01:31:49 | Netscape capacity/branding and June 2000 Yahoo deal; $10 million investment, ~$7.2 million 2001 fees; not later reverse revenue-sharing economics. Isolated mirror year error resolved by context. |
+| [A third partner joins the founders](#schmidt) | 01:41:27 | Schmidt’s March 2001 arrival in episode; triad and culture, not imported appointment chronology. |
+| [Bill Gross found the paid-search model](#overture) | 01:48:47 | Gross’s February 1998 TED launch; auction/self-service/CPC and performance versus brand goals; hosts’ $100 million first-year/8,000 advertiser figures. |
+| [An idea can be right before the market accepts it](#overture-limits) | 01:56:51 | OpenText 1996 prehistory, narrow patent distinction, Overture ~$360 million settlement/$1.6 billion Yahoo purchase; proposed ~$200 million Google combination not completed deal. |
+| [Bid and relevance belonged in the same calculation](#ad-rank) | 02:05:53 | AdRank expected value and click-through relevance proxy; self-service/quality first under CPM then auction/CPC, mature early 2002. Simplified 20/30/50→31¢ example isolated from quality/multiple positions. |
+| [Replacing a working business was painful](#sunset) | 02:13:03 | Project Sunset pain, Overture tried quality and retreated, Sandberg education; 2001 $86 million revenue/$10 million profit and 2002 $440 million revenue/~$185 million operating income retain scopes. |
+| [The $100 million promise](#aol) | 02:21:11 | AOL 34 million users, 85% revenue share, 7.4 million warrants at $3 and $100 million guarantee; fixed obligation/bankruptcy risk, not investment principal; AOL ~$35 million partial-2002/$200 million 2003 receipts. |
+| [More scale raised revenue per search](#liquidity) | 02:32:50 | Auction liquidity can raise revenue per search as cost scale lowers unit costs; cold-start problem, some 100%/above-100% distribution deals not universal payouts; scale/network classification debated. |
+| [The search box moved into the browser](#toolbar) | 02:39:06 | December 2000 Toolbar, ~7× searches, annual ~$2 versus $10-plus as acquisition-budget arithmetic not precise LTV; bundling/popup blocker, Firefox/Earth, 2004 Pichai; later Safari only brief context. |
+| [A publisher’s page became advertising inventory](#adsense) | 02:48:43 | Content versus query intent; Dean implementation, Wojcicki product leadership and Buchheit idea distinct; HowStuffWorks; publisher majority shares vary, $1 million/day by end 2003. |
+| [Search was never finished](#never-finished) | 02:54:44 | News/20% projects, changing index/200 signals, behavior and synonyms; PageRank not entire enduring asset; 2003 ~$1.5 billion revenue/~$350 million operating income and lower-margin ~$500 million AdSense contribution. |
+| [Going public without giving up control](#ipo) | 03:02:26 | 500-shareholder forcing function and VC/employee incentives debated; control/dual class separate from Dutch auction. $108–135 range, $85 price/$1.7 billion raised/~$23 billion value, ~$100 close; auction disappointed despite later company success. |
+| [One more reason to return to Google](#gmail-bridge) | 03:11:28 | June 2025 ~$2.1 trillion/P-E ~20 remains hosts’ snapshot; April 2004 Gmail gigabyte and Buchheit/AdSense bridge only, not imported later episode history. |
+| [The hosts’ explanation has several moving parts](#playbook) | 03:17:21 | Full multifactor playbook: organic quality, advertising execution, infrastructure, talent, culture, mission and data/liquidity feedback. |
+| [The window was narrow, and the analogy remains tentative](#timing) | 03:21:29 | 2025 AI parallel tentative; paid-answer idea immediately questioned, not advice; narrow window between small directory web and expensive mature index. |
+| [Power, with the uncertainties left visible](#powers) | 03:24:18 | Counter-positioning qualified versus portals; scale/network taxonomy unresolved; advertiser competition negative within same side; early logged-out switching weak, brand limited pricing power but strong employment brand; no strong early cornered resource/process power. Final rare-company synthesis retained. |
 
-3. **The search engine began as annotations** (`#annotations`), 00:15:56: L94–115. Supports chronology, figures, anecdotes and attributed analysis in this section.
+## Rechecked passages and presentation
 
-4. **To see incoming links, copy the web** (`#backrub`), 00:23:40: L116–134. Supports chronology, figures, anecdotes and attributed analysis in this section.
+The October 20 source recheck directly observed the AdRank/CPM-to-CPC/second-price and Sunset sequence at 2:05:53–2:18:38, the AOL guarantee and distribution-liquidity sequence at 2:21:11–2:39:06, and the complete playbook, AI analogy, framework disagreements and final synthesis at 3:17:21–3:31:42. These corroborate the original complete source map without adding outside facts.
 
-5. **Better search could be bad for a portal** (`#excite`), 00:30:09: L135–147. Supports chronology, figures, anecdotes and attributed analysis in this section.
+The link-signal diagram follows 0:19:05–0:25:25 and is not a numeric PageRank algorithm. The auction panel/table follows 2:06:22–2:14:19: expected value, simplified payment and the historical transition remain distinct. The liquidity flow follows 2:33:27–2:39:06, with taxonomy debate at 3:26:19–3:28:36; it is qualitative rather than a growth simulation.
 
-6. **A simple page overwhelms Stanford** (`#google`), 00:35:05: L148–168. Supports chronology, figures, anecdotes and attributed analysis in this section.
-
-7. **A check written before the company existed** (`#seed`), 00:43:51: L176–190. Supports chronology, figures, anecdotes and attributed analysis in this section.
-
-8. **Relevance was only one of three requirements** (`#search-market`), 00:49:01: L191–222. Supports chronology, figures, anecdotes and attributed analysis in this section.
-
-9. **Make unreliable parts into a reliable system** (`#infrastructure`), 00:59:34: L223–250. Supports chronology, figures, anecdotes and attributed analysis in this section.
-
-10. **Software absorbed the compromises** (`#systems`), 01:09:14: L250–262. Supports chronology, figures, anecdotes and attributed analysis in this section.
-
-11. **The business plan looked somewhere else** (`#series-a`), 01:15:08: L270–301. Supports chronology, figures, anecdotes and attributed analysis in this section.
-
-12. **Proving intent with an Amazon book link** (`#first-ads`), 01:26:03: L302–315. Supports chronology, figures, anecdotes and attributed analysis in this section.
-
-13. **Powered by Google became a brand** (`#portals`), 01:31:49: L316–344. Supports chronology, figures, anecdotes and attributed analysis in this section.
-
-14. **A third partner joins the founders** (`#schmidt`), 01:41:27: L345–368. Supports chronology, figures, anecdotes and attributed analysis in this section.
-
-15. **Bill Gross found the paid-search model** (`#overture`), 01:48:47: L369–393. Supports chronology, figures, anecdotes and attributed analysis in this section.
-
-16. **An idea can be right before the market accepts it** (`#overture-limits`), 01:56:51: L394–420. Supports chronology, figures, anecdotes and attributed analysis in this section.
-
-17. **Bid and relevance belonged in the same calculation** (`#ad-rank`), 02:05:53: L421–439. Supports chronology, figures, anecdotes and attributed analysis in this section.
-
-18. **Replacing a working business was painful** (`#sunset`), 02:13:03: L440–459; financial clarification L585–586. Supports chronology, figures, anecdotes and attributed analysis in this section.
-
-19. **The $100 million promise** (`#aol`), 02:21:11: L468–500. Supports chronology, figures, anecdotes and attributed analysis in this section.
-
-20. **More scale raised revenue per search** (`#liquidity`), 02:32:50: L485–490; L501–520. Supports chronology, figures, anecdotes and attributed analysis in this section.
-
-21. **The search box moved into the browser** (`#toolbar`), 02:39:06: L520–549. Supports chronology, figures, anecdotes and attributed analysis in this section.
-
-22. **A publisher’s page became advertising inventory** (`#adsense`), 02:48:43: L550–568; L627–634. Supports chronology, figures, anecdotes and attributed analysis in this section.
-
-23. **Search was never finished** (`#never-finished`), 02:54:44: L568–590. Supports chronology, figures, anecdotes and attributed analysis in this section.
-
-24. **Going public without giving up control** (`#ipo`), 03:02:26: L590–618. Supports chronology, figures, anecdotes and attributed analysis in this section.
-
-25. **One more reason to return to Google** (`#gmail-bridge`), 03:11:28: L619–638. Supports chronology, figures, anecdotes and attributed analysis in this section.
-
-26. **The hosts’ explanation has several moving parts** (`#playbook`), 03:17:21: L636–648. Supports chronology, figures, anecdotes and attributed analysis in this section.
-
-27. **The window was narrow, and the analogy remains tentative** (`#timing`), 03:21:29: L649–656. Supports chronology, figures, anecdotes and attributed analysis in this section.
-
-28. **Power, with the uncertainties left visible** (`#powers`), 03:24:18: L657–681. Supports chronology, figures, anecdotes and attributed analysis in this section.
-
-## Consequential qualifications and visual evidence
-
-- Childhood and partnership: L61–94. Dates1973/1995, family academic backgrounds, Stanford sabbatical, commercial ambition; meeting/tour/bar details attributed recollections, no invented direct quotations.
-- PageRank: L94–125. Annotation origin, academic citations, backlink authority vs anchor-text descriptions distinct; incoming links require crawl. Scott Hassan research contribution not Google employment. Temporal window is hosts’ analysis L118–120,655–656.
-- Failed licenses: L131–147. Excite million-dollar proposal/demo a qualified legend; portal impression incentive explains conflict, not merely inferior taste. Naming uncertainty preserved L148–154.
-- Seed: L176–189. $100k Bechtolsheim,100k Cheriton,250k Shriram,250k Bezos listed, hosts’ million total/$10m post. Listed amounts do not sum to million; do not invent allocation of remainder. Bezos currentstake conditional, no new return figure asserted.
-- Infrastructure: L223–262. GFS/chunks/system described as evolving, not all garage-era implementation. Commodity hardware/corkboard, failure-rate estimates, power-circuit anecdote uncertain, global speed. Parity discussion summarized without reproducing ambiguous bit-setting details. General three-to-five replication count not made mandatory.
-- SeriesA L270–301: enterprise/ads/OEM three-pronged plan; RedHat20k;25mraise100mpost; Sequoia/Kleiner unprecedented split legend qualified. Famous 'paid so much' attribution disputed by hosts and omitted as verbatim quote.
-- Firstads L302–315: Amazonaffiliate conversion validation, not major revenue. Text performance constraint, fax/manualCPM. Portals L316–344: google.com temporarilyoff,Netscape branding,Jun2000Yahoo10minvestment+7.2m2001fees. Transcript’s L329 'June2009' conflicts with immediate1999/2000 chronology and is not adopted.
-- Schmidt L345–368: episode says March2001 arrival; no outside CEO-appointment date imported. Partnership preserved, mission/culture attributed.
-- Overture L375–420:1998TED,100mfirstyear/8000advertisers attributed,OpenText1996 prehistory,nonpatent broadideas vsnarrowpatents,~360msettlementvalue,1.6bYahooacquisition,200mGoogleproposal. No company-specific currentmarketfacts from outside.
-- AdRank L421–450: clickthroughproxy not conversion guarantee; selfservequality/CPM thenCPCauction;2002matureversion; Overture triedqualityandretreated,not first-invention monopolyclaim. Simplified20/30/50→31c table isolated fromqualitymodel,notrealauctionformula. Userfirst incentives hosts’ view not universalperfectadvertisingassertion.
-- Financial scopes L451–459,585–587:2001 revenue86m/profit10m;2002revenue440m/operatingincome185m;2003revenue1.5b/operatingincome~350m;AdSense~500m2003revenue lower margins; highfirstpartyestimatedgrossmargin distinct. No outsidefinancialupdates.
-- AOL L468–500:$1b/$3b/$5bacquisitiondiscussions,34musers,85%revshare,7.4mshares@$3warrants,$100mguarantee,Google lackedguaranteeamount/riskofbankruptcy,35m2002partialyear and200m2003AOLreceipts. Adinventory onboarding crucial; Sandbergsupportorg. Fixedobligation notinvestmentprincipalorprofit.
-- Liquidity L485–490,501–520: costscale and per-queryrevenuescale distinct; coldstart problem,100%/above100% individualrevsharecases notuniversal payout. Counterpositioning/powerclassification not settled.
-- Toolbar L520–549:Dec2000,7xsearches,2vs10plusannualrevenueapprox budgetnotLTV,software/Dellbundling,popupblocker,Firefox,Earth,2004Pichai;laterSafari onlybriefrecordingcontext notimportothercompanion.
-- AdSense L550–568 +Gmailorigin L627–634: contentvsqueryintent,Dean6weekimplementation,Buchheitprototypeidea,Wojcickiproduct,HowStuffWorkstest,publishersmajoritysharesvariable,1m/dayend2003. Not singleinventorclaim.
-- Search L568–590: News20%time,200signalsby2007,behavior/synonymfeedback,PageRanknotentirelastingasset. Cashfreedom attributed notliteral promise unlimitedresourcesforever.
-- IPO L590–618:500shareholderrule,VC/employeeincentivesdisagreement,control/Dutchauction distinct;108–135range85price,1.7braise23bvaluation,100close18%pop;mechanismfailedgoal despitecompanysuccess. No absolute allfuturetechIPOdualclass/nobodyeverDutchauction claim.
-- June2025valuation L619–621:2.1t/PE20 approxattributed, notupdatedpriceorinvestmentconclusion. Gmail1GB Apr1,2004 teaser only, no imported nextrecordinghistory.
-- Complete conclusion L634–681:multifactorplaybook,mission/culture/talent/infrastructure,liquidity,datafeedback,narrowtimingwindow,AIparallels exploratory includingpaidanswerideaquestioned;counterpositioningqualifiedversusportals notjustbetterproduct;scale/networktaxonomydebated,negativeadvertisercompetition,switchingweakloggedout,brandweakpricepowerbutemploymentstrong,corneredresource/processnotidentified. Final 'thatcompany' synthesis paraphrased,notlongquote.
-- Linksignaldiagram L103–121:qualitative notcomputedPageRank. Auctioncontrols/table L421–447:expectedvalue/pricing/transitiondistinct. Liquidityflow L501–520,663–671:qualitative,notgrowthsimulation.
-- Navigation original linked-web geometry, horizontalverifiedtime mapping,decorativenodeheights/linksnotpath-distance; shared episode-timeline.js. Alltargetsreal, dropdownlargealternative. Endpointcaveatinartifact.
-- Original generatedwatercolors cover and server scene savedPNG, conceptual captions/alts, no exactperson/site/interfaceprovenance asserted.
+All navigation cues use this one mirror version. The closing begins at 3:39:06; the navigation endpoint 3:31:42 marks the final main-analysis paragraph before carve-outs, not recording duration. Overture and Toolbar rewind historically while following episode order. Different ad-edited players can shift cues. The graph’s horizontal position maps time; its decorative node heights and links do not supply route-distance timing. The readout interpolates reading position rather than playing audio. Both original watercolors are conceptual rather than historical reconstructions. Present-tense financial comparisons retain the June 2025 recording perspective.
