@@ -1,3 +1,4 @@
+<!-- artifact-review: {"status":"verified","bundleTree":"759c4dd909dd5c8f92033ee344af294c8f1c94aa"} -->
 # Vanguard — source map
 
 Bundle: `public/artifacts/acquired/vanguard/index.html`
