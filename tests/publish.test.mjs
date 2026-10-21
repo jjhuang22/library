@@ -5,7 +5,7 @@ import { mkdtemp, mkdir, writeFile, readFile, readdir, cp, rm } from 'node:fs/pr
 import { tmpdir } from 'node:os';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { preparePublication, publishPrepared, listQueue } from '../scripts/publish-artifact.mjs';
+import { preparePublication, publishPrepared, listQueue, publicationDate } from '../scripts/publish-artifact.mjs';
 
 const sourceRoot = fileURLToPath(new URL('../', import.meta.url));
 const git = (root, ...args) => execFileSync('git', args, { cwd: root, encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'] }).trim();
@@ -29,7 +29,7 @@ async function fixture(t, { status = 'verified', sharedChange = false, missingEv
   const main = git(root, 'rev-parse', 'HEAD');
   git(root, 'switch', '-c', 'queue/acquired/one');
   await mkdir(path.join(root, 'public/artifacts/acquired/one/images'), { recursive: true });
-  await writeFile(path.join(root, 'public/artifacts/acquired/one/index.html'), '<h1>One</h1>');
+  await writeFile(path.join(root, 'public/artifacts/acquired/one/index.html'), '<h1>One</h1><span>Created <time data-created-date>Unpublished</time></span>');
   await writeFile(path.join(root, 'public/artifacts/acquired/one/images/cover.png'), 'watercolor');
   const catalog = { categories: [{ id: 'acquired', title: 'Acquired' }], artifacts: [{ id: 'one', category: 'acquired', title: 'One', addedOn: '2026-10-18', releasedOn: '2024-03-18', file: '/artifacts/acquired/one/index.html' }] };
   await json(path.join(root, 'content/library.json'), catalog);
@@ -40,7 +40,7 @@ async function fixture(t, { status = 'verified', sharedChange = false, missingEv
   if (sharedChange) await writeFile(path.join(root, 'public/styles.css'), 'unapproved shared change');
   git(root, 'add', '.'); git(root, 'commit', '-m', 'Queue one'); git(root, 'push', 'origin', 'queue/acquired/one');
   git(root, 'switch', 'main'); git(root, 'fetch', 'origin');
-  return { root, base, remote, main, worktreeBase: path.join(base, 'publications'), key: 'acquired/one' };
+  return { root, base, remote, main, worktreeBase: path.join(base, 'publications'), key: 'acquired/one', now: new Date('2026-10-21T12:00:00Z') };
 }
 
 test('selects one episode from an older queue branch and publishes exactly one isolated commit', async t => {
@@ -57,7 +57,9 @@ test('selects one episode from an older queue branch and publishes exactly one i
   assert.equal(prepared.status, 'prepared');
   const saved = JSON.parse(await readFile(path.join(prepared.worktree, 'content/library.json'), 'utf8'));
   assert.deepEqual(saved.artifacts.map(a => a.id), ['newer', 'one']);
-  assert.equal(saved.artifacts[1].addedOn, '2026-10-18');
+  assert.equal(saved.artifacts[1].addedOn, '2026-10-21');
+  assert.equal(saved.artifacts[0].addedOn, '2026-10-19');
+  assert.match(await readFile(path.join(prepared.worktree, 'dist/acquired/one/index.html'), 'utf8'), /datetime="2026-10-21">October 21, 2026/);
   assert.deepEqual(await readdir(path.join(prepared.worktree, 'content')), ['library.json']);
   assert.equal(await readFile(path.join(prepared.worktree, 'dist/acquired/one/images/cover.png'), 'utf8'), 'watercolor');
   const pushed = await publishPrepared(f);
@@ -86,7 +88,7 @@ test('refuses stale prepared bases and preserves prior work for inspection', asy
   await writeFile(path.join(f.root, 'public/app.js'), '// newer main shell change');
   git(f.root, 'add', '.'); git(f.root, 'commit', '-m', 'New main change'); git(f.root, 'push', 'origin', 'main');
   await assert.rejects(publishPrepared(f), /Main advanced/);
-  await assert.rejects(preparePublication(f), /Main or queue source changed/);
+  await assert.rejects(preparePublication(f), /Main, queue source or publication date changed/);
   const fresh = await preparePublication({ ...f, fresh: true });
   assert.notEqual(fresh.worktree, prepared.worktree);
   assert.equal(await readFile(path.join(fresh.worktree, 'public/app.js'), 'utf8'), '// newer main shell change');
@@ -177,4 +179,38 @@ test('preserves selected source metadata and refuses unreviewed catalog changes'
   await json(file, catalog);
   await assert.rejects(publishPrepared(f), /selected source metadata/);
   assert.equal(git(f.root, 'rev-parse', 'origin/main'), f.main);
+});
+
+
+test('uses New York publication dates and refuses a preparation from the previous day', async t => {
+  assert.equal(publicationDate(new Date('2026-10-22T03:59:59Z')), '2026-10-21');
+  assert.equal(publicationDate(new Date('2026-10-22T04:00:00Z')), '2026-10-22');
+  assert.equal(publicationDate(new Date('2026-01-22T04:59:59Z')), '2026-01-21');
+  const f = await fixture(t);
+  await preparePublication(f);
+  const tomorrow = { ...f, now: new Date('2026-10-22T12:00:00Z') };
+  await assert.rejects(publishPrepared(tomorrow), /Publication date changed/);
+  await assert.rejects(preparePublication(tomorrow), /publication date changed/);
+  const fresh = await preparePublication({ ...tomorrow, fresh: true });
+  const saved = JSON.parse(await readFile(path.join(fresh.worktree, 'content/library.json'), 'utf8'));
+  assert.equal(saved.artifacts[0].addedOn, '2026-10-22');
+  assert.equal((await publishPrepared(tomorrow)).status, 'pushed');
+});
+
+
+test('publishes an existing reviewed legacy cover with the publication date while preserving its source hash', async t => {
+  const f = await fixture(t);
+  git(f.root, 'switch', 'queue/acquired/one');
+  const html = '<h1>One</h1><span><b>Created</b> October 18, 2026</span>';
+  await writeFile(path.join(f.root, 'public/artifacts/acquired/one/index.html'), html);
+  git(f.root, 'add', 'public');
+  const bundleTree = git(f.root, 'rev-parse', `${git(f.root, 'write-tree')}:public/artifacts/acquired/one`);
+  await writeFile(path.join(f.root, 'docs/evidence/acquired/one.md'), `<!-- artifact-review: ${JSON.stringify({ status: 'verified', bundleTree })} -->\n# Source map\nVerified passages.\n`);
+  git(f.root, 'add', '.'); git(f.root, 'commit', '-m', 'Reviewed legacy cover'); git(f.root, 'push', 'origin', 'queue/acquired/one');
+  git(f.root, 'switch', 'main');
+  const prepared = await preparePublication(f);
+  const built = await readFile(path.join(prepared.worktree, 'dist/acquired/one/index.html'), 'utf8');
+  assert.match(built, /Created<\/b> <time data-created-date datetime="2026-10-21">October 21, 2026/);
+  assert.equal(await readFile(path.join(prepared.worktree, 'public/artifacts/acquired/one/index.html'), 'utf8'), html);
+  assert.equal((await publishPrepared(f)).status, 'pushed');
 });

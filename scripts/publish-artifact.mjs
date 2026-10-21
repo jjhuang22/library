@@ -2,7 +2,7 @@ import { execFileSync } from 'node:child_process';
 import { readFile, writeFile, mkdir, mkdtemp, lstat, readdir } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { buildLibrary } from './build.mjs';
+import { buildLibrary, renderCreatedDate } from './build.mjs';
 
 const defaultRoot = fileURLToPath(new URL('../', import.meta.url));
 const validKey = /^[a-z0-9]+(?:-[a-z0-9]+)*\/[a-z0-9]+(?:-[a-z0-9]+)*$/;
@@ -12,6 +12,12 @@ const git = (root, ...args) => execFileSync('git', args, { cwd: root, encoding: 
 const showJSON = (root, ref, file) => JSON.parse(git(root, 'show', `${ref}:${file}`));
 const saveJSON = (file, value) => writeFile(file, JSON.stringify(value, null, 2) + '\n');
 const exists = async file => { try { await lstat(file); return true; } catch (error) { if (error.code === 'ENOENT') return false; throw error; } };
+
+export function publicationDate(now = new Date()) {
+  const parts = new Intl.DateTimeFormat('en-US', { timeZone: 'America/New_York', year: 'numeric', month: '2-digit', day: '2-digit' }).formatToParts(now);
+  const get = type => parts.find(part => part.type === type).value;
+  return `${get('year')}-${get('month')}-${get('day')}`;
+}
 
 function checkKey(key) {
   if (!validKey.test(key)) throw new Error('Use a collection/id, for example acquired/vanguard');
@@ -83,7 +89,7 @@ export async function listQueue(root = defaultRoot, { fetch = true } = {}) {
   return items;
 }
 
-export async function preparePublication({ root = defaultRoot, key, fetch = true, fresh = false, worktreeBase } = {}) {
+export async function preparePublication({ root = defaultRoot, key, fetch = true, fresh = false, worktreeBase, now = new Date() } = {}) {
   checkKey(key);
   if (fetch) fetchSources(root);
   const base = git(root, 'rev-parse', 'refs/remotes/origin/main');
@@ -95,6 +101,8 @@ export async function preparePublication({ root = defaultRoot, key, fetch = true
   const sourceCatalog = showJSON(root, source, catalogFile);
   const selected = sourceCatalog.artifacts.filter(item => keyOf(item) === key);
   if (selected.length !== 1 || selected[0].file !== `/artifacts/${key}/index.html`) throw new Error('Missing or invalid episode catalog entry');
+  const date = publicationDate(now);
+  renderCreatedDate(git(root, 'show', `${source}:public/artifacts/${key}/index.html`), date, { required: true });
   const mergeBase = git(root, 'merge-base', base, source);
   assertScope(changedFiles(root, mergeBase, source), key);
   const evidence = `docs/evidence/${key}.md`;
@@ -102,7 +110,7 @@ export async function preparePublication({ root = defaultRoot, key, fetch = true
   if (!evidenceText.trim()) throw new Error('A retained source evidence map is required');
   if (!fresh && await exists(pointerPath(root, key))) {
     const prior = await readPointer(root, key);
-    if (prior.base !== base || prior.source !== source) throw new Error('Main or queue source changed. Prepare again with --fresh, then repeat browser checks.');
+    if (prior.base !== base || prior.source !== source || prior.publicationDate !== date) throw new Error('Main, queue source or publication date changed. Prepare again with --fresh, then repeat browser checks.');
     await readFile(planPath(prior.worktree), 'utf8');
     return { status: 'prepared', ...prior };
   }
@@ -124,14 +132,14 @@ export async function preparePublication({ root = defaultRoot, key, fetch = true
     await mkdir(path.dirname(destination), { recursive: true });
     await writeFile(destination, execFileSync('git', ['cat-file', 'blob', match[2]], { cwd: root, stdio: ['ignore', 'pipe', 'pipe'], maxBuffer: 32 * 1024 * 1024 }));
   }
-  catalog.artifacts.push(selected[0]);
+  catalog.artifacts.push({ ...selected[0], addedOn: date });
   await saveJSON(path.join(worktree, catalogFile), catalog);
   git(worktree, 'add', '--', bundle, evidence, catalogFile);
   assertScope(changedFiles(worktree, '--cached'), key);
   git(worktree, 'diff', '--cached', '--check');
   await buildLibrary(worktree);
   execFileSync(process.execPath, ['--test'], { cwd: worktree, stdio: ['ignore', 'pipe', 'pipe'] });
-  const plan = { key, base, source, worktree, branch, title: selected[0].title };
+  const plan = { key, base, source, worktree, branch, title: selected[0].title, publicationDate: date };
   await saveJSON(planPath(worktree), plan);
   const pointer = pointerPath(root, key);
   await mkdir(path.dirname(pointer), { recursive: true });
@@ -139,7 +147,7 @@ export async function preparePublication({ root = defaultRoot, key, fetch = true
   return { status: 'prepared', ...plan };
 }
 
-export async function publishPrepared({ root = defaultRoot, key, fetch = true } = {}) {
+export async function publishPrepared({ root = defaultRoot, key, fetch = true, now = new Date() } = {}) {
   checkKey(key);
   if (fetch) fetchSources(root);
   const current = git(root, 'rev-parse', 'refs/remotes/origin/main');
@@ -149,6 +157,7 @@ export async function publishPrepared({ root = defaultRoot, key, fetch = true } 
   try { pointer = await readPointer(root, key); } catch (error) { if (error.code === 'ENOENT') throw new Error('Run --prepare and browser-check the printed worktree before --push'); throw error; }
   const plan = JSON.parse(await readFile(planPath(pointer.worktree), 'utf8'));
   if (plan.key !== key || plan.worktree !== pointer.worktree) throw new Error('Publication plan mismatch');
+  if (plan.publicationDate !== publicationDate(now)) throw new Error('Publication date changed. Run --prepare --fresh and repeat browser checks.');
   if (current !== plan.base) throw new Error('Main advanced after preparation. Run --prepare --fresh and repeat browser checks; never force-push.');
   const currentSource = sourceRef(root, `queue/${key}`);
   if (currentSource !== plan.source) throw new Error('Queue source changed after preparation. Run --prepare --fresh and repeat review and browser checks.');
@@ -166,7 +175,7 @@ export async function publishPrepared({ root = defaultRoot, key, fetch = true } 
   if (JSON.stringify(beforeOther) !== JSON.stringify(afterOther) || publishedCatalog.artifacts.length !== beforeOther.length + 1 || JSON.stringify(baseCatalog.categories) !== JSON.stringify(publishedCatalog.categories))
     throw new Error('Prepared catalog changes other publications or collections');
   const expectedCatalog = structuredClone(baseCatalog);
-  expectedCatalog.artifacts.push(showJSON(root, currentSource, catalogFile).artifacts.find(item => keyOf(item) === key));
+  expectedCatalog.artifacts.push({ ...showJSON(root, currentSource, catalogFile).artifacts.find(item => keyOf(item) === key), addedOn: plan.publicationDate });
   if (JSON.stringify(publishedCatalog) !== JSON.stringify(expectedCatalog)) throw new Error('Prepared catalog changes selected source metadata or unrelated catalog fields');
   const evidencePath = path.join(worktree, `docs/evidence/${key}.md`);
   if (!(await lstat(evidencePath)).isFile() || !(await readFile(evidencePath, 'utf8')).trim()) throw new Error('A nonempty ordinary evidence map is required');

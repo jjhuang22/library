@@ -4,7 +4,7 @@ Artifact: `public/artifacts/acquired/tsmc/index.html`.
 
 The narrative uses the complete reader-supplied Acquired transcript, headed Season 9 Episode 3 TSMC, including the separate 2025 remaster introduction and the original closing analysis. Paragraph references below use distinctive spoken phrases so the map remains usable without preserving the uploaded file's transient local path. No external company research is used.
 
-The official episode page, https://www.acquired.fm/episodes/tsmc, confirms the original September 7, 2021 release date. The catalog uses October 14, 2026 as its original creation date. Fall 2021 follows the library's season convention.
+The official episode page, https://www.acquired.fm/episodes/tsmc, confirms the original September 7, 2021 release date. The catalog uses October 14, 2026 as its first publication date. Fall 2021 follows the library's season convention.
 
 ## Section evidence
 

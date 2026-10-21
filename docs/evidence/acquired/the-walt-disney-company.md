@@ -1,7 +1,7 @@
 # The Walt Disney Company — source map
 
 Bundle: `public/artifacts/acquired/the-walt-disney-company/index.html`
-Released: 2026-06-22 · Original creation: 2026-10-06 · Source review: 2026-10-20.
+Released: 2026-06-22 · First published: 2026-10-06 · Source review: 2026-10-20.
 
 ## Provenance
 

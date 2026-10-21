@@ -1,7 +1,7 @@
 # Renaissance Technologies companion: evidence map
 
 Artifact: `public/artifacts/acquired/renaissance-technologies/index.html`
-Created: 2026-10-18. Released: 2024-03-18. Library season: Spring 2024. Original attribution: Season 14, Episode 3.
+First published: 2026-10-20 ([successful Vercel status](https://api.github.com/repos/jjhuang22/library/commits/898dd46/status), America/New_York). Released: 2024-03-18. Library season: Spring 2024. Original attribution: Season 14, Episode 3.
 
 ## Source boundary
 

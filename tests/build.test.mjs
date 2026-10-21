@@ -64,7 +64,7 @@ test('converts historical numbered seasons by release date using the library con
   assert.equal(acquiredSeason('2024-12-31'), 'Fall 2024');
 });
 
-test('derives Acquired seasons from release dates without changing creation dates', async t => {
+test('derives Acquired seasons from release dates without changing publication dates', async t => {
   const root = await fixture(t, library => {
     library.categories[0] = { id: 'acquired', title: 'Acquired Podcasts' };
     Object.assign(library.artifacts[0], { category: 'acquired', file: '/artifacts/acquired/example/index.html', releasedOn: '2026-06-22', season: 'Season 14' });
@@ -101,4 +101,19 @@ test('deploys only listed bundles with images, preserving both public route form
   assert.equal(await readFile(path.join(root, 'dist/artifacts/podcasts/example.html'), 'utf8'), '<h1>Independent HTML</h1>');
   for (const file of ['dist/artifacts/podcasts/unlisted/index.html', 'dist/artifacts/podcasts/unlisted/images/cover.png', 'dist/podcasts/unlisted/index.html'])
     await assert.rejects(readFile(path.join(root, file)), { code: 'ENOENT' });
+});
+
+
+test('renders the catalog publication date in every HTML route without rewriting reviewed source', async t => {
+  const root = await fixture(t);
+  const source = path.join(root, 'public/artifacts/books/example/index.html');
+  const html = '<h1>Book</h1><span>Created <time class="date" data-created-date datetime="2020-01-01">Draft date</time></span>';
+  await writeFile(source, html);
+  await buildLibrary(root);
+  for (const route of ['books/example/index.html', 'artifacts/books/example/index.html', 'artifacts/books/example.html']) {
+    const result = await readFile(path.join(root, 'dist', route), 'utf8');
+    assert.match(result, /class="date" data-created-date datetime="2026-10-06">October 6, 2026/);
+    assert.ok(!result.includes('Draft date'));
+  }
+  assert.equal(await readFile(source, 'utf8'), html);
 });

@@ -17,6 +17,25 @@ export function acquiredSeason(releasedOn) {
   return `${Number(releasedOn.slice(5, 7)) < 9 ? 'Spring' : 'Fall'} ${releasedOn.slice(0, 4)}`;
 }
 
+// Only this explicit metadata marker is interpreted; the rest of each HTML stays opaque.
+export function renderCreatedDate(html, addedOn, { required = false } = {}) {
+  validateDate(addedOn, 'addedOn');
+  let count = 0;
+  const label = new Intl.DateTimeFormat('en-US', { month: 'long', day: 'numeric', year: 'numeric', timeZone: 'UTC' }).format(new Date(`${addedOn}T12:00:00Z`));
+  let rendered = html.replace(/<time\b([^>]*\sdata-created-date(?=[\s=>])[^>]*)>[^<]*<\/time>/g, (_, attributes) => {
+    count++;
+    const kept = attributes.replace(/\sdatetime\s*=\s*(?:"[^"]*"|'[^']*')/g, '');
+    return `<time${kept} datetime="${addedOn}">${label}</time>`;
+  });
+  // Existing saved queue branches use these cover spans; normalize only their date metadata.
+  if (!count) rendered = html.replace(/(<span\b[^>]*>(?:<b>)?Created(?:<\/b>)?\s*(?:·\s*)?)(?:<time\b[^>]*>[^<]*<\/time>|(?:January|February|March|April|May|June|July|August|September|October|November|December) \d{1,2}, \d{4})(?=<\/span>)/g, (_, prefix) => {
+    count++;
+    return `${prefix}<time data-created-date datetime="${addedOn}">${label}</time>`;
+  });
+  if (required && count !== 1) throw new Error('Cover needs exactly one <time data-created-date> marker; update and review the queue bundle before publishing.');
+  return rendered;
+}
+
 export async function buildLibrary(root = defaultRoot) {
   const library = JSON.parse(await readFile(path.join(root, 'content/library.json'), 'utf8'));
   const categories = new Set();
@@ -33,7 +52,7 @@ export async function buildLibrary(root = defaultRoot) {
     artifact.url = `/${artifact.category}/${artifact.id}/`;
     if (routes.has(artifact.url)) throw new Error(`Duplicate route: ${artifact.url}`);
     routes.add(artifact.url);
-    // Standalone HTML is opaque to the library; no assumptions about its scripts or markup.
+    // Standalone story HTML remains independent of the library shell.
     if (artifact.file !== `/artifacts/${artifact.category}/${artifact.id}/index.html`) throw new Error('Invalid artifact file');
     await readFile(path.join(root, 'public', artifact.file.slice(1)));
   }
@@ -54,8 +73,10 @@ export async function buildLibrary(root = defaultRoot) {
     const bundle = path.join(dist, path.dirname(artifact.file).slice(1));
     await cp(source, bundle, { recursive: true });
     await cp(source, folder, { recursive: true });
-    // Keep previously shared raw-HTML URLs usable after bundling.
-    await cp(path.join(source, 'index.html'), path.join(dist, 'artifacts', artifact.category, `${artifact.id}.html`));
+    const html = renderCreatedDate(await readFile(path.join(source, 'index.html'), 'utf8'), artifact.addedOn);
+    // Use the same catalog date in reader, bundle and compatibility URLs.
+    for (const file of [path.join(folder, 'index.html'), path.join(bundle, 'index.html'), path.join(dist, 'artifacts', artifact.category, `${artifact.id}.html`)])
+      await writeFile(file, html);
   }
   return library;
 }

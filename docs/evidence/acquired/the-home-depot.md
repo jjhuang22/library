@@ -1,6 +1,6 @@
 # The Home Depot — episode evidence
 
-Source review: October 20, 2026. Created October 6, 2026. The [official episode](https://www.acquired.fm/episodes/home-depot) verifies September 14, 2026, Fall 2026, Episode 2.
+Source review: October 20, 2026. First published October 6, 2026. The [official episode](https://www.acquired.fm/episodes/home-depot) verifies September 14, 2026, Fall 2026, Episode 2.
 
 ## Source and version
 

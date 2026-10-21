@@ -2,7 +2,7 @@
 
 ## Sources and provenance
 
-Official episode: [Acquired — Costco](https://www.acquired.fm/episodes/costco), Season 13, Episode 2, August 21, 2023. Release metadata and the official corrections view were checked October 20, 2026. The retrievable corrections heading contains no correction entries. The companion preserves its October 12, 2026 creation date and the library’s Spring 2023 season convention.
+Official episode: [Acquired — Costco](https://www.acquired.fm/episodes/costco), Season 13, Episode 2, August 21, 2023. Release metadata and the official corrections view were checked October 20, 2026. The retrievable corrections heading contains no correction entries. The companion preserves its October 12, 2026 first publication date and the library’s Spring 2023 season convention.
 
 The official [Transcript view](https://www.acquired.fm/episodes/costco#transcript) was sought first. The available web reader returned the Sources bibliography and episode notes, without the spoken transcript or a further transcript link. Direct HTML/browser retrieval failed because the configured network proxy refused the connection, preventing inspection or expansion of the client-rendered tab. The fallback for this review was the complete [Podscripts transcript mirror](https://podscripts.co/podcasts/acquired/costco), read from the opening through the closing farewell. It transcribes the same August 2023 conversation, with a different inserted-advertisement version. Only its dialogue, not its overview or other commentary, supplies content evidence.
 

@@ -1,6 +1,6 @@
 # SpaceX episode evidence
 
-Content source: reader-supplied full transcript, Pasted text.txt, Acquired Season 6 Episode 7. Official metadata: https://www.acquired.fm/episodes/spacex confirms May 26, 2020. Created October 15, 2026. The narrative excludes appended third-party playbook summaries and external bibliography content.
+Content source: reader-supplied full transcript, Pasted text.txt, Acquired Season 6 Episode 7. Official metadata: https://www.acquired.fm/episodes/spacex confirms May 26, 2020. First published October 15, 2026. The narrative excludes appended third-party playbook summaries and external bibliography content.
 
 Timing source: https://podscripts.co/podcasts/acquired/spacex, a third-party mirror with inserted advertisements. Cue extent ends at its final displayed farewell at 2:42:59, not an exact audio duration. No timings from other audio versions are mixed in.
 
