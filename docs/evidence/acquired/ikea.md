@@ -1,113 +1,47 @@
-# IKEA — source evidence
+# IKEA — episode evidence
 
-Episode and sources This companion uses the recording as its substantive boundary, including the full closing power analysis, playbook, supply-chain discussion and final synthesis. Figures described as current refer to the hosts’ 2024 discussion. Official Acquired episode page : November 18, 2024 release, Fall 2024. No corrections were listed beneath the retrieved corrections heading. Full Podscripts transcript mirror : automated third-party transcription, not an official Acquired transcript. The full transcript was read through the analysis, carve-outs and credits. Neither the mirror summary nor the official research bibliography supplies additional company facts here. Listening cues are paragraph starts from one mirror version whose closing music starts at 3:22:08. The navigation endpoint 3:14:00 is the final main-analysis paragraph before personal carve-outs, not the episode duration. Other advertisement versions may differ. The chronology follows the episode with explicit rewinds for the restaurant and some product histories. The flat-pack navigation depicts offset furniture panels, with horizontal position mapped linearly to elapsed listening time. Panel offsets are decorative. The reading clock interpolates document position and does not play audio. The dropdown supplies large alternatives to the small timeline marks. The foundation structure evolved; the diagrams show simplified groups in the hosts’ 2024 account rather than every legal entity. Their foundation-asset and combined-valuation estimates are uncertain. Their online-profitability argument is an inference from incomplete reporting. Wholesale and retail sales overlap, and operating margins differ from gross margins. All illustrations are original generated conceptual watercolors, not historical photographs or exact reconstructions.
+## Source versions
 
-## Passage anchors and timing
+- [Official Acquired episode](https://www.acquired.fm/episodes/ikea): November 18, 2024, Fall 2024 / episode 3. No correction text appeared beneath the official Corrections heading on October 20, 2026. Original creation date remains October 19, 2026.
+- Official transcript retrieval was attempted first. The episode and `#transcript` extraction exposed Sources, overview and metadata without the conversation or a transcript link. The `?tab=transcript` and `/transcript` views could not be retrieved. Interactive inspection was unavailable because the execution environment does not permit that domain. These are access limitations, not proof that the publisher has no transcript.
+- [Complete Podscripts mirror](https://podscripts.co/podcasts/acquired/ikea) supplies the spoken evidence. It is an automated third-party transcript of the same 2024 episode, not official text. The substantive boundary excludes its summary, comments and the official research bibliography. The original companion underwent a complete transcript review through its closing analysis and credits; this maintenance review checked official metadata/corrections, the full companion, and consequential financial and concluding-analysis passages against that source.
 
-These chapter titles and paragraph-start cues locate the retained source map in the transcript version identified above. Legacy retrieval line numbers below are secondary locators, not timestamps. The original complete-transcript review and its qualifications are preserved; bundle migration is not a new retrospective source audit.
+## Chapter and diagram map
 
-- `smalland` — 0:05:15, A merchant grows up on difficult ground.
-- `trading` — 0:17:16, The name was a person and a place.
-- `furniture` — 0:23:20, A test category becomes the whole business.
-- `showroom` — 0:40:48, A place to test the catalog’s promise.
-- `destination` — 0:48:17, The exhibition becomes a destination.
-- `boycott` — 0:55:18, The boycott pushed IKEA into design.
-- `flatpack` — 1:01:03, The customer joins the production system.
-- `poland` — 1:07:29, Build the supply that the growth requires.
-- `hotdog` — 1:11:26, The breathtaking price is a design brief.
-- `food` — 1:23:14, The restaurant made the journey worthwhile.
-- `stockholm` — 1:27:39, A showroom becomes a cash-and-carry store.
-- `expansion` — 1:34:22, A repeatable concept still had limits.
-- `structure` — 1:38:05, Protect the company from its owners.
-- `testament` — 1:49:15, Quality has to earn its cost.
-- `america` — 1:56:12, America needed more than a translated catalog.
-- `fascism` — 2:04:25, The founder’s past could not be separated away.
-- `russia` — 2:07:57, Capture the neighborhood that grows around the store.
-- `democratic` — 2:11:16, Five demands on one design.
-- `ecommerce` — 2:13:33, The bargain changes when IKEA does the carrying.
-- `new-era` — 2:18:46, A catalog relationship ends.
-- `foundation-money` — 2:27:20, Two businesses, several different pools of money.
-- `market` — 2:40:36, Global scale inside a fragmented category.
-- `powers` — 2:48:51, Scale is the power that matters most.
-- `brand-or-store` — 2:55:36, A merchant’s heart, a manufacturer’s range.
-- `playbook` — 2:57:35, Independence carries a social trade-off.
-- `supply-playbook` — 3:03:46, Working capital can buy a better relationship.
-- `conclusion` — 3:10:04, A singular company, with unfinished questions.
+All passage times below refer to the single Podscripts mirror version. Chapter IDs link the evidence to the companion; they do not assert official audio chapter boundaries.
 
-## Section evidence
+| Section | Source passage and claim boundary |
+| --- | --- |
+| 01 · `smalland` | 00:05:15–00:16:59: rocky Småland, German grandparents and failed timber farm, family hardship, matchboxes, 1938 500-kronor pen loan and reinvestment. Suicide is not assigned a single cause or independent medical diagnosis. Self-financing is the hosts’ narrative, not proof of zero modern construction financing. |
+| 02 · `trading` | 00:17:16–00:23:20: 1943 registration, initials/farm/address, Gothenburg trade publications, agency/direct supplier fulfillment and catalog. Hosts explicitly acknowledge earlier catalog businesses; IKEA is not credited with inventing dropshipping. |
+| 03 · `furniture` | 00:23:20–00:37:26: 1948 furniture test and local suppliers, three initial pieces, volume/absolute-profit logic, 1949 farmers’ paper with about 285,000 circulation, low prices for the many. Disputed dyslexia lore is not adopted as a diagnosis. |
+| 04 · `showroom` | 00:40:48–00:47:59: mail-order quality distrust, Sven Göte, 13,000-kronor joinery purchase, March 1953 opening with over 1,000 visitors, coffee/buns, orders still fulfilled later. Novelty is the hosts’/Kamprad’s claim, not an independently established world first. |
+| 05 · `destination` | 00:48:17–00:55:00: catalog settings/Brita Lång, discounted rail travel and hotel dinner, 1m/3m/6m kronor sales in 1953/1954/1955, half-million catalog audience and fewer than 30 employees; urbanization changes customer requirements. |
+| 06 · `boycott` | 00:55:18–01:00:15: competitor supplier pressure and trade-fair exclusion, separate IKEA designs, Gillis Lundgren. Removing table legs is qualified as partly apocryphal; earlier Sears flat packing is acknowledged. |
+| 07 · `flatpack` + exchange diagram | 01:01:03–01:02:23 and 01:03:43–01:07:29: compact transport, customer assembly/transport, less damage, reported Milan visit and modern apartments. Together with 02:14:20–02:18:27, these support the qualitative customer-labor/delivery comparison; no measured savings rate or modeled e-commerce profit is asserted. |
+| 08 · `poland` | 01:07:29–01:11:26: roughly 40m kronor sales by 1961, 1960 Polish business report and 1961 production relationship; about half of supply by decade end; factory knowledge transfer and later board-on-frame/LACK manufacturing. |
+| 09 · `hotdog` | 01:11:26 onward: $9.99 LACK at recording and approximately 20m annual units, positive-margin breathtaking offers, POÄNG price comparisons; 1995 hot-dog policy, initially 10 then 20 offers. Costco influence remains disputed with Sinegal; an IKEA hot dog is not Costco’s drink combo. |
+| 10 · `food` | 01:23:14–01:27:39 and the later US-history passage about the 1985 meatball launch: 1958 hot food, about 10% margin policy, destination/dwell time, flashlight inspection; meatballs arrived in 1985. Restaurant visits are not assumed to be unique people. |
+| 11 · `stockholm` | 01:27:39–01:34:22: 1965 Stockholm store, about 500,000 square feet/17m kronor cost against 100m annual company sales, 18,000 opening visitors/70m first-year store sales, customer collection, 1970 fire and 1971 redesign. Destruction extent stays uncertain; checkout is not described as modern automated self-scanning. |
+| 12 · `expansion` | 01:34:22–01:38:05: earnings-financed international growth, failed first Japan entry/1986 withdrawal and 2006 return, transport/self-assembly/housing constraints, approximately $2bn historical revenue. Compressed Japanese dates are not independently reconciled. |
+| 13 · `structure` + ownership diagram | 01:38:05–01:49:15 and 02:27:20–02:37:48: historical Swedish wealth/inheritance tax, succession/independence, Denmark/Switzerland, INGKA’s Dutch charitable owner versus Inter IKEA’s Liechtenstein enterprise foundation, 3% gross-sales royalty and family board influence without controlling majority. Diagram separates retailer from franchisor; range/supply roles reflect the post-2016 arrangement, not an unchanging legal chart. |
+| 14 · `testament` | 01:49:15–01:56:12: 1976 nine principles, quality appropriate to use, deliberately plain hidden surfaces, irrecoverable time/restlessness. Paraphrases do not invent quotations or treat restraint as poor workmanship. |
+| 15 · `america` | 01:56:12–02:04:25: 1985 Philadelphia opening, US market diversity/sofa preferences, Seattle independent-franchise experiment and eventual reabsorption, 1986 Moberg succession with continuing founder influence. |
+| 16 · `fascism` | 02:04:25–02:07:57: Nazi/fascist participation, organizing/fundraising/recruiting, apology versus later disclosures, continuing friendship with a Holocaust denier. The hosts’ criticism is preserved; youth, family influence and commercial achievement do not exonerate the conduct. |
+| 17 · `russia` | 02:07:57–02:11:16 and 02:35:34–02:36:14: 2000 entry, MEGA/property economics, 17 stores/14 centers, 2022 closure and later exit; city-center property strategy. No precise disposal date, buyer identity or recovery value is invented. |
+| 18 · `democratic` + five-dimensions diagram | 02:11:16–02:13:33; 03:04:10–03:04:44: form, function, quality, sustainability, low price; long horizon and enduring product lines. Diagram lists constraints, not measured/equally weighted scores. |
+| 19 · `ecommerce` | 02:13:33–02:18:46: post-2007 stagnation, customer collection/assembly versus delivery work, Hamburg smaller stores, 2018 investment, 26% online share; declining INGKA operating margin. E-commerce as cause is a qualified inference without segment proof or a claim that every order loses money. |
+| 20 · `new-era` | 02:18:46 onward: January 2018 death at 91, India, 2021 catalog ending and peak 220m copies/69 versions/32 languages/50 markets, Ben’s $700 order/~$350 assembly example, mixed HEMNES/moving experiences. One order is not a universal margin estimate. |
+| 21 · `foundation-money` + scope diagram | 02:27:20–02:40:36: $27bn goods/$1.4bn fees against $47bn retail sales, not additive; reported €15bn foundation assets around 2011 and uncertain €50–100bn extrapolation; 15% net-income charitable transfer/85% reinvestment; roughly 25bn INGKA cash with inconsistent spoken currency. Near-$200bn combined valuation is hypothetical, not market capitalization or an audited withdrawable pool. |
+| 22 · `market` | 02:40:36–02:48:51: 216,000 coworkers/63 markets/~860m visits, Europe 71%; sales channel split 71% store/26% online/3% services; rough €320/$350 sales per foot under store-count/area assumptions; $47bn sales/5.7% market share. Visits, visitors and services composition stay qualified; uniqueness is the combined global model, not absence of substitutes. |
+| 23 · `powers` | 02:48:51–02:55:36: scale economies dominant, Wayfair/Target/high-end alternatives, ~10% strategic in-house production, little customer switching cost, branding distinguished from premium pricing power, cash versus time constraint. No invented all-seven checklist. |
+| 24 · `brand-or-store` | 02:55:36–02:57:35 and 03:00:02–03:02:09: merchant origins versus integrated brand/store; Apple structural comparison with opposite margin goals; mid-30s gross margin versus Costco ~13% covers different activity scopes. Frugality does not prove all costs optimal. |
+| 25 · `playbook` | 02:57:35–03:03:46: ownership protects durability, but foregone public tax/equity participation and outside-capital limits matter; financing history and Swedish identity. Political-group tax estimate remains attributed, not independently verified. |
+| 26 · `supply-playbook` | 03:03:46–03:10:04: inventory for availability/price, net-30 versus net-60/90 terms, ~1,600 suppliers/55 countries/11-year relationships, package/category sourcing, manufacturing knowledge transfer, 50% of range producing 90% of sales versus regional tail stock. Qualitative operating account, not invented optimization advice. |
+| 27 · `conclusion` | 03:10:04–03:14:00: founder/retained ownership/many/structure combination, Apple/Tesla comparisons with limits; e-commerce, urbanization, company size and cash deployment leave an unclear future. Admiration is not a guaranteed forecast. |
 
-1. **A merchant grows up on difficult ground** (`#smalland`), 00:05:15: L54–86. Supports chronology, figures, anecdotes and hosts’ analysis.
+## Timing and illustration boundaries
 
-2. **The name was a person and a place** (`#trading`), 00:17:16: L88–106. Supports chronology, figures, anecdotes and hosts’ analysis.
+The 27 chapter cues are mirror paragraph starts, not official chapter markers. Navigation uses only that mirror version, ending at **03:14:00**, the final main-analysis paragraph before carve-outs; its closing music begins at 03:22:08. Endpoint is a cue extent, not episode duration. The offset flat-pack panels are decorative, with horizontal position mapped linearly to time. Reading progress is not audio playback; advertisements can shift other versions.
 
-3. **A test category becomes the whole business** (`#furniture`), 00:23:20: L107–146. Supports chronology, figures, anecdotes and hosts’ analysis.
-
-4. **A place to test the catalog’s promise** (`#showroom`), 00:40:48: L156–181. Supports chronology, figures, anecdotes and hosts’ analysis.
-
-5. **The exhibition becomes a destination** (`#destination`), 00:48:17: L182–199; growth through1961 L237–238. Supports chronology, figures, anecdotes and hosts’ analysis.
-
-6. **The boycott pushed IKEA into design** (`#boycott`), 00:55:18: L201–216. Supports chronology, figures, anecdotes and hosts’ analysis.
-
-7. **The customer joins the production system** (`#flatpack`), 01:01:03: L215–237. Supports chronology, figures, anecdotes and hosts’ analysis.
-
-8. **Build the supply that the growth requires** (`#poland`), 01:07:29: L237–255. Supports chronology, figures, anecdotes and hosts’ analysis.
-
-9. **The breathtaking price is a design brief** (`#hotdog`), 01:11:26: L246–272. Supports chronology, figures, anecdotes and hosts’ analysis.
-
-10. **The restaurant made the journey worthwhile** (`#food`), 01:23:14: L283–297; meatballs L394–395. Supports chronology, figures, anecdotes and hosts’ analysis.
-
-11. **A showroom becomes a cash-and-carry store** (`#stockholm`), 01:27:39: L298–316. Supports chronology, figures, anecdotes and hosts’ analysis.
-
-12. **A repeatable concept still had limits** (`#expansion`), 01:34:22: L317–328. Supports chronology, figures, anecdotes and hosts’ analysis.
-
-13. **Protect the company from its owners** (`#structure`), 01:38:05: L328–357; foundation explanation L475–477. Supports chronology, figures, anecdotes and hosts’ analysis.
-
-14. **Quality has to earn its cost** (`#testament`), 01:49:15: L357–376. Supports chronology, figures, anecdotes and hosts’ analysis.
-
-15. **America needed more than a translated catalog** (`#america`), 01:56:12: L376–400. Supports chronology, figures, anecdotes and hosts’ analysis.
-
-16. **The founder’s past could not be separated away** (`#fascism`), 02:04:25: L400–407. Supports chronology, figures, anecdotes and hosts’ analysis.
-
-17. **Capture the neighborhood that grows around the store** (`#russia`), 02:07:57: L408–418; city-center example L489–492. Supports chronology, figures, anecdotes and hosts’ analysis.
-
-18. **Five demands on one design** (`#democratic`), 02:11:16: L418–425; timeless range L572–575. Supports chronology, figures, anecdotes and hosts’ analysis.
-
-19. **The bargain changes when IKEA does the carrying** (`#ecommerce`), 02:13:33: L426–439. Supports chronology, figures, anecdotes and hosts’ analysis.
-
-20. **A catalog relationship ends** (`#new-era`), 02:18:46: L440–459. Supports chronology, figures, anecdotes and hosts’ analysis.
-
-21. **Two businesses, several different pools of money** (`#foundation-money`), 02:27:20: L467–503. Supports chronology, figures, anecdotes and hosts’ analysis.
-
-22. **Global scale inside a fragmented category** (`#market`), 02:40:36: L503–526. Supports chronology, figures, anecdotes and hosts’ analysis.
-
-23. **Scale is the power that matters most** (`#powers`), 02:48:51: L527–548. Supports chronology, figures, anecdotes and hosts’ analysis.
-
-24. **A merchant’s heart, a manufacturer’s range** (`#brand-or-store`), 02:55:36: L549–553; L561–567. Supports chronology, figures, anecdotes and hosts’ analysis.
-
-25. **Independence carries a social trade-off** (`#playbook`), 02:57:35: L554–570. Supports chronology, figures, anecdotes and hosts’ analysis.
-
-26. **Working capital can buy a better relationship** (`#supply-playbook`), 03:03:46: L571–588. Supports chronology, figures, anecdotes and hosts’ analysis.
-
-27. **A singular company, with unfinished questions** (`#conclusion`), 03:10:04: L589–600. Supports chronology, figures, anecdotes and hosts’ analysis.
-
-## Consequential claims and qualifications
-
-- L54–86 family farm/German grandparents/hardship,bank500kronor1938,pensloanrepaid; suicide not singlecause clinicaldiagnosis. Youngmerchant/capitalreinvestment,1943registrationandname L88–106; no claim inventedmailorder/dropshipping. Dyslexia/naminglegend disputed L113–118 not used as establisheddiagnosis.
-- Furniture1948/customer demand/cashlogic/nationalfarmerspaper285k L107–146. Showroom13kSEK/~$2500,March1953,1000visitors,coffee+buns,notcashcarry L156–181. Novelshowroomcombination attributedhosts/Kamprad not universalverifiedfirst. Catalog/railway/hoteldinner/sales1m/3m/6m1953/54/55 L182–199; BritaLång1960s role follows recording.
-- Boycott/tradefairs/supplierpressure/separatedesigns/GillisLundgren L201–216. Flatpack storyqualifiedapocryphal,earlierSears acknowledged; firstMaxtablemid1950s/aspossiblewhole range. Diagramflatpack L217–220 +ecommerce L428–439:qualitative no inventedrates. Milantriplegend L227–237 qualified,designhistoryuncertainty preserved.
-- Poland1960report/1961production/~halfbydecadeend L237–243. Boardonframe1970s/LACK9.99atrecording/~20munitsannual L244–255. Breathtakingproducts smallpositiveprofitnotlossleader. POÄNG350inflationadjusted1988/<1002016/~130current L263–267. Hotdogpolicy1995,10→20;CostcoinfluencedisputedwithSinegal;onehotdognotsameascombo L256–267. Catalogcontrolnotlaterinternet L267–272.
-- Food1958/10%marginpolicy,flashlightanecdote,visitnotuniquepeople L283–297;meatballs1985 L394–395. Stockholm1965~500ksqft17mSEKcost/100mannualcompanyrev,18kvisitors70mfirstyear L298–307;1970firemajorbutextentuncertain,1971reopenplayroomcafeteriacustomerhandling L308–316. No anachronistic claim autonomousselfscanmachinesin1971.
-- Global/Japan1970s1986withdraw2006return L317–328;recordinggives1975entry/12years/1986notperfectarithmetic,notresolvedwithoutsidefacts. Revenue~2b1980s rounded. Self-financingnarrative not absolute claim zeromoderndebt;hosts themselves speculateconstructionfinancing L81–86.
-- Tax/succession/continuity1970s L328–357:60%inheritance2.5%wealthattributedhistorical;Denmark1973Switzerland1978 asrecording;structureevolvesnotallfullyestablishedin1976. PhysicalINGKA/Dutchcharity vsmentalInterIKEA/Liechtensteinenterprisefoundation;familyboardsnotmajoritycontrol. Ownershipdiagram L341–357 and467–496 simplifiedgroupnotexhaustivelegalchart,notownershipchainbetweenretailerandfranchisor;3%grosssalesnotprofits;productpurchasesseparate;post2016range/supplytimequalified.
-- Testament1976 L357–376:appropriatequalitynotmaximumfinish,unseenpartsintentionallyplainnotcarelessness;time/restlessnessparaphrasednotlongquotes. US1985/marketheterogeneity/softsofas/Seattleindependentfranchiseexperimentreabsorbed L377–394;formalsuccession1986Mobergfounderinfluence L395–399.
-- Nazi/fascistmovement L400–407:participationfundraisingrecruitmentdocumented,apology notfulldisclosure,continuedfriendshipwithHolocaustdenier,hostcriticismretained. No impliedexonerationbecauseyouthorbusinesssuccess.
-- Russia2000/MEGA/17stores14centers2022exit L408–418:closure/disposalcompressedhosts not exactsaledate/recoveryorconfusedbuyerlabel;no outsidecorrectivefacts. PropertystrategycontinuedL489–492. Democraticdesignfivepillars L418–425,nofabricatednumericalscores. Timelessrange L572–575.
-- Ecom L426–449:20b2007flatthrough2010,2014Hamburgsmallformat,2018investment,26%current;INGKAmargins8→6→5/3–5range;causalprofitinferenceunproven,notperorderlossclaim. FounderJan2018age91,India2018,catalog2021220m69versions32languages50markets L440–449. TaskRabbit2017purchase mentionedbyhosts butnotstandaloneexternaldealresearch;Ben700order350assembly+deliverytens L450–452 individualexample. HEMNESdurabilitymixed L453–459.
-- Financial L467–503:27bgoodssales/1.4bfees/47bretail notadditive,royaltylargefractionprofit;taxclaimhostsnottaxexperts. Liechtensteinfinancialassets15beuro2011thenannualtransfers/investmentassumptions50–100bestimateuncertainnotauditedcash. INGKA15%netincomecharity85%reinvest,200–300mtransfers/~200mgrants;balancecash25b transcriptcurrencyinconsistent earlyeurolaterdollar explicitcaveat. Near200bvaluationexercisehypotheticalnotmarketcapnoravailablewithdrawal. Financialdiagramnonadditivescopes no inventedauditedtotal.
-- Stats L503–526:216kcoworkers63markets860mvisitsnotunique,Europe71%,online26/store71/service3 distinctmetric;servicecompositionguessnotadoptedasfact. Salesarea320euro/~350usdfoot roughassumptions with473vs476store inconsistency,notrankingperformance;warehousesincluded.47b/5.7%marketshare hostsrecording notexternallyupdated. 'Nocompetitor' narrowed tocombinedglobalintegratedlowpricemodel,substitutesacknowledged.
-- Powers L527–548:scaleprimary,~10%ownproductionstrategicrestsuppliers,Targetlocal/Wayfairdifferentmodel/highendtastesvariation,customerweak switching,brandnotpremiumpricepower;cashnotconstraint/timecontinuity. No inventedallseven checklist.
-- Brand/store L549–553 +grossmargin L561–567:Appleorganizationcomparisonqualified/lowmarginIKEA,mid30grossvsCostco13notapplestoapplesbecauseproductionmarginupstream. Frugalitynotproofnoinefficiency.
-- Playbook L554–570:structureprotects/publictaxandnoequityparticipationsocialcost,externalcapitalhistory/practicalindependence,Swedishsenseofplaceunlikeluxurypricing. Politicalgroupbilliontaxsavingestimate notnumericallyrepeatedorverified.
-- Concludingsupply L571–588:extrainventory/availability/customerprice,net30vs60/90terms,1600suppliers55countries11yravg,package/categoryglobalsourcing/knowledgetransfer,50%range90%salesstockpriorityvsregionaltail. Notminimizeallinventorymodel.
-- Finale L589–600:uniquecombinationfounder/nooutsideshareholder/many/structure,Apple/Teslacomparisonsnotidentity,unresolvedecommerceurbanizationbureaucracycashdeployment preserved.
-- Two original generatedwatercolorPNG1536×1024:coverconceptualapartment/flatpack;showroomconceptualexhibition/coffee/catalog,notexacthistoryproductsorpeople. CaptionsandaltinHTML;actualartinspectedinbrowserbeforecompletion.
+The cover and showroom paintings are original conceptual watercolors with explicit imagined-scene captions. They are not historical photographs, portraits, product specifications or reconstructions. All explanatory diagrams summarize only the cited episode mechanisms.
