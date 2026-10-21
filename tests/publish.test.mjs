@@ -23,7 +23,7 @@ async function fixture(t, { status = 'verified', sharedChange = false, missingEv
   await writeFile(path.join(root, 'public/index.html'), '<h1>Library</h1>');
   await writeFile(path.join(root, '.gitignore'), 'dist/\n');
   await json(path.join(root, 'package.json'), { type: 'module' });
-  const registry = { artifacts: ['one', 'two'].map(id => ({ id, title: id, category: 'acquired', branch: `queue/acquired/${id}`, reviewStatus: status })) };
+  const registry = { artifacts: ['one', 'two'].map(id => ({ id, title: id, category: 'acquired', branch: `queue/acquired/${id}`, reviewStatus: status })), authoring: { active_episode: null, episodes: [{ id: 'one', status: 'completed' }, { id: 'future', status: 'pending' }], excluded_by_user: ['excluded'] } };
   await json(path.join(root, 'content/queue.json'), registry);
   await json(path.join(root, 'content/library.json'), { categories: [{ id: 'acquired', title: 'Acquired' }], artifacts: [] });
   git(root, 'add', '.'); git(root, 'commit', '-m', 'Main foundation');
@@ -58,6 +58,7 @@ test('selects one episode from an older queue branch and publishes exactly one i
   assert.deepEqual(saved.artifacts.map(a => a.id), ['newer', 'one']);
   assert.equal(saved.artifacts[1].addedOn, '2026-10-18');
   assert.deepEqual(JSON.parse(await readFile(path.join(prepared.worktree, 'content/queue.json'), 'utf8')).artifacts.map(a => a.id), ['two']);
+  assert.deepEqual(JSON.parse(await readFile(path.join(prepared.worktree, 'content/queue.json'), 'utf8')).authoring, JSON.parse(await readFile(path.join(f.root, 'content/queue.json'), 'utf8')).authoring);
   assert.equal(await readFile(path.join(prepared.worktree, 'dist/acquired/one/images/cover.png'), 'utf8'), 'watercolor');
   const pushed = await publishPrepared(f);
   assert.equal(pushed.status, 'pushed');

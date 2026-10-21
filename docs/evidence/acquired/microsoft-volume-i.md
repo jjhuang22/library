@@ -1,134 +1,65 @@
-# Microsoft Volume I — source evidence
+# Microsoft Volume I — evidence map
 
-Episode and sources Acquired: Microsoft Volume I — official episode page. Released April 22, 2024; Spring 2024. Official corrections are incorporated and identified: Engelbart/SRI before PARC; the Windows manager resigned; Weise/Barrett protected-mode engineering and Windows/386; UCSD p-System; Cutler’s VMS; the disrupted Excel-to-Mac decision; and Allen/Ballmer support for UW. Full transcript mirror — Podscripts automated third-party transcription, not official. Read in full, including concluding analysis, recommendations and sign-off. No substantive material is imported from outside company research, the mirror’s summaries or the episode bibliography. All cues use paragraph starts from this single mirror timing version. The navigation endpoint 04:06:03 is the last substantive discussion/transition paragraph, not the full recording duration. Final sign-off starts 04:20:55. Ad-edited players may differ. A chapter cue locates its discussion rather than every individual statement. All history and analysis come from this recording, with only the official episode’s explicitly identified corrections supplementing it. The automated mirror repeats some phrases and mishears names; those errors are not quotations or new evidence. Digital Research negotiations and the supposed IBM CEO invitation remain disputed or unconfirmed. Fiscal and calendar periods, acquisition groundwork versus later development, and gross economics versus operating costs are distinguished. Ownership reconstruction is qualified. Seven Powers are the hosts’ arguments, with process power explicitly uncertain. All financial snapshots retain the time of recording. The software-themed navigation maps horizontal position linearly to elapsed time. Its decorative shapes do not assert historical interface or product provenance. The reading clock interpolates document position and does not play audio. Large dropdown links provide an alternative to closely spaced chapter markers. Both watercolor images are original generated conceptual art, with anonymous figures and imagined settings. Diagrams describe the hosts’ analysis rather than supply new measurements. Financial snapshots, forecasts and unresolved arguments retain their time of recording.
+## Sources and timing
 
-## Passage anchors and timing
+- [Official episode](https://www.acquired.fm/episodes/microsoft): April 22, 2024, Spring 2024; the eight official correction bullets supplement the recording. The official page and its `#transcript` anchor returned episode metadata and the Sources bibliography, not the full transcript. A transcript-tab query was inaccessible; bibliography entries were not used as substitutes.
+- [Podscripts full transcript](https://podscripts.co/podcasts/acquired/microsoft-volume-i): same-recording automated third-party mirror used for the narrative and listening cues. The original creation and independent review documented complete reading through the closing material; this maintenance pass verified official corrections, consequential distinctions and the ending without claiming a new complete read.
+- All chapter cues are paragraph-start times in this one mirror version. Navigation ends at **04:06:03**, the transition to trivia, rather than the recording duration. Final sign-off begins **04:20:55**; closing theme begins **04:21:21**. Other ad-edited versions may differ. A cue locates the discussion, not every sentence in a chapter.
 
-These chapter titles and paragraph-start cues locate the retained source map in the transcript version identified above. Legacy retrieval line numbers below are secondary locators, not timestamps. The original complete-transcript review and its qualifications are preserved; bundle migration is not a new retrospective source audit.
+## Chapter passage index
 
-- `gates` — 0:03:06, A business education before a computer education.
-- `computing` — 0:13:48, The company that was the computer industry.
-- `programmers` — 0:20:22, Learn the machine, then negotiate a royalty.
-- `trafo` — 0:25:51, The traffic machine that taught them emulation.
-- `harvard` — 0:33:13, Waiting for a computer powerful enough to matter.
-- `altair` — 0:40:00, Sell the possibility, then build the interpreter.
-- `mits` — 0:45:45, An unlikely hardware company makes the market.
-- `license` — 0:52:42, The first contract gave away too much control.
-- `copyright` — 0:56:58, A license could travel with the machine.
-- `freedom` — 1:02:43, Win the right to sell to everyone.
-- `spiral` — 1:09:30, Make compatibility the easy choice.
-- `japan` — 1:15:14, International before there was much company.
-- `chess` — 1:29:39, IBM starts a garage inside the elephant.
-- `digital` — 1:36:25, The operating system opportunity almost passed by.
-- `dos` — 1:42:00, Buy a beginning, then turn it into DOS.
-- `ibmdeal` — 1:47:02, Let IBM create demand; retain the right to serve it.
-- `clones` — 1:53:20, The standard escapes its original manufacturer.
-- `capital` — 2:01:55, Outside money arrived after the cash machine worked.
-- `applications` — 2:12:26, Multiplan loses to a focused spreadsheet.
-- `mac` — 2:24:02, The Mac needed Excel, and Excel needed a new platform.
-- `office` — 2:30:25, A suite starts as a box and a price.
-- `windows` — 2:34:29, The graphical hedge was not the favored project.
-- `os2` — 2:41:52, Staying on the bear while encouraging the rebels.
-- `plan-a` — 2:47:15, Windows finally becomes the main bet.
-- `ecosystem` — 2:55:09, Build the applications, recruit the developers, win the OEMs.
-- `enterprise` — 3:00:24, Employees brought the opening; Ballmer built the sales motion.
-- `nt` — 3:07:22, Two implementations of the Windows future.
-- `chicago` — 3:13:28, An ordinary destination rather than a distant promise.
-- `launch` — 3:16:03, Software becomes a mass-market event.
-- `founders` — 3:28:26, Capital efficiency preserved unusually large ownership.
-- `hedges` — 3:38:47, Conviction about software, flexibility about the route.
-- `organization` — 3:42:55, Talent, local markets and software that is never finished.
-- `powers` — 3:53:23, Seven possible powers, with unequal strength.
-- `conclusion` — 4:00:58, The place where the industry had to meet.
+Line ranges refer to the linked mirror’s numbered transcript extraction; timestamps and passage subjects are the durable locators. Official references below mean the correction bullets on the episode page.
 
-## Section evidence
+| Chapter | Cue | Passage |
+|---|---|---|
+| [A business education before a computer education](index.html#gates) | 00:03:06 | 48–76 |
+| [The company that was the computer industry](index.html#computing) | 00:13:48 | 77–93;  665–670 |
+| [Learn the machine, then negotiate a royalty](index.html#programmers) | 00:20:22 | 94–111 |
+| [The traffic machine that taught them emulation](index.html#trafo) | 00:25:51 | 111–133 |
+| [Waiting for a computer powerful enough to matter](index.html#harvard) | 00:33:13 | 134–147 |
+| [Sell the possibility, then build the interpreter](index.html#altair) | 00:40:00 | 153–168 |
+| [An unlikely hardware company makes the market](index.html#mits) | 00:45:45 | 169–190 |
+| [The first contract gave away too much control](index.html#license) | 00:52:42 | 190–201 |
+| [A license could travel with the machine](index.html#copyright) | 00:56:58 | 202–217 |
+| [Win the right to sell to everyone](index.html#freedom) | 01:02:43 | 218–243 |
+| [Make compatibility the easy choice](index.html#spiral) | 01:09:30 | 233–250 |
+| [International before there was much company](index.html#japan) | 01:15:14 | 250–265;  official correction 291 |
+| [IBM starts a garage inside the elephant](index.html#chess) | 01:29:39 | 272–310 |
+| [The operating system opportunity almost passed by](index.html#digital) | 01:36:25 | 311–327 |
+| [Buy a beginning, then turn it into DOS](index.html#dos) | 01:42:00 | 328–340 |
+| [Let IBM create demand; retain the right to serve it](index.html#ibmdeal) | 01:47:02 | 341–357 |
+| [The standard escapes its original manufacturer](index.html#clones) | 01:53:20 | 357–380;  official correction 288 |
+| [Outside money arrived after the cash machine worked](index.html#capital) | 02:01:55 | 381–410 |
+| [Multiplan loses to a focused spreadsheet](index.html#applications) | 02:12:26 | 411–440;  official correction 283 |
+| [The Mac needed Excel, and Excel needed a new platform](index.html#mac) | 02:24:02 | 447–464;  official correction 290 |
+| [A suite starts as a box and a price](index.html#office) | 02:30:25 | 465–475;  790 |
+| [The graphical hedge was not the favored project](index.html#windows) | 02:34:29 | 476–499;  official correction 284 |
+| [Staying on the bear while encouraging the rebels](index.html#os2) | 02:41:52 | 495–510;  official correction 285–287 |
+| [Windows finally becomes the main bet](index.html#plan-a) | 02:47:15 | 511–534;  668–669 |
+| [Build the applications, recruit the developers, win the OEMs](index.html#ecosystem) | 02:55:09 | 534–549 |
+| [Employees brought the opening; Ballmer built the sales motion](index.html#enterprise) | 03:00:24 | 550–569 |
+| [Two implementations of the Windows future](index.html#nt) | 03:07:22 | 570–584;  official correction 289 |
+| [An ordinary destination rather than a distant promise](index.html#chicago) | 03:13:28 | 585–592;  603–618;  621–624 |
+| [Software becomes a mass-market event](index.html#launch) | 03:16:03 | 593–631 |
+| [Capital efficiency preserved unusually large ownership](index.html#founders) | 03:28:26 | 628–657 |
+| [Conviction about software, flexibility about the route](index.html#hedges) | 03:38:47 | 658–670 |
+| [Talent, local markets and software that is never finished](index.html#organization) | 03:42:55 | 671–705 |
+| [Seven possible powers, with unequal strength](index.html#powers) | 03:53:23 | 706–730 |
+| [The place where the industry had to meet](index.html#conclusion) | 04:00:58 | 730–748 |
 
-1. **A business education before a computer education** (`#gates`), 00:03:06: L48–76. Supports the section’s chronology, examples, figures and attributed analysis.
+## Consequential claims and qualifications
 
-2. **The company that was the computer industry** (`#computing`), 00:13:48: L77–93; L665–670. Supports the section’s chronology, examples, figures and attributed analysis.
+- **Early preparation through licensing** (`#gates`–`#japan`, 00:03:06–01:15:14): family access, Lakeside time-sharing, paid programming and Traf-O-Data emulation precede Altair BASIC. MITS’s exclusive distribution, $180,000 cap and best-efforts clause differ from later OEM licensing. The 1977 arbitration freed Microsoft to serve other manufacturers; software copyright and licensing are the hosts’ historical account.
+- **IBM and DOS** (`#chess`–`#clones`, 01:29:39–01:53:20): Digital Research negotiations have competing accounts. Seattle Computer Products’ $25,000 plus $50,000 deal bought groundwork followed by Microsoft engineering. IBM’s $430,000 package included $45,000 for DOS; it was a different transaction from the $75,000 SCP acquisition. IBM owed no continuing per-copy royalty; Microsoft retained rights to sell elsewhere. Compatibility and Compaq’s clean-room BIOS explain the later OEM opportunity.
+- **Capital and applications** (`#capital`–`#office`, 02:01:55–02:30:25): outside investment occurred despite positive operating cash; Paul’s departure and the 1986 IPO are distinct events. Multiplan lost to Lotus; Mac Excel supplied a new-generation route. An early commercial bundle was not yet deep Office integration. The PowerPoint/Forethought coda appears again at 04:19:55.
+- **Windows and enterprise** (`#windows`–`#nt`, 02:34:29–03:07:22): OS/2 was initially the main strategy, Windows a genuine hedge. Per-processor contracts charged for competing OS machines too; the hosts acknowledge exclusionary incentives while disputing how much the contracts explain success. Ballmer’s enterprise sales effort and Cutler’s NT engineering are separate foundations. The purported invitation for Gates to run IBM remains uncorroborated.
+- **Windows 95 and ownership** (`#chicago`–`#founders`, 03:13:28–03:28:26): million first-week versus seven-million first-month sales; fiscal 1995 ended in June before the August launch. Microsoft Research’s 1991 rationale is retained. Calendar-1982 and fiscal-1984 revenue are different periods; market capitalization is not revenue. IPO ownership figures are attributed to the hosts and earlier option-pool reconstruction remains approximate. Operating-cash financing does not mean no outside money was raised.
+- **Ending analysis** (`#hedges`–`#conclusion`, 03:38:47–04:05:44): real hedges, platform transitions, local-market knowledge, talent and unfinished software; all seven Powers discussed with early process power explicitly uncertain. IBM’s later revenue persistence qualifies the leadership narrative. Brief bull/bear framing asks whether the important layer moves beyond operating systems. Final takeaway credits IBM’s achievement and Microsoft’s retained rights, ecosystem value creation and gradually increasing confidence. No later outcome is presented as a forecast.
 
-3. **Learn the machine, then negotiate a royalty** (`#programmers`), 00:20:22: L94–111. Supports the section’s chronology, examples, figures and attributed analysis.
+## Official corrections applied
 
-4. **The traffic machine that taught them emulation** (`#trafo`), 00:25:51: L111–133. Supports the section’s chronology, examples, figures and attributed analysis.
+The episode page corrects Engelbart/SRI’s 1968 GUI demonstration before PARC; the Windows manager’s resignation rather than firing; Weise/Barrett’s protected-mode skunkworks and the Windows/386 virtual-DOS bridge; UCSD **p-System**, not Pascal; Cutler’s **VMS**, not VAX; Gates’s disruptive switch of Excel/Odyssey from PC to Mac and Doug Klunder’s planned departure; and Allen/Ballmer-family UW donations alongside Gates’s. These are identified in the relevant chapters.
 
-5. **Waiting for a computer powerful enough to matter** (`#harvard`), 00:33:13: L134–147. Supports the section’s chronology, examples, figures and attributed analysis.
+## Visual and interpretive material
 
-6. **Sell the possibility, then build the interpreter** (`#altair`), 00:40:00: L153–168. Supports the section’s chronology, examples, figures and attributed analysis.
-
-7. **An unlikely hardware company makes the market** (`#mits`), 00:45:45: L169–190. Supports the section’s chronology, examples, figures and attributed analysis.
-
-8. **The first contract gave away too much control** (`#license`), 00:52:42: L190–201. Supports the section’s chronology, examples, figures and attributed analysis.
-
-9. **A license could travel with the machine** (`#copyright`), 00:56:58: L202–217. Supports the section’s chronology, examples, figures and attributed analysis.
-
-10. **Win the right to sell to everyone** (`#freedom`), 01:02:43: L218–243. Supports the section’s chronology, examples, figures and attributed analysis.
-
-11. **Make compatibility the easy choice** (`#spiral`), 01:09:30: L233–250. Supports the section’s chronology, examples, figures and attributed analysis.
-
-12. **International before there was much company** (`#japan`), 01:15:14: L250–265; official corrections L291. Supports the section’s chronology, examples, figures and attributed analysis.
-
-13. **IBM starts a garage inside the elephant** (`#chess`), 01:29:39: L272–310. Supports the section’s chronology, examples, figures and attributed analysis.
-
-14. **The operating system opportunity almost passed by** (`#digital`), 01:36:25: L311–327. Supports the section’s chronology, examples, figures and attributed analysis.
-
-15. **Buy a beginning, then turn it into DOS** (`#dos`), 01:42:00: L328–340. Supports the section’s chronology, examples, figures and attributed analysis.
-
-16. **Let IBM create demand; retain the right to serve it** (`#ibmdeal`), 01:47:02: L341–357. Supports the section’s chronology, examples, figures and attributed analysis.
-
-17. **The standard escapes its original manufacturer** (`#clones`), 01:53:20: L357–380; official corrections L288. Supports the section’s chronology, examples, figures and attributed analysis.
-
-18. **Outside money arrived after the cash machine worked** (`#capital`), 02:01:55: L381–410. Supports the section’s chronology, examples, figures and attributed analysis.
-
-19. **Multiplan loses to a focused spreadsheet** (`#applications`), 02:12:26: L411–440; official corrections L283. Supports the section’s chronology, examples, figures and attributed analysis.
-
-20. **The Mac needed Excel, and Excel needed a new platform** (`#mac`), 02:24:02: L447–464; official corrections L290. Supports the section’s chronology, examples, figures and attributed analysis.
-
-21. **A suite starts as a box and a price** (`#office`), 02:30:25: L465–475; L790. Supports the section’s chronology, examples, figures and attributed analysis.
-
-22. **The graphical hedge was not the favored project** (`#windows`), 02:34:29: L476–499; official corrections L284. Supports the section’s chronology, examples, figures and attributed analysis.
-
-23. **Staying on the bear while encouraging the rebels** (`#os2`), 02:41:52: L495–510; official corrections L285–287. Supports the section’s chronology, examples, figures and attributed analysis.
-
-24. **Windows finally becomes the main bet** (`#plan-a`), 02:47:15: L511–534; L668–669. Supports the section’s chronology, examples, figures and attributed analysis.
-
-25. **Build the applications, recruit the developers, win the OEMs** (`#ecosystem`), 02:55:09: L534–549. Supports the section’s chronology, examples, figures and attributed analysis.
-
-26. **Employees brought the opening; Ballmer built the sales motion** (`#enterprise`), 03:00:24: L550–569. Supports the section’s chronology, examples, figures and attributed analysis.
-
-27. **Two implementations of the Windows future** (`#nt`), 03:07:22: L570–584; official corrections L289. Supports the section’s chronology, examples, figures and attributed analysis.
-
-28. **An ordinary destination rather than a distant promise** (`#chicago`), 03:13:28: L585–592; L603–618; L621–624. Supports the section’s chronology, examples, figures and attributed analysis.
-
-29. **Software becomes a mass-market event** (`#launch`), 03:16:03: L593–631. Supports the section’s chronology, examples, figures and attributed analysis.
-
-30. **Capital efficiency preserved unusually large ownership** (`#founders`), 03:28:26: L628–657. Supports the section’s chronology, examples, figures and attributed analysis.
-
-31. **Conviction about software, flexibility about the route** (`#hedges`), 03:38:47: L658–670. Supports the section’s chronology, examples, figures and attributed analysis.
-
-32. **Talent, local markets and software that is never finished** (`#organization`), 03:42:55: L671–705. Supports the section’s chronology, examples, figures and attributed analysis.
-
-33. **Seven possible powers, with unequal strength** (`#powers`), 03:53:23: L706–730. Supports the section’s chronology, examples, figures and attributed analysis.
-
-34. **The place where the industry had to meet** (`#conclusion`), 04:00:58: L730–748. Supports the section’s chronology, examples, figures and attributed analysis.
-
-## Qualifications and visual evidence
-
-All history and analysis come from this recording, with only the official episode’s explicitly identified corrections supplementing it. The automated mirror repeats some phrases and mishears names; those errors are not quotations or new evidence. Digital Research negotiations and the supposed IBM CEO invitation remain disputed or unconfirmed. Fiscal and calendar periods, acquisition groundwork versus later development, and gross economics versus operating costs are distinguished. Ownership reconstruction is qualified. Seven Powers are the hosts’ arguments, with process power explicitly uncertain. All financial snapshots retain the time of recording.
-
-- **The two sides of the IBM bargain**, after `#ibmdeal`: same cited passages as that section. Conceptual explanation from the episode. The $430,000 IBM package and $75,000 Seattle Computer Products transaction are separate deals.
-- **Three routes through an uncertain future**, after `#plan-a`: same cited passages as that section. Concurrent strategies with changing emphasis, not equal budgets or a claim that management always expected Windows to win.
-- The three interactive perspectives restate the concluding analysis; no new data or projections. Original PNG watercolors, both 1536×1024, conceptual anonymous subjects, descriptive alt/captions.  Shared episode-timeline.js, bundled Cormorant and artifact-type.css last; company-specific geometry preserved.
-
-## Consequential distinctions and corrections
-
-- Full mirror projection includes every line L41–794 through final theme/sign-off. Repeated phrases and name-transcription errors are not copied as quotations. Official metadata release April22,2024 L251; all eight correction bullets L283–291 read and incorporated.
-- Bill’s privilege/family and Paul’s technical preparation are included, not a lone-founder inevitability story. Traf-O-Data’s emulator (L111–125) is connected to Altair development (L153–168), but imagined art is not documentary evidence.
-- MITS exclusive distribution/cap and termination clause L190–224 differ from later OEM payments. Copyright framework and licensing L202–217 are narrated as the hosts’ discussion, not independent legal advice or a claim Microsoft was literally the first software vendor of any kind.
-- Digital Research L318–324: competing accounts unresolved. Seattle Computer Products L328–336: $25k+$50k groundwork followed by Microsoft development, not all later DOS bought ready-made.
-- IBM L341–357: $430k entire package vs $45k DOS component; rights beyond IBM more consequential than initial payment. Separate $75k SCP acquisition cost. OS options at L362–363 use officially corrected UCSD p-System name.
-- Application failure/next platform L411–475: Multiplan’s loss, Excel-Mac decision disrupts team (official L290), early commercial suite differs from product integration. Xerox influence corrected with SRI/Engelbart predecessor (official L283).
-- Windows L476–510: manager resigned, not fired (official L284). Protected-mode memory work by DavidWeise/PhilBarrett and Windows/386 virtual-DOS bridge added explicitly from official corrections L285–287. No precise 8-bit word/pin claims copied from imprecise transcript analogies.
-- Per-processor licenses L539–548: mechanism and antitrust concern preserved with hosts’ qualification about timing; no denial of exclusionary incentives. Enterprise seeds L550–584 differ from full later go-to-market; Cutler system corrected VMS official L289.
-- Fiscal1995 endsJune before AugustWindows95 launch; salesweek/month distinct, calendar1982/fiscal1984 reporting periods retained. Marketcap differs from revenue; supposed Gates/IBMCEO invitation explicitly unconfirmed.
-- Capital efficiency L631–657: external capital really raised, operating cashfinanced growth; IPOcap table cited, optionpoolestimateuncertain, hosts disagree over publiccompany necessity. PC shipment growth contextual, not a universal startup prescription.
-- Complete concluding playbook L658–705, allsevenpowers with process uncertainty L706–730, brief bearbull and final point-of-integration reflection L730–748 retained. No independent future forecast.
+The IBM bargain diagram uses the distinct package price, acquired groundwork and retained licensing rights above. The OS/2/Mac/Windows diagram shows changing concurrent strategies, not equal budgets or certainty of victory. The three interactive perspectives restate the concluding analysis without new data. Both retained original generated watercolors depict conceptual anonymous figures and imagined settings, not documentary scenes.
