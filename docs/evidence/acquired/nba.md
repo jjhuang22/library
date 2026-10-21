@@ -1,3 +1,4 @@
+<!-- artifact-review: {"status":"verified","bundleTree":"3a59a520e6c00ac6332195c54819eb06a6f84571"} -->
 # The NBA — source evidence
 
 ## Source and provenance
