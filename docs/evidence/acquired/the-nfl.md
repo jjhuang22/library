@@ -1,3 +1,4 @@
+<!-- artifact-review: {"status":"verified","bundleTree":"8952af0d7f5c2fc6ce87df6183cfc53a61c966d1"} -->
 # The NFL — 2026 remaster and follow-up evidence
 
 ## Source versions and release
