@@ -1,97 +1,46 @@
 # Google: The AI Company — source evidence
 
-Episode and sources This narrative follows the recording, including the full concluding analysis. Figures and competitive judgments refer to the hosts’ 2025 discussion, not later company results or product releases. Official Acquired episode page : October 6, 2025 release date and three corrections. Kubernetes launched in 2014. AlphaGo’s Lee Sedol match used 48 TPUs across two racks; four TPUs refers to later AlphaGo Zero. TPU cost comparisons must account for the whole system rather than applying chip-level markup to total cost. Full Podscripts transcript mirror : the automated third-party transcript used for the story and listening cues. It is not an official Acquired transcript. The full transcript was read, including the conclusion, carve-outs and credits. No substantive material is imported from the episode bibliography or the mirror’s summary. All listening cues are paragraph-start timestamps from this mirror’s single recording version, whose final thanks begins at 4:06:29. The navigation endpoint, 3:54:17, is the final paragraph of the main conclusion, before personal carve-outs. It is not the total audio duration. Obvious truncated-year transcription errors are resolved from the surrounding chronology; unclear details are qualified or omitted. The Waymo and Cloud branches deliberately rewind in historical time while retaining their later positions in the episode’s listening order. The tensor-chip navigation maps elapsed listening time horizontally. The moving readout interpolates reading position and does not play the recording. The Chapters menu provides large targets for the small chip markers. Both original watercolor images are imagined conceptual scenes. The diagrams and interactive panels explain the hosts’ arguments without calculating financial outcomes.
+## Provenance and corrections
 
-## Passage anchors and timing
+Official episode: [Acquired — Google: The AI Company](https://www.acquired.fm/episodes/google-the-ai-company), October 6, 2025, Fall 2025. Created October 19, 2026.
 
-These chapter titles and paragraph-start cues locate the retained source map in the transcript version identified above. Legacy retrieval line numbers below are secondary locators, not timestamps. The original complete-transcript review and its qualifications are preserved; bundle migration is not a new retrospective source audit.
+The original October 19 source record documents a complete read of the [Podscripts same-recording transcript mirror](https://podscripts.co/podcasts/acquired/google-the-ai-company), including its concluding analysis and closing material, followed by an independent full-source review. That existing review is retained; this October 20 provenance audit re-read the complete companion and targeted consequential source passages and ending, rather than claiming another complete transcript read.
 
-- `language` — 0:08:30, A search company dreams of understanding.
-- `translate` — 0:18:46, Research becomes fast enough to ship.
-- `brain` — 0:23:52, A place where professors could build.
-- `alexnet` — 0:47:27, Two gaming cards changed the bidding.
-- `deepmind` — 1:02:05, A game designer set out to solve intelligence.
-- `acquisition` — 1:22:07, Google acquired a second research engine.
-- `openai` — 1:30:40, A rival recruited around a different promise.
-- `tpu` — 1:40:24, Demand required another kind of computer.
-- `transformer` — 1:52:27, A simpler architecture could scale.
-- `gpt` — 2:04:16, Scaling the model changed the financing.
-- `unshipped` — 2:20:38, Google had a chatbot, and reasons to hesitate.
-- `code-red` — 2:25:31, A chat box changed the competitive question.
-- `gemini` — 2:40:23, Two laboratories became one model program.
-- `waymo-origins` — 2:47:12, The other moonshot began in the desert.
-- `waymo-business` — 2:58:03, A driverless ride is still an operating business.
-- `cloud` — 3:22:54, An enterprise business became AI distribution.
-- `bull` — 3:32:43, The assets could reinforce one another.
-- `bear` — 3:43:04, A better answer may earn less money.
-- `powers` — 3:47:17, Scale survives; the other powers narrow.
-- `conclusion` — 3:51:33, Steward of a mission and a franchise.
+Official-first access was rechecked October 20 at the episode and explicit [Transcript view](https://www.acquired.fm/episodes/google-the-ai-company#transcript). The web reader exposed bibliography/episode notes and corrections, but no dialogue or further transcript link. Direct client-rendered tab access remained unavailable under the already established cloud network restriction, so the complete mirror remains the documented fallback. Bibliography research and mirror summaries are excluded.
 
-## Section evidence
+The official corrections were rechecked and are incorporated: Kubernetes launched in 2014, not 2018; AlphaGo’s Lee Sedol match used 48 TPUs across two racks, whereas four TPUs describes later AlphaGo Zero; Broadcom’s approximate chip markup and Nvidia’s system economics have different scopes, with the chip only roughly a quarter of system cost. The companion avoids deriving a universal cost ratio from those inputs.
 
-1. **A search company dreams of understanding** (`#language`), 00:08:30: L64–94. These passages support the section’s chronology, numbers, anecdotes and attributed analysis.
+## Source passages
 
-2. **Research becomes fast enough to ship** (`#translate`), 00:18:46: L94–110. These passages support the section’s chronology, numbers, anecdotes and attributed analysis.
+Cues below identify paragraph starts in the same Podscripts version used by the navigation. Each row maps its section to the episode’s account and qualifications.
 
-3. **A place where professors could build** (`#brain`), 00:23:52: L111–178. These passages support the section’s chronology, numbers, anecdotes and attributed analysis.
+| Section | Cue | Supported content and qualification |
+| --- | --- | --- |
+| [A search company dreams of understanding](#language) | 00:08:30 | Harik/Shazeer, uncertain late-2000/early-2001 timing; compression versus understanding is a hypothesis. Phil improves spelling and AdSense rather than being a modern neural chatbot. |
+| [Research becomes fast enough to ship](#translate) | 00:18:46 | Och’s translation challenge and Dean’s engineering: reported twelve hours to ~100 milliseconds; no claim that word substitution alone describes translation. |
+| [A place where professors could build](#brain) | 00:23:52 | Thrun’s maps include extensive human work; academic recruiting, Ng/Dean/Corrado and DistBelief; asynchronous CPU training and the cat paper’s 16,000 cores. Recognition is not proof of general intelligence. |
+| [Two gaming cards changed the bidding](#alexnet) | 00:47:27 | AlexNet’s two GTX 580 GPUs; ~25% to ~15% error is ten percentage points/~40% relative; DNN Research’s competitive auction ends at $44 million, not an instant uncontested acquisition. |
+| [A game designer set out to solve intelligence](#deepmind) | 01:02:05 | Hassabis’s chess, game development, failed studio and neuroscience; Legg/Suleyman, seed funding, Musk; reported Facebook offer up to $800 million; autonomy as a deal consideration. |
+| [Google acquired a second research engine](#acquisition) | 01:22:07 | Google’s reported $550 million DeepMind acquisition, mission protections; 40% reduction is cooling energy, not all energy. Official AlphaGo hardware correction applied. |
+| [A rival recruited around a different promise](#openai) | 01:30:40 | Nonprofit research recruitment; $1 billion pledged versus ~$130 million collected; games/robotics rather than an original settled chat-product plan. |
+| [Demand required another kind of computer](#tpu) | 01:40:24 | 40,000 GPUs/$130 million, speech-recognition demand, specialized TPU and ~15-month development; TensorFlow/framework, model, hardware and interface distinguished. |
+| [A simpler architecture could scale](#transformer) | 01:52:27 | Attention architecture, Shazeer implementation and eight authors; Google used BERT and other applications. Publication and lost opportunity are hosts’ interpretations. |
+| [Scaling the model changed the financing](#gpt) | 02:04:16 | Musk exit and transformer pivot interaction uncertain; 2018 Sun Valley meeting separate from later partnership; capital, Azure, GPT scaling and Copilot. |
+| [Google had a chatbot, and reasons to hesitate](#unshipped) | 02:20:38 | Meena/LaMDA were unsafe prototypes rather than a fully shippable ChatGPT; post-training, brand, publishers and ad economics constrain launch. |
+| [A chat box changed the competitive question](#code-red) | 02:25:31 | November 2022 ChatGPT, consumer surprise, qualified Anthropic account, code red and early-2023 Bing/Bard. Surrounding repeated years resolve automated truncated-year errors. |
+| [Two laboratories became one model program](#gemini) | 02:40:23 | Brain/DeepMind unification, Gemini family rather than a single identical checkpoint, returned talent, 2023–2025 releases. Hosts question what 450 million monthly users measures. |
+| [The other moonshot began in the desert](#waymo-origins) | 02:47:12 | DARPA, Thrun, maps, Chauffeur and Page’s route challenge; early system not deep-learning throughout; demonstrations versus production edge cases. |
+| [A driverless ride is still an operating business](#waymo-business) | 02:58:03 | Driverless Waymo versus supervised Tesla; study’s 91% serious-or-worse crash comparison is attributed and scoped. Cumulative $10–15 billion burn is distinct from annual cost/funding. Social crash costs are not captured revenue; launches remain plans. |
+| [An enterprise business became AI distribution](#cloud) | 03:22:54 | App Engine 2008, Compute Engine 2012; official Kubernetes 2014 correction, Kurian late-2018 hire; enterprise go-to-market and ~$50 billion annual run rate, not completed-year sales. |
+| [The assets could reinforce one another](#bull) | 03:32:43 | All-up ~$370 billion trailing revenue/$140 billion earnings and ~$95 billion cash/securities, not Gemini figures. Google One’s 150 million subscribers not all premium AI. Integrated applications/model/chip/cloud stack; official chip-versus-system cost qualification; monetization scenarios are hypotheses. |
+| [A better answer may earn less money](#bear) | 03:43:04 | Value creation differs from capture; future share scenarios not forecasts; valuable queries may leave first; regulation characterization is the hosts’ 2025 interpretation, not later legal outcome. |
+| [Scale survives; the other powers narrow](#powers) | 03:47:17 | Scoped to AI products: scale, distribution/cornered resource, qualified brand; low current consumer switching, some enterprise friction; no present network, counter-positioning or demonstrated process power awarded. |
+| [Steward of a mission and a franchise](#conclusion) | 03:51:33 | Mission versus franchise and public shareholders; praise for rapid but measured response, unresolved future profitability and possible erosion beneath strong results. |
 
-4. **Two gaming cards changed the bidding** (`#alexnet`), 00:47:27: L177–208. These passages support the section’s chronology, numbers, anecdotes and attributed analysis.
+## Visual and timing provenance
 
-5. **A game designer set out to solve intelligence** (`#deepmind`), 01:02:05: L217–280. These passages support the section’s chronology, numbers, anecdotes and attributed analysis.
+The language-model interlude restates the language/translation discussion and 1:52:27–2:03:28 architecture passages. The four-capability model follows 3:27:57–3:42:24 with the official cost correction. The value-created/value-captured comparison follows 3:32:43–3:47:05. These are qualitative relationships, not simulated financial outcomes.
 
-6. **Google acquired a second research engine** (`#acquisition`), 01:22:07: L280–295; official AlphaGo correction. These passages support the section’s chronology, numbers, anecdotes and attributed analysis.
+The October 20 source recheck directly observed the 3:03:11 study qualification, 3:07:19 cumulative spending estimate, 3:13:05 usage-count caveat, 3:22:54–3:30:39 Cloud/stack discussion, and the complete bull/bear/powers/conclusion sequence from 3:32:43 through 3:54:17. These corroborate the earlier full-source map.
 
-7. **A rival recruited around a different promise** (`#openai`), 01:30:40: L304–328. These passages support the section’s chronology, numbers, anecdotes and attributed analysis.
-
-8. **Demand required another kind of computer** (`#tpu`), 01:40:24: L329–362. These passages support the section’s chronology, numbers, anecdotes and attributed analysis.
-
-9. **A simpler architecture could scale** (`#transformer`), 01:52:27: L364–395. These passages support the section’s chronology, numbers, anecdotes and attributed analysis.
-
-10. **Scaling the model changed the financing** (`#gpt`), 02:04:16: L396–438. These passages support the section’s chronology, numbers, anecdotes and attributed analysis.
-
-11. **Google had a chatbot, and reasons to hesitate** (`#unshipped`), 02:20:38: L439–452; L464–472. These passages support the section’s chronology, numbers, anecdotes and attributed analysis.
-
-12. **A chat box changed the competitive question** (`#code-red`), 02:25:31: L454–493. These passages support the section’s chronology, numbers, anecdotes and attributed analysis.
-
-13. **Two laboratories became one model program** (`#gemini`), 02:40:23: L494–509; L575–595. These passages support the section’s chronology, numbers, anecdotes and attributed analysis.
-
-14. **The other moonshot began in the desert** (`#waymo-origins`), 02:47:12: L510–544. These passages support the section’s chronology, numbers, anecdotes and attributed analysis.
-
-15. **A driverless ride is still an operating business** (`#waymo-business`), 02:58:03: L543–575. These passages support the section’s chronology, numbers, anecdotes and attributed analysis.
-
-16. **An enterprise business became AI distribution** (`#cloud`), 03:22:54: L618–647. These passages support the section’s chronology, numbers, anecdotes and attributed analysis.
-
-17. **The assets could reinforce one another** (`#bull`), 03:32:43: L603–617; L648–679; official TPU correction. These passages support the section’s chronology, numbers, anecdotes and attributed analysis.
-
-18. **A better answer may earn less money** (`#bear`), 03:43:04: L596–602; L680–690. These passages support the section’s chronology, numbers, anecdotes and attributed analysis.
-
-19. **Scale survives; the other powers narrow** (`#powers`), 03:47:17: L691–705. These passages support the section’s chronology, numbers, anecdotes and attributed analysis.
-
-20. **Steward of a mission and a franchise** (`#conclusion`), 03:51:33: L705–712. These passages support the section’s chronology, numbers, anecdotes and attributed analysis.
-
-## Consequential qualifications
-
-- Early language: compression/understanding treated as a hypothesis, preserving hosts’ caveat. Late2000/early2001 uncertainty. Phil is distinct from modern neural LLMs.
-- Translate: reported12hours→100milliseconds is hosts’ engineering account; no claim literal word substitution is the full algorithm.
-- Brain/cat paper: manual maps work retained. DistBelief asynchronous updates distinguished from GPUs.16,000cores supported; conflicting machine counts omitted. Learned representation not proof of general intelligence.
-- AlexNet:25→15percent error is10percentage points/~40percent relative. Two GTX580s; DNN44million auction; not an immediate no-bid acquisition.
-- DeepMind: founder background, failed studio, funding/chess and autonomy; Facebook offer up to800million reported, Google550million as episode. No unsupported valuation asserted. Cooling40percent not whole-data-center power.
-- Official correction: AlphaGo match48TPUs across2racks(24each); later AlphaGoZero4TPUs. Original four-TPU match claim removed.
-- OpenAI:1billion pledged vs130million collected, research not initial chatbotplan. Timing interaction between Muskexit and transformerpivot uncertain. SunValleymeeting vs subsequent partnership distinguished; no exact compressed boardlist/announcement chronology asserted.
-- TPU:40k GPUs/130million; speech scaling motivates ASIC;15month firstTPU. Reducedprecision explained qualitatively; no computed savings ratio. Framework/hardware/model/interface kept distinct.
-- Transformer: eightauthors, Shazeerimplementation, scalability. Google DID use BERT etc, not no response. Publication/talent loss host interpretation.
-- Meena/LaMDA: rawunsafe prototype not shippable ChatGPT; humanfeedback,trust,publishers and monetization constraints. Departure year omitted where transcript shorthand uncertain.
-- ChatGPT/codered/Gemini: surrounding repeated2022/2023 chronology resolves isolated automated2020 truncations. Consumer surprise and Anthropic timing account qualified. Avoid unsupported exact Bard GA rollout claim. Gemini brand/model family not literally one identical checkpoint across alluses.450million use definition questioned, not settled activeappcount.
-- Waymo: earlyDARPA/Chauffeur not deeplearning throughout; Larry1000 vs productionedgecases; supervisedTesla notdriverlessWaymo.91percent fewer serious/worse crashes attributed to study’s comparison, not zero accidents/allroads. Cumulative10–15billion burn estimate fromL573–575 distinguished from annual costs and announced funding. Social crashcost savings not businessrevenue/marketcap. Futurelaunches remain plans. Alphabet majorityowner.
-- Cloud: AppEngine2008,ComputeEngine2012, enterpriseGT M not onlyengineering. Official correction Kubernetes2014, not2018. Kurianhirelate2018 separate.50billionannualrunrate not reportedannualsales. TPUexternaldistribution speculation distinguished.
-- Snapshot:370billionrevenue/140billionearnings are hosts’ Google/Alphabet all-up trailing figures, not Searchonly or Gemini.95billioncash/securities; distributions vsAIcapex.150millionGoogleOne subscribers not150millionpremiumAI. Gemini revenue unknown.
-- TPUofficialcostcorrection: approximateBroadcom2xchipmarkup vsNvidia5xwhole-system economics. Chiproughly25percentofsystem in officialcorrection; avoid wrongtotal-costratio and preciseTCOfromuncertaininputs. Costadvantage qualitative, not forecast.
-- Bull/bear: distinguish valuecreation/capture, hypothesesforads/bundles/personalization/YouTube. No forecastsharesasserted. Regulation hosts’ view atrecording, not no-remedieslegalclaim. Search’s share not automaticallyAIshare.
-- Powers: scale,strongdistribution/corneredresource,qualifiedbrand;lowcurrentconsumerswitching,someenterprise; no currentnetworkeffect/counterpositioning/processpower asserted. AIproducts scoped not companyallup.
-- Conclusion: mission vs franchise, praise for response without declaring ultimate success, possibleerosionunderstrongfinancials preserved. Neutralhostattribution avoids guessing unlabeled speakers.
-
-## Visual evidence
-
-Language architecture interlude summarizes0:18–0:24 and1:52–2:03; conceptual relationships, no unsupported architecture math. Four-capability stack and controls from3:27:57–3:42:24 plus officialcostcorrection. Valuecreated/captured comparison from3:32:43–3:47:05; no numericsimulation.
-
-Two original generated watercolor PNGs,1536×1024, conceptual cover/laboratory and desertvehicle scene. Imagined settings with descriptivealt/captions; no claim authentic historicalrendering or namedpeople. Tensorchip navigation uses shared episode-timeline.js; actual chaptertimes maplinearly; large dropdown alternatives.
+All navigation cues use that one mirror’s paragraph starts. Its final thanks begins at 4:06:29, while the navigation endpoint 3:54:17 marks the final main-conclusion paragraph before carve-outs, not total audio duration. Ad-edited versions differ. The Waymo and Cloud branches intentionally rewind historical chronology while keeping listening order. The chip maps time horizontally; reading interpolation does not play audio. The two original watercolors are conceptual, not historical reconstructions. Figures and forecasts retain the October 2025 recording perspective.
