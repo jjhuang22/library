@@ -1,109 +1,62 @@
-# Epic Systems (MyChart) — source evidence
+# Epic Systems (MyChart): episode evidence
 
-Episode and sources Acquired: Epic Systems (MyChart) — official episode page. Released April 21, 2025; Spring 2025. No specific correction was listed beneath the official corrections heading when checked. Full transcript mirror — Podscripts automated third-party transcription, not official. Read in full, including concluding analysis, recommendations and sign-off. No substantive material is imported from outside company research, the mirror’s summaries or the episode bibliography. All cues use paragraph starts from this single mirror timing version. The navigation endpoint 03:49:26 is the last substantive discussion/transition paragraph, not the full recording duration. Final sign-off starts 03:56:15. Ad-edited players may differ. A chapter cue locates its discussion rather than every individual statement. The automated mirror contains repeated phrases and garbled introductory laughter; those strings are not used as factual evidence. The coherent substantive discussion supplies the narrative. Market shares use different denominators. EBITDA and valuations are the hosts’ estimates or thought experiments. Litigation is unresolved as of the recording, and AI and regulatory scenarios retain their uncertainty. Clinical data ownership, local customer databases, inter-hospital exchange and anonymized Cosmos aggregation are distinct. The chart-themed navigation maps horizontal position linearly to elapsed time. Its decorative shapes do not assert historical interface or product provenance. The reading clock interpolates document position and does not play audio. Large dropdown links provide an alternative to closely spaced chapter markers. Both watercolor images are original generated conceptual art, with anonymous figures and imagined settings. Diagrams describe the hosts’ analysis rather than supply new measurements. Financial snapshots, forecasts and unresolved arguments retain their time of recording.
+Released April 21, 2025 (Spring 2025). Original creation date: October 19, 2026.
 
-## Passage anchors and timing
+## Sources and review scope
 
-These chapter titles and paragraph-start cues locate the retained source map in the transcript version identified above. Legacy retrieval line numbers below are secondary locators, not timestamps. The original complete-transcript review and its qualifications are preserved; bundle migration is not a new retrospective source audit.
+- [Acquired episode](https://www.acquired.fm/episodes/epic-systems-mychart): official release metadata and corrections. No specific correction was listed under its corrections heading on October 20, 2026.
+- [Podscripts transcript](https://podscripts.co/podcasts/acquired/epic-systems-mychart): automated third-party mirror of the same Ben Gilbert/David Rosenthal recording. Episode title, substantive opening, story sequence, final analysis and farewell establish provenance. Garbled introductory repetitions are transcription defects, not evidence. The mirror’s overview and commentary and outside research are excluded.
 
-- `judy` — 0:06:23, A mathematician discovers a material she can shape.
-- `slack` — 0:14:07, The doctor who needed a programmer.
-- `payers` — 0:20:39, Why the record also had to produce a bill.
-- `chronicles` — 0:28:45, Put the patient at the center of the database.
-- `founding` — 0:37:02, A reluctant company and a very small financing.
-- `neil` — 0:46:08, Learn a company from another programmer.
-- `suite` — 0:53:35, The record becomes the operating system.
-- `mychart` — 1:02:15, Let the patient see the story too.
-- `kaiser` — 1:10:34, Kaiser needed one answer.
-- `bakeoff` — 1:23:28, Prove the load, then refuse the equity demand.
-- `philips` — 1:30:16, The partnership that left scar tissue.
-- `verona` — 1:33:27, A campus built to recruit a software factory.
-- `culture` — 1:42:29, High trust, taught in considerable detail.
-- `customer` — 1:50:09, A tiny sales team and a powerful customer relationship.
-- `interoperability` — 2:03:31, Three different meanings of sharing.
-- `hitech` — 2:12:11, Pulling an entire market into the present.
-- `clicks` — 2:19:55, Digitization was not the same as transformation.
-- `government` — 2:33:05, The enormous contracts Epic did not win.
-- `connected` — 2:48:10, From the hospital to the rest of the system.
-- `cosmos` — 2:56:02, A different database for a different purpose.
-- `economics` — 3:00:21, A vast footprint and a smaller revenue pool.
-- `ownership` — 3:06:14, An empire designed to stay private.
-- `powers` — 3:11:59, Patience first; several powers later.
-- `playbook` — 3:19:20, Build adjacent products, defend the boundary.
-- `bear` — 3:31:18, The bear case requires a difficult change.
-- `ai` — 3:35:11, AI might remove work—or reinforce the gatekeeper.
-- `conclusion` — 3:44:24, Why this kind of breadth worked here.
+Original authoring included a complete transcript read and independent complete source review, followed by rechecking the resulting fixes. This upkeep preserves that narrative. Current verification reads the entire companion and rechecks official corrections, mirror provenance, financing, current-business figures and the ending; it does not claim a new complete transcript read.
 
-## Section evidence
+The official page was sought first. Its accessible extracted view showed Sources, metadata and corrections rather than the full conversation. The `#transcript` view returned the same material; a candidate `?tab=transcript` URL was inaccessible. Direct cloud retrieval of this domain is blocked. These access limits do not establish that the website has no transcript. The complete mirror remains the documented fallback.
 
-1. **A mathematician discovers a material she can shape** (`#judy`), 00:06:23: L63–88. Supports the section’s chronology, examples, figures and attributed analysis.
+## Passage map
 
-2. **The doctor who needed a programmer** (`#slack`), 00:14:07: L89–108. Supports the section’s chronology, examples, figures and attributed analysis.
+Cues are paragraph starts from the retained Podscripts timing version.
 
-3. **Why the record also had to produce a bill** (`#payers`), 00:20:39: L109–133. Supports the section’s chronology, examples, figures and attributed analysis.
+| Companion chapter | Transcript passage/cue |
+| --- | --- |
+| 01 Judy | 0:06:23 — family, mathematics and programming |
+| 02 Slack | 0:14:07 — physician requests and medical-record history |
+| 03 Payers | 0:20:39 — insurance, public payment and billing documentation |
+| 04 Chronicles | 0:28:45 — MUMPS, patient-centered architecture and customer installations |
+| 05 Founding | 0:37:02; financing 0:41:27–0:43:15 |
+| 06 Neil | 0:46:08 — Pappalardo, programmer-led organization and early customers |
+| 07 Suite; architecture interlude | 0:53:35 — Resolute, Cadence and EpicCare |
+| 08 MyChart | 1:02:15 — patient access, development and adoption |
+| 09 Kaiser | 1:10:34 — prior systems, rival vendors and single-vendor demand |
+| 10 Bakeoff | 1:23:28 — load demonstration, warrants and transformation costs |
+| 11 Philips | 1:30:16 — partnership and subsequent preference for control |
+| 12 Verona | 1:33:27 — campus, recruitment and software-factory model |
+| 13 Culture | 1:42:29 — commandments, training and employment intensity |
+| 14 Customer | 1:50:09 — hiring tests, sales, standardization and pricing |
+| 15 Interoperability | 2:03:31 — Epic-to-Epic exchange versus external access |
+| 16 HITECH; adoption interlude | 2:12:11 — incentives, accelerated adoption and incumbent advantage |
+| 17 Clicks | 2:19:55 — clinical burden, costs and digitization versus transformation |
+| 18 Government | 2:33:05 — procurement, implementation costs and vendor consolidation |
+| 19 Connected | 2:48:10 — adjacent participants and growth opportunities |
+| 20 Cosmos | 2:56:02 — separate anonymized aggregate, opt-in access and research |
+| 21 Economics | 3:00:21–3:05:59; retention exception 0:01:41 |
+| 22 Ownership | 3:06:14; later succession details — hypothetical value, foundation and purpose trust |
+| 23 Powers | 3:11:59 — uncertain early advantage; mature switching, scale, network and brand |
+| 24 Playbook | 3:19:20 — operating-expense R&D denominator, integration and buyer/user tension |
+| 25 Bear | 3:31:18 — international economics, regulation, litigation and displacement |
+| 26 AI | 3:35:11–3:44:01 — ambient documentation, administration scenario and open-platform option |
+| 27 Conclusion | 3:44:24–3:49:26 — vertical software and healthcare-specific integration stakes |
 
-4. **Put the patient at the center of the database** (`#chronicles`), 00:28:45: L134–158; L658–660. Supports the section’s chronology, examples, figures and attributed analysis.
+The three interactive perspectives restate the buyer, clinician and competitive-analysis passages without adding projections.
 
-5. **A reluctant company and a very small financing** (`#founding`), 00:37:02: L158–160; L169–188. Supports the section’s chronology, examples, figures and attributed analysis.
+## Consequential qualifications
 
-6. **Learn a company from another programmer** (`#neil`), 00:46:08: L189–210. Supports the section’s chronology, examples, figures and attributed analysis.
+Financing separates $70,000 of bank debt from $70,000 of equity and distinguishes primary financing from later secondary transfers. Kaiser’s roughly $4 billion transformation included about $400 million for Epic; overall implementation spending is not vendor revenue. HITECH’s $27 billion direct and $36 billion broader figures are adoption-program measures, not grants paid to Epic. Public procurement likewise distinguishes program spending from software receipts. Oracle’s December 2021 agreement is not presented as its closing date.
 
-7. **The record becomes the operating system** (`#suite`), 00:53:35: L211–235. Supports the section’s chronology, examples, figures and attributed analysis.
+Architecture distinguishes each customer’s clinical foundation, exchange between customers and opt-in anonymized Cosmos aggregation. The Flint example concerns electronic-record discovery, not proof that Cosmos caused it. Clinical data ownership and research permissions are not conflated.
 
-8. **Let the patient see the story too** (`#mychart`), 01:02:15: L235–255. Supports the section’s chronology, examples, figures and attributed analysis.
+The recording-era snapshot separates 42% of hospitals, 58% of ambulatory physicians and 79% of Americans; the six-month customer departure qualifies the retention claim. The 30–35% EBITDA margin is estimated, not net income. Valuation and founder-wealth rankings remain hypothetical host judgments. Foundation economic interests differ from the succession purpose trust’s voting control.
 
-9. **Kaiser needed one answer** (`#kaiser`), 01:10:34: L263–301. Supports the section’s chronology, examples, figures and attributed analysis.
+Competitive powers, interoperability objections and buyer/user disagreements remain attributed analysis. Particle Health claims were unresolved allegations at recording. AI, regulatory and platform scenarios remain uncertain; the final App Orchard option and vertical-software explanation are retained.
 
-10. **Prove the load, then refuse the equity demand** (`#bakeoff`), 01:23:28: L272–276; L302–321. Supports the section’s chronology, examples, figures and attributed analysis.
+## Timing and illustrations
 
-11. **The partnership that left scar tissue** (`#philips`), 01:30:16: L321–331. Supports the section’s chronology, examples, figures and attributed analysis.
-
-12. **A campus built to recruit a software factory** (`#verona`), 01:33:27: L332–358. Supports the section’s chronology, examples, figures and attributed analysis.
-
-13. **High trust, taught in considerable detail** (`#culture`), 01:42:29: L359–385. Supports the section’s chronology, examples, figures and attributed analysis.
-
-14. **A tiny sales team and a powerful customer relationship** (`#customer`), 01:50:09: L386–420. Supports the section’s chronology, examples, figures and attributed analysis.
-
-15. **Three different meanings of sharing** (`#interoperability`), 02:03:31: L430–457. Supports the section’s chronology, examples, figures and attributed analysis.
-
-16. **Pulling an entire market into the present** (`#hitech`), 02:12:11: L457–480; L489–511. Supports the section’s chronology, examples, figures and attributed analysis.
-
-17. **Digitization was not the same as transformation** (`#clicks`), 02:19:55: L481–504; L511–523. Supports the section’s chronology, examples, figures and attributed analysis.
-
-18. **The enormous contracts Epic did not win** (`#government`), 02:33:05: L521–565. Supports the section’s chronology, examples, figures and attributed analysis.
-
-19. **From the hospital to the rest of the system** (`#connected`), 02:48:10: L565–585. Supports the section’s chronology, examples, figures and attributed analysis.
-
-20. **A different database for a different purpose** (`#cosmos`), 02:56:02: L585–600. Supports the section’s chronology, examples, figures and attributed analysis.
-
-21. **A vast footprint and a smaller revenue pool** (`#economics`), 03:00:21: L49; L600–617. Supports the section’s chronology, examples, figures and attributed analysis.
-
-22. **An empire designed to stay private** (`#ownership`), 03:06:14: L618–634; L690–699. Supports the section’s chronology, examples, figures and attributed analysis.
-
-23. **Patience first; several powers later** (`#powers`), 03:11:59: L635–660. Supports the section’s chronology, examples, figures and attributed analysis.
-
-24. **Build adjacent products, defend the boundary** (`#playbook`), 03:19:20: L660–689. Supports the section’s chronology, examples, figures and attributed analysis.
-
-25. **The bear case requires a difficult change** (`#bear`), 03:31:18: L700–710. Supports the section’s chronology, examples, figures and attributed analysis.
-
-26. **AI might remove work—or reinforce the gatekeeper** (`#ai`), 03:35:11: L710–739. Supports the section’s chronology, examples, figures and attributed analysis.
-
-27. **Why this kind of breadth worked here** (`#conclusion`), 03:44:24: L738–757. Supports the section’s chronology, examples, figures and attributed analysis.
-
-## Qualifications and visual evidence
-
-The automated mirror contains repeated phrases and garbled introductory laughter; those strings are not used as factual evidence. The coherent substantive discussion supplies the narrative. Market shares use different denominators. EBITDA and valuations are the hosts’ estimates or thought experiments. Litigation is unresolved as of the recording, and AI and regulatory scenarios retain their uncertainty. Clinical data ownership, local customer databases, inter-hospital exchange and anonymized Cosmos aggregation are distinct.
-
-- **One foundation, several connected jobs**, after `#suite`: same cited passages as that section. Conceptual architecture from the episode, not a physical deployment diagram or one global database.
-- **The adoption surge and its tradeoff**, after `#hitech`: same cited passages as that section. The hosts’ causal interpretation, with their counterfactual uncertainty; not an independent policy-effect estimate.
-- The three interactive perspectives restate the concluding analysis; no new data or projections. Original PNG watercolors, both 1536×1024, conceptual anonymous subjects, descriptive alt/captions.  Shared episode-timeline.js, bundled Cormorant and artifact-type.css last; company-specific geometry preserved.
-
-## Consequential distinctions
-
-- Financing (L169–180): $70,000 equity and $70,000 bank debt; primary financing differs from secondary share transfers. No claim of zero financing.
-- Architecture (L134–158, L437–450, L585–600): one logical customer foundation, exchange between customers, and opt-in anonymized Cosmos are different systems. No global raw-patient database owned by Epic.
-- Kaiser (L272–276, L301–321): $4 billion was the transformation scope, about $400 million went to Epic. Cerner’s later acquisitions are not projected backward to 2003. Warrants story retains attribution.
-- HITECH (L457–520): $27 billion direct versus $36 billion broader program, industry adoption incentives rather than cash paid to Epic. Adoption success differs from cost/interoperability outcomes. Buyer/user/patient incentives remain distinct.
-- Public procurement (L537–565): contracting structures and entire implementation costs are distinct from vendor revenue. Oracle’s December 2021 agreement is not described as the closing date.
-- Economics and ownership (L600–634, L690–699): market-share denominators differ; 30–35% EBITDA is estimated, not net income; $50–100 billion valuations and founder rankings are hypothetical host judgments. Purpose trust differs from foundation economic interests.
-- Analysis (L635–757): early power uncertain, mature switching/scale/network/brand and qualified process arguments, R&D denominator operating expenses, enterprise buyer mismatch, pending litigation, bear cases, ambient AI and speculative full-administration scenario, final vertical-market conclusion all retained.
+All 27 navigation starts retain the mirror’s paragraph cues. The navigation endpoint is 3:49:26, the transition to recommendations; the farewell is in the 3:56:15 paragraph. This is a content extent, not full audio duration, and ad-edited players can differ. Horizontal position maps linearly to time; reading progress is not playback. Both watercolors depict imagined campus/basement scenes and anonymous figures, not exact reconstructions. Diagrams introduce no independent measurements.
