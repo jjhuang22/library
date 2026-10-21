@@ -5,25 +5,25 @@ import path from 'node:path';
 import { tmpdir } from 'node:os';
 import { checkEvidence } from '../scripts/check-evidence.mjs';
 
-test('repository retains maps for every published and completed queued artifact', async () => {
+test('repository retains exactly the evidence maps in this branch catalog', async () => {
   const result = await checkEvidence();
-  assert.ok(result.maps > 0);
+  assert.equal(result.maps, result.artifacts);
 });
 
-test('coverage includes completed queues, excludes future plans, and detects missing, empty and stray maps', async t => {
+test('coverage follows the branch catalog across collections and rejects missing, empty and stray maps', async t => {
   const root = await mkdtemp(path.join(tmpdir(), 'evidence-coverage-'));
   t.after(() => rm(root, { recursive: true, force: true }));
   await mkdir(path.join(root, 'content'));
   const maps = path.join(root, 'docs/evidence/acquired');
-  await mkdir(maps, { recursive: true });
-  await writeFile(path.join(root, 'content/library.json'), JSON.stringify({ artifacts: [{ category: 'acquired', id: 'published' }] }));
-  await writeFile(path.join(root, 'content/queue.json'), JSON.stringify({ artifacts: [{ category: 'acquired', id: 'queued', reviewStatus: 'verified' }], authoring: { episodes: [{ id: 'future', status: 'pending' }] } }));
+  const books = path.join(root, 'docs/evidence/books');
+  await mkdir(maps, { recursive: true }); await mkdir(books, { recursive: true });
+  await writeFile(path.join(root, 'content/library.json'), JSON.stringify({ artifacts: [{ category: 'acquired', id: 'published' }, { category: 'books', id: 'book' }] }));
   await writeFile(path.join(maps, 'published.md'), '# Real source map');
-  await assert.rejects(checkEvidence(root), /Missing: acquired\/queued/);
-  await writeFile(path.join(maps, 'queued.md'), ' ');
+  await assert.rejects(checkEvidence(root), /Missing: books\/book/);
+  await writeFile(path.join(books, 'book.md'), ' ');
   await assert.rejects(checkEvidence(root), /Empty evidence/);
-  await writeFile(path.join(maps, 'queued.md'), '# Verified queued source');
-  assert.deepEqual(await checkEvidence(root), { maps: 2, published: 1, queued: 1 });
-  await writeFile(path.join(maps, 'future.md'), '# Placeholder');
-  await assert.rejects(checkEvidence(root), /Unregistered: acquired\/future/);
+  await writeFile(path.join(books, 'book.md'), '# Book source passages');
+  assert.deepEqual(await checkEvidence(root), { maps: 2, artifacts: 2 });
+  await writeFile(path.join(maps, 'unpublished.md'), '# Other branch evidence');
+  await assert.rejects(checkEvidence(root), /Unregistered: acquired\/unpublished/);
 });

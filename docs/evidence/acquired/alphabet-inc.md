@@ -1,3 +1,4 @@
+<!-- artifact-review: {"status":"verified","bundleTree":"ba807609095756c9978774336c2c88a49b504ba0"} -->
 # Alphabet Inc. — source evidence
 
 ## Provenance and corrections
