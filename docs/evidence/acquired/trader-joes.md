@@ -1,3 +1,4 @@
+<!-- artifact-review: {"status":"verified","bundleTree":"308a1c4af0bf1a547ea2cd00753413d7a26771c0"} -->
 # Trader Joe’s — source map
 
 Bundle: `public/artifacts/acquired/trader-joes/index.html`
