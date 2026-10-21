@@ -1,3 +1,4 @@
+<!-- artifact-review: {"status":"verified","bundleTree":"4cf6b65f151cc0f2d305d55576bf87d063b00da6"} -->
 # Google: The Origin of Search — source evidence
 
 ## Provenance and corrections
