@@ -1,140 +1,61 @@
-# The NFL (2026 remaster and follow-up) — source evidence
+# The NFL — 2026 remaster and follow-up evidence
 
-Episode and sources This companion covers the remastered 2023 recording and the complete January 2026 follow-up. Historical snapshots retain their recording dates. Later revisions are marked as such rather than silently replacing the earlier argument. Official Acquired episode page : January 27, 2026 release, Spring 2026. It identifies the remaster and hour-plus follow-up. No listed corrections were present beneath the retrieved corrections heading. Full Podscripts 2026 transcript mirror : automated third-party transcription, not official. Read in full through the closing thanks and credits. No substantive material is imported from the mirror’s summary, episode bibliography or outside company research. The older 2023-only transcript was not the cue source. All listening cues are paragraph starts from this single mirror timing version. Its 2026 return begins 3:19:00; closing thanks begin within the 4:13:42 paragraph, with final sign-off starting 4:16:46. The navigation endpoint 4:13:42 marks the last substantive paragraph, not the recording duration. The episode’s published chapter list uses different timings, including 3:21:04 for the update. Those chapter-list timestamps are not mixed into this navigation. Ad-edited players may differ. The field navigation maps horizontal position linearly to elapsed listening time. Turf lines and end zones are decorative; chapter marks correspond to verified cues, not football yard numbers. The reading clock interpolates document position and does not play audio. Large dropdown links provide an alternative to closely spaced field markers. The hosts’ first AFL television-deal figures and some historical timelines are internally compressed or inconsistent. The narrative preserves the supported sequence without creating a reconciled number or importing outside corrections. 2023 valuation predictions, international concerns and streaming assessments are followed by their 2026 revisions. The ESPN transaction was pending at recording. Taylor Swift audience figures are correlations; foundation-like ownership is not claimed for ordinary franchises; private-equity return rates are undisclosed, and its numerical illustration is hypothetical. The diagrams are qualitative explanations, not legal advice or financial simulations. Both watercolor images are original generated conceptual artwork. They depict imagined settings and anonymous figures, not exact historical locations, identifiable athletes or documentary reconstructions.
+## Source versions and release
 
-## Passage anchors and timing
+- [Official Acquired episode](https://www.acquired.fm/episodes/the-nfl): **January 27, 2026**, Spring 2026. The page explicitly identifies a remaster of the original **January 2023** recording plus an hour-plus new follow-up. No correction text appeared beneath its Corrections heading on October 20, 2026. Catalog and cover use the selected 2026 release, not the earlier recording date. Creation remains October 19, 2026.
+- Official transcript retrieval was attempted first. The episode and `#transcript` extraction exposed Sources, overview and metadata without the conversation or transcript link. The `?tab=transcript` and `/transcript` views could not be retrieved. Interactive inspection was unavailable because the execution environment does not permit that domain. This records an access limitation, not a claim that Acquired has no transcript.
+- [Podscripts: The NFL (2026 Update)](https://podscripts.co/podcasts/acquired/the-nfl-2026-update) is the complete same-recording fallback: an automated third-party mirror, not official text. The original companion had a complete source review through original analysis, personal carve-outs, the entire new follow-up and closing thanks. Current maintenance checked the complete companion, official metadata/corrections and consequential closing/follow-up passages against this mirror. Neither its summary nor the official research bibliography supplies additional facts.
 
-These chapter titles and paragraph-start cues locate the retained source map in the transcript version identified above. Legacy retrieval line numbers below are secondary locators, not timestamps. The original complete-transcript review and its qualifications are preserved; bundle migration is not a new retrospective source audit.
+## Original-recording sections
 
-- `college` — 0:05:24, A college ritual before a professional business.
-- `founding` — 0:14:11, A league meets in an automobile showroom.
-- `aafc` — 0:24:34, A rival sees the postwar opportunity.
-- `brown` — 0:31:18, The best team can make the league worse.
-- `parity` — 0:41:51, League first, team second.
-- `television` — 0:45:58, The game comes into the living room.
-- `afl` — 0:53:23, Lamar Hunt finds the other rejected buyers.
-- `rozelle` — 1:03:22, The compromise candidate understood the new America.
-- `broadcasting-act` — 1:11:23, A collective contract needs political permission.
-- `films` — 1:16:43, The league learns to remember itself beautifully.
-- `shared-brand` — 1:22:45, The same check in Cleveland and Green Bay.
-- `namath` — 1:30:19, The other league creates a national celebrity.
-- `merger` — 1:42:31, The war over a kicker becomes a merger.
-- `superbowl` — 1:56:42, Invent a championship after the rights are sold.
-- `monday` — 2:09:40, One game, the whole country, every week.
-- `highlights` — 2:21:41, Sunday’s drama returns on Monday.
-- `local-money` — 2:26:19, A league-first system develops local exceptions.
-- `packages` — 2:31:03, Sell different ways to watch the same season.
-- `harm` — 2:39:15, The product’s appeal does not remove the harm.
-- `kaepernick` — 2:43:06, Who the commissioner works for.
-- `playbook` — 2:48:39, The entertainment package captures the value.
-- `powers` — 3:09:19, The scarce resource is the football itself.
-- `update` — 3:19:00, Three years later, the answer changes.
-- `gambling` — 3:24:53, More bettors, several routes to revenue.
-- `streaming` — 3:31:14, The distributors changed; the league kept the audience.
-- `espn` — 3:35:20, Help another bidder become viable.
-- `audience` — 3:39:40, Follower counts do not settle the demographic question.
-- `swift` — 3:44:45, A cultural crossover with evidence and limits.
-- `flag` — 3:47:33, A gentler entry into the game.
-- `nil` — 3:50:06, The college relationship is less settled.
-- `ownership` — 3:54:12, The ownership rules become the bottleneck.
-- `private-equity` — 4:03:13, Let capital in without giving up control.
-- `valuation` — 4:07:50, A wider buyer pool changes the clearing price.
-- `conclusion` — 4:11:54, The cooperation still has to hold.
+The times below are starts of source passages in the **one 2026 mirror timing version**, including its remastered 2023 portion. They are not timing from the older 2023-only upload. Detailed chronological reforms compressed in the conversation are not independently reconstructed.
 
-## Sections
+| Chapter / ID / mirror cue | Passage anchor and claim boundary |
+| --- | --- |
+| 01 · `college` · 00:05:24 | Rutgers/Princeton in 1869 with 25 players per side; collegiate legitimacy, violence and Roosevelt’s 1905 pressure, NCAA/forward-pass reforms. No exact reform chronology or medical diagnosis is invented. |
+| 02 · `founding` · 00:14:11 | 1920 Canton showroom, Halas/Staley, Thorpe, Fritz Pollard; later exclusion of Black players and Marshall’s racism; small-market failures/Green Bay exception. Does not imply an uninterrupted inclusive progression. |
+| 03 · `aafc` · 00:24:34 | Postwar demand and NFL refusal to expand, 1944 AAFC, Reeves/Rams move, Coliseum integration condition and Kenny Washington/Rozelle. Absorbed AAFC Baltimore is not conflated with the present Colts. |
+| 04 · `brown` · 00:31:18 | Paul Brown’s year-round staff/film/tests/integration and four AAFC titles; dominance weakens opponents’ attendance and entertainment value. Not a claim he invented every coaching practice. |
+| 05 · `parity` · 00:41:51 | Bell’s schedule, reverse-order draft and 60/40 gate sharing; visitors later share through a wider pool. Historical model, not the full current scheduling formula or guaranteed equal outcomes. |
+| 06 · `television` · 00:45:58 | Rams attendance loss, away rights/home protection, unequal local deals and approximately 45m watching the 1958 championship. That game is not called a Super Bowl. |
+| 07 · `afl` · 00:53:23 | Hunt/Rickey, rejected prospective owners, ABC/Arledge and league-wide media money before play. Spoken first-deal totals and annual figures conflict; the companion retains the sequence without inventing reconciliation. |
+| 08 · `rozelle` · 01:03:22 | Rozelle chosen at 33 in 1960, Rams PR/merchandise background, New York headquarters, statistical services and Sports Illustrated. No unsupported education credential or universal claim of first-ever PR technique. |
+| 09 · `broadcasting-act` · 01:11:23 | CBS $4.65m annually for two years, equal sharing, court challenge and 1961 Sports Broadcasting Act. Broadcasting permission is not blanket immunity or the later merger exemption. |
+| 10 · `films` · 01:16:43 | Ed Sabol’s $5,000 1962 film bid, cinematic archive, 1965 in-house NFL Films, promotional value rather than direct-profit maximization; later rapid highlights workflow. Imagined watercolor is not the Sabols’ studio. |
+| 11 · `shared-brand` · 01:22:45 | Shared merchandising, Hall of Fame, Green Bay’s nonprofit shares without normal return/control and $14.1m annual CBS renewal. Reinforcing audience/revenue cycle is qualitative. |
+| 12 · `namath` · 01:30:19 | AFL NBC $37.5m/five years, Werblen/Namath celebrity and bidding war; quiet Hunt/Schramm merger talks. No invented Namath quotation or contract amount. |
+| 13 · `merger` · 01:42:31 | Al Davis, veteran kicker/Gabriel escalation, 1966 deal/common draft/1970 combined season, $18m over 20 years and specific market conflicts; congressional/New Orleans bargaining. Owners’ gain ended player bidding competition. |
+| 14 · `superbowl` · 01:56:42 | CBS/NBC each pay $1m for first title game; roughly 65m television audience versus partly empty Coliseum; deliberate media week, Packers wins/Jets upset/Chiefs victory. Approximate audience measures are not presented as a uniform modern Nielsen series. |
+| 15 · `monday` · 02:09:40 | ABC $8.5m/year Monday package, concentrated production, Cosell/music/cameras/interviews. Coordinated innovation does not imply every technique had never existed. |
+| 16 · `highlights` · 02:21:41 | NFL Films Sunday-to-Monday highlight production; Rozelle’s blackout mistake and Nixon pressure. The hosts compress blackout history; no exact outside repeal chronology is added. |
+| 17 · `local-money` · 02:26:19 | Unshared stadium/local income grows from ~12% in 1994 to ~21% in 2003 and >30% at original recording; 1993 free agency/cap and roughly half the relevant revenue to players. Does not equalize individual pay, profits or every resource. |
+| 18 · `packages` · 02:31:03 | Original ~$18bn revenue; separate broadcast windows and Sunday Ticket out-of-market bundle, fantasy/betting, approximate 61/10/10/10/9 revenue split. These are 2023 perspectives, not updated segment accounts or a bundle literally containing every game. |
+| 19 · `harm` · 02:39:15 | CTE/long-term harm, research denial/settlement/trust and parental consent. Commercial success does not resolve ethics; original demographic concern is later revised. No outside clinical guidance. |
+| 20 · `kaepernick` · 02:43:06 | 2016 protest, injuries/play acknowledged, hosts’ blackball interpretation, grievance/confidential settlement, commissioner’s duties to owners and distinct league-office/team economics. Views are attributed, not an unqualified legal finding. |
+| 21 · `playbook` · 02:48:39 | Durability, tech rights buyers, college pipeline and CBA/media bargaining sequence; original ad-centric distributor analysis. Follow-up at 03:21:54 supplies its explicit retransmission-fee correction. |
+| 22 · `powers` · 03:09:19 | Best players/coherent contest as cornered resource, historical counterpositioning versus baseball and production scale; brand premium and legal-permission classification qualified. Later passages cover public stadium subsidies with exceptions, player treatment, consumer surplus, original bull/bear cases and mixed enjoyment. Nearby original valuation forecast of an $8–9bn plateau remains dated and is later corrected. |
 
-1. **A college ritual before a professional business** (`#college`), 00:05:24: L58–83. Supports chronology, figures, anecdotes and attributed analysis. Remastered original2023 discussion.
+## January 2026 follow-up
 
-2. **A league meets in an automobile showroom** (`#founding`), 00:14:11: L84–112. Supports chronology, figures, anecdotes and attributed analysis. Remastered original2023 discussion.
+| Chapter / ID / mirror cue | Passage anchor and claim boundary |
+| --- | --- |
+| 23 · `update` · 03:19:00 | “Hello again from January of 2026”; international strategy reversed: seven games/five countries, goal of 16, free São Paulo YouTube stream. 18.7m average/10% yearly growth versus 17.5m in 2011; Super Bowl 127m. Retransmission fees support networks alongside advertising and cover whole programming bundles, not solely football. |
+| 24 · `gambling` · 03:24:53 | Bettors estimated 46m→76m; ~$200m direct sponsorship versus separate Nielsen ~$2.3bn indirect annual benefit. Not additive disclosed revenue lines or proof every bettor is a new viewer. >$23bn revenue/$25bn 2027 target remains the hosts’ expectation at recording. |
+| 25 · `streaming` · 03:31:14 | Prime 2025 15.33m average versus 122m cumulative unique viewers; improved scheduling, free global YouTube and Netflix Christmas ~30m holiday audience. Reverses original Amazon pessimism; global monetization remains an opportunity. |
+| 26 · `espn` · 03:35:20 | August 2025 NFL Network/fantasy-app exchange for 10% of all ESPN, **pending regulatory review at recording**; full ESPN service versus ESPN Plus and future bidder strategy. Not described as closed or merely a stake in one app. |
+| 27 · `audience` · 03:39:40 | Gen-Z conclusion walked back, demographic data messy; follower counts versus algorithmic engagement. Mahomes ~$90m/Allen ~$75m include earnings beyond salary; New Heights >$100m deal is not annual income per brother or direct league revenue. |
+| 28 · `swift` · 03:44:45 | Correlated Sept 2023–Sept 2024 growth of 4m female NFL fans/3.4m Chiefs fans, Super Bowl audience data and Hunt’s 57% women statement. Explicit absence of definitive causal study; not a relationship engineered by the league. |
+| 29 · `flag` · 03:47:33 | 2019–2023 youngest tackle participation −5% versus flag +16%; girls/international/Olympics/Pro Bowl. Future stars and global fandom are prospective benefits, not a measured conversion rate. |
+| 30 · `nil` · 03:50:06 | Booster NIL, portal/conference fragmentation and possible better-developed draft prospects. Hosts leave the net effect unsettled; compressed Supreme Court/direct-pay dates do not become a definitive legal history. |
+| 31 · `ownership` · 03:54:12 | Principal natural person/family 30% equity, ~$800m ordinary debt ceiling/higher acquisition allowance, silent minority partners and grandfathered Packers; Snyder pressure, no completed forced-divestiture vote, Harris >$6bn purchase/~$1.8bn minimum principal equity. Rules describe the recording’s account. |
+| 32 · `private-equity` · 04:03:13 | Approved investors, 10% ceiling, no operating control and eventual return sharing across all 32. Hosts compare it to carry but do not know legal mechanics/rate. At 04:11:11, 10% of an $8bn team, 30% appreciation and **hypothetical** 10% skim yield a **$24m pool**, not $24m for each team. |
+| 33 · `valuation` · 04:07:50 | Forbes ~$7.1bn average/$228bn total versus original $140bn, ~62% growth; minority liquidity/PE bidder effects, multiples 6.4→10.7. Estimates are not quoted liquid prices; annuity comparison is investor thinking, not a guaranteed coupon. |
+| 34 · `conclusion` · 04:11:54 | Cowboys ~$13bn value/$1.2bn 2024 revenue/$630m operating income versus ~$127m average/$21m least profitable. Operating profit is not identical dividends. Disparity still threatens league-first cooperation; 04:13:42 gives an affirmative answer to original growth doubts, especially asset value. |
 
-3. **A rival sees the postwar opportunity** (`#aafc`), 00:24:34: L113–143. Supports chronology, figures, anecdotes and attributed analysis. Remastered original2023 discussion.
+## Diagrams, cues and artwork
 
-4. **The best team can make the league worse** (`#brown`), 00:31:18: L133–159; absorption L177. Supports chronology, figures, anecdotes and attributed analysis. Remastered original2023 discussion.
-
-5. **League first, team second** (`#parity`), 00:41:51: L165–177. Supports chronology, figures, anecdotes and attributed analysis. Remastered original2023 discussion.
-
-6. **The game comes into the living room** (`#television`), 00:45:58: L178–195. Supports chronology, figures, anecdotes and attributed analysis. Remastered original2023 discussion.
-
-7. **Lamar Hunt finds the other rejected buyers** (`#afl`), 00:53:23: L196–223. Supports chronology, figures, anecdotes and attributed analysis. Remastered original2023 discussion.
-
-8. **The compromise candidate understood the new America** (`#rozelle`), 01:03:22: L224–245. Supports chronology, figures, anecdotes and attributed analysis. Remastered original2023 discussion.
-
-9. **A collective contract needs political permission** (`#broadcasting-act`), 01:11:23: L245–258. Supports chronology, figures, anecdotes and attributed analysis. Remastered original2023 discussion.
-
-10. **The league learns to remember itself beautifully** (`#films`), 01:16:43: L259–277. Supports chronology, figures, anecdotes and attributed analysis. Remastered original2023 discussion.
-
-11. **The same check in Cleveland and Green Bay** (`#shared-brand`), 01:22:45: L277–299. Supports chronology, figures, anecdotes and attributed analysis. Remastered original2023 discussion.
-
-12. **The other league creates a national celebrity** (`#namath`), 01:30:19: L300–333. Supports chronology, figures, anecdotes and attributed analysis. Remastered original2023 discussion.
-
-13. **The war over a kicker becomes a merger** (`#merger`), 01:42:31: L334–373. Supports chronology, figures, anecdotes and attributed analysis. Remastered original2023 discussion.
-
-14. **Invent a championship after the rights are sold** (`#superbowl`), 01:56:42: L374–400. Supports chronology, figures, anecdotes and attributed analysis. Remastered original2023 discussion.
-
-15. **One game, the whole country, every week** (`#monday`), 02:09:40: L410–444. Supports chronology, figures, anecdotes and attributed analysis. Remastered original2023 discussion.
-
-16. **Sunday’s drama returns on Monday** (`#highlights`), 02:21:41: L445–458. Supports chronology, figures, anecdotes and attributed analysis. Remastered original2023 discussion.
-
-17. **A league-first system develops local exceptions** (`#local-money`), 02:26:19: L458–469. Supports chronology, figures, anecdotes and attributed analysis. Remastered original2023 discussion.
-
-18. **Sell different ways to watch the same season** (`#packages`), 02:31:03: L469–494. Supports chronology, figures, anecdotes and attributed analysis. Remastered original2023 discussion.
-
-19. **The product’s appeal does not remove the harm** (`#harm`), 02:39:15: L494–505; update L671–681. Supports chronology, figures, anecdotes and attributed analysis. Remastered original2023 discussion.
-
-20. **Who the commissioner works for** (`#kaepernick`), 02:43:06: L505–523. Supports chronology, figures, anecdotes and attributed analysis. Remastered original2023 discussion.
-
-21. **The entertainment package captures the value** (`#playbook`), 02:48:39: L524–558; retransmission correction L623–630. Supports chronology, figures, anecdotes and attributed analysis. Remastered original2023 discussion.
-
-22. **The scarce resource is the football itself** (`#powers`), 03:09:19: L563–611. Supports chronology, figures, anecdotes and attributed analysis. Remastered original2023 discussion.
-
-23. **Three years later, the answer changes** (`#update`), 03:19:00: L614–630. Supports chronology, figures, anecdotes and attributed analysis. 2026 follow-up.
-
-24. **More bettors, several routes to revenue** (`#gambling`), 03:24:53: L631–641. Supports chronology, figures, anecdotes and attributed analysis. 2026 follow-up.
-
-25. **The distributors changed; the league kept the audience** (`#streaming`), 03:31:14: L648–660. Supports chronology, figures, anecdotes and attributed analysis. 2026 follow-up.
-
-26. **Help another bidder become viable** (`#espn`), 03:35:20: L661–670. Supports chronology, figures, anecdotes and attributed analysis. 2026 follow-up.
-
-27. **Follower counts do not settle the demographic question** (`#audience`), 03:39:40: L671–685. Supports chronology, figures, anecdotes and attributed analysis. 2026 follow-up.
-
-28. **A cultural crossover with evidence and limits** (`#swift`), 03:44:45: L685–695. Supports chronology, figures, anecdotes and attributed analysis. 2026 follow-up.
-
-29. **A gentler entry into the game** (`#flag`), 03:47:33: L695–701. Supports chronology, figures, anecdotes and attributed analysis. 2026 follow-up.
-
-30. **The college relationship is less settled** (`#nil`), 03:50:06: L702–711. Supports chronology, figures, anecdotes and attributed analysis. 2026 follow-up.
-
-31. **The ownership rules become the bottleneck** (`#ownership`), 03:54:12: L711–735. Supports chronology, figures, anecdotes and attributed analysis. 2026 follow-up.
-
-32. **Let capital in without giving up control** (`#private-equity`), 04:03:13: L735–747; hypothetical L757–759. Supports chronology, figures, anecdotes and attributed analysis. 2026 follow-up.
-
-33. **A wider buyer pool changes the clearing price** (`#valuation`), 04:07:50: L748–759. Supports chronology, figures, anecdotes and attributed analysis. 2026 follow-up.
-
-34. **The cooperation still has to hold** (`#conclusion`), 04:11:54: L760–764. Supports chronology, figures, anecdotes and attributed analysis. 2026 follow-up.
-
-## Consequential qualifications and visual evidence
-
-- Origins L58–83:1869Rutgers/Princeton25perside, collegelegitimacy vsprofessional stigma,1905safetycrisis/presidentialpressure/pass+NCAAformation compressed byhosts. Exact reform dates not independentlyrepaired; no inventedmedicaldiagnosisorverbatimquotes.
-- Founding L84–112:Halas/Staley1920Canton,Thorpe figurehead/Pollard Blackpioneer,1930sexclusionandMarshallracism,smallmarketfailuresGreenBayexception. No broadclaimall14originalfranchises/Packersfoundingdates. AAFC1944postwaropportunity L113–143,Reeves/RamsLAColiseumintegrationcondition/KennyWashingtonandRozelle. AbsorbedAAFCColts notpresentedassamecurrentColts (sourcecompressesidentity).
-- PaulBrown L133–159 film/staff/tests/integration,dominanceAAFC4titleshurtentertainment,parity. Schedule/draft/gateshare L165–177:describedBellmodelnottechnicalcurrentNFLscheduleformula;draftnotclaimedfirstinventedpostwar;60home40visitorlaterpool,equalitynotguaranteedwins.
-- TV L178–195 installedbase,riskattendanceRams50%,awayrights/blackouts,biglocaldisparity,1958championship~45mnotSuperBowl. NFLTVagainstbaseball comparisonhostsnotindependentresearch.
-- AFL L196–223:Hunt/Rickey/ABCArledge1959/1960; initialdeal8.5m/5yr vs1.3mannual internallyinconsistent,amountsnotreconciledorinvented. Teamlistinrecordingmixesexpansion omitted. Rozelle33chosen1960,NYHQstats/SI/media/PR L224–245; exactcollegecredentialnotasserted.
-- 1961CBS4.65mannual2yrs/equalshare/courtsblocked/SportsBroadcastingAct narrowpermission L245–258:notblanketNFLantitrustimmunity. Kennedyrelationpoliticshostaccount,notlegaladvice.
-- Sabol1962film5k/1965NFLFilms L259–277:filmvsbroadcast,notallvideoarchivesnonexistentelsewhere;break-evenpromotionalinvestment,notdirectprofitmax. Originalwatercolorfilm conceptualscene not exactSabolstudio. Merchshared/Hall1963/Packersnonprofitpublicsharesnotnormalinvestment L277–299;14.1mannualrenewal. Cycle diagramL145–177+289–298 qualitative.
-- AFLNBC37.5m5yrs7.5m/8teams/NamathWerblen/rookiewar L300–333; storiesnotinventedquotesoramount forNamath. AlDavisveterankicker/Gabriel/quarterbacksmerger1966/common draft1970jointseason18mtotal20yrsinitial50mperteamdemands/specificmarketcompensation L334–373. Congressmergerexemptionseparatefrombroadcasting,NewOrleansbargainhostnarrative;playerslostbiddingcompetitionqualified.
-- Superbowl L374–400:1966seasonfirsttitlegameCBSNBC1meach65mTVvs63kattendees95kstadium,notuniformNielsenmetricclaim;mediaweekintentional,NamathJetsupset,Chiefsnext2–2series. NBC/CBSSunday156m4yrs40mannual L400–402 notallrightsforeverexclusive. MondayABC8.5mannual/newpackage,multiangles/sound/commentatorHowardCosell/highlights L410–450:coordinatedproductioninnovationnotuniversalfirsteverytool;sourcehouseholds/viewersswitchingfor60mfirstgame notadoptedprecisenumber.
-- Blackouts/Nixon L451–457 critiqueRozellestrategicerror;hostsconflateaway/home wording, narrativestaysgeneralnotexactrepealhistory. Localrevenue/salarycap/freeagency1993nearhalfplayersshare L458–469:notallplayerssamepay/notallrevenueshared;salarysystemnotguaranteeequalresources. 12%1994/21%2003/>30atrecording dated.
-- Original2023 snapshot L469–494:18b/112bmediaallpackage/61media10general10premium10sponsor9other approximate,SundayTicketoutofmarketbundle notliterallyeveryNFLgamealltimes. Madden1.6b5yrandfantasy30–40mattributedrecordingifreferenced,notlaterupdates;46mbettorsdated.
-- Harm L494–505:CTErisk/settlement/NFLdenial/2016acknowledgmenthostcriticism/longtermriskvsimmediate,ethicalnotsettledbybusinesssuccess. No outsideclinicalguidance. GenZconcernsdatedandlaterwalkback.
-- Kaepernick L505–523:2016protestpolicebrutality/racialinequality,nosigning/hostblackballview,injuryacknowledged,confidentialgrievancesettlement;ownercommissionerresponsibility,officevsindividualteamsstatus;notneutralCEOofallfootball.
-- Originalplaybook L524–583:durability/network/techbuyers/collegepipeline/playerCBAsequence/modelad-onlylimitationcorrected2026. Playerscreatevaluebutproductionpackaging also real,partial. Social/paycomparisonlaterrevised,notnewunqualifiedcurrentfollowerstats. Valuationplateau8–9bforecastpreservedaswrong,scarcity/bubbleuncertainty.
-- Powers L584–608:corneredplayersandunifiedcontest,MLBcounterposition/productionscale,brandnotsameproductpremium,legalpermissionclassificationnotsettled;stadiumpublicsubsidiesnotallstadiumtaxpayer,playerdealbetterthanbeforedoesnoteraseharm. BullLindyvscooperativebreak/safety/internationalyouth,consumerenjoymentnotcapturedallinrevenue.
-- Update L614–630:7games5countriesgoal16international,YouTubefreeSãoPaulo,18.7mavg10%yr vs17.5m2011modestlongtrend,SuperBowl127mrecord;retransmissioncorrectionnotads-only,feesforwholebundle. Navigationuses3:19:00notpublished3:21:04. Media modelL623–630+648–670 qualitative no fabricatedprofit.
-- Gambling L631–641:46→76mbettorsestimates,200mdirectsponsorshipvsNielsen2.3bindirectbenefit notadditive,notallnewbettorsincrementalviewers;>23brev/25b2027goal2010forecast8bbase;futureexpectationnotclaimlatergoalhit.
-- Streaming L648–660:Prime2025avg15.33m vs122munique notinterchangeable,YouTubefreeglobal,NetflixChristmas30mholidaycontext,nationalreachvsworldplatformpotentialnotestablishedinternationalmonetization. ESPN L661–670:Aug2025swapNFLNetwork/fantasyappfor10%ESPNwholecompany,regulatorypendingatJan2026,notclaimedclosed;fullESPNstreamingvsPlus,viablefuturebidderstrategic.
-- GenZwalkback L671–685:messydatavsplayerfollowercounts,algorithmvsfollow,footballcelebrityearnings90mMahomes/75mAllen approximate,salary+endorsements notsoleNFLpay;100m+NewHeightspodcastdealnotannualpersiblingincome.
-- Swift L685–695:4mfemalefans3.4mChiefsSep2023–Sep2024,SuperBowl58Feb2024correlations,57%womenChiefsquotedHunt;causaluncertaintyexplicit,notengineeredrelationship. IPLanalogyonlyrecordingnotimportoutsidefacts.
-- Flag L695–701:2019–23youngesttackle-5/flag+16,olympics/ProBowl/girls/internationalpotentialnotguaranteedpipeline/star. NIL L702–711 booster/transferchaos/possiblematurerookies;noexactlegalchronologyadoptedfromcompressedSupremeCourt/directpaydates,netuncertaintyretained.
-- Ownership L711–735:principalnaturalperson/family30%cashorappreciatedequity,max24minoritysilent,800mdebtnormalroughdoubleacquisition,Packersgrandfatherexception;Snyderscandalforce24ownerthresholdnotclaimvoteactuallyhappened;Harris6b+team1.8bminimumprincipalchecknewbuyerpools.
-- PE L735–747:approvedfirmset/tencap/nooperationalcontrol/returnshareall32;4approvedfirmsdescribednotnamedascurrentspecificlegalentities;exactmechanics/rateunknown;10%skim inL757–759onlyhypothetical,24mwholepoolnotperteam. Capitaldiagramqualitative,noactualcarryscheduleorcontrolconveyed.
-- Valuations L748–759:Forbes7.1bavg228btotalvs140b/62%estimatesnotquotes/fullsales;minorityinclfamilyofficesPEbidderpriceeffect,10.7xmultiple6.4x5yrbefore9x2024;annuitycomparisoninvestorviewnotbondguarantee. FinalL760–764:Cowboys13bvalue1.2brev630moperatingincome2024vsavg127m/bottom21mprofitnotguaranteeddividend;PEexamplepooledvsindividualnotconfused. Leaguefirstdisparityremainingbearcasegrowthaffirmativeassetvaluewithoutethicalabsolution.
-- OriginalwatercolorsPNG1536×1024:conceptualstadium/screensfootballcover andfilmproduction scene;descriptivealt/captions,nohistorical/photographicprovenanceinvented. Fieldnavdecorativeturflineslinearverifiedcuepositions;HomeChaptersabove/nointernalnavscroll/reducedmotion/sharedcomponent.
+- Cooperative cycle: source 00:35:28–00:45:32 and 01:26:35–01:28:53; national/local contrast: 02:26:19–02:31:03 and 04:11:54–04:13:42. Neither promises identical profits, resources or sporting results.
+- Distributor model: 03:21:54–03:24:53 and 03:31:14–03:38:58. Qualitative advertising/carriage/subscription mechanisms, without invented partner margins or assigning all subscriptions to football.
+- Capital-constraint cards: 04:03:13–04:07:50, with the separate 04:11:11 hypothetical. No undisclosed legal formula or carry schedule is invented.
+- All 34 navigation cues are mirror paragraph starts from this same **2026 remaster/update version**. Follow-up starts **03:19:00**; endpoint **04:13:42** is the final substantive paragraph transitioning to thanks, not duration; final sign-off is **04:16:46**. The published index’s **03:21:04** update cue is a different version and is not mixed in. Field marks map horizontal position linearly to time; turf/end zones are decorative. Reading progress does not play audio; other advertising versions may differ.
+- Original conceptual watercolors show an imagined stadium/screens and film production. Anonymous figures/settings are not exact historical events, identifiable athletes or documentary images.
