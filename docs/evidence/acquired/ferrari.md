@@ -1,3 +1,4 @@
+<!-- artifact-review: {"status":"verified","bundleTree":"0f093ceb2d6746ba9b4b1f7d42741dcd3368d4c0"} -->
 # Ferrari — episode evidence
 
 Source review: October 20, 2026. Original creation: October 12, 2026. Released April 13, 2026; Spring 2026, Episode 2, verified on the [official episode page](https://www.acquired.fm/episodes/ferrari).
