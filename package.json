@@ -11,6 +11,7 @@
     "dev": "node scripts/serve.mjs",
     "test": "node --test",
     "artifact:publish": "node scripts/publish-artifact.mjs",
-    "queue:list": "node scripts/publish-artifact.mjs --list"
+    "queue:list": "node scripts/publish-artifact.mjs --list",
+    "evidence:check": "node scripts/check-evidence.mjs"
   }
 }
