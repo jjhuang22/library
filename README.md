@@ -2,7 +2,7 @@
 
 A static reading library for podcast episodes, books, and standalone illustrated companions. Inspired by [Boris Cherny’s artifact](https://claude.ai/artifact/RdE6uE7WozcP2MLfx3BDky).
 
-`content/library.json` describes the artifacts present in a branch. On main it is the published catalog; on a queue branch it includes that branch's one additional artifact. `content/queue.json` locates prepared episodes and records whether their source review is complete. Empty collections stay hidden.
+`content/library.json` describes the artifacts present in a branch. On main it is the published catalog; on a queue branch it includes that branch's one additional artifact. `content/queue.json` locates prepared episodes, records source-review status, and retains the scheduled authoring order and progress. Empty collections stay hidden.
 
 ## Development
 
@@ -13,6 +13,7 @@ npm run dev         # Build and serve locally on port 3000
 npm run build       # Generate dist/
 npm test            # Build and selective-publication tests
 npm run queue:list  # List queued episodes and review status
+npm run evidence:check # Check source-map coverage
 ```
 
 The home page sorts by original creation date. Acquired seasons use the library's Spring/Fall convention, derived from release date. Artifact links open standalone pages; their Home link returns to `/`.
@@ -22,10 +23,9 @@ The home page sorts by original creation date. Acquired seasons use the library'
 - `AGENTS.md`: entry instructions for agents, including natural-language create and publish requests.
 - `docs/publishing.md`: general queue and publishing workflow for every collection.
 - `docs/acquired/authoring.md`: Acquired transcript, narrative, illustration, and navigation requirements.
-- `docs/evidence/<collection>/<id>.md`: permanent source maps; not deployed.
-- `docs/queue.md`: queue migration inventory and outstanding source reviews.
+- `docs/evidence/<collection>/<id>.md`: permanent source maps for every published and completed queued artifact; not deployed.
 - `content/library.json`: catalog entries with `id`, `title`, `category`, `addedOn`, `file`, and, for Acquired, `releasedOn`.
-- `content/queue.json`: episode branch registry and source-review status; not deployed.
+- `content/queue.json`: the single queue registry (`artifacts`) and scheduled authoring plan (`authoring`); not deployed.
 - `public/index.html`, `app.js`, `styles.css`: the library interface.
 - `public/artifacts/<collection>/<id>/index.html` and `images/`: each artifact's deployable bundle.
 - `public/assets/acquired/`: shared Acquired typography, timelines, and navigation themes.
