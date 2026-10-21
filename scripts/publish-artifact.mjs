@@ -7,7 +7,6 @@ import { buildLibrary } from './build.mjs';
 const defaultRoot = fileURLToPath(new URL('../', import.meta.url));
 const validKey = /^[a-z0-9]+(?:-[a-z0-9]+)*\/[a-z0-9]+(?:-[a-z0-9]+)*$/;
 const catalogFile = 'content/library.json';
-const queueFile = 'content/queue.json';
 const keyOf = item => `${item.category}/${item.id}`;
 const git = (root, ...args) => execFileSync('git', args, { cwd: root, encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'], maxBuffer: 32 * 1024 * 1024 }).trim();
 const showJSON = (root, ref, file) => JSON.parse(git(root, 'show', `${ref}:${file}`));
@@ -18,14 +17,31 @@ function checkKey(key) {
   if (!validKey.test(key)) throw new Error('Use a collection/id, for example acquired/vanguard');
 }
 function fetchSources(root) {
-  git(root, 'fetch', 'origin', 'main', '+refs/heads/queue/*:refs/remotes/origin/queue/*');
+  git(root, 'fetch', '--prune', 'origin', '+refs/heads/main:refs/remotes/origin/main', '+refs/heads/queue/*:refs/remotes/origin/queue/*');
 }
 function sourceRef(root, branch) {
-  // Prefer an available remote branch; local-only work remains usable.
-  for (const ref of [`refs/remotes/origin/${branch}`, `refs/heads/${branch}`]) {
-    try { return git(root, 'rev-parse', '--verify', `${ref}^{commit}`); } catch { /* try next */ }
-  }
-  throw new Error(`Queue branch ${branch} is unavailable. Recover its committed source before publishing.`);
+  try { return git(root, 'rev-parse', '--verify', `refs/remotes/origin/${branch}^{commit}`); }
+  catch { throw new Error(`Queue branch ${branch} is unavailable. Commit and push its source before publishing.`); }
+}
+function sourceReview(root, source, key) {
+  let text;
+  try { text = git(root, 'show', `${source}:docs/evidence/${key}.md`); }
+  catch { return { status: 'needs-source-review', notes: 'Missing evidence map' }; }
+  const header = text.match(/^<!-- artifact-review: (.+) -->\r?\n/);
+  if (!header) return { status: 'needs-source-review', notes: 'Missing review record' };
+  let review;
+  try { review = JSON.parse(header[1]); } catch { return { status: 'needs-source-review', notes: 'Invalid review record' }; }
+  if (!review || typeof review !== 'object' || !['draft', 'needs-source-review', 'blocked', 'verified'].includes(review.status))
+    return { status: 'needs-source-review', notes: 'Invalid review status' };
+  if (review.status !== 'verified') return { status: review.status, notes: review.blocker || '' };
+  let bundleTree;
+  try {
+    bundleTree = git(root, 'rev-parse', `${source}:public/artifacts/${key}`);
+    if (git(root, 'cat-file', '-t', bundleTree) !== 'tree') throw new Error('Not a bundle directory');
+  } catch { return { status: 'needs-source-review', notes: 'Missing bundle directory' }; }
+  if (review.bundleTree !== bundleTree || !text.slice(header[0].length).trim())
+    return { status: 'needs-source-review', notes: 'Bundle changed after review or source map is empty' };
+  return { status: 'verified', bundleTree, notes: '' };
 }
 function changedFiles(root, ...revisions) {
   const raw = execFileSync('git', ['diff', '--name-only', '-z', ...revisions], { cwd: root, stdio: ['ignore', 'pipe', 'pipe'] });
@@ -35,7 +51,7 @@ function assertScope(files, key) {
   const bundle = `public/artifacts/${key}/`;
   const evidence = `docs/evidence/${key}.md`;
   for (const file of files) {
-    if (file !== catalogFile && file !== queueFile && file !== evidence && !file.startsWith(bundle))
+    if (file !== catalogFile && file !== evidence && !file.startsWith(bundle))
       throw new Error(`Publication includes unrelated file ${file}; publish shared maintenance separately.`);
   }
 }
@@ -49,9 +65,22 @@ async function readPointer(root, key) {
   return JSON.parse(await readFile(pointerPath(root, key), 'utf8'));
 }
 
-export async function listQueue(root = defaultRoot) {
-  const registry = JSON.parse(await readFile(path.join(root, queueFile), 'utf8'));
-  return registry.artifacts;
+export async function listQueue(root = defaultRoot, { fetch = true } = {}) {
+  if (fetch) fetchSources(root);
+  const published = new Set(showJSON(root, 'refs/remotes/origin/main', catalogFile).artifacts.map(keyOf));
+  const refs = git(root, 'for-each-ref', '--format=%(refname)', 'refs/remotes/origin/queue/').split('\n').filter(Boolean);
+  const items = [];
+  for (const ref of refs) {
+    const branch = ref.slice('refs/remotes/origin/'.length);
+    const key = branch.slice('queue/'.length);
+    if (!validKey.test(key) || published.has(key)) continue;
+    const [category, id] = key.split('/');
+    let selected;
+    try { selected = showJSON(root, ref, catalogFile).artifacts.find(item => keyOf(item) === key); } catch { /* incomplete draft */ }
+    const review = selected ? sourceReview(root, ref, key) : { status: 'draft', notes: 'Missing catalog entry' };
+    items.push({ category, id, title: selected?.title || id, branch, reviewStatus: review.status, notes: review.notes });
+  }
+  return items;
 }
 
 export async function preparePublication({ root = defaultRoot, key, fetch = true, fresh = false, worktreeBase } = {}) {
@@ -60,14 +89,9 @@ export async function preparePublication({ root = defaultRoot, key, fetch = true
   const base = git(root, 'rev-parse', 'refs/remotes/origin/main');
   const catalog = showJSON(root, base, catalogFile);
   if (catalog.artifacts.some(item => keyOf(item) === key)) return { status: 'already-published', key, base };
-  const registry = showJSON(root, base, queueFile);
-  const queued = registry.artifacts.find(item => keyOf(item) === key);
-  if (!queued) throw new Error(`No queue registration for ${key}`);
-  if (queued.branch !== `queue/${key}`) throw new Error(`Unexpected queue branch for ${key}`);
-  const source = sourceRef(root, queued.branch);
-  const sourceRegistry = showJSON(root, source, queueFile);
-  const review = sourceRegistry.artifacts.find(item => keyOf(item) === key);
-  if (!review || review.reviewStatus !== 'verified') throw new Error(`${key} needs a complete source review and evidence map before publication.`);
+  const source = sourceRef(root, `queue/${key}`);
+  const review = sourceReview(root, source, key);
+  if (review.status !== 'verified') throw new Error(`${key} needs a complete source review and evidence map before publication: ${review.notes || review.status}`);
   const sourceCatalog = showJSON(root, source, catalogFile);
   const selected = sourceCatalog.artifacts.filter(item => keyOf(item) === key);
   if (selected.length !== 1 || selected[0].file !== `/artifacts/${key}/index.html`) throw new Error('Missing or invalid episode catalog entry');
@@ -101,10 +125,8 @@ export async function preparePublication({ root = defaultRoot, key, fetch = true
     await writeFile(destination, execFileSync('git', ['cat-file', 'blob', match[2]], { cwd: root, stdio: ['ignore', 'pipe', 'pipe'], maxBuffer: 32 * 1024 * 1024 }));
   }
   catalog.artifacts.push(selected[0]);
-  registry.artifacts = registry.artifacts.filter(item => keyOf(item) !== key);
   await saveJSON(path.join(worktree, catalogFile), catalog);
-  await saveJSON(path.join(worktree, queueFile), registry);
-  git(worktree, 'add', '--', bundle, evidence, catalogFile, queueFile);
+  git(worktree, 'add', '--', bundle, evidence, catalogFile);
   assertScope(changedFiles(worktree, '--cached'), key);
   git(worktree, 'diff', '--cached', '--check');
   await buildLibrary(worktree);
@@ -130,8 +152,8 @@ export async function publishPrepared({ root = defaultRoot, key, fetch = true } 
   if (current !== plan.base) throw new Error('Main advanced after preparation. Run --prepare --fresh and repeat browser checks; never force-push.');
   const currentSource = sourceRef(root, `queue/${key}`);
   if (currentSource !== plan.source) throw new Error('Queue source changed after preparation. Run --prepare --fresh and repeat review and browser checks.');
-  const currentReview = showJSON(root, currentSource, queueFile).artifacts.find(item => keyOf(item) === key);
-  if (currentReview?.reviewStatus !== 'verified') throw new Error('Source review is no longer verified');
+  const currentReview = sourceReview(root, currentSource, key);
+  if (currentReview.status !== 'verified') throw new Error('Source review is no longer verified');
   const worktree = plan.worktree;
   if (git(worktree, 'branch', '--show-current') !== plan.branch) throw new Error('Prepared worktree changed branch');
   if (!plan.commit && git(worktree, 'rev-parse', 'HEAD') !== plan.base) throw new Error('Prepared worktree has unexpected commits');
@@ -143,9 +165,9 @@ export async function publishPrepared({ root = defaultRoot, key, fetch = true } 
   const afterOther = publishedCatalog.artifacts.filter(item => keyOf(item) !== key);
   if (JSON.stringify(beforeOther) !== JSON.stringify(afterOther) || publishedCatalog.artifacts.length !== beforeOther.length + 1 || JSON.stringify(baseCatalog.categories) !== JSON.stringify(publishedCatalog.categories))
     throw new Error('Prepared catalog changes other publications or collections');
-  const expectedQueue = showJSON(root, plan.base, queueFile);
-  expectedQueue.artifacts = expectedQueue.artifacts.filter(item => keyOf(item) !== key);
-  if (JSON.stringify(expectedQueue) !== JSON.stringify(JSON.parse(await readFile(path.join(worktree, queueFile), 'utf8')))) throw new Error('Prepared registry changes another queued episode');
+  const expectedCatalog = structuredClone(baseCatalog);
+  expectedCatalog.artifacts.push(showJSON(root, currentSource, catalogFile).artifacts.find(item => keyOf(item) === key));
+  if (JSON.stringify(publishedCatalog) !== JSON.stringify(expectedCatalog)) throw new Error('Prepared catalog changes selected source metadata or unrelated catalog fields');
   const evidencePath = path.join(worktree, `docs/evidence/${key}.md`);
   if (!(await lstat(evidencePath)).isFile() || !(await readFile(evidencePath, 'utf8')).trim()) throw new Error('A nonempty ordinary evidence map is required');
   async function checkBundle(directory) {
@@ -160,8 +182,12 @@ export async function publishPrepared({ root = defaultRoot, key, fetch = true } 
   await buildLibrary(worktree);
   execFileSync(process.execPath, ['--test'], { cwd: worktree, stdio: ['ignore', 'pipe', 'pipe'] });
   if (!plan.commit) {
-    git(worktree, 'add', '--', `public/artifacts/${key}/`, `docs/evidence/${key}.md`, catalogFile, queueFile);
+    git(worktree, 'add', '--', `public/artifacts/${key}/`, `docs/evidence/${key}.md`, catalogFile);
     assertScope(changedFiles(worktree, '--cached', plan.base), key);
+    const stagedTree = git(worktree, 'write-tree');
+    if (git(worktree, 'rev-parse', `${stagedTree}:public/artifacts/${key}`) !== currentReview.bundleTree ||
+        git(worktree, 'show', `${stagedTree}:docs/evidence/${key}.md`) !== git(root, 'show', `${currentSource}:docs/evidence/${key}.md`))
+      throw new Error('Prepared artifact or evidence changed after source review. Update and review the queue branch, then prepare again.');
     git(worktree, 'diff', '--cached', '--check');
     git(worktree, 'commit', '-m', `Publish ${plan.title} reading companion`);
     plan.commit = git(worktree, 'rev-parse', 'HEAD');
@@ -176,7 +202,7 @@ if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.me
   const args = process.argv.slice(2);
   try {
     if (args[0] === '--list') {
-      for (const item of await listQueue()) console.log(`${keyOf(item)}\t${item.reviewStatus}\t${item.branch}\t${item.notes || ''}`);
+      for (const item of await listQueue()) console.log(`${keyOf(item)}\t${item.reviewStatus}\t${item.branch}\t${item.title}\t${item.notes || ''}`);
     } else {
       const [key, ...flags] = args;
       if (flags.some(flag => !['--prepare', '--push', '--fresh'].includes(flag)) || flags.includes('--prepare') && flags.includes('--push') || flags.includes('--fresh') && flags.includes('--push')) throw new Error('Use collection/id with --prepare [--fresh] or --push');
