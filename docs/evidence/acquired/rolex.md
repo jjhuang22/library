@@ -1,3 +1,4 @@
+<!-- artifact-review: {"status":"verified","bundleTree":"83c2598bb111a186a4a382da6ef3c3ddc130d5ed"} -->
 # Rolex: episode evidence
 
 Artifact: `public/artifacts/acquired/rolex/index.html`. Released February 24, 2025; library season Spring 2025. Original creation date: October 12, 2026.
