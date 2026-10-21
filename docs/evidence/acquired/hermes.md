@@ -1,3 +1,4 @@
+<!-- artifact-review: {"status":"verified","bundleTree":"e6dbbe5b05e508faf18ea370202d883a3000c32c"} -->
 # Hermès — episode evidence
 
 - [Acquired episode](https://www.acquired.fm/episodes/hermes): February 20, 2024, Season 14 episode 2. Library season Spring 2024; original creation date October 12, 2026.
