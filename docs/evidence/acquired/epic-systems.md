@@ -1,3 +1,4 @@
+<!-- artifact-review: {"status":"verified","bundleTree":"aae9229d5083b9a9dc32a3bb2f963437ba5aeaac"} -->
 # Epic Systems (MyChart): episode evidence
 
 Released April 21, 2025 (Spring 2025). Original creation date: October 19, 2026.
