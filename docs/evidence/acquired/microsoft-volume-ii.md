@@ -1,3 +1,4 @@
+<!-- artifact-review: {"status":"verified","bundleTree":"879330d75bc636482de8a98a76c6975eefb3a029"} -->
 # Microsoft Volume II — source evidence
 
 Official episode: <https://www.acquired.fm/episodes/microsoft-volume-ii>. Complete spoken transcript used: <https://podscripts.co/podcasts/acquired/microsoft-volume-ii> (third-party mirror, not official).
