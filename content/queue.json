@@ -5,160 +5,711 @@
       "title": "Hermès",
       "category": "acquired",
       "branch": "queue/acquired/hermes",
-      "reviewStatus": "verified",
-      "notes": "Full transcript audited; official-site retrieval limitation and complete-source fallback recorded in retained source map."
+      "reviewStatus": "verified"
     },
     {
       "id": "rolex",
       "title": "Rolex",
       "category": "acquired",
       "branch": "queue/acquired/rolex",
-      "reviewStatus": "verified",
-      "notes": "Full transcript audited; official-site retrieval limitation and complete-source fallback recorded in retained source map."
+      "reviewStatus": "verified"
     },
     {
       "id": "formula-1",
       "title": "Formula 1",
       "category": "acquired",
       "branch": "queue/acquired/formula-1",
-      "reviewStatus": "verified",
-      "notes": "Full transcript audited; official-site retrieval limitation and complete-source fallback recorded in retained source map."
+      "reviewStatus": "verified"
     },
     {
       "id": "ferrari",
       "title": "Ferrari",
       "category": "acquired",
       "branch": "queue/acquired/ferrari",
-      "reviewStatus": "verified",
-      "notes": "Full transcript audited; official-site retrieval limitation and complete-source fallback recorded in retained source map."
+      "reviewStatus": "verified"
     },
     {
       "id": "nba",
       "title": "The NBA",
       "category": "acquired",
       "branch": "queue/acquired/nba",
-      "reviewStatus": "verified",
-      "notes": "Full transcript audited; official-site retrieval limitation and complete-source fallback recorded in retained source map."
+      "reviewStatus": "verified"
     },
     {
       "id": "vanguard",
       "title": "Vanguard",
       "category": "acquired",
       "branch": "queue/acquired/vanguard",
-      "reviewStatus": "verified",
-      "notes": "Full transcript audited; official-site retrieval limitation and complete-source fallback recorded in retained source map."
+      "reviewStatus": "verified"
     },
     {
       "id": "disney-the-renaissance-and-the-empire",
-      "title": "Disney The Renaissance and the Empire",
+      "title": "Disney: The Renaissance and the Empire",
       "category": "acquired",
       "branch": "queue/acquired/disney-the-renaissance-and-the-empire",
-      "reviewStatus": "source-unavailable",
-      "notes": "Original chat reports completion on local-only queued/acquired-selected-episodes; recover that branch and source files before migration or re-verification."
+      "reviewStatus": "verified"
     },
     {
       "id": "coca-cola",
       "title": "Coca-Cola",
       "category": "acquired",
       "branch": "queue/acquired/coca-cola",
-      "reviewStatus": "source-unavailable",
-      "notes": "Original chat reports completion on local-only queued/acquired-selected-episodes; recover that branch and source files before migration or re-verification."
+      "reviewStatus": "verified"
     },
     {
       "id": "trader-joes",
       "title": "Trader Joe's",
       "category": "acquired",
       "branch": "queue/acquired/trader-joes",
-      "reviewStatus": "source-unavailable",
-      "notes": "Original chat reports completion on local-only queued/acquired-selected-episodes; recover that branch and source files before migration or re-verification."
+      "reviewStatus": "verified"
     },
     {
       "id": "google-the-ai-company",
-      "title": "Google The AI Company",
+      "title": "Google: The AI Company",
       "category": "acquired",
       "branch": "queue/acquired/google-the-ai-company",
-      "reviewStatus": "source-unavailable",
-      "notes": "Original chat reports completion on local-only queued/acquired-selected-episodes; recover that branch and source files before migration or re-verification."
+      "reviewStatus": "verified"
     },
     {
       "id": "alphabet-inc",
       "title": "Alphabet Inc.",
       "category": "acquired",
       "branch": "queue/acquired/alphabet-inc",
-      "reviewStatus": "verified",
-      "notes": "Recovered full bundle and retained source map from 00808ce; prior complete-transcript independent review approved_after_fixes. Rechecked bundle migration; original source review is preserved, not newly invented."
+      "reviewStatus": "verified"
     },
     {
       "id": "google-the-origin-of-search",
-      "title": "Google The Origin of Search",
+      "title": "Google: The Origin of Search",
       "category": "acquired",
       "branch": "queue/acquired/google-the-origin-of-search",
-      "reviewStatus": "source-unavailable",
-      "notes": "Original chat reports completion on local-only queued/acquired-selected-episodes; recover that branch and source files before migration or re-verification."
+      "reviewStatus": "verified"
     },
     {
       "id": "ikea",
       "title": "IKEA",
       "category": "acquired",
       "branch": "queue/acquired/ikea",
-      "reviewStatus": "source-unavailable",
-      "notes": "Original chat reports completion on local-only queued/acquired-selected-episodes; recover that branch and source files before migration or re-verification."
+      "reviewStatus": "verified"
     },
     {
       "id": "the-nfl",
-      "title": "The NFL",
+      "title": "The NFL (2026 remaster and follow-up)",
       "category": "acquired",
       "branch": "queue/acquired/the-nfl",
-      "reviewStatus": "source-unavailable",
-      "notes": "Original chat reports completion on local-only queued/acquired-selected-episodes; recover that branch and source files before migration or re-verification."
+      "reviewStatus": "verified"
     },
     {
       "id": "visa",
       "title": "Visa",
       "category": "acquired",
       "branch": "queue/acquired/visa",
-      "reviewStatus": "source-unavailable",
-      "notes": "Original chat reports completion on local-only queued/acquired-selected-episodes; recover that branch and source files before migration or re-verification."
+      "reviewStatus": "verified"
     },
     {
       "id": "meta",
       "title": "Meta",
       "category": "acquired",
       "branch": "queue/acquired/meta",
-      "reviewStatus": "source-unavailable",
-      "notes": "Original chat reports completion on local-only queued/acquired-selected-episodes; recover that branch and source files before migration or re-verification."
+      "reviewStatus": "verified"
     },
     {
       "id": "mars-inc",
-      "title": "Mars Inc.",
+      "title": "Mars Inc. (the chocolate story)",
       "category": "acquired",
       "branch": "queue/acquired/mars-inc",
-      "reviewStatus": "source-unavailable",
-      "notes": "Original chat reports completion on local-only queued/acquired-selected-episodes; recover that branch and source files before migration or re-verification."
+      "reviewStatus": "verified"
     },
     {
       "id": "epic-systems",
-      "title": "Epic Systems",
+      "title": "Epic Systems (MyChart)",
       "category": "acquired",
       "branch": "queue/acquired/epic-systems",
-      "reviewStatus": "source-unavailable",
-      "notes": "Original chat reports completion on local-only queued/acquired-selected-episodes; recover that branch and source files before migration or re-verification."
+      "reviewStatus": "verified"
     },
     {
       "id": "microsoft-volume-i",
       "title": "Microsoft Volume I",
       "category": "acquired",
       "branch": "queue/acquired/microsoft-volume-i",
-      "reviewStatus": "source-unavailable",
-      "notes": "Original chat reports completion on local-only queued/acquired-selected-episodes; recover that branch and source files before migration or re-verification."
+      "reviewStatus": "verified"
     },
     {
       "id": "microsoft-volume-ii",
       "title": "Microsoft Volume II",
       "category": "acquired",
       "branch": "queue/acquired/microsoft-volume-ii",
-      "reviewStatus": "source-unavailable",
-      "notes": "Original chat reports completion on local-only queued/acquired-selected-episodes; recover that branch and source files before migration or re-verification."
+      "reviewStatus": "verified"
     }
-  ]
+  ],
+  "authoring": {
+    "schema_version": 1,
+    "requested_on": "2026-10-18",
+    "timezone": "America/New_York",
+    "repository": "jjhuang22/library",
+    "process": "sequential_author_independent_subagent_review_fix_recheck_verify_commit_repeat",
+    "automation_id": "6ad5881e8d488191a132e7ba1d4da6d9",
+    "active_episode": null,
+    "excluded_by_user": [
+      {
+        "id": "benchmark-part-ii",
+        "title": "Benchmark Part II: The Dinner",
+        "reason": "Listen later; exclude from artifact format"
+      },
+      {
+        "id": "sequoia-capital-part-ii",
+        "title": "Sequoia Capital Part II (with Doug Leone)",
+        "reason": "Listen later; exclude from artifact format"
+      }
+    ],
+    "episodes": [
+      {
+        "position": 1,
+        "id": "disney-the-renaissance-and-the-empire",
+        "title": "Disney: The Renaissance and the Empire",
+        "status": "completed",
+        "attempts": 1,
+        "blocker": null,
+        "artifact_commit": "3ad3aba2b203dcb53ef1950b39c3a12daa478631",
+        "review_status": "approved_after_fixes",
+        "started_at": "2026-10-19T04:07:10.230807+00:00",
+        "completed_at": "2026-10-19T04:18:51.773296+00:00",
+        "queue_branch": "queue/acquired/disney-the-renaissance-and-the-empire",
+        "evidence_map": "docs/evidence/acquired/disney-the-renaissance-and-the-empire.md"
+      },
+      {
+        "position": 2,
+        "id": "coca-cola",
+        "title": "Coca-Cola",
+        "status": "completed",
+        "attempts": 1,
+        "blocker": null,
+        "artifact_commit": "a5de30a2a515d5b5bd053b674f868074d0222fc8",
+        "review_status": "approved_after_fixes",
+        "started_at": "2026-10-19T05:04:44.180377+00:00",
+        "completed_at": "2026-10-19T05:14:47.026744+00:00",
+        "queue_branch": "queue/acquired/coca-cola",
+        "evidence_map": "docs/evidence/acquired/coca-cola.md"
+      },
+      {
+        "position": 3,
+        "id": "trader-joes",
+        "title": "Trader Joe's",
+        "status": "completed",
+        "attempts": 1,
+        "blocker": null,
+        "artifact_commit": "5943918e3572dcb4496dda81e572ba7ce5c51fa0",
+        "review_status": "approved_after_fixes",
+        "started_at": "2026-10-19T06:05:12.781518+00:00",
+        "completed_at": "2026-10-19T08:13:47.668222+00:00",
+        "queue_branch": "queue/acquired/trader-joes",
+        "evidence_map": "docs/evidence/acquired/trader-joes.md"
+      },
+      {
+        "position": 4,
+        "id": "google-the-ai-company",
+        "title": "Google: The AI Company",
+        "status": "completed",
+        "attempts": 1,
+        "blocker": null,
+        "artifact_commit": "d392f8a2c1777121be6e6d5d084e790628a26208",
+        "review_status": "approved_after_fixes",
+        "started_at": "2026-10-19T09:04:52.424210+00:00",
+        "completed_at": "2026-10-19T09:15:02.466876+00:00",
+        "queue_branch": "queue/acquired/google-the-ai-company",
+        "evidence_map": "docs/evidence/acquired/google-the-ai-company.md"
+      },
+      {
+        "position": 5,
+        "id": "alphabet-inc",
+        "title": "Alphabet Inc.",
+        "status": "completed",
+        "attempts": 1,
+        "blocker": null,
+        "artifact_commit": "00808ce3dbc5016c8e851333284998b57af1c3bf",
+        "review_status": "approved_after_fixes",
+        "started_at": "2026-10-19T10:06:55.821652+00:00",
+        "completed_at": "2026-10-19T10:17:04.011158+00:00",
+        "queue_branch": "queue/acquired/alphabet-inc",
+        "evidence_map": "docs/evidence/acquired/alphabet-inc.md"
+      },
+      {
+        "position": 6,
+        "id": "google-the-origin-of-search",
+        "title": "Google: The Origin of Search",
+        "status": "completed",
+        "attempts": 1,
+        "blocker": null,
+        "artifact_commit": "7f9b8b369307a697c9702ae8fb322f386a9ce615",
+        "review_status": "approved",
+        "started_at": "2026-10-19T11:07:05.916631+00:00",
+        "completed_at": "2026-10-19T11:16:28.993823+00:00",
+        "queue_branch": "queue/acquired/google-the-origin-of-search",
+        "evidence_map": "docs/evidence/acquired/google-the-origin-of-search.md"
+      },
+      {
+        "position": 7,
+        "id": "ikea",
+        "title": "IKEA",
+        "status": "completed",
+        "attempts": 1,
+        "blocker": null,
+        "artifact_commit": "99171f8a7d747f3ce724a413b168ab52cdc53daa",
+        "review_status": "approved_after_fixes",
+        "started_at": "2026-10-19T12:07:45.884010+00:00",
+        "completed_at": "2026-10-19T12:19:01.095507+00:00",
+        "queue_branch": "queue/acquired/ikea",
+        "evidence_map": "docs/evidence/acquired/ikea.md"
+      },
+      {
+        "position": 8,
+        "id": "the-nfl",
+        "title": "The NFL (2026 remaster and follow-up)",
+        "status": "completed",
+        "attempts": 1,
+        "blocker": null,
+        "artifact_commit": "6dfd53766df65527c1bf642e5a2f36e0721b88b3",
+        "review_status": "approved_after_fixes",
+        "started_at": "2026-10-19T13:10:39.206705+00:00",
+        "completed_at": "2026-10-19T13:23:40.513470+00:00",
+        "queue_branch": "queue/acquired/the-nfl",
+        "evidence_map": "docs/evidence/acquired/the-nfl.md"
+      },
+      {
+        "position": 9,
+        "id": "visa",
+        "title": "Visa",
+        "status": "completed",
+        "attempts": 1,
+        "blocker": null,
+        "artifact_commit": "2b4907d01ffba5aca36bc6e3019b49889edc9f64",
+        "review_status": "approved_after_fixes",
+        "started_at": "2026-10-19T14:12:16.315678+00:00",
+        "completed_at": "2026-10-19T14:26:28.409397+00:00",
+        "queue_branch": "queue/acquired/visa",
+        "evidence_map": "docs/evidence/acquired/visa.md"
+      },
+      {
+        "position": 10,
+        "id": "meta",
+        "title": "Meta",
+        "status": "completed",
+        "attempts": 1,
+        "blocker": null,
+        "artifact_commit": "8cbdb934efcabcc2d74b67b5b649e94dfe5b96c8",
+        "review_status": "approved",
+        "started_at": "2026-10-19T15:04:38.409983+00:00",
+        "completed_at": "2026-10-19T15:17:53.606933+00:00",
+        "queue_branch": "queue/acquired/meta",
+        "evidence_map": "docs/evidence/acquired/meta.md"
+      },
+      {
+        "position": 11,
+        "id": "mars-inc",
+        "title": "Mars Inc. (the chocolate story)",
+        "status": "completed",
+        "attempts": 1,
+        "blocker": null,
+        "artifact_commit": "97c29da819803e9da9f27735a82a25f5800abab9",
+        "review_status": "approved",
+        "started_at": "2026-10-20T01:05:35.693774+00:00",
+        "completed_at": "2026-10-20T01:15:57.604417+00:00",
+        "queue_branch": "queue/acquired/mars-inc",
+        "evidence_map": "docs/evidence/acquired/mars-inc.md"
+      },
+      {
+        "position": 12,
+        "id": "epic-systems",
+        "title": "Epic Systems (MyChart)",
+        "status": "completed",
+        "attempts": 1,
+        "blocker": null,
+        "artifact_commit": "8eeb220d9ba02049cc36660145f4e8285dbfc8d4",
+        "review_status": "approved_after_fixes",
+        "started_at": "2026-10-20T01:16:08.250278+00:00",
+        "completed_at": "2026-10-20T01:26:20.652763+00:00",
+        "queue_branch": "queue/acquired/epic-systems",
+        "evidence_map": "docs/evidence/acquired/epic-systems.md"
+      },
+      {
+        "position": 13,
+        "id": "microsoft-volume-i",
+        "title": "Microsoft Volume I",
+        "status": "completed",
+        "attempts": 1,
+        "blocker": null,
+        "artifact_commit": "8210dddc516f381f19120a158cc77dac87cf1309",
+        "review_status": "approved_after_fixes",
+        "started_at": "2026-10-20T01:26:28.636677+00:00",
+        "completed_at": "2026-10-20T01:34:46.775271+00:00",
+        "queue_branch": "queue/acquired/microsoft-volume-i",
+        "evidence_map": "docs/evidence/acquired/microsoft-volume-i.md"
+      },
+      {
+        "position": 14,
+        "id": "microsoft-volume-ii",
+        "title": "Microsoft Volume II",
+        "status": "completed",
+        "attempts": 1,
+        "blocker": null,
+        "artifact_commit": "cd136445de0784fc7111fcfaac8882b36de139b2",
+        "review_status": "approved",
+        "started_at": "2026-10-20T01:36:02.791971+00:00",
+        "completed_at": "2026-10-20T01:47:52.498371+00:00",
+        "queue_branch": "queue/acquired/microsoft-volume-ii",
+        "evidence_map": "docs/evidence/acquired/microsoft-volume-ii.md"
+      },
+      {
+        "position": 15,
+        "id": "novo-nordisk",
+        "title": "Novo Nordisk (Ozempic)",
+        "status": "pending",
+        "attempts": 0,
+        "blocker": null,
+        "artifact_commit": null,
+        "review_status": "not_started",
+        "queue_branch": "queue/acquired/novo-nordisk"
+      },
+      {
+        "position": 16,
+        "id": "starbucks",
+        "title": "Starbucks (with Howard Schultz)",
+        "status": "pending",
+        "attempts": 0,
+        "blocker": null,
+        "artifact_commit": null,
+        "review_status": "not_started",
+        "queue_branch": "queue/acquired/starbucks"
+      },
+      {
+        "position": 17,
+        "id": "nike",
+        "title": "Nike",
+        "status": "pending",
+        "attempts": 0,
+        "blocker": null,
+        "artifact_commit": null,
+        "review_status": "not_started",
+        "queue_branch": "queue/acquired/nike"
+      },
+      {
+        "position": 18,
+        "id": "nvidia-part-i",
+        "title": "Nvidia Part I: The GPU Company (1993–2006)",
+        "status": "pending",
+        "attempts": 0,
+        "blocker": null,
+        "artifact_commit": null,
+        "review_status": "not_started",
+        "queue_branch": "queue/acquired/nvidia-part-i"
+      },
+      {
+        "position": 19,
+        "id": "nvidia-part-ii",
+        "title": "Nvidia Part II: The Machine Learning Company (2006–2022)",
+        "status": "pending",
+        "attempts": 0,
+        "blocker": null,
+        "artifact_commit": null,
+        "review_status": "not_started",
+        "queue_branch": "queue/acquired/nvidia-part-ii"
+      },
+      {
+        "position": 20,
+        "id": "nvidia-part-iii",
+        "title": "Nvidia Part III: The Dawn of the AI Era (2022–2023)",
+        "status": "pending",
+        "attempts": 0,
+        "blocker": null,
+        "artifact_commit": null,
+        "review_status": "not_started",
+        "queue_branch": "queue/acquired/nvidia-part-iii"
+      },
+      {
+        "position": 21,
+        "id": "lvmh",
+        "title": "LVMH",
+        "status": "pending",
+        "attempts": 0,
+        "blocker": null,
+        "artifact_commit": null,
+        "review_status": "not_started",
+        "queue_branch": "queue/acquired/lvmh"
+      },
+      {
+        "position": 22,
+        "id": "enron",
+        "title": "Enron",
+        "status": "pending",
+        "attempts": 0,
+        "blocker": null,
+        "artifact_commit": null,
+        "review_status": "not_started",
+        "queue_branch": "queue/acquired/enron"
+      },
+      {
+        "position": 23,
+        "id": "qualcomm",
+        "title": "Qualcomm",
+        "status": "pending",
+        "attempts": 0,
+        "blocker": null,
+        "artifact_commit": null,
+        "review_status": "not_started",
+        "queue_branch": "queue/acquired/qualcomm"
+      },
+      {
+        "position": 24,
+        "id": "amazon-web-services",
+        "title": "Amazon Web Services",
+        "status": "pending",
+        "attempts": 0,
+        "blocker": null,
+        "artifact_commit": null,
+        "review_status": "not_started",
+        "queue_branch": "queue/acquired/amazon-web-services"
+      },
+      {
+        "position": 25,
+        "id": "amazon-com",
+        "title": "Amazon.com",
+        "status": "pending",
+        "attempts": 0,
+        "blocker": null,
+        "artifact_commit": null,
+        "review_status": "not_started",
+        "queue_branch": "queue/acquired/amazon-com"
+      },
+      {
+        "position": 26,
+        "id": "walmart",
+        "title": "Walmart",
+        "status": "pending",
+        "attempts": 0,
+        "blocker": null,
+        "artifact_commit": null,
+        "review_status": "not_started",
+        "queue_branch": "queue/acquired/walmart"
+      },
+      {
+        "position": 27,
+        "id": "benchmark-part-i",
+        "title": "Benchmark Part I",
+        "status": "pending",
+        "attempts": 0,
+        "blocker": null,
+        "artifact_commit": null,
+        "review_status": "not_started",
+        "queue_branch": "queue/acquired/benchmark-part-i"
+      },
+      {
+        "position": 28,
+        "id": "andreessen-horowitz-part-i",
+        "title": "Andreessen Horowitz Part I",
+        "status": "pending",
+        "attempts": 0,
+        "blocker": null,
+        "artifact_commit": null,
+        "review_status": "not_started",
+        "queue_branch": "queue/acquired/andreessen-horowitz-part-i"
+      },
+      {
+        "position": 29,
+        "id": "andreessen-horowitz-part-ii",
+        "title": "Andreessen Horowitz Part II",
+        "status": "pending",
+        "attempts": 0,
+        "blocker": null,
+        "artifact_commit": null,
+        "review_status": "not_started",
+        "queue_branch": "queue/acquired/andreessen-horowitz-part-ii"
+      },
+      {
+        "position": 30,
+        "id": "berkshire-hathaway-part-i",
+        "title": "Berkshire Hathaway Part I",
+        "status": "pending",
+        "attempts": 0,
+        "blocker": null,
+        "artifact_commit": null,
+        "review_status": "not_started",
+        "queue_branch": "queue/acquired/berkshire-hathaway-part-i"
+      },
+      {
+        "position": 31,
+        "id": "berkshire-hathaway-part-ii",
+        "title": "Berkshire Hathaway Part II",
+        "status": "pending",
+        "attempts": 0,
+        "blocker": null,
+        "artifact_commit": null,
+        "review_status": "not_started",
+        "queue_branch": "queue/acquired/berkshire-hathaway-part-ii"
+      },
+      {
+        "position": 32,
+        "id": "berkshire-hathaway-part-iii",
+        "title": "Berkshire Hathaway Part III",
+        "status": "pending",
+        "attempts": 0,
+        "blocker": null,
+        "artifact_commit": null,
+        "review_status": "not_started",
+        "queue_branch": "queue/acquired/berkshire-hathaway-part-iii"
+      },
+      {
+        "position": 33,
+        "id": "bitcoin",
+        "title": "Bitcoin",
+        "status": "pending",
+        "attempts": 0,
+        "blocker": null,
+        "artifact_commit": null,
+        "review_status": "not_started",
+        "queue_branch": "queue/acquired/bitcoin"
+      },
+      {
+        "position": 34,
+        "id": "airbnb",
+        "title": "Airbnb",
+        "status": "pending",
+        "attempts": 0,
+        "blocker": null,
+        "artifact_commit": null,
+        "review_status": "not_started",
+        "queue_branch": "queue/acquired/airbnb"
+      },
+      {
+        "position": 35,
+        "id": "doordash",
+        "title": "DoorDash",
+        "status": "pending",
+        "attempts": 0,
+        "blocker": null,
+        "artifact_commit": null,
+        "review_status": "not_started",
+        "queue_branch": "queue/acquired/doordash"
+      },
+      {
+        "position": 36,
+        "id": "sequoia-capital-part-i",
+        "title": "Sequoia Capital (Part 1)",
+        "status": "pending",
+        "attempts": 0,
+        "blocker": null,
+        "artifact_commit": null,
+        "review_status": "not_started",
+        "queue_branch": "queue/acquired/sequoia-capital-part-i"
+      },
+      {
+        "position": 37,
+        "id": "google-maps",
+        "title": "Google Maps",
+        "status": "pending",
+        "attempts": 0,
+        "blocker": null,
+        "artifact_commit": null,
+        "review_status": "not_started",
+        "queue_branch": "queue/acquired/google-maps"
+      },
+      {
+        "position": 38,
+        "id": "huawei",
+        "title": "Huawei",
+        "status": "pending",
+        "attempts": 0,
+        "blocker": null,
+        "artifact_commit": null,
+        "review_status": "not_started",
+        "queue_branch": "queue/acquired/huawei"
+      },
+      {
+        "position": 39,
+        "id": "the-shopify-ipo",
+        "title": "The Shopify IPO",
+        "status": "pending",
+        "attempts": 0,
+        "blocker": null,
+        "artifact_commit": null,
+        "review_status": "not_started",
+        "queue_branch": "queue/acquired/the-shopify-ipo"
+      },
+      {
+        "position": 40,
+        "id": "espn",
+        "title": "ESPN",
+        "status": "pending",
+        "attempts": 0,
+        "blocker": null,
+        "artifact_commit": null,
+        "review_status": "not_started",
+        "queue_branch": "queue/acquired/espn"
+      },
+      {
+        "position": 41,
+        "id": "tencent",
+        "title": "Tencent",
+        "status": "pending",
+        "attempts": 0,
+        "blocker": null,
+        "artifact_commit": null,
+        "review_status": "not_started",
+        "queue_branch": "queue/acquired/tencent"
+      },
+      {
+        "position": 42,
+        "id": "netflix-part-i",
+        "title": "Netflix (Part 1)",
+        "status": "pending",
+        "attempts": 0,
+        "blocker": null,
+        "artifact_commit": null,
+        "review_status": "not_started",
+        "queue_branch": "queue/acquired/netflix-part-i"
+      },
+      {
+        "position": 43,
+        "id": "netflix-part-ii",
+        "title": "Netflix (Part 2)",
+        "status": "pending",
+        "attempts": 0,
+        "blocker": null,
+        "artifact_commit": null,
+        "review_status": "not_started",
+        "queue_branch": "queue/acquired/netflix-part-ii"
+      },
+      {
+        "position": 44,
+        "id": "alibaba",
+        "title": "Alibaba",
+        "status": "pending",
+        "attempts": 0,
+        "blocker": null,
+        "artifact_commit": null,
+        "review_status": "not_started",
+        "queue_branch": "queue/acquired/alibaba"
+      },
+      {
+        "position": 45,
+        "id": "tesla",
+        "title": "Tesla",
+        "status": "pending",
+        "attempts": 0,
+        "blocker": null,
+        "artifact_commit": null,
+        "review_status": "not_started",
+        "queue_branch": "queue/acquired/tesla"
+      },
+      {
+        "position": 46,
+        "id": "whole-foods-market",
+        "title": "Whole Foods Market",
+        "status": "pending",
+        "attempts": 0,
+        "blocker": null,
+        "artifact_commit": null,
+        "review_status": "not_started",
+        "queue_branch": "queue/acquired/whole-foods-market"
+      }
+    ]
+  }
 }
