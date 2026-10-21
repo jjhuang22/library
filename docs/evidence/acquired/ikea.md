@@ -1,3 +1,4 @@
+<!-- artifact-review: {"status":"verified","bundleTree":"a7c624d7989589df93210b1fe2cb1b42e24f080f"} -->
 # IKEA — episode evidence
 
 ## Source versions
