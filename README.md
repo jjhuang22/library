@@ -1,50 +1,45 @@
 # Library
 
-A static reading library for podcast episodes, books, and standalone illustrated companions. Inspired by [Boris Cherny’s artifact](https://claude.ai/artifact/RdE6uE7WozcP2MLfx3BDky).
+A static reading library for podcast episodes, books, and illustrated companions. Inspired by [Boris Cherny’s artifact](https://claude.ai/artifact/RdE6uE7WozcP2MLfx3BDky).
 
-`content/library.json` describes the artifacts present in a branch. On main it is the published catalog; on a queue branch it includes that branch's one additional artifact. `content/queue.json` locates prepared episodes, records source-review status, and retains the scheduled authoring order and progress. Empty collections stay hidden.
+Main contains the published library. Unpublished artifacts live on individual `queue/<collection>/<id>` branches until the user requests publication, usually after listening or reading. The scheduled automation keeps its creation backlog in its own instructions; there is no tracked queue registry.
 
 ## Development
 
 Requires Node.js 22 or newer. No framework or build dependencies are required.
 
 ```sh
-npm run dev         # Build and serve locally on port 3000
-npm run build       # Generate dist/
-npm test            # Build and selective-publication tests
-npm run queue:list  # List queued episodes and review status
-npm run evidence:check # Check source-map coverage
+npm run dev             # Build and serve locally on port 3000
+npm run build           # Generate dist/
+npm test                # Build, source-map and publication checks
+npm run queue:list      # Fetch and list unpublished remote branches and readiness
+npm run evidence:check  # Check maps against this branch's catalog
 ```
 
-The home page sorts by original creation date. Acquired seasons use the library's Spring/Fall convention, derived from release date. Artifact links open standalone pages; their Home link returns to `/`.
+The home page sorts by original creation date. Empty collections stay hidden. Reader routes are `/<collection>/<id>/`; legacy `/artifacts/<collection>/<id>.html` links are generated as compatibility copies. Only catalog-listed bundles enter the build. Artifact pages are standalone and link Home to `/`.
 
 ## Repository structure
 
-- `AGENTS.md`: entry instructions for agents, including natural-language create and publish requests.
-- `docs/publishing.md`: general queue and publishing workflow for every collection.
-- `docs/acquired/authoring.md`: Acquired transcript, narrative, illustration, and navigation requirements.
-- `docs/evidence/<collection>/<id>.md`: permanent source maps for every published and completed queued artifact; not deployed.
-- `content/library.json`: catalog entries with `id`, `title`, `category`, `addedOn`, `file`, and, for Acquired, `releasedOn`.
-- `content/queue.json`: the single queue registry (`artifacts`) and scheduled authoring plan (`authoring`); not deployed.
+- `AGENTS.md`: brief agent entry instructions and interpretation of create/publish requests.
+- `docs/publishing.md`: shared creation, review and selective publication workflow.
+- `docs/collections/<collection>.md`: source-specific authoring requirements, beginning with [Acquired](docs/collections/acquired.md).
+- `docs/evidence/<collection>/<id>.md`: source passages, qualifications, timing provenance and, for queued work, a review record. Maps travel with their artifact and are never deployed.
+- `content/library.json`: this branch's catalog. Main lists published artifacts; a queue branch adds its one artifact. Entries retain `id`, `title`, `category`, `addedOn`, `file`, and collection-specific metadata such as Acquired's `releasedOn`.
 - `public/index.html`, `app.js`, `styles.css`: the library interface.
-- `public/artifacts/<collection>/<id>/index.html` and `images/`: each artifact's deployable bundle.
-- `public/assets/acquired/`: shared Acquired typography, timelines, and navigation themes.
-- `public/fonts/`: bundled fonts and licenses.
-- `scripts/`: build, preview server, and selective-publication tooling.
-- `tests/`: automated checks. `dist/` is generated and ignored by Git.
+- `public/artifacts/<collection>/<id>/index.html` and `images/`: each deployable bundle and its artwork.
+- `public/assets/<collection>/`: reusable collection styles and navigation; `public/fonts/` contains bundled fonts and licenses.
+- `scripts/` and `tests/`: build, preview, evidence and selective publication tools. Generated `dist/` is ignored by Git.
 
-The build deploys catalog-listed artifact bundles only. Reader routes remain `/<collection>/<id>/`. Legacy `/artifacts/<collection>/<id>.html` links are generated as compatibility copies. Source maps, queue metadata, and unlisted artifact bundles stay out of dist.
+Shared procedures live directly under `docs/`; collection guides and per-artifact evidence have distinct subdirectories. Add guides and assets when a new collection needs them, rather than creating empty directories in advance.
 
 ## Create and publish
 
-Creating an artifact defaults to saving it on `queue/<collection>/<id>`, without publishing it. Start with the [publishing workflow](docs/publishing.md); Acquired content additionally follows the [authoring guide](docs/acquired/authoring.md).
-
-“Publish Vanguard” means publish that episode alone in one commit, after validation. The tool prepares an isolated worktree from current main so it preserves other publications even when a queue branch is older:
+Follow [the workflow](docs/publishing.md). “Publish Vanguard” authorizes these steps, including verification and the final push:
 
 ```sh
 npm run artifact:publish -- acquired/vanguard --prepare
-# Inspect desktop and mobile rendering in the printed worktree.
+# Browser-check the printed worktree at desktop, 390px and 320px widths.
 npm run artifact:publish -- acquired/vanguard --push
 ```
 
-Hosting uses the existing GitHub → Vercel integration. Main deploys with `npm run build`, output `dist/`. See the workflow for source-review gates, failure recovery, and deployment verification.
+Publication starts from current main and copies only the selected artifact, its source map and catalog entry into one commit. The existing GitHub → Vercel integration deploys main with `npm run build`, output `dist/`.

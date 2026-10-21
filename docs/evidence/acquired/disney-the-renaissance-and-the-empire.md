@@ -1,3 +1,4 @@
+<!-- artifact-review: {"status":"verified","bundleTree":"50c68fcf04965fc9c7d4e426b1754ddc2706a18f"} -->
 # Disney: The Renaissance and the Empire — source map
 
 Bundle: `public/artifacts/acquired/disney-the-renaissance-and-the-empire/index.html`
