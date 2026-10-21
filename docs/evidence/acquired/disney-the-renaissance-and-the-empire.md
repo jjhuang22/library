@@ -1,61 +1,47 @@
-# Disney: The Renaissance and the Empire — source evidence
+# Disney: The Renaissance and the Empire — source map
 
-Episode and sources This companion follows the recording’s story and the hosts’ interpretations. Financial figures and business conditions describe their discussion at the time of recording; estimates and counterfactuals remain estimates and counterfactuals. Official Acquired episode page : release date and the published corrections about post-Renaissance films and parks investment. No facts have been imported from its research bibliography. Podscripts transcript mirror : the full transcript used for the narrative, concluding analysis, and listening cues. This is an automated third-party transcript, not an official Acquired transcript. Obvious transcription errors in names and dates have been avoided or resolved from the surrounding conversation. Listening cues use the chapter list reproduced with the transcript mirror, in the same approximately 4:32:34 episode version as its transcript. Individual paragraph boundaries can differ slightly from those chapter cues. Navigation stops at the last concluding paragraph’s verified start, 4:24:30; unrelated carve-outs and credits continue afterward. The film ribbon maps elapsed listening time horizontally; the moving readout interpolates reading position and does not play audio. The Library uses January–August for Spring and September–December for Fall. Accordingly this companion displays Spring 2026, while Acquired labels the episode Fall 2026. The two original watercolors are conceptual illustrations. The model diagrams explain the hosts’ arguments and do not simulate or project financial returns.
+Bundle: `public/artifacts/acquired/disney-the-renaissance-and-the-empire/index.html`
+Released 2026-08-10 · Original creation 2026-10-18 · Source access rechecked 2026-10-20.
 
-## Passage anchors and timing
+Official episode: https://www.acquired.fm/episodes/disney-the-renaissance-and-the-empire. The official page and `#transcript` anchor were checked first; the web reader exposes Sources/overview rather than the conversation or an actionable Transcript tab, and rendered-site retrieval is unavailable under the environment's network policy. This is a retrieval limitation, not evidence that the site lacks a transcript. The official page supplies release metadata and the corrections below.
 
-These chapter titles and paragraph-start cues locate the retained source map in the transcript version identified above. Legacy retrieval line numbers below are secondary locators, not timestamps. The original complete-transcript review and its qualifications are preserved; bundle migration is not a new retrospective source audit.
+Transcript used: https://podscripts.co/podcasts/acquired/disney-the-renaissance-and-the-empire — automated third-party mirror, not official. The established complete-source review read the full conversation, analysis, and closing material; this retained map preserves that source work. The recovered narrative, official corrections, ending discussion, and provenance were rechecked against the same mirror on the access date above. No mirror summaries, outside bibliography, or subsequent financial updates are evidence.
 
-- `crisis` — 0:05:07, A company worth taking apart.
-- `new-team` — 0:11:33, Three outsiders and a protected promise.
-- `renaissance` — 0:24:30, A song could carry the story.
-- `extensions` — 0:37:33, The vault came home.
-- `fracture` — 0:54:32, The partnership broke before the numbers did.
-- `espn` — 1:05:55, The other engine.
-- `save-disney` — 1:21:26, A second fight to save Disney.
-- `iger` — 1:41:58, A candidate argued for the future.
-- `pixar-origins` — 1:52:17, A future built outside Disney.
-- `toy-story` — 2:03:11, A hit became negotiating leverage.
-- `pixar-deal` — 2:34:30, Buying the people who could rebuild the core.
-- `franchises` — 2:46:37, A larger collection of stories.
-- `streaming` — 2:58:01, The new distribution problem.
-- `launch` — 3:19:01, A spectacular launch hid a harder question.
-- `today` — 3:42:15, The parks carried the company again.
-- `analysis` — 3:59:22, Durable myths in a less forgiving market.
+The library's January–August convention displays Spring 2026, while Acquired labels the August episode Fall 2026. Listening cues follow the chapter list reproduced with the same mirror version. Endpoint 4:24:30 is the verified start of the final concluding paragraph, not full audio duration; later credits/carve-outs continue. Linear filmstrip interpolation is reading progress, not playback.
 
 ## Section mapping
 
-1. A company worth taking apart — 00:05:07; transcript L56–75. Covers the events, figures, and interpretations narrated in this section.
+1. A company worth taking apart — 00:05:07. Corporate rescue, Bass stake, and film/TV versus parks/product earnings.
 
-2. Three outsiders and a protected promise — 00:11:33; transcript L75–111. Covers the events, figures, and interpretations narrated in this section.
+2. Three outsiders and a protected promise — 00:11:33. Eisner/Wells/Katzenberg roles, protected animation, park prices and Silver Screen financing.
 
-3. A song could carry the story — 00:24:30; transcript L112–150. Covers the events, figures, and interpretations narrated in this section.
+3. A song could carry the story — 00:24:30. Ashman/Menken, animation Renaissance, CAPS, and theatrical gross/budget distinctions.
 
-4. The vault came home — 00:37:33; transcript L151–192; official corrections. Covers the events, figures, and interpretations narrated in this section.
+4. The vault came home — 00:37:33; official corrections. VHS economics, stores, Broadway and resort expansion; park correction applied.
 
-5. The partnership broke before the numbers did — 00:54:32; transcript L199–235; official corrections. Covers the events, figures, and interpretations narrated in this section.
+5. The partnership broke before the numbers did — 00:54:32; official corrections. Wells death, disputed succession promise, Katzenberg exit and ABC purchase; film-affection correction applied.
 
-6. The other engine — 01:05:55; transcript L236–263; L317–321. Covers the events, figures, and interpretations narrated in this section.
+6. The other engine — 01:05:55. Affiliate fees, sports rights and cable versus franchise cash models; ESPN outcome not fully foreseen.
 
-7. A second fight to save Disney — 01:21:26; transcript L264–330; official corrections. Covers the events, figures, and interpretations narrated in this section.
+7. A second fight to save Disney — 01:21:26; official corrections. Ovitz, September 11/Bass sale, Save Disney, Comcast bid, shareholder revolt and corrected park criticism.
 
-8. A candidate argued for the future — 01:41:58; transcript L331–356. Covers the events, figures, and interpretations narrated in this section.
+8. A candidate argued for the future — 01:41:58. Iger’s three priorities, internal-candidate problem, September transition and Jobs outreach.
 
-9. A future built outside Disney — 01:52:17; transcript L357–396. Covers the events, figures, and interpretations narrated in this section.
+9. A future built outside Disney — 01:52:17. Lasseter/Catmull/Smith, Lucasfilm, Jobs purchase and CAPS/RenderMan origins.
 
-10. A hit became negotiating leverage — 02:03:11; transcript L388–470. Covers the events, figures, and interpretations narrated in this section.
+10. A hit became negotiating leverage — 02:03:11. Toy Story production/IPO, financing and sequel rights, Toy Story 2 and Nemo disputes.
 
-11. Buying the people who could rebuild the core — 02:34:30; transcript L470–503. Covers the events, figures, and interpretations narrated in this section.
+11. Buying the people who could rebuild the core — 02:34:30. Stock acquisition, cultural protection, Disney Animation revival and hosts’ Jobs/Pixar sale interpretation.
 
-12. A larger collection of stories — 02:46:37; transcript L511–534. Covers the events, figures, and interpretations narrated in this section.
+12. A larger collection of stories — 02:46:37. Marvel/Lucasfilm prices, franchise outcomes, Frozen and retail sales versus retained revenue.
 
-13. The new distribution problem — 02:58:01; transcript L535–588. Covers the events, figures, and interpretations narrated in this section.
+13. The new distribution problem — 02:58:01. Cord cutting, algorithm control, BAMTech, Disney+ and Fox consideration/divestiture qualifications.
 
-14. A spectacular launch hid a harder question — 03:19:01; transcript L589–652. Covers the events, figures, and interpretations narrated in this section.
+14. A spectacular launch hid a harder question — 03:19:01. Launch signups, subscription cadence, franchise strain, ESPN economics and Chapek succession/removal.
 
-15. The parks carried the company again — 03:42:15; transcript L653–693. Covers the events, figures, and interpretations narrated in this section.
+15. The parks carried the company again — 03:42:15. Parks attendance versus spending, segment operating income, streaming losses/profit and investments.
 
-16. Durable myths in a less forgiving market — 03:59:22; transcript L693–772. Covers the events, figures, and interpretations narrated in this section.
+16. Durable myths in a less forgiving market — 03:59:22. Licensing/algorithm disagreement, DTC synergy skepticism, bull/bear, speculative IP ideas and streaming-specific Powers.
 
 ## Consequential distinctions and qualifications
 
