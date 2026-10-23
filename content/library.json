@@ -57,6 +57,24 @@
       "addedOn": "2026-10-20",
       "releasedOn": "2024-03-18",
       "file": "/artifacts/acquired/renaissance-technologies/index.html"
+    },
+    {
+      "id": "novo-nordisk",
+      "title": "Novo Nordisk (Ozempic)",
+      "category": "acquired",
+      "addedOn": "2026-10-23",
+      "releasedOn": "2024-01-22",
+      "subtitle": "The Long Horizon",
+      "description": "A century of insulin, scientific rivalry, foundation ownership and the long road to Ozempic.",
+      "tags": [
+        "pharmaceuticals",
+        "diabetes",
+        "GLP-1",
+        "foundation ownership"
+      ],
+      "file": "/artifacts/acquired/novo-nordisk/index.html",
+      "source": "https://www.acquired.fm/episodes/novo-nordisk-ozempic",
+      "format": "Illustrated episode companion"
     }
   ]
 }
