@@ -65,6 +65,14 @@
       "addedOn": "2026-11-01",
       "releasedOn": "2026-05-18",
       "file": "/artifacts/acquired/vanguard/index.html"
+    },
+    {
+      "id": "starbucks",
+      "title": "Starbucks (with Howard Schultz)",
+      "category": "acquired",
+      "addedOn": "2026-11-03",
+      "releasedOn": "2024-06-04",
+      "file": "/artifacts/acquired/starbucks/index.html"
     }
   ]
 }
