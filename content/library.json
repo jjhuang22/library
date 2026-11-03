@@ -57,6 +57,14 @@
       "addedOn": "2026-10-20",
       "releasedOn": "2024-03-18",
       "file": "/artifacts/acquired/renaissance-technologies/index.html"
+    },
+    {
+      "id": "vanguard",
+      "title": "Vanguard",
+      "category": "acquired",
+      "addedOn": "2026-11-01",
+      "releasedOn": "2026-05-18",
+      "file": "/artifacts/acquired/vanguard/index.html"
     }
   ]
 }
