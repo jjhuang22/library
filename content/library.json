@@ -65,6 +65,14 @@
       "addedOn": "2026-11-01",
       "releasedOn": "2026-05-18",
       "file": "/artifacts/acquired/vanguard/index.html"
+    },
+    {
+      "id": "nvidia-part-i",
+      "title": "Nvidia Part I: The GPU Company (1993\u20132006)",
+      "category": "acquired",
+      "addedOn": "2026-11-05",
+      "releasedOn": "2022-03-28",
+      "file": "/artifacts/acquired/nvidia-part-i/index.html"
     }
   ]
 }
