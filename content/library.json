@@ -65,6 +65,14 @@
       "addedOn": "2026-11-01",
       "releasedOn": "2026-05-18",
       "file": "/artifacts/acquired/vanguard/index.html"
+    },
+    {
+      "id": "nvidia-part-ii",
+      "title": "Nvidia Part II: The Machine Learning Company (2006\u20132022)",
+      "category": "acquired",
+      "addedOn": "2026-11-06",
+      "releasedOn": "2022-04-20",
+      "file": "/artifacts/acquired/nvidia-part-ii/index.html"
     }
   ]
 }
