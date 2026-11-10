@@ -65,6 +65,22 @@
       "addedOn": "2026-11-01",
       "releasedOn": "2026-05-18",
       "file": "/artifacts/acquired/vanguard/index.html"
+    },
+    {
+      "id": "qualcomm",
+      "title": "Qualcomm",
+      "category": "acquired",
+      "addedOn": "2026-11-09",
+      "releasedOn": "2022-11-15",
+      "file": "/artifacts/acquired/qualcomm/index.html",
+      "source": "https://www.acquired.fm/episodes/qualcomm",
+      "description": "Irwin Jacobs, CDMA, Omnitracs, and the invention and licensing of mobile communications.",
+      "tags": [
+        "wireless",
+        "semiconductors",
+        "patents",
+        "CDMA"
+      ]
     }
   ]
 }
