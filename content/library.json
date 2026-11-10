@@ -65,6 +65,22 @@
       "addedOn": "2026-11-01",
       "releasedOn": "2026-05-18",
       "file": "/artifacts/acquired/vanguard/index.html"
+    },
+    {
+      "id": "amazon-web-services",
+      "title": "Amazon Web Services",
+      "category": "acquired",
+      "addedOn": "2026-11-09",
+      "releasedOn": "2022-09-06",
+      "file": "/artifacts/acquired/amazon-web-services/index.html",
+      "source": "https://www.acquired.fm/episodes/amazon-web-services",
+      "description": "The overlapping origins of AWS, cloud primitives, enterprise adoption, databases and the economics of infrastructure.",
+      "tags": [
+        "cloud",
+        "infrastructure",
+        "AWS",
+        "databases"
+      ]
     }
   ]
 }
