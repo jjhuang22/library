@@ -73,6 +73,14 @@
       "addedOn": "2026-11-12",
       "releasedOn": "2024-10-28",
       "file": "/artifacts/acquired/meta/index.html"
+    },
+    {
+      "id": "benchmark-part-i",
+      "title": "Benchmark Part I",
+      "category": "acquired",
+      "addedOn": "2026-11-13",
+      "releasedOn": "2022-09-28",
+      "file": "/artifacts/acquired/benchmark-part-i/index.html"
     }
   ]
 }
