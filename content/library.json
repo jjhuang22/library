@@ -73,6 +73,14 @@
       "addedOn": "2026-11-12",
       "releasedOn": "2024-10-28",
       "file": "/artifacts/acquired/meta/index.html"
+    },
+    {
+      "id": "andreessen-horowitz-part-i",
+      "title": "Andreessen Horowitz Part I",
+      "category": "acquired",
+      "addedOn": "2026-11-14",
+      "releasedOn": "2021-07-27",
+      "file": "/artifacts/acquired/andreessen-horowitz-part-i/index.html"
     }
   ]
 }
