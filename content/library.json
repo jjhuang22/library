@@ -73,6 +73,14 @@
       "addedOn": "2026-11-12",
       "releasedOn": "2024-10-28",
       "file": "/artifacts/acquired/meta/index.html"
+    },
+    {
+      "id": "bitcoin",
+      "title": "Bitcoin",
+      "category": "acquired",
+      "addedOn": "2026-11-20",
+      "releasedOn": "2021-01-19",
+      "file": "/artifacts/acquired/bitcoin/index.html"
     }
   ]
 }
