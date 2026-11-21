@@ -73,6 +73,14 @@
       "addedOn": "2026-11-12",
       "releasedOn": "2024-10-28",
       "file": "/artifacts/acquired/meta/index.html"
+    },
+    {
+      "id": "airbnb",
+      "title": "Airbnb",
+      "category": "acquired",
+      "addedOn": "2026-11-21",
+      "releasedOn": "2020-12-11",
+      "file": "/artifacts/acquired/airbnb/index.html"
     }
   ]
 }
